@@ -24,6 +24,7 @@ Description:    "An ACC Integrated Care Pathway resource based on Episode of Car
     Icp_diagnoses named diagnoses 1..* and
     $icp-referral-source named referralSource 1..1 and
     $icp-intended-pathway named intendedPathway 1..1 and
+    $icp-complexity-scores named complexityScores 1..1 and
     $icp-exceptional-funding named exceptionalFunding 0..1
 
 * patient only Reference(NzPatient)

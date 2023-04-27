@@ -23,6 +23,9 @@ Description: "Example ICP notification"
 * extension[=].extension[=].valueCodeableConcept.coding = $SCT#45326000 "Shoulder pain"
 * extension[=].extension[+].url = $icp-diagnosis-side
 * extension[=].extension[=].valueCode = #left
+* extension[+].url = $icp-complexity-scores
+* extension[=].extension[0].url = $icp-category-score
+* extension[=].extension[=].valueCode = #low
 * extension[+].url = $icp-referral-source
 * extension[=].extension[0].url = $icp-referral-source-type
 * extension[=].extension[=].valueCode = #internal
@@ -35,6 +38,8 @@ Description: "Example ICP notification"
 * identifier[icpclaimnumber].use = #official
 * identifier[icpclaimnumber].system = $icp-acc-claim-number
 * identifier[icpclaimnumber].value = "A101111"
+* identifier[patientDob].use = #official
+* identifier[patientDob].value = "2002-11-17"
 * status = #active
 * type.coding.system = $icp-service-type-cs
 * type.coding.code = #msk

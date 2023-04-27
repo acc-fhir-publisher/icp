@@ -70,6 +70,8 @@ Alias: $acc-providerid = http://hl7.org.nz/fhir/ig/icp/fhir/ns/acc-providerid
 Alias: $icp-triage-assessment-date = http://hl7.org.nz/fhir/ig/icp/fhir/ns/acc-icp-triage-assessment-date
 Alias: $icp-patient-birth-date = http://hl7.org.nz/fhir/ig/icp/fhir/ns/acc-icp-patient-birth-date
 Alias: $icp-exceptional-funding = http://hl7.org.nz/fhir/ig/icp/fhir/ns/acc-icp-exceptional-funding
+Alias: $icp-complexity-scores = http://hl7.org.nz/fhir/ig/icp/fhir/ns/acc-icp-complexity-scores
+Alias: $icp-category-scores = http://hl7.org.nz/fhir/ig/icp/fhir/ns/acc-icp-category-scores
 Alias: $icp-subcategory-scores = http://hl7.org.nz/fhir/ig/icp/fhir/ns/acc-icp-subcategory-scores
 
 Alias: $hpi-organisation = https://standards.digital.health.nz/id/hpi-organisation
