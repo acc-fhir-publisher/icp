@@ -1,0 +1,124 @@
+openapi: 3.0.1
+info:
+  title: ACC Integrated Care Pathways FHIR Server
+  description: This is the computable resource that describes the RESTful endpoint
+  license:
+    name: Creative Commons Zero v1.0 Universal
+    url: http://spdx.org/licenses/CC0-1.0.html
+  contact:
+    name: ACC
+    email: integrationsupport@acc.co.nz
+  version: 1.0.0
+servers:
+- url: https://apiservicesnpe.acc.co.nz/t01/cp-fhir-exp-api/v1/
+  description: ACC Integrated Care Pathways endpoint
+externalDocs:
+  url: https://icp-ig.digital.acc.co.nz/CapabilityStatement-IcpCapabilityStatement.html
+  description: FHIR CapabilityStatement
+paths:
+  /IcpEpisodeOfCare:
+    post:
+      summary: "create-type: Create a new IcpEpisodeOfCare instance"
+      requestBody:
+        content:
+          application/fhir+json:
+            schema:
+              $ref: '#/components/schemas/FHIR-JSON-RESOURCE'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/fhir+json:
+              schema:
+                $ref: '#/components/schemas/FHIR-JSON-RESOURCE'
+        '400':
+          description: Error, with details
+          content:
+            application/fhir+json:
+              schema:
+                $ref: '#/components/schemas/OperationOutcome'
+        '401':
+          description: Not Authorized
+          content:
+            application/fhir+json:
+              schema:
+                $ref: '#/components/schemas/OperationOutcome'
+components:
+  schemas:
+    FHIR-JSON-RESOURCE:
+      type: object
+      description: A FHIR resource
+    string:
+      pattern: ^[ \r\n\t\S]+$
+      type: string
+      description: A sequence of Unicode characters
+    OperationOutcome:
+      type: object
+      description: >-
+        A collection of error, warning, or information messages that result from
+        a system action.
+      properties:
+        issue:
+          description: >-
+            An error, warning, or information message that results from a system
+            action.
+          items:
+            $ref: '#/components/schemas/OperationOutcomeIssue'
+          type: array
+      additionalProperties: false
+    OperationOutcomeIssue:
+      type: object
+      description: >-
+        A collection of error, warning, or information messages that result from
+        a system action.
+      properties:
+        severity:
+          description: >-
+            Indicates whether the issue indicates a variation from successful
+            processing.
+          enum:
+            - fatal
+            - error
+            - warning
+            - information
+        code:
+          description: >-
+            Describes the type of the issue. The system that creates an
+            OperationOutcome SHALL choose the most applicable code from the
+            IssueType value set, and may additional provide its own code for the
+            error in the details element.
+          enum:
+            - invalid
+            - structure
+            - required
+            - value
+            - invariant
+            - security
+            - login
+            - unknown
+            - expired
+            - forbidden
+            - suppressed
+            - processing
+            - not-supported
+            - duplicate
+            - multiple-matches
+            - not-found
+            - deleted
+            - too-long
+            - code-invalid
+            - extension
+            - too-costly
+            - business-rule
+            - conflict
+            - transient
+            - lock-error
+            - no-store
+            - exception
+            - timeout
+            - incomplete
+            - throttled
+            - informational
+        diagnostics:
+          $ref: '#/components/schemas/string'
+      additionalProperties: false

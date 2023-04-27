@@ -1,0 +1,24 @@
+{
+  "name": "hl7.org.nz.icp",
+  "version": "0.1.0",
+  "canonical": "http://hl7.org.nz/fhir/icp",
+  "url": "http://hl7.org.nz/fhir/icp",
+  "title": "New Zealand ICP Implementation Guide",
+  "description": "The ICP server",
+  "dependencies": {
+      "hl7.org.nz.fhir.hip-core": "1.1.0",
+      "hl7.org.nz.fhir.ig.hpi": "current",
+      "hl7.org.nz.fhir.ig.nhi": "dev",
+      "hl7.fhir.nz.base": "current",
+      "hl7.fhir.r4.core": "4.0.1"
+  },
+  "language": "en",
+  "author": "ACC Integration",
+  "maintainers": [
+      {
+          "name": "ACC Integration",
+          "email": "integrationsupport@acc.co.nz"
+      }
+  ],
+  "license": "CC0-1.0"
+}
