@@ -14,8 +14,11 @@ Description: "Example ICP notification"
 * status = #active
 * type.coding.system = $icp-service-type-cs
 * type.coding.code = #msk
+
 * patient.reference = $nhi-patient#Patient/A112233
-* extension[0].url = $icp-service-bundle
+* extension[0].url = $icp-intended-pathway
+* extension[=].valueCode = #surgical
+* extension[+].url = $icp-service-bundle
 * extension[=].valueCode = #shoulder-bundle1
 * extension[+].url = $icp-acc-client-authority
 * extension[=].valueBoolean = true
@@ -40,7 +43,5 @@ Description: "Example ICP notification"
 * extension[+].url = $icp-referral-source
 * extension[=].extension[0].url = $icp-referral-source-type
 * extension[=].extension[=].valueCode = #internal
-* extension[=].extension[0].url = $icp-intended-pathway
-* extension[=].extension[=].valueCode = #surgical
 * extension[=].extension[+].url = "receivedDate"
 * extension[=].extension[=].valueDate = "2022-11-17"
