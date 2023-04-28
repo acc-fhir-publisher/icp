@@ -11,8 +11,17 @@ Description: "Integrated Care Pathways Category Score"
 * ^contact[0].telecom[0].value = "admin@hl7.org.nz"
 * ^contact[0].telecom[0].use = #work
 * ^copyright = "HL7 New Zealand© 2020+; Licensed Under Creative Commons No Rights Reserved."
-* ^context.type = #element
-* ^context.expression = "EpisodeOfCare"
+
+* ^context[+].type = #element
+* ^context[=].expression = "Icp_complexityScores"
+* ^context[+].type = #element
+* ^context[=].expression = "Icp_complexityScores.extension"
+
+* ^context[+].type = #element
+* ^context[=].expression = "Icp_categoryScores"
+* ^context[+].type = #element
+* ^context[=].expression = "Icp_categoryScores.extension"
+
 
 * value[x] only code
 * valueCode 1..1

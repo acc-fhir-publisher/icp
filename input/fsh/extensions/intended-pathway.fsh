@@ -12,7 +12,8 @@ Description: "Integrated Care Pathways Intended Pathway"
 * ^contact[0].telecom[0].use = #work
 * ^copyright = "HL7 New Zealand© 2020+; Licensed Under Creative Commons No Rights Reserved."
 * ^context.type = #element
-* ^context.expression = "EpisodeOfCare.extension"
+* ^context.expression = "EpisodeOfCare"
 
+* value[x] only code
 * valueCode 1..1
 * valueCode from $icp-intended-pathway-vs (required)

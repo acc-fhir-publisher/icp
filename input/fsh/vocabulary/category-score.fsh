@@ -1,7 +1,7 @@
 ValueSet: ICPcategoryScore
 Id: icp-category-score
-Title: "ICP category Score"
-Description: "New Zealand codes for Integrated Care Pathways category Score"
+Title: "ICP Category Score"
+Description: "New Zealand codes for Integrated Care Pathways Category Score"
 
 * ^url = $icp-category-score-vs
 * ^version = "0.1.0"
@@ -10,10 +10,10 @@ Description: "New Zealand codes for Integrated Care Pathways category Score"
 
 CodeSystem: ICPcategoryScore
 Id: icp-category-score
-Title: "ICP category Score"
-Description: "New Zealand codes for Integrated Care Pathways Subcategory Score"
+Title: "ICP Category Score"
+Description: "New Zealand codes for Integrated Care Pathways Category Score"
 
-* ^url = $icp-subcategory-score-cs
+* ^url = $icp-category-score-cs
 * ^caseSensitive = true
 * ^version = "0.1.0"
 
