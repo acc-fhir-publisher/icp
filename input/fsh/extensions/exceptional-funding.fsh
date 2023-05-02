@@ -9,14 +9,8 @@ Description: "Identifies the Referral source submitting the ICP Notification."
 * ^context[+].type = #element
 * ^context[=].expression = "EpisodeOfCare.extension"
 
+* extension 1..*
 
 * extension contains
     Icp_FundingRationale named rationale 1..* and
-    supportingDetails 1..1
-
-* extension[rationale].url = $icp-funding-rationale (exactly)
-
-* extension[supportingDetails].url = "supportingDetails" (exactly)
-* extension[supportingDetails] ^definition = "The Exceptional Funding Supporting Details"
-* extension[supportingDetails] ^short = "Supporting Details"
-* extension[supportingDetails].value[x] only string
+    Icp_supportingDetails named supportingDetails 1..1

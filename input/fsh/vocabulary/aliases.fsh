@@ -5,6 +5,30 @@ Alias: $ICD10CM = http://hl7.org/fhir/sid/icd-10-cm
 Alias: $ICD10PCS = http://www.cms.gov/Medicare/Coding/ICD10
 Alias: $icd10ae = http://terminology.hl7.org/CodeSystem/icd10ae
 
+Alias: $episode-of-case-status = http://hl7.org/fhir/episode-of-care-status
+
+Alias: $icp-profile = http://hl7.org.nz/fhir/StructureDefinition/acc/icp/IntegratedCarePathway
+Alias: $icp-triage-assessment-date = http://hl7.org.nz/fhir/ig/icp/fhir/StructureDefinition/acc/icp/triage-assessment-date
+Alias: $icp-patient-birth-date = http://hl7.org.nz/fhir/ig/icp/fhir/StructureDefinition/acc/icp/patient-birth-date
+Alias: $icp-supporting-details = http://hl7.org.nz/fhir/ig/icp/fhir/StructureDefinition/acc/icp/supporting-details
+Alias: $icp-exceptional-funding = http://hl7.org.nz/fhir/ig/icp/fhir/StructureDefinition/acc/icp/exceptional-funding
+Alias: $icp-complexity-scores = http://hl7.org.nz/fhir/ig/icp/fhir/StructureDefinition/acc/icp/complexity-scores
+Alias: $icp-category-scores = http://hl7.org.nz/fhir/ig/icp/fhir/StructureDefinition/acc/icp/category-scores
+Alias: $icp-subcategory-scores = http://hl7.org.nz/fhir/ig/icp/fhir/StructureDefinition/acc/icp/subcategory-scores
+Alias: $icp-diagnoses = http://hl7.org.nz/fhir/StructureDefinition/acc/icp/diagnoses
+Alias: $icp-acc-client-authority = http://hl7.org.nz/fhir/StructureDefinition/acc/icp/client-authority
+Alias: $icp-client-participation-agreement = http://hl7.org.nz/fhir/StructureDefinition/acc/icp/client-participation-agreement
+Alias: $icp-covers-all-claim-diagnoses = http://hl7.org.nz/fhir/StructureDefinition/acc/icp/covers-all-claim-diagnoses
+Alias: $icp-period = http://hl7.org.nz/fhir/StructureDefinition/acc/icp/period
+Alias: $icp-referral-source = http://hl7.org.nz/fhir/StructureDefinition/acc/icp/referral-source
+
+Alias: $icp-case-identifier = http://hl7.org.nz/fhir/ig/icp/fhir/ns/acc/icp/case-identifier
+Alias: $icp-acc-claim-number = http://hl7.org.nz/fhir/ig/icp/fhir/ns/acc-claim-number
+Alias: $acc-providerid = http://hl7.org.nz/fhir/ig/icp/fhir/ns/acc/acc-providerid
+Alias: $hpi-organisation = https://standards.digital.health.nz/id/hpi-organisation
+Alias: $nhi-patient = https://standards.digital.health.nz/ns/nhi-id
+
+
 Alias: $icp-diagnosis-codes = http://hl7.org.nz/fhir/StructureDefinition/acc/icp/diagnosis-codes
 Alias: $icp-diagnosis-codes-vs = http://hl7.org.nz/fhir/ig/icp/fhir/ValueSet/acc/icp/diagnosis-codes
 
@@ -56,25 +80,3 @@ Alias: $icp-subcategory-score = http://hl7.org.nz/fhir/StructureDefinition/acc/i
 Alias: $icp-subcategory-score-cs = http://hl7.org.nz/fhir/ig/icp/fhir/ns/acc/icp/subcategory-score-code
 Alias: $icp-subcategory-score-vs = http://hl7.org.nz/fhir/ig/icp/fhir/ValueSet/acc/icp/subcategory-score-code
 
-Alias: $icp-profile = http://hl7.org.nz/fhir/StructureDefinition/acc/icp/IntegratedCarePathway
-Alias: $icp-diagnoses = http://hl7.org.nz/fhir/StructureDefinition/acc/icp/diagnoses
-Alias: $icp-acc-client-authority = http://hl7.org.nz/fhir/StructureDefinition/acc/icp/client-authority
-Alias: $icp-client-participation-agreement = http://hl7.org.nz/fhir/StructureDefinition/acc/icp/client-participation-agreement
-Alias: $icp-covers-all-claim-diagnoses = http://hl7.org.nz/fhir/StructureDefinition/acc/icp/covers-all-claim-diagnoses
-Alias: $icp-period = http://hl7.org.nz/fhir/StructureDefinition/acc/icp/period
-Alias: $icp-referral-source = http://hl7.org.nz/fhir/StructureDefinition/acc/icp/referral-source
-
-Alias: $icp-case-identifier = http://hl7.org.nz/fhir/ig/icp/fhir/ns/acc/icp/case-identifier
-Alias: $icp-acc-claim-number = http://hl7.org.nz/fhir/ig/icp/fhir/ns/acc-claim-number
-Alias: $acc-providerid = http://hl7.org.nz/fhir/ig/icp/fhir/ns/acc/acc-providerid
-Alias: $icp-triage-assessment-date = http://hl7.org.nz/fhir/ig/icp/fhir/ns/acc/icp/triage-assessment-date
-Alias: $icp-patient-birth-date = http://hl7.org.nz/fhir/ig/icp/fhir/ns/acc/icp/patient-birth-date
-Alias: $icp-exceptional-funding = http://hl7.org.nz/fhir/ig/icp/fhir/ns/acc/icp/exceptional-funding
-Alias: $icp-complexity-scores = http://hl7.org.nz/fhir/ig/icp/fhir/ns/acc/icp/complexity-scores
-Alias: $icp-category-scores = http://hl7.org.nz/fhir/ig/icp/fhir/ns/acc/icp/category-scores
-Alias: $icp-subcategory-scores = http://hl7.org.nz/fhir/ig/icp/fhir/ns/acc/icp/subcategory-scores
-
-Alias: $hpi-organisation = https://standards.digital.health.nz/id/hpi-organisation
-Alias: $nhi-patient = https://standards.digital.health.nz/ns/nhi-id
-
-Alias: $episode-of-case-status = http://hl7.org/fhir/episode-of-care-status
