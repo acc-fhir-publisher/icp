@@ -10,3 +10,4 @@ Description: "Patient DOB is only included as a secondary validator for ClaimNum
 
 * extension 0..0
 * value[x] only date
+* value[x] obeys date-not-in-future

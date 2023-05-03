@@ -17,5 +17,3 @@ Description: "Integrated Care Pathways Diagnosis Side"
 * extension contains
     Icp_diagnosisCodes named diagnosisCode 1..1 and
     Icp_diagnosisSide named diagnosisSide 1..1
-
-* extension[diagnosisSide].valueCode from $icp-diagnosis-side-vs (required)

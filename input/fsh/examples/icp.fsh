@@ -45,3 +45,12 @@ Description: "Example ICP notification"
 * extension[=].extension[=].valueCode = #internal
 * extension[=].extension[+].url = "receivedDate"
 * extension[=].extension[=].valueDate = "2022-11-17"
+
+* extension[+].url = $icp-exceptional-funding
+* extension[=].extension[0].url = $icp-funding-rationale
+* extension[=].extension[=].valueCode[0] = #other
+* extension[=].extension[+].url = $icp-funding-rationale
+* extension[=].extension[=].valueCode[0] = #social-support
+* extension[=].extension[+].url = $icp-supporting-details
+* extension[=].extension[=].valueString = "some supporting details"
+

@@ -21,7 +21,7 @@ Description:    "An ACC Integrated Care Pathway resource based on Episode of Car
     $icp-covers-all-claim-diagnoses named coversAllClaimDiagnoses 0..1 and
     $acc-providerid named accProviderId 1..1 and
     $icp-triage-assessment-date named triageAssessmentDate 1..1 and
-    Icp_diagnoses named diagnoses 1..* and
+    $icp-diagnoses named diagnoses 1..* and
     $icp-referral-source named referralSource 1..1 and
     $icp-intended-pathway named intendedPathway 1..1 and
     $icp-complexity-scores named complexityScores 1..1 and
@@ -35,7 +35,9 @@ Description:    "An ACC Integrated Care Pathway resource based on Episode of Car
 
 * period 1..1
 * period.start 1..1
+* period.start obeys start-date-not-in-future
 * period.end 0..1
+* period.end obeys end-date-not-in-future
 
 * status from $icp-status-vs (required)
 * status ^short = "active | finished"
@@ -60,3 +62,19 @@ Description:    "An ACC Integrated Care Pathway resource based on Episode of Car
 
 * identifier[icpclaimnumber].system = $icp-acc-claim-number (exactly)
 * identifier[patientDob].system = $icp-patient-birth-date (exactly)
+
+
+Invariant: start-date-not-in-future
+Severity: #error
+Description: "The date value cannot be in the future"
+Expression: "%start <= today()"
+
+Invariant: end-date-not-in-future
+Severity: #error
+Description: "The date value cannot be in the future"
+Expression: "%end <= today()"
+
+Invariant: date-not-in-future
+Severity: #error
+Description: "The date value cannot be in the future"
+Expression: "%value <= today()"

@@ -1,8 +1,8 @@
-Extension: Icp_FundingRationale
-Id: icp-funding-rationale
-Title: "ICP Funding Rationale"
-Description: "Integrated Care Pathways Funding Rationale"
-* ^url = $icp-funding-rationale
+Extension: ICP_complexityScore
+Id: icp-complexity-score
+Title: "ICP Complexity Score"
+Description: "Integrated Care Pathways Complexity Score"
+* ^url = $icp-complexity-score
 * ^version = "0.1.0"
 * ^status = #draft
 * ^date = "2022-11-20"
@@ -11,11 +11,18 @@ Description: "Integrated Care Pathways Funding Rationale"
 * ^contact[0].telecom[0].value = "admin@hl7.org.nz"
 * ^contact[0].telecom[0].use = #work
 * ^copyright = "HL7 New Zealand© 2020+; Licensed Under Creative Commons No Rights Reserved."
-* ^context.type = #element
+
+
 * ^context[+].type = #element
 * ^context[=].expression = "EpisodeOfCare"
 * ^context[+].type = #element
 * ^context[=].expression = "EpisodeOfCare.extension"
 
-// * valueCode 1..*
-* valueCode from $icp-funding-rationale-vs (required)
+* ^context[+].type = #element
+* ^context[=].expression = "Icp_complexityScores"
+* ^context[+].type = #element
+* ^context[=].expression = "Icp_complexityScores.extension"
+
+
+* value[x] 1..1
+* value[x] from $icp-complexity-score-vs (required)
