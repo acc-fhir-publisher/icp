@@ -3,7 +3,8 @@ Parent:         EpisodeOfCare
 Id:             IntegratedCarePathway
 Title:          "ACC ICP Episode of Care"
 Description:    "An ACC Integrated Care Pathway resource based on Episode of Care"
-// * obeys start-date-when-active-invariant and start-date-when-finished-invariant
+* obeys start-date-when-active-invariant
+//  and start-date-when-finished-invariant
 
 * ^url = $icp-profile
 * ^status = #draft
@@ -77,10 +78,10 @@ Description: "The date value cannot be in the future"
 
 Invariant: start-date-when-active-invariant
 Severity: #error
-Expression: "status = 'active' and Period.start.exists()"
+Expression: "status = 'active' implies period.start.exists()"
 Description: "The start date is required when the status is active"
 
 Invariant: start-date-when-finished-invariant
 Severity: #error
-Expression: "status = 'finished' and Period.start.exists().not()"
+Expression: "status = 'finished' implies period.start.exists().not()"
 Description: "The start date is not allowed when the status is finished"
