@@ -1,4 +1,4 @@
-Extension: ICPSubcategoryScores
+Extension: Icp_subcategoryScores
 Id: icp-subcategory-scores
 Title: "ICP Subcategory Scores"
 Description: "Subcategory scores for an ICP claim"

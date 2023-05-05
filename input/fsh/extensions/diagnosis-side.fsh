@@ -14,5 +14,6 @@ Description: "Integrated Care Pathways Diagnosis Side"
 * ^context.type = #element
 * ^context.expression = "EpisodeOfCare.extension"
 
+* value[x] only code
 * valueCode 1..1
 * valueCode from $icp-diagnosis-side-vs (required)

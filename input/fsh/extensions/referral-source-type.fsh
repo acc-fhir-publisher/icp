@@ -14,5 +14,6 @@ Description: "Integrated Care Pathways Referral Source Type"
 * ^context.type = #element
 * ^context.expression = "EpisodeOfCare.extension"
 
+* value[x] only code
 * valueCode 1..1
 * valueCode from $icp-referral-source-type-vs (required)

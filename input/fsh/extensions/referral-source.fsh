@@ -17,5 +17,5 @@ Description: "Identifies the Referral source submitting the ICP Notification."
 * extension[referralSourceType].url = $icp-referral-source-type (exactly)
 
 * extension[receivedDate].url = "receivedDate" (exactly)
-* extension[receivedDate].valueDate only date
-* extension[receivedDate].valueDate obeys date-not-in-future
+* extension[receivedDate].value[x] only date
+// * extension[receivedDate].valueDate obeys date-not-in-future

@@ -1,4 +1,4 @@
-Instance: ICP12345
+Instance: baseTemplate
 InstanceOf: IntegratedCarePathway
 Usage: #example
 Title: "ACC ICP Notification - ICP12345"
@@ -37,9 +37,21 @@ Description: "Example ICP notification"
 * extension[=].extension[=].valueCodeableConcept.coding = $SCT#45326000 "Shoulder pain"
 * extension[=].extension[+].url = $icp-diagnosis-side
 * extension[=].extension[=].valueCode = #left
+
 * extension[+].url = $icp-complexity-scores
-* extension[=].extension[0].url = $icp-category-score
+* extension[=].extension[0].url = $icp-complexity-score
 * extension[=].extension[=].valueCode = #low
+* extension[=].extension[+].url = $icp-category-scores
+* extension[=].extension[=].extension[0].url = $icp-category
+* extension[=].extension[=].extension[=].valueCode = #contextual
+* extension[=].extension[=].extension[+].url = $icp-category-score
+* extension[=].extension[=].extension[=].valueCode = #low
+* extension[=].extension[=].extension[=].extension[0].url = $icp-subcategory-scores
+* extension[=].extension[=].extension[=].extension[=].extension[0].url = $icp-subcategory
+* extension[=].extension[=].extension[=].extension[=].extension[=].valueCode = #active-participation
+* extension[=].extension[=].extension[=].extension[=].extension[+].url = $icp-subcategory-score
+* extension[=].extension[=].extension[=].extension[=].extension[=].valueCode = #low
+
 * extension[+].url = $icp-referral-source
 * extension[=].extension[0].url = $icp-referral-source-type
 * extension[=].extension[=].valueCode = #internal

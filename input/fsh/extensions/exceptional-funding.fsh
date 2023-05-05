@@ -11,12 +11,6 @@ Description: "Identifies the Referral source submitting the ICP Notification."
 
 * extension 1..*
 
-// * rationale from $icp-funding-rationale-vs (required)
-// * rationale 1..* 
-
-// * supportingDetails 1..1 
-// * supportingDetails only string
-
 * extension contains
     Icp_FundingRationale named rationale 1..* and
     Icp_supportingDetails named supportingDetails 1..1

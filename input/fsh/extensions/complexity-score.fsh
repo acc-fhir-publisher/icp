@@ -23,6 +23,6 @@ Description: "Integrated Care Pathways Complexity Score"
 * ^context[+].type = #element
 * ^context[=].expression = "Icp_complexityScores.extension"
 
-
-* value[x] 1..1
-* value[x] from $icp-complexity-score-vs (required)
+* value[x] only code
+* valueCode 1..1
+* valueCode from $icp-complexity-score-vs (required)

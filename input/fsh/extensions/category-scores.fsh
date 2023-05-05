@@ -13,4 +13,4 @@ Description: "Category scores for an ICP claim"
 * extension contains
     Icp_category named category 1..1 and
     Icp_categoryScore named categoryscore 1..1 and
-    ICPSubcategoryScores named subcategoryscores 0..*
+    Icp_subcategoryScores named subcategoryscores 0..*

@@ -3,6 +3,7 @@ Parent:         EpisodeOfCare
 Id:             IntegratedCarePathway
 Title:          "ACC ICP Episode of Care"
 Description:    "An ACC Integrated Care Pathway resource based on Episode of Care"
+// * obeys start-date-when-active-invariant and start-date-when-finished-invariant
 
 * ^url = $icp-profile
 * ^status = #draft
@@ -34,10 +35,10 @@ Description:    "An ACC Integrated Care Pathway resource based on Episode of Car
 * managingOrganization 1..1
 
 * period 1..1
-* period.start 1..1
-* period.start obeys start-date-not-in-future
+* period.start 0..1
+* period.start obeys date-invariant and date-not-in-future-invariant
 * period.end 0..1
-* period.end obeys end-date-not-in-future
+* period.end obeys date-invariant and date-not-in-future-invariant
 
 * status from $icp-status-vs (required)
 * status ^short = "active | finished"
@@ -64,17 +65,22 @@ Description:    "An ACC Integrated Care Pathway resource based on Episode of Car
 * identifier[patientDob].system = $icp-patient-birth-date (exactly)
 
 
-Invariant: start-date-not-in-future
+Invariant: date-invariant
 Severity: #error
-Description: "The date value cannot be in the future"
-Expression: "%start <= today()"
+Description: "All timestamps SHOULD be represented as Dates (YYYY-MM-DD only)."
+Expression: "$this.toString().matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$')"
 
-Invariant: end-date-not-in-future
+Invariant: date-not-in-future-invariant
 Severity: #error
+Expression: "$this <= today()"
 Description: "The date value cannot be in the future"
-Expression: "%end <= today()"
 
-Invariant: date-not-in-future
+Invariant: start-date-when-active-invariant
 Severity: #error
-Description: "The date value cannot be in the future"
-Expression: "%value <= today()"
+Expression: "status = 'active' and Period.start.exists()"
+Description: "The start date is required when the status is active"
+
+Invariant: start-date-when-finished-invariant
+Severity: #error
+Expression: "status = 'finished' and Period.start.exists().not()"
+Description: "The start date is not allowed when the status is finished"

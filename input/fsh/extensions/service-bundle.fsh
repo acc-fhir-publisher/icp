@@ -14,5 +14,6 @@ Description: "Integrated Care Pathways Service Bundle"
 * ^context.type = #element
 * ^context.expression = "EpisodeOfCare"
 
+* value[x] only code
 * valueCode 1..1
 * valueCode from $icp-service-bundle-vs (required)

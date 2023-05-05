@@ -14,5 +14,6 @@ Description: "Integrated Care Pathways Service Type"
 * ^context.type = #element
 * ^context.expression = "EpisodeOfCare.type"
 
+* value[x] only code
 * valueCode 1..1
 * valueCode from $icp-service-type-vs (required)

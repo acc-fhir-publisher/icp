@@ -11,6 +11,6 @@ Description: "Complexity scores for an ICP claim"
 
 * extension contains
     ICP_complexityScore named complexityScore 1..1 and
-    ICP_categoryScores named categoryScores 0..* 
+    ICP_categoryScores named categoryScores 0..*
 
     

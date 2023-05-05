@@ -12,6 +12,9 @@ cp ./Practitioner-*.json ./temp
 java -jar /C/apps/FHIR_validator/validator_cli.jar ./temp  -ig ./package.tgz -profile http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner -proxy WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 -html-output ./validation_HPIPractitioner.html
 rm ./*temp/*.json
 
+%JAVA_HOME%\bin\java -jar ./org.hl7.fhir.validator.jar .\fsh-generated\resources\EpisodeOfCare-baseTemplate.json -version 4.0 -ig .\output\package.r4.tgz -profile http://hl7.org.nz/fhir/StructureDefinition/acc-integratedcarepathway -want-invariants-in-messages -output-style json -output ./output/validation_EpisodeOfCare-baseTemplate.json -igpkgs C:\Users\BesserGa\.fhir\packages
+
+
 echo validating Organization examples
 cp ./Organization-*.json ./temp
 java -jar /C/apps/FHIR_validator/validator_cli.jar ./temp  -ig ./package.tgz -profile http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization  -proxy WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 -html-output ./validation_HPIOrganization.html

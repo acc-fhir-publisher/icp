@@ -10,4 +10,4 @@ Description: "The date when the triage was performed for the resulting assessmen
 
 * extension 0..0
 * value[x] only date
-* value[x] obeys date-not-in-future
+// * value[x] obeys date-not-in-future

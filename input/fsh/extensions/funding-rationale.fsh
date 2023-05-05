@@ -17,5 +17,5 @@ Description: "Integrated Care Pathways Funding Rationale"
 * ^context[+].type = #element
 * ^context[=].expression = "EpisodeOfCare.extension"
 
-// * valueCode 1..*
+* value[x] only code
 * valueCode from $icp-funding-rationale-vs (required)
