@@ -33,3 +33,4 @@ validator_cli.jar
 .vscode/settings.json
 ig.ini
 *.log
+org.hl7.fhir.validator.jar

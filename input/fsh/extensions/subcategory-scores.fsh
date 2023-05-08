@@ -8,7 +8,10 @@ Description: "Subcategory scores for an ICP claim"
 * ^context[=].expression = "EpisodeOfCare"
 * ^context[+].type = #element
 * ^context[=].expression = "EpisodeOfCare.extension"
-
+* ^context[+].type = #element
+* ^context[=].expression = "EpisodeOfCare.extension.extension"
+* ^context[+].type = #element
+* ^context[=].expression = "EpisodeOfCare.extension.extension.extension"
 
 * extension contains
     Icp_subcategory named subcategory 1..1 and

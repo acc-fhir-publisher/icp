@@ -1,21 +1,22 @@
-Instance: baseTemplate
-InstanceOf: IntegratedCarePathway
+Instance: icp-template
+InstanceOf: IcpCase
 Usage: #example
 Title: "ACC ICP Notification - ICP12345"
 Description: "Example ICP notification"
-* meta.profile = $icp-profile
+* meta.profile = $icp-case-profile
 * managingOrganization.reference = $hpi-organisation#Organization/ORG123
 * period.start = "2022-11-17"
 * identifier[icpclaimnumber].use = #official
 * identifier[icpclaimnumber].system = $icp-acc-claim-number
 * identifier[icpclaimnumber].value = "A101111"
-* identifier[patientDob].use = #official
-* identifier[patientDob].value = "2002-11-17"
+
 * status = #active
 * type.coding.system = $icp-service-type-cs
 * type.coding.code = #msk
 
+// * patient.birthDate = "2002-11-17"
 * patient.reference = $nhi-patient#Patient/A112233
+
 * extension[0].url = $icp-intended-pathway
 * extension[=].valueCode = #surgical
 * extension[+].url = $icp-service-bundle

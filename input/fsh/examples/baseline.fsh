@@ -2,20 +2,20 @@ Alias: $acc-icp-service-type-code = http://hl7.org.nz/fhir/ns/acc-icp-service-ty
 Alias: $sct = http://snomed.info/sct
 
 Instance: baseline
-InstanceOf: IntegratedCarePathway
+InstanceOf: IcpCase
 Usage: #example
-* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/acc-integratedcarepathway"
+* meta.profile = $icp-case-profile
 * identifier[0].system = "http://hl7.org.nz/icp/fhir/ns/acc-claim-number"
 * identifier[=].use = #official
 * identifier[=].value = "A101111"
-* identifier[+].system = "http://hl7.org.nz/StructureDefinition/acc-icp-patient-birth-date"
-* identifier[=].use = #official
-* identifier[=].value = "2002-11-17"
+
 * type = $acc-icp-service-type-code#msk
 * managingOrganization = Reference(Organization/ORG123)
 * period.start = "2022-11-17"
 * status = #active
-* patient = Reference(Patient/A112233asdasd)
+
+* patient.reference = $nhi-patient#Patient/A112233
+
 * extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-intended-pathway"
 * extension[=].valueCode = #surgical
 * extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-bundle"

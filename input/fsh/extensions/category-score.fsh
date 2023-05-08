@@ -17,7 +17,8 @@ Description: "Integrated Care Pathways Category Score"
 * ^context[=].expression = "EpisodeOfCare"
 * ^context[+].type = #element
 * ^context[=].expression = "EpisodeOfCare.extension"
-
+* ^context[+].type = #element
+* ^context[=].expression = "EpisodeOfCare.extension.extension"
 * ^context[+].type = #element
 * ^context[=].expression = "Icp_complexityScores"
 * ^context[+].type = #element

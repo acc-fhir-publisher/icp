@@ -18,4 +18,4 @@ Description: "Identifies the Referral source submitting the ICP Notification."
 
 * extension[receivedDate].url = "receivedDate" (exactly)
 * extension[receivedDate].value[x] only date
-// * extension[receivedDate].valueDate obeys date-not-in-future
+* extension[receivedDate].valueDate obeys date-invariant and date-not-in-future-invariant

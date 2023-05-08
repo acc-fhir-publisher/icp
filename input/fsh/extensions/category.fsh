@@ -13,6 +13,12 @@ Description: "Integrated Care Pathways Category"
 * ^copyright = "HL7 New Zealand© 2020+; Licensed Under Creative Commons No Rights Reserved."
 
 * ^context[+].type = #element
+* ^context[=].expression = "EpisodeOfCare"
+* ^context[+].type = #element
+* ^context[=].expression = "EpisodeOfCare.extension"
+* ^context[+].type = #element
+* ^context[=].expression = "EpisodeOfCare.extension.extension"
+* ^context[+].type = #element
 * ^context[=].expression = "Icp_categoryScores"
 * ^context[+].type = #element
 * ^context[=].expression = "Icp_categoryScores.extension"

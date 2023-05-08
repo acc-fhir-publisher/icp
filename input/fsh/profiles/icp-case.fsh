@@ -1,12 +1,12 @@
-Profile:        IntegratedCarePathway
+Profile:        IcpCase
 Parent:         EpisodeOfCare
-Id:             IntegratedCarePathway
+Id:             IcpCase
 Title:          "ACC ICP Episode of Care"
 Description:    "An ACC Integrated Care Pathway resource based on Episode of Care"
 * obeys start-date-when-active-invariant
-//  and start-date-when-finished-invariant
 
-* ^url = $icp-profile
+
+* ^url = $icp-case-profile
 * ^status = #draft
 
 * statusHistory 0..0
@@ -29,8 +29,17 @@ Description:    "An ACC Integrated Care Pathway resource based on Episode of Car
     $icp-complexity-scores named complexityScores 1..1 and
     $icp-exceptional-funding named exceptionalFunding 0..1
 
-* patient only Reference(NzPatient)
+* patient only Reference(NhiPatient)
 * patient 1..1
+
+// * contained ^slicing.discriminator.type = #type
+// * contained ^slicing.discriminator.path = "$this"
+// * contained ^slicing.rules = #closed
+// * contained ^slicing.description = "Slicing to specifiy an icp patient resource may be returned as a contained resource for the Icp case information"
+// * contained contains patient 1..1
+// * contained[patient] only $icp-patient-profile
+// * contained[patient] ^short = "Contained resource for the Patient's birthDate"
+// * contained[patient] ^definition = "Contained resource for the patient's birthDate"
 
 * managingOrganization only Reference(HpiOrganization)
 * managingOrganization 1..1
@@ -56,14 +65,11 @@ Description:    "An ACC Integrated Care Pathway resource based on Episode of Car
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.ordered = false
-* identifier ^slicing.rules = #openAtEnd
 
 * identifier contains
-    icpclaimnumber 1..1 and
-    patientDob 1..1
+    icpclaimnumber 1..1
 
 * identifier[icpclaimnumber].system = $icp-acc-claim-number (exactly)
-* identifier[patientDob].system = $icp-patient-birth-date (exactly)
 
 
 Invariant: date-invariant
@@ -73,15 +79,16 @@ Expression: "$this.toString().matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$')"
 
 Invariant: date-not-in-future-invariant
 Severity: #error
-Expression: "$this <= today()"
 Description: "The date value cannot be in the future"
+Expression: "$this <= today()"
+
 
 Invariant: start-date-when-active-invariant
 Severity: #error
-Expression: "status = 'active' implies period.start.exists()"
 Description: "The start date is required when the status is active"
+Expression: "status = 'active' implies period.start.exists()"
 
 Invariant: start-date-when-finished-invariant
 Severity: #error
-Expression: "status = 'finished' implies period.start.exists().not()"
 Description: "The start date is not allowed when the status is finished"
+Expression: "status = 'finished' implies period.start.exists().not()"

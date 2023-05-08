@@ -7,7 +7,9 @@ Alias: $icd10ae = http://terminology.hl7.org/CodeSystem/icd10ae
 
 Alias: $episode-of-case-status = http://hl7.org/fhir/episode-of-care-status
 
-Alias: $icp-profile = http://hl7.org.nz/fhir/StructureDefinition/acc-integratedcarepathway
+Alias: $icp-case-profile = http://hl7.org.nz/fhir/StructureDefinition/acc-integratedcarepathway
+Alias: $icp-patient-profile = http://hl7.org.nz/fhir/StructureDefinition/IcpPatient
+
 Alias: $icp-triage-assessment-date = http://hl7.org.nz/StructureDefinition/acc-icp-triage-assessment-date
 Alias: $icp-patient-birth-date = http://hl7.org.nz/StructureDefinition/acc-icp-patient-birth-date
 Alias: $icp-supporting-details = http://hl7.org.nz/StructureDefinition/acc-icp-supporting-details
@@ -24,6 +26,7 @@ Alias: $icp-referral-source = http://hl7.org.nz/fhir/StructureDefinition/acc-icp
 
 Alias: $icp-case-identifier = http://hl7.org.nz/icp/fhir/ns/acc-icp-case-identifier
 Alias: $icp-acc-claim-number = http://hl7.org.nz/icp/fhir/ns/acc-claim-number
+// Alias: $icp-patient-birth-date-id = http://hl7.org.nz/icp/fhir/ns/acc-icp-patient-birth-date
 Alias: $acc-providerid = http://hl7.org.nz/fhir/ns/acc-providerid
 Alias: $hpi-organisation = https://standards.digital.health.nz/id/hpi-organisation
 Alias: $nhi-patient = https://standards.digital.health.nz/ns/nhi-id

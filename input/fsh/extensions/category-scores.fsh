@@ -5,6 +5,12 @@ Description: "Category scores for an ICP claim"
 
 * ^url = $icp-category-scores
 * ^context[+].type = #element
+* ^context[=].expression = "EpisodeOfCare"
+* ^context[+].type = #element
+* ^context[=].expression = "EpisodeOfCare.extension"
+* ^context[+].type = #element
+* ^context[=].expression = "EpisodeOfCare.extension.extension"
+* ^context[+].type = #element
 * ^context[=].expression = "Icp_complexityScores"
 * ^context[+].type = #element
 * ^context[=].expression = "Icp_complexityScores.extension"
