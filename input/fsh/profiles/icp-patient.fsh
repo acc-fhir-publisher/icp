@@ -1,18 +1,3 @@
-// Extension: IcpPatient
-// Id: icp-patient
-// Title: "ICP Patient birthdate"
-// Description: "Identifies the referred patient's birthdate."
-
-// * ^url = $icp-patient-birth-date
-// * ^context[+].type = #element
-// * ^context[=].expression = "EpisodeOfCare"
-// * ^context[+].type = #element
-// * ^context[=].expression = "EpisodeOfCare.extension"
-
-// * extension 0..0
-// * birthDate 1..1 
-// * birthDate obeys date-invariant and date-not-in-future-invariant
-
 Profile:        IcpPatient
 Parent:         NhiPatient
 Id:             IcpPatient

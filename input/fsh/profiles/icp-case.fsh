@@ -21,25 +21,25 @@ Description:    "An ACC Integrated Care Pathway resource based on Episode of Car
     $icp-acc-client-authority named accClientAuthority 1..1 and
     $icp-client-participation-agreement named clientParticipationAgreement 1..1 and
     $icp-covers-all-claim-diagnoses named coversAllClaimDiagnoses 0..1 and
-    $acc-providerid named accProviderId 1..1 and
     $icp-triage-assessment-date named triageAssessmentDate 1..1 and
-    $icp-diagnoses named diagnoses 1..* and
     $icp-referral-source named referralSource 1..1 and
     $icp-intended-pathway named intendedPathway 1..1 and
+    $acc-providerid named accProviderId 1..1 and
+    $icp-diagnoses named diagnoses 1..* and
     $icp-complexity-scores named complexityScores 1..1 and
     $icp-exceptional-funding named exceptionalFunding 0..1
 
-* patient only Reference(NhiPatient)
+* patient only Reference(IcpPatient)
 * patient 1..1
 
-// * contained ^slicing.discriminator.type = #type
-// * contained ^slicing.discriminator.path = "$this"
-// * contained ^slicing.rules = #closed
-// * contained ^slicing.description = "Slicing to specifiy an icp patient resource may be returned as a contained resource for the Icp case information"
-// * contained contains patient 1..1
-// * contained[patient] only $icp-patient-profile
-// * contained[patient] ^short = "Contained resource for the Patient's birthDate"
-// * contained[patient] ^definition = "Contained resource for the patient's birthDate"
+* contained ^slicing.discriminator.type = #type
+* contained ^slicing.discriminator.path = "$this"
+* contained ^slicing.rules = #closed
+* contained ^slicing.description = "Slicing to specifiy an icp patient resource may be returned as a contained resource for the Icp case information"
+* contained contains patient 1..1
+* contained[patient] only $icp-patient-profile
+* contained[patient] ^short = "Contained resource for the Patient's birthDate"
+* contained[patient] ^definition = "Contained resource for the patient's birthDate"
 
 * managingOrganization only Reference(HpiOrganization)
 * managingOrganization 1..1

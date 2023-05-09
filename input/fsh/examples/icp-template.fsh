@@ -4,6 +4,8 @@ Usage: #example
 Title: "ACC ICP Notification - ICP12345"
 Description: "Example ICP notification"
 * meta.profile = $icp-case-profile
+* contained = Inline-Instance-for-A112233-1
+
 * managingOrganization.reference = $hpi-organisation#Organization/ORG123
 * period.start = "2022-11-17"
 * identifier[icpclaimnumber].use = #official
@@ -14,8 +16,7 @@ Description: "Example ICP notification"
 * type.coding.system = $icp-service-type-cs
 * type.coding.code = #msk
 
-// * patient.birthDate = "2002-11-17"
-* patient.reference = $nhi-patient#Patient/A112233
+* patient = Reference(A112233)
 
 * extension[0].url = $icp-intended-pathway
 * extension[=].valueCode = #surgical

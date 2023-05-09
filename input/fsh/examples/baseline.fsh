@@ -5,6 +5,8 @@ Instance: baseline
 InstanceOf: IcpCase
 Usage: #example
 * meta.profile = $icp-case-profile
+* contained = Inline-Instance-for-A112233-1
+
 * identifier[0].system = "http://hl7.org.nz/icp/fhir/ns/acc-claim-number"
 * identifier[=].use = #official
 * identifier[=].value = "A101111"
@@ -14,7 +16,7 @@ Usage: #example
 * period.start = "2022-11-17"
 * status = #active
 
-* patient.reference = $nhi-patient#Patient/A112233
+* patient = Reference(A112233)
 
 * extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-intended-pathway"
 * extension[=].valueCode = #surgical
@@ -52,3 +54,9 @@ Usage: #example
 * extension[+].url = "http://hl7.org.nz/StructureDefinition/acc-icp-complexity-scores"
 * extension[=].extension.url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-total-complexity-score"
 * extension[=].extension.valueCode = #low
+
+Instance: Inline-Instance-for-A112233-1
+InstanceOf: IcpPatient
+Usage: #inline
+* id = "A112233"
+* birthDate = "2002-11-17"
