@@ -1,23 +1,19 @@
 Alias: $acc-icp-service-type-code = http://hl7.org.nz/fhir/ns/acc-icp-service-type-code
 Alias: $sct = http://snomed.info/sct
 
-Instance: baseline
-InstanceOf: IcpCase
+Instance: icp-create
+InstanceOf: EpisodeOfCare
 Usage: #example
-* meta.profile = $icp-case-profile
-* contained = Inline-Instance-for-A112233-1
-
-* identifier[0].system = "http://hl7.org.nz/icp/fhir/ns/acc-claim-number"
-* identifier[=].use = #official
-* identifier[=].value = "A101111"
-
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-create"
+* identifier.system = "http://hl7.org.nz/icp/fhir/ns/acc-claim-number"
+* identifier.use = #official
+* identifier.value = "A101112"
 * type = $acc-icp-service-type-code#msk
+* contained = patient-unknown
 * managingOrganization = Reference(Organization/ORG123)
 * period.start = "2022-11-17"
 * status = #active
-
-* patient = Reference(A112233)
-
+* patient = Reference(patient-unknown)
 * extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-intended-pathway"
 * extension[=].valueCode = #surgical
 * extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-bundle"
@@ -28,12 +24,10 @@ Usage: #example
 * extension[=].valueBoolean = true
 * extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-covers-all-claim-diagnoses"
 * extension[=].valueBoolean = true
-* extension[+].url = "http://hl7.org.nz/fhir/ns/acc-providerid"
+* extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-providerid"
 * extension[=].valueString = "J99966"
 * extension[+].url = "http://hl7.org.nz/StructureDefinition/acc-icp-triage-assessment-date"
 * extension[=].valueDate = "2022-11-17"
-* extension[+].url = "http://hl7.org.nz/StructureDefinition/acc-icp-patient-birth-date"
-* extension[=].valueDate = "1995-01-17"
 * extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnoses"
 * extension[=].extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnosis-codes"
 * extension[=].extension[=].valueCodeableConcept = $sct#45326000 "Shoulder pain"
@@ -54,9 +48,3 @@ Usage: #example
 * extension[+].url = "http://hl7.org.nz/StructureDefinition/acc-icp-complexity-scores"
 * extension[=].extension.url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-total-complexity-score"
 * extension[=].extension.valueCode = #low
-
-Instance: Inline-Instance-for-A112233-1
-InstanceOf: IcpPatient
-Usage: #inline
-* id = "A112233"
-* birthDate = "2002-11-17"

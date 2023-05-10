@@ -1,12 +1,11 @@
 Profile:        IcpCase
 Parent:         EpisodeOfCare
 Id:             IcpCase
-Title:          "ACC ICP Episode of Care"
+Title:          "ACC ICP Episode of Care Referral"
 Description:    "An ACC Integrated Care Pathway resource based on Episode of Care"
-* obeys start-date-when-active-invariant
+* obeys end-date-when-active-invariant and end-date-when-finished-invariant
 
-
-* ^url = $icp-case-profile
+* ^url = $icp-case
 * ^status = #draft
 
 * statusHistory 0..0
@@ -15,19 +14,6 @@ Description:    "An ACC Integrated Care Pathway resource based on Episode of Car
 * team 0..0
 * account 0..0
 * diagnosis 0..0
-
-* extension contains
-    $icp-service-bundle named serviceBundle 1..1 and
-    $icp-acc-client-authority named accClientAuthority 1..1 and
-    $icp-client-participation-agreement named clientParticipationAgreement 1..1 and
-    $icp-covers-all-claim-diagnoses named coversAllClaimDiagnoses 0..1 and
-    $icp-triage-assessment-date named triageAssessmentDate 1..1 and
-    $icp-referral-source named referralSource 1..1 and
-    $icp-intended-pathway named intendedPathway 1..1 and
-    $acc-providerid named accProviderId 1..1 and
-    $icp-diagnoses named diagnoses 1..* and
-    $icp-complexity-scores named complexityScores 1..1 and
-    $icp-exceptional-funding named exceptionalFunding 0..1
 
 * patient only Reference(IcpPatient)
 * patient 1..1
@@ -44,7 +30,7 @@ Description:    "An ACC Integrated Care Pathway resource based on Episode of Car
 * managingOrganization only Reference(HpiOrganization)
 * managingOrganization 1..1
 
-* period 1..1
+* period 0..1
 * period.start 0..1
 * period.start obeys date-invariant and date-not-in-future-invariant
 * period.end 0..1
@@ -52,7 +38,8 @@ Description:    "An ACC Integrated Care Pathway resource based on Episode of Car
 
 * status from $icp-status-vs (required)
 * status ^short = "active | finished"
-* type 1..1
+
+* type 0..1
 * type.coding 1..1
 * type.coding.system 1..1
 * type.coding.system = $icp-service-type-cs
@@ -71,6 +58,9 @@ Description:    "An ACC Integrated Care Pathway resource based on Episode of Car
 
 * identifier[icpclaimnumber].system = $icp-acc-claim-number (exactly)
 
+* extension 1..*
+* extension contains
+    $acc-providerid named accProviderId 1..1
 
 Invariant: date-invariant
 Severity: #error
@@ -82,13 +72,22 @@ Severity: #error
 Description: "The date value cannot be in the future"
 Expression: "$this <= today()"
 
-
-Invariant: start-date-when-active-invariant
+Invariant: active-status-invariant
 Severity: #error
-Description: "The start date is required when the status is active"
-Expression: "status = 'active' implies period.start.exists()"
+Description: "The status attribute must be set to 'active'."
+Expression: "status = 'active'"
 
-Invariant: start-date-when-finished-invariant
+Invariant: start-date-when-active-finished-invariant
 Severity: #error
-Description: "The start date is not allowed when the status is finished"
-Expression: "status = 'finished' implies period.start.exists().not()"
+Description: "Start date is required when status is active"
+Expression: "status = 'active' or status = 'finished' implies period.start.exists()"
+
+Invariant: end-date-when-active-invariant
+Severity: #error
+Description: "End date is not allowed when status is active"
+Expression: "status = 'active' implies period.end.empty()"
+
+Invariant: end-date-when-finished-invariant
+Severity: #error
+Description: "End date is required when status is finished"
+Expression: "status = 'finished' implies period.end.exists()"

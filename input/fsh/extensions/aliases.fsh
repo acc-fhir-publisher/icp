@@ -23,11 +23,11 @@ Alias: $icp-subcategory-scores = http://hl7.org.nz/StructureDefinition/acc-icp-s
 Alias: $icp-diagnoses = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnoses
 Alias: $icp-acc-client-authority = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-client-authority
 Alias: $icp-client-participation-agreement = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-client-participation-agreement
-Alias: $icp-additional-acc-support = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-additional-acc-support
 Alias: $icp-covers-all-claim-diagnoses = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-covers-all-claim-diagnoses
 Alias: $icp-period = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-period
 Alias: $icp-referral-source = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-source
 Alias: $acc-providerid = http://hl7.org.nz/fhir/StructureDefinition/acc-providerid
+Alias: $icp-additional-acc-support = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-additional-acc-support
 
 Alias: $hpi-organisation = https://standards.digital.health.nz/id/hpi-organisation
 Alias: $icp-case-identifier = http://hl7.org.nz/icp/fhir/ns/acc-icp-case-identifier
