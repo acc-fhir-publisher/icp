@@ -1,4 +1,4 @@
-FROM ubi8:latest
+FROM accnewzealand/ubi8:latest
 
 ENV PATH $JAVA_HOME/bin:$PATH
 
