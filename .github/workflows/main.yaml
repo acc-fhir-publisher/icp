@@ -33,6 +33,12 @@ jobs:
         run: |
           docker start ${{ env.ID }}
 
+      - name: Wait for container to be up
+        run: |
+          while [[ "$(docker inspect -f '{{.State.Status}}' ${{ env.ID }})" != "running" ]]; do
+            sleep 1
+          done
+
       - name: Copy folder into Docker container
         run: |
           docker exec ${{ env.ID }} sh -c 'mkdir -p /app/icp'
