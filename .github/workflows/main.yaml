@@ -6,47 +6,26 @@ on:
       - action-flow
 jobs:
   build-and-publish:
-    runs-on: ubuntu-latest
+    container:
+      image: accnewzealand/ubi8:latest
+      credentials:
+        username: ${{ secrets.DOCKER_HUB_USERNAME }}
+        password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Login to Docker Hub
-        uses: docker/login-action@v2
-        with:
-          username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
-      - name: Build Docker image
-        uses: docker/build-push-action@v2
-        with:
-          context: .
-          dockerfile: ./Dockerfile
-          push: false
-          tags: icp-fhir:latest
-
-      - name: Create temporary container
-        id: create-container
+      - name: Copy shell script file
         run: |
-          echo "ID=$(docker create icp-fhir:latest)" >> $GITHUB_ENV
+          mkdir -p $HOME/icp
+          cp . $HOME/icp/
+          chmod +x $HOME/test.sh
 
-      - name: Start container
+      - name: Run shell script
         run: |
-          docker run -d --name my-container ${{ env.ID }}
+          $HOME/icp/test.sh
 
-      - name: Wait for container to be up
-        run: |
-          while [[ "$(docker inspect -f '{{.State.Status}}' my-container)" != "running" ]]; do
-            sleep 1
-          done
-
-      - name: Copy folder into Docker container
-        run: |
-          docker exec my-container sh -c 'mkdir -p /app/icp'
-          docker cp . my-container:/app/icp
-
-      - name: Run shell script in Docker container
-        run: |
-          docker exec my-container sh -c 'cd /app/icp && ./test.sh''
+     
           
 
       # - name: Push Docker image
