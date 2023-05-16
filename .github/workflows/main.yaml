@@ -23,15 +23,13 @@ jobs:
           dockerfile: ./Dockerfile
           push: false
           tags: icp-fhir:latest
+
       - name: Copy folder into Docker container
-        run: docker cp ./* ${{ github.job.container.id }}:/app/icp
+        run: docker cp . ${{ github.job.container.id }}:/app/icp
+
       - name: Run shell script in Docker container
         run: |
           docker exec ${{ github.job.container.id }} sh -c 'cd /app/icp && ./script.sh'
-
-      - name: Run script
-        run: |
-          ./test.sh icp
           
 
       # - name: Push Docker image
@@ -41,8 +39,8 @@ jobs:
       #     push: true
       #     tags: myimage:latest
 
-      - name: Copy package.zip to another repository
-        uses: actions/upload-artifact@v2
-        with:
-          name: package.zip
-          path: /path/to/package.zip
+      # - name: Copy package.zip to another repository
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: package.zip
+      #     path: /path/to/package.zip
