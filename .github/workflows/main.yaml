@@ -31,22 +31,22 @@ jobs:
 
       - name: Start container
         run: |
-          docker start ${{ env.ID }}
+          docker run -d --name my-container ${{ env.ID }}
 
       - name: Wait for container to be up
         run: |
-          while [[ "$(docker inspect -f '{{.State.Status}}' ${{ env.ID }})" != "running" ]]; do
+          while [[ "$(docker inspect -f '{{.State.Status}}' my-container)" != "running" ]]; do
             sleep 1
           done
 
       - name: Copy folder into Docker container
         run: |
-          docker exec ${{ env.ID }} sh -c 'mkdir -p /app/icp'
-          docker cp . ${{ env.ID }}:/app/icp
+          docker exec my-container sh -c 'mkdir -p /app/icp'
+          docker cp . my-container:/app/icp
 
       - name: Run shell script in Docker container
         run: |
-          docker exec ${{ env.ID }} sh -c 'cd /app/icp && ./test.sh'
+          docker exec my-container sh -c 'cd /app/icp && ./test.sh''
           
 
       # - name: Push Docker image
