@@ -27,16 +27,20 @@ jobs:
       - name: Create temporary container
         id: create-container
         run: |
-          echo "::set-output name=id::$(docker create icp-fhir:latest)"
+          echo "ID=$(docker create icp-fhir:latest)" >> $GITHUB_ENV
+
+      - name: Start container
+        run: |
+          docker start ${{ env.ID }}
 
       - name: Copy folder into Docker container
         run: |
-          docker exec ${{ steps.create-container.outputs.id }} sh -c 'mkdir -p /app/icp'
-          docker cp . ${{ steps.create-container.outputs.id }}:/app/icp
+          docker exec ${{ env.ID }} sh -c 'mkdir -p /app/icp'
+          docker cp . ${{ env.ID }}:/app/icp
 
       - name: Run shell script in Docker container
         run: |
-          docker exec ${{ steps.create-container.outputs.id }} sh -c 'cd /app/icp && ./test.sh'
+          docker exec ${{ env.ID }} sh -c 'cd /app/icp && ./test.sh'
           
 
       # - name: Push Docker image
