@@ -19,7 +19,7 @@ jobs:
       - name: Copy shell script file
         run: |
           mkdir -p $HOME/icp
-          cp * $HOME/icp/
+          cp -r * $HOME/icp/
           chmod +x $HOME/icp/test.sh
 
       - name: Run shell script
