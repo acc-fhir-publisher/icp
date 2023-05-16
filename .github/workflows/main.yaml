@@ -1,44 +1,48 @@
-# This is a basic workflow to help you get started with Actions
+name: IG Build
 
-name: CI
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
-    branches: [ trunk ]
-  pull_request:
-    branches: [ trunk ]
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+    branches:
+      - action-flow
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  build-and-publish:
     runs-on: ubuntu-latest
-     
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-      - name: Update the image to the latest publisher
-        uses: docker://hl7fhir/ig-publisher-base:latest
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
         with:
-          args: ./_updatePublisher.sh --force
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+      - name: Build Docker image
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          dockerfile: ./Dockerfile
+          push: false
+          tags: icp-fhir:latest
+      - name: Copy folder into Docker container
+        run: docker cp ./* ${{ github.job.container.id }}:/app/icp
+      - name: Run shell script in Docker container
+        run: |
+          docker exec ${{ github.job.container.id }} sh -c 'cd /app/icp && ./script.sh'
 
-      - name: Run sushi to generate the ig.ini file
-        uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-          args: sushi
-
-      - name: Run the IG publisher
-        uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-          args: ./_genonce.sh -no-sushi
+      - name: Run script
+        run: |
+          ./test.sh icp
           
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+
+      # - name: Push Docker image
+      #   uses: docker/build-push-action@v2
+      #   with:
+      #     context: .
+      #     push: true
+      #     tags: myimage:latest
+
+      - name: Copy package.zip to another repository
+        uses: actions/upload-artifact@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output
+          name: package.zip
+          path: /path/to/package.zip
