@@ -1,5 +1,5 @@
 Profile:        IcpPatient
-Parent:         NhiPatient
+Parent:         NzPatient
 Id:             IcpPatient
 Title:          "ICP Patient"
 Description:    "The ICP Patient profile"

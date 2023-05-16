@@ -57,6 +57,7 @@ Description:    "An ACC Integrated Care Pathway resource based on Episode of Car
     icpclaimnumber 1..1
 
 * identifier[icpclaimnumber].system = $icp-acc-claim-number (exactly)
+* identifier[icpclaimnumber].value 1..1
 
 * extension 1..*
 * extension contains

@@ -32,10 +32,10 @@ dependencies:
     version: 1.1.0
   hl7.org.nz.fhir.ig.hpi:
     uri: 'http://hl7.org.nz/fhir/ig/hpi'
-    version: dev
-  hl7.org.nz.fhir.ig.nhi:
-    uri: http://hl7.org.nz/fhir/ig/nhi
-    version: dev
+    version: current
+  # hl7.org.nz.fhir.ig.nhi:
+  #   uri: http://hl7.org.nz/fhir/ig/nhi
+  #   version: dev
 #
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
