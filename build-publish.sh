@@ -1,5 +1,5 @@
 #!/bin/bash
-cp /root/.fhir /github/home/
+cp -r /root/.fhir /github/home/.fhir
 
 #copy publisher to the app ig folder
 cp /publisher.jar /apps/icp/publisher.jar
@@ -12,7 +12,7 @@ sushi -s -o .
 
 #check the location of fhir folder
 #ls /github/home/.fhir/packages/
-cp /github/home/.fhir /root/
+cp -r /github/home/.fhir /root/.fhir
 #check root folder
 ls /root/.fhir/packages/
 
