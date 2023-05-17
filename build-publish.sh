@@ -10,5 +10,8 @@ cd /apps/icp
 # Run sushi command
 sushi -s -o .
 
+#check the location of fhir folder
+find / -name ".fhir" 2>/dev/null
+
 # Run publisher command
 java -jar publisher.jar -ig .
