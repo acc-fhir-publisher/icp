@@ -1,5 +1,5 @@
 #!/bin/bash
-ls /root/fhir/packages/
+ls /root
 ls /
 
 #copy publisher to the app ig folder
