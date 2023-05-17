@@ -1,5 +1,5 @@
 #!/bin/bash
-ls /root
+cp /github/home/.fhir /root
 
 #copy publisher to the app ig folder
 cp /publisher.jar /apps/icp/publisher.jar
