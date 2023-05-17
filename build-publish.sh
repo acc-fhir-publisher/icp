@@ -1,5 +1,4 @@
 #!/bin/bash
-cp /github/home/.fhir /root
 
 #copy publisher to the app ig folder
 cp /publisher.jar /apps/icp/publisher.jar
@@ -8,13 +7,13 @@ cp /publisher.jar /apps/icp/publisher.jar
 cd /apps/icp
 
 # Run sushi command
-sushi -s -o .
+sushi -s -o /root
 
 #check the location of fhir folder
-ls /github/home/.fhir/packages/
+#ls /github/home/.fhir/packages/
 
 #check root folder
-#ls /root/.fhir/packages/
+ls /root/.fhir/packages/
 
 # Run publisher command
 java -jar publisher.jar -ig .
