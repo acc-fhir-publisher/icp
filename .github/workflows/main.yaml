@@ -6,6 +6,7 @@ on:
       - action-flow
 jobs:
   build-and-publish:
+    runs-on: ubuntu-latest
     container:
       image: gokulmoorthi781/fsh:latest
       credentials:
@@ -18,7 +19,7 @@ jobs:
       - name: Copy shell script file
         run: |
           mkdir -p /apps/icp
-          cp . /apps/icp/
+          cp -r * /apps/icp/
           chmod +x /apps/build-publish.sh
 
       - name: Run shell script
