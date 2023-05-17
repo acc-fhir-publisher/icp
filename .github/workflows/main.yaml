@@ -7,7 +7,7 @@ on:
 jobs:
   build-and-publish:
     container:
-      image: accnewzealand/ubi8:latest
+      image: gokulmoorthi781/fsh:latest
       credentials:
         username: ${{ secrets.DOCKER_HUB_USERNAME }}
         password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
@@ -17,13 +17,13 @@ jobs:
 
       - name: Copy shell script file
         run: |
-          mkdir -p $HOME/icp
-          cp . $HOME/icp/
-          chmod +x $HOME/test.sh
+          mkdir -p /apps/icp
+          cp . /apps/icp/
+          chmod +x /apps/build-publish.sh
 
       - name: Run shell script
         run: |
-          $HOME/icp/test.sh
+          /apps/icp/build-publish.sh
 
      
           

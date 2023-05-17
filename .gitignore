@@ -31,6 +31,6 @@ validator_cli.jar
 .idea/sonarlint/securityhotspotstore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 .idea/sonarlint/securityhotspotstore/c/0/c08f72bb4bf915cc98d5f0170c499e570f5e109b
 .vscode/settings.json
-ig.ini
+# ig.ini
 *.log
 org.hl7.fhir.validator.jar

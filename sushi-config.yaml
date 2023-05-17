@@ -26,13 +26,13 @@ publisher:
 dependencies:
   fhir.org.nz.ig.base:
      uri: 'https://fhir.org.nz/ig/base'
-     version: 2.0.0
+     version: current
   hl7.org.nz.fhir.ig.hip-core:
     uri: 'https://common-ig-v1-1-0.hip.digital.health.nz/site'
     version: 1.1.0
   hl7.org.nz.fhir.ig.hpi:
     uri: 'http://hl7.org.nz/fhir/ig/hpi'
-    version: dev
+    version: current
   hl7.org.nz.fhir.ig.nhi:
     uri: http://hl7.org.nz/fhir/ig/nhi
     version: dev
