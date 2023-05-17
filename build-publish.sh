@@ -11,7 +11,10 @@ cd /apps/icp
 sushi -s -o .
 
 #check the location of fhir folder
-find / -name ".fhir" 2>/dev/null
+ls /github/home/.fhir/packages/
+
+#check root folder
+ls /root/.fhir/packages/
 
 # Run publisher command
 java -jar publisher.jar -ig .
