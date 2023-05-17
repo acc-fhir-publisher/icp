@@ -20,7 +20,7 @@ jobs:
         run: |
           mkdir -p /apps/icp
           cp -r * /apps/icp/
-          chmod +x /apps/build-publish.sh
+          chmod +x /apps/icp/build-publish.sh
 
       - name: Run shell script
         run: |
