@@ -1,6 +1,5 @@
 #!/bin/bash
 ls /root
-ls /
 
 #copy publisher to the app ig folder
 cp /publisher.jar /apps/icp/publisher.jar
