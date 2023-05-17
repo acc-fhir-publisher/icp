@@ -14,7 +14,7 @@ sushi -s -o .
 ls /github/home/.fhir/packages/
 
 #check root folder
-ls /root/.fhir/packages/
+#ls /root/.fhir/packages/
 
 # Run publisher command
 java -jar publisher.jar -ig .
