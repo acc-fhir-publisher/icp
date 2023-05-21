@@ -18,3 +18,12 @@ ls /root/.fhir/packages/
 
 # Run publisher command
 java -jar publisher.jar -ig .
+
+#publish the the file into npm repo
+#!/bin/bash
+
+# Unzip the .tar.gz file
+tar -xzf output/package.r4.tgz
+
+
+

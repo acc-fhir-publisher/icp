@@ -27,7 +27,23 @@ jobs:
           /apps/icp/build-publish.sh
 
      
-          
+      - name: NPM Publish
+      env:
+        REGISTRY_URL: https://pkgs.dev.azure.com/accapplications/IntegrationServices/_packaging/icp-ig/npm/registry/
+        USERNAME: ${{ secrets.NPM_USERNAME }}
+        PAT: ${{ secrets.NPM_PASSWORD }}
+        EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+      run: |
+        cd /apps/icp/package
+        # Set the registry URL and authentication
+        npm config set registry $REGISTRY_URL/
+        npm config set //$REGISTRY_URL/:username $USERNAME
+        npm config set //$REGISTRY_URL/:_password $PAT
+        npm config set //$REGISTRY_URL/:email $EMAIL_ADDRESS
+        npm config set //$REGISTRY_URL/:always-auth true
+
+        # Publish the npm package
+        npm publish    
 
       # - name: Push Docker image
       #   uses: docker/build-push-action@v2
