@@ -8,7 +8,7 @@ jobs:
   build-and-publish:
     runs-on: ubuntu-latest
     container:
-      image: gokulmoorthi781/fsh:latest
+      image: accnewzealand/ig-publisher:latest
       credentials:
         username: ${{ secrets.DOCKER_HUB_USERNAME }}
         password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
@@ -29,7 +29,7 @@ jobs:
      
       - name: NPM Publish
         env:
-          REGISTRY_URL: https://pkgs.dev.azure.com/accapplications/IntegrationServices/_packaging/icp-ig/npm/registry/
+          REGISTRY_URL: https://pkgs.dev.azure.com/accapplications/IntegrationServices/_packaging/Integration-Suraj/npm/registry/
           USERNAME: ${{ secrets.NPM_USERNAME }}
           PAT: ${{ secrets.NPM_PASSWORD }}
           EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
@@ -43,17 +43,6 @@ jobs:
           npm config set //$REGISTRY_URL/:always-auth true
 
           # Publish the npm package
-          npm publish    
-
-      # - name: Push Docker image
-      #   uses: docker/build-push-action@v2
-      #   with:
-      #     context: .
-      #     push: true
-      #     tags: myimage:latest
-
-      # - name: Copy package.zip to another repository
-      #   uses: actions/upload-artifact@v2
-      #   with:
-      #     name: package.zip
-      #     path: /path/to/package.zip
+          npm version $(npm view hl7.org.nz.fhir.ig.icp.r version)
+          npm version prerelease
+          npm publish
