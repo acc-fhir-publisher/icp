@@ -40,7 +40,6 @@ jobs:
           npm config set //$REGISTRY_URL/:username $USERNAME
           npm config set //$REGISTRY_URL/:_password $PAT
           npm config set //$REGISTRY_URL/:email $EMAIL_ADDRESS
-          npm config set //$REGISTRY_URL/:always-auth true
 
           # Publish the npm package
           npm version $(npm view hl7.org.nz.fhir.ig.icp.r version)
