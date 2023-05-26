@@ -42,6 +42,6 @@ jobs:
           npm config set //$REGISTRY_URL/:email $EMAIL_ADDRESS
 
           # Publish the npm package
-          npm version $(npm view hl7.org.nz.fhir.ig.icp.r version)
+          npm version $(npm view hl7.org.nz.fhir.ig.icp.r4 version)
           npm version prerelease
           npm publish
