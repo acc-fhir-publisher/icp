@@ -41,6 +41,7 @@ jobs:
           npm config set //$REGISTRY_URL/:_password $PAT
           npm config set //$REGISTRY_URL/:email $EMAIL_ADDRESS
            echo "//$REGISTRY_URL/:_authToken=\${{secrets.NPM_PASSWORD}}" >> ~/.npmrc
+           npm whomai
 
           # Publish the npm package
           npm version $(npm view hl7.org.nz.fhir.ig.icp.r4 version)
