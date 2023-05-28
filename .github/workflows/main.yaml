@@ -35,6 +35,7 @@ jobs:
           EMAIL_ADDRESS: ${{secrets.EMAIL_ADDRESS}}
         run: |
           cd /apps/icp/package
+          npm whoami
           # Set the registry URL and authentication
           npm config set registry $REGISTRY_URL/
           npm config set //$REGISTRY_URL/:username $USERNAME
