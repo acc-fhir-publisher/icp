@@ -34,13 +34,13 @@ jobs:
           PAT: ${{secrets.NPM_PASSWORD}}
           EMAIL_ADDRESS: ${{secrets.EMAIL_ADDRESS}}
         run: |
-          cd /apps/icp/package
+          cd /apps/icp/package         
+          npm config --userconfig .npmrc set registry $REGISTRY_URL/
+          npm config --userconfig .npmrc set //$REGISTRY_URL/:username $USERNAME
+          npm config --userconfig .npmrc set //$REGISTRY_URL/:_password $PAT
+          npm config --userconfig .npmrc set //$REGISTRY_URL/:email $EMAIL_ADDRESS
           npm whoami
           # Set the registry URL and authentication
-          npm config set registry $REGISTRY_URL/
-          npm config set //$REGISTRY_URL/:username $USERNAME
-          npm config set //$REGISTRY_URL/:_password $PAT
-          npm config set //$REGISTRY_URL/:email $EMAIL_ADDRESS
            echo "//$REGISTRY_URL/:_authToken=\${{secrets.NPM_PASSWORD}}" >> ~/.npmrc
            npm whoami
 
