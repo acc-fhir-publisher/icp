@@ -25,8 +25,8 @@ This is the computable resource that describes the RESTful endpoint
 * format[0] = #json
 // * messaging.endpoint.protocol = $message-transport#http
 
-* implementation.description = "The icp endpoint"
-* implementation.url = "http://acc.co.nz/icp/fhir"
+* implementation.description = "The ICP endpoint accessed by PMS vendors to create, modify and exit an ICP Episode of Care"
+* implementation.url = "https://provider.api-compliance.acc.co.nz/fhir/v1/claims/integratedcarepathway"
 
 * rest.mode = #server
 
