@@ -13,7 +13,8 @@ publisher:
   name: Accident Compensation Corporation
 
 parameters:
-  show-inherited-invariants: true
+  show-inherited-invariants: false
+  # apply-version: false
   generate-version: r4
   validation: [allow-any-extensions]
   excludettl: true

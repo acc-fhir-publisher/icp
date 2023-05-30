@@ -2,7 +2,7 @@ Instance: A101113-2002-11-17
 InstanceOf: EpisodeOfCare
 Usage: #example
 * meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-finished"
-* identifier.system = "http://hl7.org.nz/icp/fhir/ns/acc-claim-number"
+* identifier.system = $icp-acc-claim-number
 * identifier.use = #official
 * identifier.value = "A101113"
 * contained = patient-unknown
@@ -13,9 +13,9 @@ Usage: #example
 * patient = Reference(patient-unknown)
 * extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exit-reason"
 * extension[=].valueCode = #other
-* extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-supporting-details"
+* extension[+].url = $icp-supporting-details
 * extension[=].valueString = "some other reason"
 * extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-additional-acc-support"
 * extension[=].valueBoolean = false
-* extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-providerid"
+* extension[+].url = $acc-providerid
 * extension[=].valueString = "J99966"

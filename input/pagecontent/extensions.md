@@ -13,7 +13,7 @@
 |[CoversAllClaimDiagnoses](StructureDefinition-acc-icp-covers-all-claim-diagnoses.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-covers-all-claim-diagnoses|Indicates whether or not the ICP case is treating all the diagnoses on the claim.|
 |[Triage Assessment Date](StructureDefinition-acc-icp-triage-assessment-date.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-triage-assessment-date|Integrated Care Pathways Triage Assessment Date|
 |[Diagnoses](StructureDefinition-acc-icp-diagnoses.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnoses|Integrated Care Pathways Diagnosis Side|
-|[Diagnosis Codes](StructureDefinition-acc-icp-diagnosis-code.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnosis-code|Integrated Care Pathways Diagnosis Codes|
+|[Diagnosis Codes](StructureDefinition-acc-icp-diagnosis-codes.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnosis-codes|Integrated Care Pathways Diagnosis Codes|
 |[Diagnosis Side](StructureDefinition-acc-icp-diagnosis-side.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnosis-side|Integrated Care Pathways Diagnosis Side|
 |[Referral Source Type](StructureDefinition-acc-icp-referral-source-type.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-source-type|Integrated Care Pathways Referral Source Type|
 |[Referral Source](StructureDefinition-acc-icp-referral-source.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-source|Identifies the Referral source submitting the ICP Notification.|
