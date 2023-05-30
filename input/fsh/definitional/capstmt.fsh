@@ -1,3 +1,4 @@
+Alias: $message-transport = http://terminology.hl7.org/CodeSystem/message-transport
 
 Instance:   acc-icp-capabilitystatement
 InstanceOf: CapabilityStatement
@@ -19,10 +20,12 @@ This is the computable resource that describes the RESTful endpoint
 * date = "2023-05-30"
 * status = #draft
 * kind = #instance
+* software.name = "ACC Integration API"
 * fhirVersion = #4.0.1
-* format = #json
+* format[0] = #json
+// * messaging.endpoint.protocol = $message-transport#http
 
-* implementation.description = "The icp create endpoint"
+* implementation.description = "The icp endpoint"
 * implementation.url = "http://acc.co.nz/icp/fhir"
 
 * rest.mode = #server
@@ -30,10 +33,27 @@ This is the computable resource that describes the RESTful endpoint
 // ============== The EpisodeOfCare endpoint
 
 * rest.resource.type = #EpisodeOfCare
-* rest.resource.supportedProfile = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-create"
-* rest.resource.documentation = """
+
+* rest.resource.supportedProfile[0] = $icp-case-create
+* rest.resource.interaction[0].code = #create
+* rest.resource.interaction[=].documentation[0] = """
 EpisodeOfCare create
+The ICP Create Episode of Care contains the data that ICP suppliers send ACC on completion of triage and they decide to enrol a patient into their ICP-MSK service.
 
 """
 
+* rest.resource.supportedProfile[+] = $icp-case-modify
+* rest.resource.interaction[+].code = #update
+* rest.resource.interaction[=].documentation[+] = """
+ICP EpisodeOfCare modify service bundle
+The ICP Modify Episode of Care contains the data that ICP suppliers send ACC on when they require to modify the service bundle.
 
+"""
+
+* rest.resource.supportedProfile[+] = $icp-case-exit
+* rest.resource.interaction[+].code = #update
+* rest.resource.interaction[=].documentation[+] = """
+ICP EpisodeOfCare exit
+The ICP Exit Episode of Care contains the data that ICP suppliers send ACC on exiting the Episode of Care.
+
+"""
