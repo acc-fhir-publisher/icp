@@ -4,7 +4,7 @@ Title: "Covers All Claim Diagnoses"
 Description: "Indicates whether or not the ICP case is treating all the diagnoses on the claim."
 
 * ^url = $icp-covers-all-claim-diagnoses
-* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
+* ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "EpisodeOfCare"

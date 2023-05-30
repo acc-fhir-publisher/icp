@@ -4,7 +4,7 @@ Title: "Triage Assessment Date"
 Description: "The date when the triage was performed for the resulting assessment for an ICP referral."
 
 * ^url = $icp-triage-assessment-date
-* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
+* ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^context.type = #element
 * ^context.expression = "EpisodeOfCare"
 * ^status = #draft

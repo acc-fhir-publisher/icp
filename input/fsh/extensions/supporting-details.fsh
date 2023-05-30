@@ -4,7 +4,7 @@ Title: "Supporting Details"
 Description: "Supporting details supplied for exceptional funding."
 
 * ^url = $icp-supporting-details
-* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
+* ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^status = #draft
 
 * ^context.type = #element

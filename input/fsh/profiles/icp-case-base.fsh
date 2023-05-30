@@ -6,7 +6,7 @@ Description:    "The ACC ICP Case resource based on Episode of Care"
 * obeys end-date-when-active-invariant and end-date-when-finished-invariant
 
 * ^url = $icp-case
-* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
+* ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^status = #draft
 
 * statusHistory 0..0

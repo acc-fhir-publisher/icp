@@ -5,7 +5,7 @@ Title:          "ICP Patient"
 Description:    "The ACC ICP Patient resource based on NzPatient"
 
 * ^url = $icp-patient
-* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
+* ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^purpose = "An ICP Patient resource is used within an Icp Case, as a data point to verify weither an Icp case has a valid claim"
 * ^text.status = #additional
 

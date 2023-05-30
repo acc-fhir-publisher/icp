@@ -3,7 +3,7 @@ Id: acc-icp-exit-reason
 Title: "Exit Reason"
 Description: "Integrated Care Pathways Exit Reason"
 * ^url = $icp-exit-reason
-* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
+* ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^version = "0.1.0"
 * ^status = #draft
 * ^date = "2022-11-20"

@@ -3,7 +3,7 @@ Id: acc-icp-diagnosis-codes
 Title: "Diagnosis Codes"
 Description: "Integrated Care Pathways Diagnosis Codes"
 * ^url = $icp-diagnosis-codes
-* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
+* ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^version = "0.1.0"
 * ^status = #draft
 * ^date = "2022-11-20"

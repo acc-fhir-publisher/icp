@@ -6,7 +6,7 @@ Description:    "The ACC ICP Case Service Bundle Update resource based on ACC IC
 * obeys active-status-invariant
 
 * ^url = $icp-case-modify
-* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
+* ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^status = #draft
 
 * type 0..0

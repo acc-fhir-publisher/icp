@@ -6,7 +6,7 @@ Description:    "The ACC ICP Case Exit resource based on ACC ICP Case"
 * obeys finished-status-invariant and start-date-when-active-finished-invariant
 
 * ^url = $icp-case-exit
-* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
+* ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^status = #draft
 
 * type 0..0

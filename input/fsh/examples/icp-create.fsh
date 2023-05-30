@@ -6,7 +6,7 @@ Usage: #example
 * identifier.system = $icp-acc-claim-number
 * identifier.use = #official
 * identifier.value = "A101112"
-* type = $icp-service-type#msk
+* type = $icp-service-type-cs#msk
 * contained = patient-unknown
 * managingOrganization = Reference(Organization/ORG123)
 * period.start = "2022-11-17"

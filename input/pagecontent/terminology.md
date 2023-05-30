@@ -48,7 +48,6 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |[icp-referral-source-type](CodeSystem-acc-icp-referral-source-type.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-referral-source-type|New Zealand codes for Integrated Care Pathways Referral Source Type| |
 |[icp-service-bundle](CodeSystem-acc-icp-service-bundle.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-bundle|New Zealand codes for Integrated Care Pathways serviceBundle| |
 |[icp-service-type](CodeSystem-acc-icp-service-type.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-type|New Zealand codes for Integrated Care Pathways Service Type| |
-|[icp-status](CodeSystem-acc-icp-status.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-status|New Zealand codes for Integrated Care Pathways Status| |
 |[icp-subcategory](CodeSystem-acc-icp-subcategory.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-subcategory|New Zealand codes for Integrated Care Pathways Subcategory| |
 |[icp-subcategory-score](CodeSystem-acc-icp-subcategory-score.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-subcategory-score|New Zealand codes for Integrated Care Pathways Subcategory Score| |
 |[icp-category-score](CodeSystem-acc-icp-category-score.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-category-score|New Zealand codes for Integrated Care Pathways Category Score| |
