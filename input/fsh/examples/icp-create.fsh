@@ -26,7 +26,7 @@ Usage: #example
 * extension[=].valueBoolean = true
 * extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-providerid"
 * extension[=].valueString = "J99966"
-* extension[+].url = "http://hl7.org.nz/StructureDefinition/acc-icp-triage-assessment-date"
+* extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-triage-assessment-date"
 * extension[=].valueDate = "2022-11-17"
 * extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnoses"
 * extension[=].extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnosis-codes"
@@ -38,13 +38,13 @@ Usage: #example
 * extension[=].extension[=].valueCode = #internal
 * extension[=].extension[+].url = "receivedDate"
 * extension[=].extension[=].valueDate = "2022-11-17"
-* extension[+].url = "http://hl7.org.nz/StructureDefinition/acc-icp-exceptional-funding"
+* extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exceptional-funding"
 * extension[=].extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-funding-rationale"
 * extension[=].extension[=].valueCode = #other
 * extension[=].extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-funding-rationale"
 * extension[=].extension[=].valueCode = #social-support
-* extension[=].extension[+].url = "http://hl7.org.nz/StructureDefinition/acc-icp-supporting-details"
+* extension[=].extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-supporting-details"
 * extension[=].extension[=].valueString = "supporting details"
-* extension[+].url = "http://hl7.org.nz/StructureDefinition/acc-icp-complexity-scores"
+* extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-complexity-scores"
 * extension[=].extension.url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-total-complexity-score"
 * extension[=].extension.valueCode = #low

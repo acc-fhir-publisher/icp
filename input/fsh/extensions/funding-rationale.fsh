@@ -1,8 +1,9 @@
 Extension: Icp_FundingRationale
-Id: icp-funding-rationale
-Title: "ICP Funding Rationale"
+Id: acc-icp-funding-rationale
+Title: "Funding Rationale"
 Description: "Integrated Care Pathways Funding Rationale"
 * ^url = $icp-funding-rationale
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
 * ^version = "0.1.0"
 * ^status = #draft
 * ^date = "2022-11-20"

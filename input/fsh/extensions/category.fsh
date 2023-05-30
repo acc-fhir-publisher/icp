@@ -1,8 +1,9 @@
 Extension: Icp_category
-Id: icp-category
-Title: "ICP Category"
+Id: acc-icp-category
+Title: "Category"
 Description: "Integrated Care Pathways Category"
 * ^url = $icp-category
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
 * ^version = "0.1.0"
 * ^status = #draft
 * ^date = "2022-11-20"

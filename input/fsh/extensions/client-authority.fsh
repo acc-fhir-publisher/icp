@@ -1,9 +1,10 @@
 Extension: AccClientAuthority
-Id: acc-client-authority
-Title: "ACC ICP Client Authority"
+Id: acc-icp-client-authority
+Title: "Client Authority"
 Description: "Indicates that the Client has agreed to ACC being able to collect, store, use, & share their information."
 
 * ^url = $icp-acc-client-authority
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "EpisodeOfCare"

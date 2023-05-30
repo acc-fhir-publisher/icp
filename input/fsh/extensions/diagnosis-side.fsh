@@ -1,8 +1,9 @@
 Extension: Icp_diagnosisSide
-Id: icp-diagnosis-side
-Title: "ICP Diagnosis Side"
+Id: acc-icp-diagnosis-side
+Title: "Diagnosis Side"
 Description: "Integrated Care Pathways Diagnosis Side"
 * ^url = $icp-diagnosis-side
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
 * ^version = "0.1.0"
 * ^status = #draft
 * ^date = "2022-11-20"

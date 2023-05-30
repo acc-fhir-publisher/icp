@@ -1,8 +1,9 @@
 Extension: ICP_complexityScore
-Id: icp-complexity-score
-Title: "ICP Complexity Score"
+Id: acc-icp-complexity-score
+Title: "Complexity Score"
 Description: "Integrated Care Pathways Complexity Score"
 * ^url = $icp-complexity-score
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
 * ^version = "0.1.0"
 * ^status = #draft
 * ^date = "2022-11-20"

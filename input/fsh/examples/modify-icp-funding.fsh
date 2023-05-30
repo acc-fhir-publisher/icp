@@ -13,12 +13,12 @@ Usage: #example
 * extension[=].valueCode = #shoulder-bundle1
 * extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-providerid"
 * extension[=].valueString = "J99966"
-* extension[+].url = "http://hl7.org.nz/StructureDefinition/acc-icp-exceptional-funding"
+* extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exceptional-funding"
 * extension[=].extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-funding-rationale"
 * extension[=].extension[=].valueCode = #other
 * extension[=].extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-funding-rationale"
 * extension[=].extension[=].valueCode = #social-support
-* extension[=].extension[+].url = "http://hl7.org.nz/StructureDefinition/acc-icp-supporting-details"
+* extension[=].extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-supporting-details"
 * extension[=].extension[=].valueString = "supporting details"
-* extension[+].url = "http://hl7.org.nz/StructureDefinition/acc-icp-supporting-details"
+* extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-supporting-details"
 * extension[=].valueString = "supporting details"

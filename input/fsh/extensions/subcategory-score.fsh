@@ -1,8 +1,9 @@
 Extension: Icp_subcategoryScore
-Id: icp-subcategory-score
-Title: "ICP Subcategory Score"
+Id: acc-icp-subcategory-score
+Title: "Subcategory Score"
 Description: "Integrated Care Pathways Subcategory Score"
 * ^url = $icp-subcategory-score
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
 * ^version = "0.1.0"
 * ^status = #draft
 * ^date = "2022-11-20"

@@ -1,12 +1,12 @@
 Profile:        IcpPatient
 Parent:         NzPatient
-Id:             IcpPatient
+Id:             acc-icp-patient
 Title:          "ICP Patient"
-Description:    "The ICP Patient profile"
+Description:    "The ACC ICP Patient resource based on NzPatient"
 
-* ^url = $icp-patient-profile
-
-* ^purpose = "Describe the New Zealand ICP Patient resource profile"
+* ^url = $icp-patient
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
+* ^purpose = "An ICP Patient resource is used within an Icp Case, as a data point to verify weither an Icp case has a valid claim"
 * ^text.status = #additional
 
 //elements that have been removed

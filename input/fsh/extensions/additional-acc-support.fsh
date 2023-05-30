@@ -1,9 +1,10 @@
 Extension: AdditionalAccSupport
-Id: additional-acc-support
-Title: "ICP Additional ACC Support Needed"
+Id: acc-icp-additional-acc-support
+Title: "Additional ACC Support Needed"
 Description: "Indicates if the ICP client requires additional ACC Support."
 
 * ^url = $icp-additional-acc-support
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
 * ^status = #draft
 
 * ^context[+].type = #element

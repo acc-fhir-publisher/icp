@@ -1,11 +1,12 @@
 Profile:        IcpCase
 Parent:         EpisodeOfCare
-Id:             IcpCase
-Title:          "ACC ICP Episode of Care Referral"
-Description:    "An ACC Integrated Care Pathway resource based on Episode of Care"
+Id:             acc-icp-case
+Title:          "ACC ICP Episode of Care Resource"
+Description:    "The ACC ICP Case resource based on Episode of Care"
 * obeys end-date-when-active-invariant and end-date-when-finished-invariant
 
 * ^url = $icp-case
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
 * ^status = #draft
 
 * statusHistory 0..0
@@ -23,11 +24,11 @@ Description:    "An ACC Integrated Care Pathway resource based on Episode of Car
 * contained ^slicing.rules = #closed
 * contained ^slicing.description = "Slicing to specifiy an icp patient resource may be returned as a contained resource for the Icp case information"
 * contained contains patient 1..1
-* contained[patient] only $icp-patient-profile
+* contained[patient] only $icp-patient
 * contained[patient] ^short = "Contained resource for the Patient's birthDate"
 * contained[patient] ^definition = "Contained resource for the patient's birthDate"
 
-* managingOrganization only Reference(HpiOrganization)
+* managingOrganization only Reference(Organization)
 * managingOrganization 1..1
 
 * period 0..1

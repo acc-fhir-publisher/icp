@@ -1,8 +1,9 @@
 Extension: Icp_status
-Id: icp-status
-Title: "ICP Status"
+Id: acc-icp-status
+Title: "Status"
 Description: "Integrated Care Pathways Status"
 * ^url = $icp-status
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
 * ^version = "0.1.0"
 * ^status = #draft
 * ^date = "2022-11-20"

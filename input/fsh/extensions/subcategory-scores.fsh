@@ -1,9 +1,11 @@
 Extension: Icp_subcategoryScores
-Id: icp-subcategory-scores
-Title: "ICP Subcategory Scores"
+Id: acc-icp-subcategory-scores
+Title: "Subcategory Scores"
 Description: "Subcategory scores for an ICP claim"
 
 * ^url = $icp-subcategory-scores
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
+
 * ^context[+].type = #element
 * ^context[=].expression = "EpisodeOfCare"
 * ^context[+].type = #element

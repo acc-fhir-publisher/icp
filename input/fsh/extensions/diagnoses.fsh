@@ -1,8 +1,9 @@
 Extension: Icp_diagnoses
-Id: icp-diagnoses
-Title: "ICP Diagnoses"
+Id: acc-icp-diagnoses
+Title: "Diagnoses"
 Description: "Integrated Care Pathways Diagnosis Side"
 * ^url = $icp-diagnoses
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
 * ^version = "0.1.0"
 * ^status = #draft
 * ^date = "2022-11-20"

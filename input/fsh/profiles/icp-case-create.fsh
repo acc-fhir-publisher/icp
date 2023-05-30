@@ -1,11 +1,12 @@
 Profile:        IcpCaseCreate
-Parent:         IcpCase
-Id:             IcpCaseCreate
-Title:          "ACC ICP Episode of Care Referral"
-Description:    "An ACC Integrated Care Pathway resource based on Episode of Care"
+Parent:         acc-icp-case
+Id:             acc-icp-case-create
+Title:          "ACC ICP Case Create Resource"
+Description:    "The ACC ICP Case Create resource based on ACC ICP Case"
 * obeys active-status-invariant and start-date-when-active-finished-invariant
 
 * ^url = $icp-case-create
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
 * ^status = #draft
 
 * type 1..1

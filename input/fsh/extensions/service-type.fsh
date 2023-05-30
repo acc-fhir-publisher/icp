@@ -1,8 +1,9 @@
 Extension: Icp_serviceType
-Id: icp-service-type
-Title: "ICP Service Type"
+Id: acc-icp-service-type
+Title: "Service Type"
 Description: "Integrated Care Pathways Service Type"
 * ^url = $icp-service-type
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
 * ^version = "0.1.0"
 * ^status = #draft
 * ^date = "2022-11-20"
