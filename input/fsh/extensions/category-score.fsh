@@ -1,8 +1,9 @@
 Extension: Icp_categoryScore
-Id: icp-category-score
-Title: "ICP Category Score"
+Id: acc-icp-category-score
+Title: "Category Score"
 Description: "Integrated Care Pathways Category Score"
 * ^url = $icp-category-score
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
 * ^version = "0.1.0"
 * ^status = #draft
 * ^date = "2022-11-20"

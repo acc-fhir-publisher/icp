@@ -1,8 +1,9 @@
 Extension: Icp_referralSourceType
-Id: icp-referral-source-type
-Title: "ICP Referral Source Type"
+Id: acc-icp-referral-source-type
+Title: "Referral Source Type"
 Description: "Integrated Care Pathways Referral Source Type"
 * ^url = $icp-referral-source-type
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
 * ^version = "0.1.0"
 * ^status = #draft
 * ^date = "2022-11-20"

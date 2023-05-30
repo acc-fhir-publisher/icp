@@ -1,11 +1,12 @@
-Profile:        IcpCaseUpdate
-Parent:         IcpCase
-Id:             IcpCaseUpdate
+Profile:        IcpCaseModify
+Parent:         acc-icp-case
+Id:             acc-icp-case-modify
 Title:          "ACC ICP Episode of Care Service Bundle Update Resource"
-Description:    "An ACC Integrated Care Pathway resource based on Episode of Care"
+Description:    "The ACC ICP Case Service Bundle Update resource based on ACC ICP Case"
 * obeys active-status-invariant
 
-* ^url = $icp-case-update
+* ^url = $icp-case-modify
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
 * ^status = #draft
 
 * type 0..0

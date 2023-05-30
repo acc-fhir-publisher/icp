@@ -1,9 +1,10 @@
 Extension: IcpReferralSource
-Id: icp-referral-source
-Title: "ICP Referral Source"
+Id: acc-icp-referral-source
+Title: "Referral Source"
 Description: "Identifies the Referral source submitting the ICP Notification."
 
 * ^url = $icp-referral-source
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
 * ^context[+].type = #element
 * ^context[=].expression = "EpisodeOfCare"
 * ^context[+].type = #element

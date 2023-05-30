@@ -1,9 +1,10 @@
 Extension: ClientPatricitionAgreement
-Id: client-participation-agreement
-Title: "ICP Client Participation Agreement"
+Id: acc-icp-client-participation-agreement
+Title: "Client Participation Agreement"
 Description: "Indicates that the Client has agreed to participating in ICP."
 
 * ^url = $icp-client-participation-agreement
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "EpisodeOfCare"

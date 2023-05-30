@@ -7,8 +7,6 @@
     "description": "The ICP facade",
     "dependencies": {
         "hl7.org.nz.fhir.hip-core": "1.1.0",
-        "hl7.org.nz.fhir.ig.hpi": "dev",
-        "hl7.org.nz.fhir.ig.nhi": "dev",
         "hl7.fhir.nz.base": "2.0.0",
         "hl7.fhir.r4.core": "4.0.1",
         "markdown": "^0.5.0",

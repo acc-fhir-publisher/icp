@@ -1,9 +1,10 @@
 Extension: Icp_supportingDetails
-Id: icp-supporting-details
-Title: "ICP Supporting Details"
+Id: acc-icp-supporting-details
+Title: "Supporting Details"
 Description: "Supporting details supplied for exceptional funding."
 
 * ^url = $icp-supporting-details
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
 * ^status = #draft
 
 * ^context.type = #element

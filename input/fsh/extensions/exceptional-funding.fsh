@@ -1,9 +1,10 @@
 Extension: IcpExceptionalFunding
-Id: icp-exceptional-funding
+Id: acc-icp-exceptional-funding
 Title: "Exceptional Funding"
 Description: "Identifies the Referral source submitting the ICP Notification."
 
 * ^url = $icp-exceptional-funding
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
 * ^context[+].type = #element
 * ^context[=].expression = "EpisodeOfCare"
 * ^context[+].type = #element

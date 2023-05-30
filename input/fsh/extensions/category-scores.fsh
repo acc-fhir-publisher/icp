@@ -1,9 +1,11 @@
 Extension: ICP_categoryScores
-Id: icp-category-scores
-Title: "ICP Category Scores"
+Id: acc-icp-category-scores
+Title: "Category Scores"
 Description: "Category scores for an ICP claim"
 
 * ^url = $icp-category-scores
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
+
 * ^context[+].type = #element
 * ^context[=].expression = "EpisodeOfCare"
 * ^context[+].type = #element

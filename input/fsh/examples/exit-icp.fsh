@@ -13,7 +13,7 @@ Usage: #example
 * patient = Reference(patient-unknown)
 * extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exit-reason"
 * extension[=].valueCode = #other
-* extension[+].url = "http://hl7.org.nz/StructureDefinition/acc-icp-supporting-details"
+* extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-supporting-details"
 * extension[=].valueString = "some other reason"
 * extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-additional-acc-support"
 * extension[=].valueBoolean = false

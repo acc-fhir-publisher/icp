@@ -1,11 +1,12 @@
 Profile:        IcpCaseExit
-Parent:         IcpCase
-Id:             IcpCaseExit
+Parent:         acc-icp-case
+Id:             acc-icp-case-exit
 Title:          "ACC ICP Episode of Care Exit Resource"
-Description:    "An ACC Integrated Care Pathway resource based on Episode of Care"
+Description:    "The ACC ICP Case Exit resource based on ACC ICP Case"
 * obeys finished-status-invariant and start-date-when-active-finished-invariant
 
-* ^url = $icp-case-finish
+* ^url = $icp-case-exit
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
 * ^status = #draft
 
 * type 0..0

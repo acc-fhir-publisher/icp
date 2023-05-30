@@ -1,21 +1,23 @@
 ValueSet: ICPFundingRationale
-Id: icp-funding-rationale
-Title: "ICP Funding Rationale"
+Id: acc-icp-funding-rationale
+Title: "Funding Rationale"
 Description: "New Zealand codes for Integrated Care Pathways funding rationale"
 
 * ^url = $icp-funding-rationale-vs
 * ^version = "0.1.0"
+* ^experimental = false
 * include codes from system $icp-funding-rationale-cs
 
 
 CodeSystem: ICPFundingRationale
-Id: icp-funding-rationale
-Title: "ICP Funding Rationale"
+Id: acc-icp-funding-rationale
+Title: "Funding Rationale"
 Description: "New Zealand codes for Integrated Care Pathways Funding Rationale"
 
 * ^url = $icp-funding-rationale-cs
 * ^caseSensitive = true
 * ^version = "0.1.0"
+* ^experimental = false
 
 * #other "Other"
 * #comorbitity-factors "Comorbitity Factors"

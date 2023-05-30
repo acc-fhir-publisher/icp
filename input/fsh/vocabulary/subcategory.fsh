@@ -1,21 +1,23 @@
 ValueSet: ICPSubcategory
-Id: icp-subcategory
-Title: "ICP Subcategory"
+Id: acc-icp-subcategory
+Title: "Subcategory"
 Description: "New Zealand codes for Integrated Care Pathways Subcategory"
 
 * ^url = $icp-subcategory-vs
 * ^version = "0.1.0"
+* ^experimental = false
 * include codes from system $icp-subcategory-cs
 
 
 CodeSystem: ICPSubcategory
-Id: icp-subcategory-
-Title: "ICP Subcategory"
+Id: acc-icp-subcategory
+Title: "Subcategory"
 Description: "New Zealand codes for Integrated Care Pathways Subcategory"
 
 * ^url = $icp-subcategory-cs
 * ^caseSensitive = true
 * ^version = "0.1.0"
+* ^experimental = false
 
 
 * #comorbitity-factors "Comorbitity Factors"

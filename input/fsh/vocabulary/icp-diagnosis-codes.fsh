@@ -1,10 +1,11 @@
 ValueSet: IcpDiagnosisCodesVS
-Id: icp-diagnosis-codes-vs
-Title: "ICP Diagnosis Codes"
+Id: acc-icp-diagnosis-codes
+Title: "Diagnosis Codes"
 Description: "New Zealand codes for Integrated Care Pathways Diagnosis Codes"
 
 * ^url = $icp-diagnosis-codes-vs
 * ^version = "0.1.0"
+* ^experimental = false
 
 * include $SCT#45326000 "Shoulder pain"
 * include codes from system $SCT

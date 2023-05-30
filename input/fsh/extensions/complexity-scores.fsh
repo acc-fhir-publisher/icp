@@ -1,9 +1,10 @@
 Extension: Icp_complexityScores
-Id: icp-complexity-scores
-Title: "ICP Complexity Scores"
+Id: acc-icp-complexity-scores
+Title: "Complexity Scores"
 Description: "Complexity scores for an ICP claim"
 
 * ^url = $icp-complexity-scores
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
 * ^context[+].type = #element
 * ^context[=].expression = "EpisodeOfCare"
 * ^context[+].type = #element

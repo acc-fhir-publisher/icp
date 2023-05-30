@@ -1,8 +1,9 @@
 Extension: Icp_intendedPathway
-Id: icp-intended-pathway
-Title: "ICP Intended Pathway"
+Id: acc-icp-intended-pathway
+Title: "Intended Pathway"
 Description: "Integrated Care Pathways Intended Pathway"
 * ^url = $icp-intended-pathway
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
 * ^version = "0.1.0"
 * ^status = #draft
 * ^date = "2022-11-20"
