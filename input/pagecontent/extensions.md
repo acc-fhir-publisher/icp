@@ -15,18 +15,18 @@
 |[Diagnoses](StructureDefinition-acc-icp-diagnoses.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnoses|The diagnoses for the injury being treated.|
 |[Diagnosis Codes](StructureDefinition-acc-icp-diagnosis-codes.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnosis-codes|The diagnosis codes for the injury being treated.|
 |[Diagnosis Side](StructureDefinition-acc-icp-diagnosis-side.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnosis-side|The body side this diagnosis code relates to.|
-|[Referral Source Type](StructureDefinition-acc-icp-referral-source-type.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-source-type|A classification of the source of the ICP referral, e.g. ACC referral, GP referral, rongoa referral|
-|[Referral Source](StructureDefinition-acc-icp-referral-source.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-source|Identifies the Referral source submitting the ICP Notification.|
-|[Complexity Scores](StructureDefinition-acc-icp-complexity-scores.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-complexity-scores|Complexity scores for an ICP claim|
-|[Complexity Score](StructureDefinition-acc-icp-complexity-score.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-complexity-score|Integrated Care Pathways Complexity Score.|
-|[Category Scores](StructureDefinition-acc-icp-category-scores.html)|http://hl7.org.nz/fhir/StructureDefinition/covers-all-claim-diagnoses|Category scores for an ICP claim.|
-|[Category](StructureDefinition-acc-icp-category.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-category|Integrated Care Pathways Category|
-|[Category Score](StructureDefinition-acc-icp-category-score.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-category-score|Integrated Care Pathways Category Score|
-|[Subcategory Scores](StructureDefinition-acc-icp-subcategory-scores.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-subcategory-scores|Subcategory scores for an ICP claim|
-|[Subcategory](StructureDefinition-acc-icp-subcategory.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-subcategory|Integrated Care Pathways Subcategory|
-|[Subcategory Score](StructureDefinition-acc-icp-subcategory-score.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-subcategory-score|Integrated Care Pathways Subcategory Score|
-|[Exceptional Funding](StructureDefinition-acc-icp-exceptional-funding.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exceptional-funding|Identifies the Referral source submitting the ICP Notification.|
-|[Funding Rationale](StructureDefinition-acc-icp-funding-rationale.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-funding-rationale|Integrated Care Pathways Funding Rationale|
-|[Supporting Details](StructureDefinition-acc-icp-supporting-details.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-supporting-details|Supporting details supplied for exceptional funding.|
-|[Exit Reason](StructureDefinition-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exit-reason|Integrated Care Pathways Exit Reason|
-|[AdditionalAccSupport](StructureDefinition-acc-icp-additional-acc-support.html)|http://hl7.org.nz/fhir/StructureDefinition/additional-acc-support|Indicates if the ICP client requires additional ACC Support.|
+|[Referral Source Type](StructureDefinition-acc-icp-referral-source-type.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-source-type|A classification of the source of the ICP referral, e.g. ACC referral, GP referral, rongoa referral, etc|
+|[Referral Source](StructureDefinition-acc-icp-referral-source.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-source|A classification of the source of the ICP referral, e.g. ACC referral, GP referral, rongoa referral, etc|
+|[Complexity Scores](StructureDefinition-acc-icp-complexity-scores.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-complexity-scores|The scores obtained from the ICP complexity assessment/tool.|
+|[Complexity Score](StructureDefinition-acc-icp-complexity-score.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-complexity-score|The score (low, medium, high) for each category/sub-category obtained from the ICP complexity assessment/tool.|
+|[Category Scores](StructureDefinition-acc-icp-category-scores.html)|http://hl7.org.nz/fhir/StructureDefinition/covers-all-claim-diagnoses|A complexity category and corresponding complexity score. Also contains the sub-category details (sub-category types and corresponding scores) related to this category.|
+|[Category](StructureDefinition-acc-icp-category.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-category|The complexity category.|
+|[Category Score](StructureDefinition-acc-icp-category-score.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-category-score|The score (low, medium, high) for each complexity category.|
+|[Subcategory Scores](StructureDefinition-acc-icp-subcategory-scores.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-subcategory-scores|A set of complexity sub-category and corresponding score.|
+|[Subcategory](StructureDefinition-acc-icp-subcategory.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-subcategory|The complexity sub-category.|
+|[Subcategory Score](StructureDefinition-acc-icp-subcategory-score.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-subcategory-score|The score (low, medium, high) for the complexity sub-category.|
+|[Exceptional Funding](StructureDefinition-acc-icp-exceptional-funding.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exceptional-funding|Indicates if exceptional is required for this treatment.|
+|[Funding Rationale](StructureDefinition-acc-icp-funding-rationale.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-funding-rationale|A categorisation of the rationale for exceptional funding being required.|
+|[Supporting Details](StructureDefinition-acc-icp-supporting-details.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-supporting-details|A paragraph outlining the reason/rational. Used to explain the need for exceptional funding being required as well as providing further context for the client exit.|
+|[Exit Reason](StructureDefinition-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exit-reason|A classification of the type reason for the client exit, e.g. client moved, or non-compliance, etc.|
+|[AdditionalAccSupport](StructureDefinition-acc-icp-additional-acc-support.html)|http://hl7.org.nz/fhir/StructureDefinition/additional-acc-support|An attribute on the Client Exit flow for the ICP supplier to indicate if the client/patient requires further support from ACC.|
