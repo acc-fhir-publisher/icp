@@ -1,21 +1,21 @@
 
 <div class="tableGridded"></div>
 
-|Id |Canonical url | Description | |
-|--- |--- | --- | ---|
-|[Status](StructureDefinition-acc-icp-status.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-status|Integrated Care Pathways Status|
-|[AccProviderId](StructureDefinition-acc-providerid.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-providerid|This should represent the person submitting this inform to ACC. It should take the form of their ACC Provider ID.|
-|[Service Type](StructureDefinition-acc-icp-service-type.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-type|Integrated Care Pathways Service Type|
-|[Intended Pathway](StructureDefinition-acc-icp-intended-pathway.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-intended-pathway|Integrated Care Pathways Intended Pathway|
-|[Service Bundle](StructureDefinition-acc-icp-service-bundle.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-bundle|Integrated Care Pathways Service Bundle|
+|Id |Canonical url | Description |
+|--- |--- | --- |
+|[Status](StructureDefinition-acc-icp-status.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-status|The Status of the ICP case (Active or Finished)|
+|[AccProviderId](StructureDefinition-acc-providerid.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-providerid|This should represent the person providing the data to ACC.|
+|[Service Type](StructureDefinition-acc-icp-service-type.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-type|The type of ICP service. Currently only musculoskeletal (msk) is allowed, with more to be added in the future, e.g. concussion.|
+|[Intended Pathway](StructureDefinition-acc-icp-intended-pathway.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-intended-pathway|Indicates if the pathway is expected to be surgical or non-surgical|
+|[Service Bundle](StructureDefinition-acc-icp-service-bundle.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-bundle|Indicates the ICP service bundle selected for the treatment|
 |[ClientAuthority](StructureDefinition-acc-icp-client-authority.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-client-authority|Indicates that the Client has agreed to ACC being able to collect, store, use, &amp; share their information.|
 |[ClientParticipationAgreement](StructureDefinition-acc-icp-client-participation-agreement.html)|http://hl7.org.nz/fhir/StructureDefinition/client-participation-agreement|Indicates that the Client has agreed to participating in ICP.|
 |[CoversAllClaimDiagnoses](StructureDefinition-acc-icp-covers-all-claim-diagnoses.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-covers-all-claim-diagnoses|Indicates whether or not the ICP case is treating all the diagnoses on the claim.|
-|[Triage Assessment Date](StructureDefinition-acc-icp-triage-assessment-date.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-triage-assessment-date|Integrated Care Pathways Triage Assessment Date|
-|[Diagnoses](StructureDefinition-acc-icp-diagnoses.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnoses|Integrated Care Pathways Diagnosis Side|
-|[Diagnosis Codes](StructureDefinition-acc-icp-diagnosis-codes.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnosis-codes|Integrated Care Pathways Diagnosis Codes|
-|[Diagnosis Side](StructureDefinition-acc-icp-diagnosis-side.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnosis-side|Integrated Care Pathways Diagnosis Side|
-|[Referral Source Type](StructureDefinition-acc-icp-referral-source-type.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-source-type|Integrated Care Pathways Referral Source Type|
+|[Triage Assessment Date](StructureDefinition-acc-icp-triage-assessment-date.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-triage-assessment-date|The date the triage assessment was completed|
+|[Diagnoses](StructureDefinition-acc-icp-diagnoses.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnoses|The diagnoses for the injury being treated.|
+|[Diagnosis Codes](StructureDefinition-acc-icp-diagnosis-codes.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnosis-codes|The diagnosis codes for the injury being treated.|
+|[Diagnosis Side](StructureDefinition-acc-icp-diagnosis-side.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnosis-side|The body side this diagnosis code relates to.|
+|[Referral Source Type](StructureDefinition-acc-icp-referral-source-type.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-source-type|A classification of the source of the ICP referral, e.g. ACC referral, GP referral, rongoa referral|
 |[Referral Source](StructureDefinition-acc-icp-referral-source.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-source|Identifies the Referral source submitting the ICP Notification.|
 |[Complexity Scores](StructureDefinition-acc-icp-complexity-scores.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-complexity-scores|Complexity scores for an ICP claim|
 |[Complexity Score](StructureDefinition-acc-icp-complexity-score.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-complexity-score|Integrated Care Pathways Complexity Score.|
