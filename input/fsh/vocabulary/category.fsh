@@ -1,7 +1,7 @@
 ValueSet: ICPCategory
 Id: acc-icp-category
 Title: "Category"
-Description: "New Zealand codes for Integrated Care Pathways Category"
+Description: "The complexity category."
 
 * ^url = $icp-category-vs
 * ^version = "0.1.0"
@@ -12,7 +12,7 @@ Description: "New Zealand codes for Integrated Care Pathways Category"
 CodeSystem: ICPCategory
 Id: acc-icp-category
 Title: "Category"
-Description: "New Zealand codes for Integrated Care Pathways Category"
+Description: "The complexity category."
 
 * ^url = $icp-category-cs
 * ^caseSensitive = true

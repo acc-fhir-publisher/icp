@@ -1,7 +1,7 @@
 Extension: Icp_ServiceBundle
 Id: acc-icp-service-bundle
-Title: "service Bundle"
-Description: "Integrated Care Pathways Service Bundle"
+Title: "Service Bundle"
+Description: "Indicates the ICP service bundle selected for the treatment."
 * ^url = $icp-service-bundle
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^version = "0.1.0"

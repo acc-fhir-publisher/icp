@@ -1,7 +1,7 @@
 Extension: IcpReferralSource
 Id: acc-icp-referral-source
 Title: "Referral Source"
-Description: "Identifies the Referral source submitting the ICP Notification."
+Description: "The source of the ICP referral, e.g. ACC referral, GP referral, rongoa referral, etc."
 
 * ^url = $icp-referral-source
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
@@ -16,6 +16,7 @@ Description: "Identifies the Referral source submitting the ICP Notification."
     receivedDate 0..1
 
 * extension[referralSourceType].url = $icp-referral-source-type (exactly)
+* extension[referralSourceType] ^short = "(internal | external | acc | self)"
 
 * extension[receivedDate].url = "receivedDate" (exactly)
 * extension[receivedDate].value[x] only date

@@ -1,7 +1,7 @@
 ValueSet: ICPSubcategoryScore
 Id: acc-icp-subcategory-score
 Title: "Subcategory Score"
-Description: "New Zealand codes for Integrated Care Pathways Subcategory Score"
+Description: "The score (low, medium, high) for the complexity sub-category."
 
 * ^url = $icp-subcategory-score-vs
 * ^version = "0.1.0"
@@ -12,7 +12,7 @@ Description: "New Zealand codes for Integrated Care Pathways Subcategory Score"
 CodeSystem: ICPSubcategoryScore
 Id: acc-icp-subcategory-score
 Title: "Subcategory Score"
-Description: "New Zealand codes for Integrated Care Pathways Subcategory Score"
+Description: "The score (low, medium, high) for the complexity sub-category."
 
 * ^url = $icp-subcategory-score-cs
 * ^caseSensitive = true

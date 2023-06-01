@@ -22,14 +22,15 @@ Description:    "The ACC ICP Case resource based on Episode of Care"
 * contained ^slicing.discriminator.type = #type
 * contained ^slicing.discriminator.path = "$this"
 * contained ^slicing.rules = #closed
-* contained ^slicing.description = "Slicing to specifiy an icp patient resource may be returned as a contained resource for the Icp case information"
+* contained ^slicing.description = "Slicing to specifiy an icp patient resource must be returned as a contained resource for the ICP case"
 * contained contains patient 1..1
 * contained[patient] only $icp-patient
-* contained[patient] ^short = "Contained resource for the Patient's birthDate"
-* contained[patient] ^definition = "Contained resource for the patient's birthDate"
+* contained[patient] ^short = "Patient's date of birth."
+* contained[patient] ^definition = "Contained patient resource for the required patient's date of birth."
 
 * managingOrganization only Reference(Organization)
 * managingOrganization 1..1
+* managingOrganization ^short = "This is the ACC Vendor ID, in most cases this is the organisation's HPI ID."
 
 * period 0..1
 * period.start 0..1
@@ -39,8 +40,10 @@ Description:    "The ACC ICP Case resource based on Episode of Care"
 
 * status from $icp-status-vs (required)
 * status ^short = "active | finished"
+* status ^definition = "The Status of the ICP case (Active or Finished)."
 
 * type 0..1
+* type ^short = "The type of ICP service. Currently only musculoskeletal (msk) is allowed, with more to be added in the future, e.g. concussion."
 * type.coding 1..1
 * type.coding.system 1..1
 * type.coding.system = $icp-service-type-cs
@@ -59,10 +62,13 @@ Description:    "The ACC ICP Case resource based on Episode of Care"
 
 * identifier[icpclaimnumber].system = $icp-acc-claim-number (exactly)
 * identifier[icpclaimnumber].value 1..1
+* identifier[icpclaimnumber] ^short = "The ACC claim number to be used in combination with the contained patient's date of birth, as the ICP case idenfitier."
 
 * extension 1..*
 * extension contains
     $acc-providerid named accProviderId 1..1
+
+* extension[accProviderId] ^short = "The ACC provider ID associated with the ICP case"
 
 Invariant: date-invariant
 Severity: #error

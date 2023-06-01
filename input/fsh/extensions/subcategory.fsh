@@ -1,7 +1,7 @@
 Extension: Icp_subcategory
 Id: acc-icp-subcategory
 Title: "Subcategory"
-Description: "Integrated Care Pathways Subcategory"
+Description: "The complexity sub-category."
 * ^url = $icp-subcategory
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^version = "0.1.0"
@@ -12,6 +12,7 @@ Description: "Integrated Care Pathways Subcategory"
 * ^contact[0].telecom[0].value = "admin@hl7.org.nz"
 * ^contact[0].telecom[0].use = #work
 * ^copyright = "HL7 New Zealand© 2020+; Licensed Under Creative Commons No Rights Reserved."
+
 * ^context.type = #element
 * ^context.expression = "EpisodeOfCare"
 * ^context[+].type = #element

@@ -1,7 +1,7 @@
 Extension: Icp_referralSourceType
 Id: acc-icp-referral-source-type
 Title: "Referral Source Type"
-Description: "Integrated Care Pathways Referral Source Type"
+Description: "The source of the referral.  e.g. Internal is from within the supplier/consortium group."
 * ^url = $icp-referral-source-type
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^version = "0.1.0"

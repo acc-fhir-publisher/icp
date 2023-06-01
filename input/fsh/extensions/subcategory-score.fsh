@@ -1,7 +1,7 @@
 Extension: Icp_subcategoryScore
 Id: acc-icp-subcategory-score
 Title: "Subcategory Score"
-Description: "Integrated Care Pathways Subcategory Score"
+Description: "The score (low, medium, high) for the complexity sub-category."
 * ^url = $icp-subcategory-score
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^version = "0.1.0"

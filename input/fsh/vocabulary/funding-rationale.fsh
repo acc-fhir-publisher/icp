@@ -1,7 +1,7 @@
 ValueSet: ICPFundingRationale
 Id: acc-icp-funding-rationale
 Title: "Funding Rationale"
-Description: "New Zealand codes for Integrated Care Pathways funding rationale"
+Description: "A categorisation of the rationale for exceptional funding being required."
 
 * ^url = $icp-funding-rationale-vs
 * ^version = "0.1.0"
@@ -12,7 +12,7 @@ Description: "New Zealand codes for Integrated Care Pathways funding rationale"
 CodeSystem: ICPFundingRationale
 Id: acc-icp-funding-rationale
 Title: "Funding Rationale"
-Description: "New Zealand codes for Integrated Care Pathways Funding Rationale"
+Description: "A categorisation of the rationale for exceptional funding being required."
 
 * ^url = $icp-funding-rationale-cs
 * ^caseSensitive = true

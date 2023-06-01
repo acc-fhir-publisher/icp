@@ -1,7 +1,7 @@
 ValueSet: IcpDiagnosisCodesVS
 Id: acc-icp-diagnosis-codes
 Title: "Diagnosis Codes"
-Description: "New Zealand codes for Integrated Care Pathways Diagnosis Codes"
+Description: "The diagnosis codes for the injury being treated."
 
 * ^url = $icp-diagnosis-codes-vs
 * ^version = "0.1.0"

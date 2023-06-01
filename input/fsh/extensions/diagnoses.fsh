@@ -1,7 +1,7 @@
 Extension: Icp_diagnoses
 Id: acc-icp-diagnoses
 Title: "Diagnoses"
-Description: "Integrated Care Pathways Diagnosis Side"
+Description: "The diagnoses for the injury being treated."
 * ^url = $icp-diagnoses
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^version = "0.1.0"
@@ -18,3 +18,6 @@ Description: "Integrated Care Pathways Diagnosis Side"
 * extension contains
     Icp_diagnosisCodes named diagnosisCode 1..1 and
     Icp_diagnosisSide named diagnosisSide 1..1
+
+* extension[diagnosisCode] ^short = "The diagnosi codes for the injury being treated."
+* extension[diagnosisSide] ^short = "The body side this diagnosis code relates to."

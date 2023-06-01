@@ -1,7 +1,7 @@
 ValueSet: ICPcomplexityScore
 Id: acc-icp-complexity-score
 Title: "Complexity Score"
-Description: "New Zealand codes for Integrated Care Pathways Total Complexity Score"
+Description: "The score (low, medium, high) for each category/sub-category obtained from the ICP complexity assessment/tool."
 
 * ^url = $icp-complexity-score-vs
 * ^version = "0.1.0"
@@ -12,7 +12,7 @@ Description: "New Zealand codes for Integrated Care Pathways Total Complexity Sc
 CodeSystem: ICPcomplexityScore
 Id: acc-icp-complexity-score
 Title: "Complexity Score"
-Description: "New Zealand codes for Integrated Care Pathways Total Complexity Score"
+Description: "The score (low, medium, high) for each category/sub-category obtained from the ICP complexity assessment/tool."
 
 * ^url = $icp-complexity-score-cs
 * ^caseSensitive = true

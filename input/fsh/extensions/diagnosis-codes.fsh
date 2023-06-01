@@ -1,7 +1,7 @@
 Extension: Icp_diagnosisCodes
 Id: acc-icp-diagnosis-codes
 Title: "Diagnosis Codes"
-Description: "Integrated Care Pathways Diagnosis Codes"
+Description: "The diagnosis codes for the injury being treated."
 * ^url = $icp-diagnosis-codes
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^version = "0.1.0"

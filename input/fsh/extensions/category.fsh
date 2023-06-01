@@ -1,7 +1,7 @@
 Extension: Icp_category
 Id: acc-icp-category
 Title: "Category"
-Description: "Integrated Care Pathways Category"
+Description: "The complexity category."
 * ^url = $icp-category
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^version = "0.1.0"

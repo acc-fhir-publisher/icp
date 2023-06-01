@@ -2,7 +2,7 @@ Profile:        IcpCaseExit
 Parent:         acc-icp-case
 Id:             acc-icp-case-exit
 Title:          "ACC ICP Episode of Care Exit Resource"
-Description:    "The ACC ICP Case Exit resource based on ACC ICP Case"
+Description:    "This profile supports suppliers needing to inform ACC of a patient being exited from their ICP service."
 * obeys finished-status-invariant and start-date-when-active-finished-invariant
 
 * ^url = $icp-case-exit

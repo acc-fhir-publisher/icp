@@ -1,7 +1,7 @@
 Extension: Icp_supportingDetails
 Id: acc-icp-supporting-details
 Title: "Supporting Details"
-Description: "Supporting details supplied for exceptional funding."
+Description: "A paragraph outlining the reason/rational. Used to explain the need for exceptional funding being required as well as providing further context for the client exit."
 
 * ^url = $icp-supporting-details
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"

@@ -1,7 +1,7 @@
 Extension: Icp_intendedPathway
 Id: acc-icp-intended-pathway
 Title: "Intended Pathway"
-Description: "Integrated Care Pathways Intended Pathway"
+Description: "Indicates if the pathway is expected to be surgical or non-surgical."
 * ^url = $icp-intended-pathway
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^version = "0.1.0"

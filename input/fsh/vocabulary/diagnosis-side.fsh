@@ -1,7 +1,7 @@
 ValueSet: ICPDiagnosisSide
 Id: acc-icp-diagnosis-side
 Title: "Diagnosis Side"
-Description: "New Zealand codes for Integrated Care Pathways Service Type"
+Description: "The body side this diagnosis code relates to."
 
 * ^url = $icp-diagnosis-side-vs
 * ^version = "0.1.0"
@@ -12,7 +12,7 @@ Description: "New Zealand codes for Integrated Care Pathways Service Type"
 CodeSystem: ICPDiagnosisSide
 Id: acc-icp-diagnosis-side
 Title: "Diagnosis Side"
-Description: "New Zealand codes for Integrated Care Pathways Diagnosis Side"
+Description: "The body side this diagnosis code relates to."
 
 * ^url = $icp-diagnosis-side-cs
 * ^caseSensitive = true

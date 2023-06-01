@@ -1,7 +1,7 @@
 Extension: ICP_categoryScores
 Id: acc-icp-category-scores
 Title: "Category Scores"
-Description: "Category scores for an ICP claim"
+Description: "A complexity category and corresponding complexity score. Also contains the sub-category details (sub-category types and corresponding scores) related to this category."
 
 * ^url = $icp-category-scores
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
@@ -22,3 +22,7 @@ Description: "Category scores for an ICP claim"
     Icp_category named category 1..1 and
     Icp_categoryScore named categoryscore 1..1 and
     Icp_subcategoryScores named subcategoryscores 0..*
+
+* extension[category] ^short = "The complexity category."
+* extension[categoryscore] ^short = "(low | medium | high | n/a)"
+* extension[subcategoryscores] ^short = "A set of complexity sub-category and corresponding score."

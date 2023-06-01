@@ -1,7 +1,7 @@
 Extension: Icp_diagnosisSide
 Id: acc-icp-diagnosis-side
 Title: "Diagnosis Side"
-Description: "Integrated Care Pathways Diagnosis Side"
+Description: "The body side this diagnosis code relates to."
 * ^url = $icp-diagnosis-side
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^version = "0.1.0"

@@ -1,7 +1,7 @@
 Extension: Icp_status
 Id: acc-icp-status
 Title: "Status"
-Description: "Integrated Care Pathways Status"
+Description: "The Status of the ICP case (Active or Finished)"
 * ^url = $icp-status
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^version = "0.1.0"

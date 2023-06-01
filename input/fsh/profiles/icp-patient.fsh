@@ -2,7 +2,7 @@ Profile:        IcpPatient
 Parent:         NzPatient
 Id:             acc-icp-patient
 Title:          "ICP Patient"
-Description:    "The ACC ICP Patient resource based on NzPatient"
+Description:    "The ACC ICP Patient resource based on NzPatient.  Used to verify that an ICP Case has a valid claim."
 
 * ^url = $icp-patient
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"

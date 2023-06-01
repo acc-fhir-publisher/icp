@@ -1,7 +1,7 @@
 Extension: Icp_FundingRationale
 Id: acc-icp-funding-rationale
 Title: "Funding Rationale"
-Description: "Integrated Care Pathways Funding Rationale"
+Description: "A categorisation of the rationale for exceptional funding being required."
 * ^url = $icp-funding-rationale
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^version = "0.1.0"

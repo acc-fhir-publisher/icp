@@ -1,7 +1,7 @@
 Extension: Icp_subcategoryScores
 Id: acc-icp-subcategory-scores
 Title: "Subcategory Scores"
-Description: "Subcategory scores for an ICP claim"
+Description: "A set of complexity sub-category and corresponding score."
 
 * ^url = $icp-subcategory-scores
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
@@ -18,3 +18,6 @@ Description: "Subcategory scores for an ICP claim"
 * extension contains
     Icp_subcategory named subcategory 1..1 and
     Icp_subcategoryScore named subcategoryscore 1..1
+
+* extension[subcategory] ^short = "The complexity sub-category."
+* extension[subcategoryscore] ^short = "(low | medium | high | unsure | na)"

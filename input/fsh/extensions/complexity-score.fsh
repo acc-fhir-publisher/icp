@@ -1,7 +1,7 @@
 Extension: ICP_complexityScore
 Id: acc-icp-complexity-score
 Title: "Complexity Score"
-Description: "Integrated Care Pathways Complexity Score"
+Description: "The score (low, medium, high) for each category/sub-category obtained from the ICP complexity assessment/tool."
 * ^url = $icp-complexity-score
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^version = "0.1.0"

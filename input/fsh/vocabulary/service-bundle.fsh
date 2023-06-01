@@ -1,7 +1,7 @@
 ValueSet: ICPServiceBundle
 Id: acc-icp-service-bundle
 Title: "Service Bundle"
-Description: "New Zealand codes for Integrated Care Pathways serviceBundle"
+Description: "The ICP service bundles available as a selected treatment."
 
 * ^url = $icp-service-bundle-vs
 * ^version = "0.1.0"
@@ -13,7 +13,7 @@ Description: "New Zealand codes for Integrated Care Pathways serviceBundle"
 CodeSystem: ICPServiceBundle
 Id: acc-icp-service-bundle
 Title: "Service Bundle"
-Description: "New Zealand codes for Integrated Care Pathways Service Bundle"
+Description: "The ICP service bundles available as a selected treatment."
 
 * ^url = $icp-service-bundle-cs
 * ^caseSensitive = true
