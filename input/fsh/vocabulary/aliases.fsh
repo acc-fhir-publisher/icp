@@ -90,3 +90,6 @@ Alias: $icp-subcategory-score-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-subca
 Alias: $icp-exit-reason = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exit-reason
 Alias: $icp-exit-reason-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-exit-reason
 Alias: $icp-exit-reason-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-exit-reason
+
+Alias: $icp-error-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-error
+Alias: $icp-error-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-error

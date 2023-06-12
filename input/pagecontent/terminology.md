@@ -25,6 +25,7 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |[icp-category-score](ValueSet-acc-icp-category-score.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-category-score|
 |[icp-complexity-score](ValueSet-acc-icp-complexity-score.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-complexity-score|
 |[icp-diagnosis-codes](ValueSet-acc-icp-diagnosis-codes.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-diagnosis-codes|
+|[icp-error-codes](ValueSet-acc-icp-diagnosis-codes.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-error|
 
 ### CodeSystems
 
@@ -50,3 +51,4 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |[icp-subcategory-score](CodeSystem-acc-icp-subcategory-score.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-subcategory-score|
 |[icp-category-score](CodeSystem-acc-icp-category-score.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-category-score|
 |[icp-complexity-score](CodeSystem-acc-icp-complexity-score.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-complexity-score|
+|[icp-error-codes](CodeSystem-acc-icp-complexity-score.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-error|
