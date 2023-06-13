@@ -26,5 +26,4 @@ jobs:
       - name: Configure remote and push
         run: |
           git remote add origin https://github.com/integration-services-accnz/icp-clone.git
-          git branch -M trunk
           git push -u origin trunk
