@@ -37,6 +37,9 @@ jobs:
 #           SSH_KEY: ${{ secrets.ID_ED25519 }}
 # git branch --set-upstream-to origin/trunk
 # git push -u origin trunk
+# git config branch.trunk.remote origin
+# git config branch.trunk.merge refs/heads/trunk
+# git branch --set-upstream-to=origin/trunk trunk
       - name: Configure remote and push
         run: |
           git remote rm origin
@@ -44,6 +47,4 @@ jobs:
           git config --local user.name "acc-fhir-publisher"
           git config --local user.password "${{ secrets.ICP_CLONE_PAT }}"
           git remote add origin https://acc-fhir-publisher:${{ secrets.ICP_CLONE_PAT }}@github.com/acc-fhir-publisher/icp-clone.git
-          git branch --set-upstream-to=origin/trunk trunk
-          git pull
-          git push -u origin trunk --force
+          git push -u origin trunk
