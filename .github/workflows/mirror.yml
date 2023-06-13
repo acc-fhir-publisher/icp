@@ -21,7 +21,6 @@ jobs:
           persist-credentials: true # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
           fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
       
-      - name: Setup SSH      
       - uses: webfactory/ssh-agent@v0.7.0
         with:
          ssh-private-key: ${{ secrets.ID_ED25519 }}
