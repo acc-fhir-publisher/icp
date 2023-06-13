@@ -45,4 +45,4 @@ jobs:
           git config --local user.password "${{ secrets.ICP_CLONE_PAT }}"
           git remote add origin https://acc-fhir-publisher:${{ secrets.ICP_CLONE_PAT }}@github.com/acc-fhir-publisher/icp-clone.git
           git pull
-          git push --set-upstream origin trunk
+          git push -u
