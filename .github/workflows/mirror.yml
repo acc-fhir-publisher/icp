@@ -42,6 +42,6 @@ jobs:
           git config --local user.email "acc-fhir-publisher@acc.co.nz"
           git config --local user.name "acc-fhir-publisher"
           git config --local user.password "${{ secrets.ICP_CLONE }}"
-          git remote set-url origin https://github.com/acc-fhir-publisher/icp-clone.git
+          git remote set-url origin git@github.com:acc-fhir-publisher/acc-fhir-publisher/icp-clone.git
           git pull
           git push
