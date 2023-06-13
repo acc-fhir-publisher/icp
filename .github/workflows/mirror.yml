@@ -23,9 +23,10 @@ jobs:
       
 #         git config --local user.email "acc-fhir-publisher@acc.co.nz"
 #         git config --local user.name "acc-fhir-publisher@acc.co.nz"
+# git push -u origin trunk
       - name: Configure remote and push
         run: |
           git config --local user.email "garret.besser@acc.co.nz"
           git config --local user.name "Garret-Besser_accnz"
-          git remote set-url origin https://github.com/integration-services-accnz/icp-clone.git
-          git push -u origin trunk
+          git remote set-url origin git@github.com:Garret-Besser_accnz/integration-services-accnz/icp-clone.git
+          git pull         
