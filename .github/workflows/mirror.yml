@@ -18,7 +18,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with:
-          persist-credentials: true # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
           fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
       
       - name: setup ssh
@@ -26,9 +26,10 @@ jobs:
         with:
          ssh-private-key: ${{ secrets.ID_ED25519 }}
 # git push -u origin trunk
-#       - name: Configure remote and push
-#         run: |
-#           git config --local user.email "garret.besser@acc.co.nz"
-#           git config --local user.name "Garret-Besser_accnz"
-#           git remote set-url origin git@github.com:Garret-Besser_accnz/integration-services-accnz/icp-clone.git
-#           git pull
+      - name: Configure remote and push
+        run: |
+          git config --local user.email "garret.besser@acc.co.nz"
+          git config --local user.name "Garret-Besser_accnz"
+          git remote set-url origin git@github.com:Garret-Besser_accnz/integration-services-accnz/icp-clone.git
+          git pull
+          git push
