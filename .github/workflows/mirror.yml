@@ -46,4 +46,4 @@ jobs:
           git remote add origin https://acc-fhir-publisher:${{ secrets.ICP_CLONE_PAT }}@github.com/acc-fhir-publisher/icp-clone.git
           git branch --set-upstream-to origin/trunk
           git pull
-          git push -u
+          git push origin/trunk trunk --force
