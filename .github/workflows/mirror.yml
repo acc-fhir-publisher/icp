@@ -21,15 +21,14 @@ jobs:
           persist-credentials: true # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
           fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
       
-      - uses: webfactory/ssh-agent@v0.7.0
+      - name: setup ssh
+        uses: webfactory/ssh-agent@v0.7.0
         with:
          ssh-private-key: ${{ secrets.ID_ED25519 }}
-#         git config --local user.email "acc-fhir-publisher@acc.co.nz"
-#         git config --local user.name "acc-fhir-publisher@acc.co.nz"
 # git push -u origin trunk
-      - name: Configure remote and push
-        run: |
-          git config --local user.email "garret.besser@acc.co.nz"
-          git config --local user.name "Garret-Besser_accnz"
-          git remote set-url origin git@github.com:Garret-Besser_accnz/integration-services-accnz/icp-clone.git
-          git pull
+#       - name: Configure remote and push
+#         run: |
+#           git config --local user.email "garret.besser@acc.co.nz"
+#           git config --local user.name "Garret-Besser_accnz"
+#           git remote set-url origin git@github.com:Garret-Besser_accnz/integration-services-accnz/icp-clone.git
+#           git pull
