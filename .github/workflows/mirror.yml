@@ -39,9 +39,10 @@ jobs:
 # git push -u origin trunk
       - name: Configure remote and push
         run: |
+          git remote rm origin
           git config --local user.email "acc-fhir-publisher@acc.co.nz"
           git config --local user.name "acc-fhir-publisher"
           git config --local user.password "${{ secrets.ICP_CLONE_PAT }}"
-          git remote set-url origin https://acc-fhir-publisher:github.com/icp-clone.git
+          git remote add origin git@github.com:acc-fhir-publisher/acc-fhir-publisher/icp-clone.git
           git pull
           git push --set-upstream origin trunk
