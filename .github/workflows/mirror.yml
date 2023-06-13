@@ -25,5 +25,5 @@ jobs:
 #         git config --local user.name "acc-fhir-publisher@acc.co.nz"
       - name: Configure remote and push
         run: |
-          git remote set-url origin Garret-Besser_accnz@github.com/integration-services-accnz/icp-clone.git
+          git remote set-url origin git@github.com:Garret-Besser_accnz/integration-services-accnz/icp-clone.git
           git push -u origin trunk
