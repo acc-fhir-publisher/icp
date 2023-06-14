@@ -21,12 +21,16 @@ jobs:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
           fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
 
-      - name: cleanup
-        run: rm -rf ~/.ssh
 
+# install -m 600 -D /dev/null ~/.ssh/id_ed25519
+#           echo "${{ secrets.ID_ED25519 }}" > ~/.ssh/id_ed25519
+
+#       - name: cleanup
+#         run: rm -rf ~/.ssh
+# ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -C "acc-fhir-publisher@acc.co.nz"
       - name: Configure SSH
         run: |
-          ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -C "acc-fhir-publisher@acc.co.nz"
+          
           cat ~/.ssh/id_ed25519.pub
           cat ~/.ssh/id_ed25519
 
