@@ -25,11 +25,12 @@ jobs:
         run: |
           install -m 600 -D /dev/null ~/.ssh/id_rsa
           echo "${{ secrets.ACC_FHIR_PUBLISH_PRIVATE }}" > ~/.ssh/id_rsa
+          ssh -vT git@github.com
 
-      - name: connect and pull
-        run: ssh acc-fhir-publisher@github.com "git remote add origin git@github.com:HL7NZ/icp.git && git push -u origin trunk && exit"
-      - name: cleanup
-        run: rm -rf ~/.ssh
+#       - name: connect and pull
+#         run: ssh acc-fhir-publisher@github.com "git remote add origin git@github.com:HL7NZ/icp.git && git push -u origin trunk && exit"
+#       - name: cleanup
+#         run: rm -rf ~/.ssh
 
 #       - name: Configure remote and push
 #         run: |
