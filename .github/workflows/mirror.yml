@@ -32,7 +32,8 @@ jobs:
           cat ~/.ssh/id_ed25519
           eval "$(ssh-agent -s)"
           ssh-add ~/.ssh/id_ed25519
-          ssh git@github.com "git remote set-url origin git@github.com:HL7NZ/icp.git && git push -u origin trunk && exit"
+          git remote set-url origin git@github.com:HL7NZ/icp.git
+          git push -u origin trunk
 
 #       - name: Configure git
 #         run: ssh git@github.com "git remote set-url origin git@github.com:HL7NZ/icp.git && git push -u origin trunk && exit"
