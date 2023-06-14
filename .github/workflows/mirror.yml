@@ -23,9 +23,10 @@ jobs:
       
       - name: Configure SSH
         run: |
-          install -m 600 -D /dev/null ~/.ssh/id_rsa
-          echo "${{ secrets.ID_ED25519 }}" > ~/.ssh/id_rsa
-          ssh-add -l -E sha256
+          install -m 600 -D /dev/null ~/.ssh/id_ed25519
+          echo "${{ secrets.ID_ED25519 }}" > ~/.ssh/id_ed25519
+          ssh-add ~/.ssh/id_ed25519
+#          ssh-add -l -E sha256
 #          ssh -vT git@github.com
 
       - name: Configure git
