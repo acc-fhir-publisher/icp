@@ -29,7 +29,7 @@ jobs:
           
 # cat ~/.ssh/id_ed25519.pub > .ssh/authorized_keys
       - name: Configure git
-        run: ssh git@github.com "git remote add origin gitr@github.com:HL7NZ/icp.git && git push -u origin trunk && exit"
+        run: ssh git@github.com "git remote add origin git@github.com:HL7NZ/icp.git && git push -u origin trunk && exit"
         
 #       - name: Push
 #         run: ssh git@github.com "git push -u origin trunk && exit"
