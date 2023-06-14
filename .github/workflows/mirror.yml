@@ -28,7 +28,7 @@ jobs:
 #          ssh -vT git@github.com
 
       - name: connect and pull
-        run: ssh acc-fhir-publisher@github.com "git remote add origin git@github.com:HL7NZ/icp.git && git push -u origin trunk && exit"
+        run: ssh git@github.com "git remote add origin git@github.com:HL7NZ/icp.git && git push -u origin trunk && exit"
       - name: cleanup
         run: rm -rf ~/.ssh
 
