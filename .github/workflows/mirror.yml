@@ -20,16 +20,20 @@ jobs:
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
           fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
-        
-#       - name: Configure SSH
-#         run: |
-#           ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -C "acc-fhir-publisher@acc.co.nz"
-#           cat ~/.ssh/id_ed25519.pub
+
+      - name: cleanup
+        run: rm -rf ~/.ssh
+
+      - name: Configure SSH
+        run: |
+          ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -C "acc-fhir-publisher@acc.co.nz"
+          cat ~/.ssh/id_ed25519.pub
+          cat ~/.ssh/id_ed25519
 
           
 # cat ~/.ssh/id_ed25519.pub > .ssh/authorized_keys
-      - name: Configure git
-        run: ssh git@github.com "git remote add origin git@github.com:HL7NZ/icp.git && git push -u origin trunk && exit"
+#       - name: Configure git
+#         run: ssh git@github.com "git remote add origin git@github.com:HL7NZ/icp.git && git push -u origin trunk && exit"
         
 #       - name: Push
 #         run: ssh git@github.com "git push -u origin trunk && exit"
