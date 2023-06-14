@@ -25,10 +25,14 @@ jobs:
         run: |
           install -m 600 -D /dev/null ~/.ssh/id_rsa
           echo "${{ secrets.ID_ED25519 }}" > ~/.ssh/id_rsa
+          ssh-add -l -E sha256
 #          ssh -vT git@github.com
 
-      - name: connect and pull
-        run: ssh git@github.com "git remote add origin git@github.com:HL7NZ/icp.git && git push -u origin trunk && exit"
+      - name: Configure git
+        run: ssh git@github.com "git remote add origin git@github.com:HL7NZ/icp.git"
+        
+      - name: Push
+        run: ssh git@github.com "git push -u origin trunk && exit"
       - name: cleanup
         run: rm -rf ~/.ssh
 
