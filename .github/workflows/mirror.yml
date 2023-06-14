@@ -24,7 +24,7 @@ jobs:
       - name: Configure SSH
         run: |
           install -m 600 -D /dev/null ~/.ssh/id_rsa
-          echo "${{ secrets.ACC_FHIR_PUBLISH_PRIVATE }}" > ~/.ssh/id_rsa
+          echo "${{ secrets.ID_ED25519 }}" > ~/.ssh/id_rsa
           ssh -vT git@github.com
 
 #       - name: connect and pull
