@@ -45,6 +45,6 @@ jobs:
           git remote rm origin
           git config --local user.email "acc-fhir-publisher@acc.co.nz"
           git config --local user.name "acc-fhir-publisher"
-          git config --local user.password "${{ secrets.ICP_CLONE_PAT }}"
-          git remote add origin https://acc-fhir-publisher:${{ secrets.ICP_CLONE_PAT }}@github.com/acc-fhir-publisher/icp-clone.git
+          git config --local user.password "${{ secrets.ACC_FHIR_PUBLISHER_PAT }}"
+          git remote add origin https://acc-fhir-publisher:${{ secrets.ACC_FHIR_PUBLISHER_PAT }}@github.com/HL7NZ/icp.git
           git push -u origin trunk
