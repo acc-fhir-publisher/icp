@@ -27,10 +27,10 @@ jobs:
           echo "${{ secrets.ID_ED25519 }}" > ~/.ssh/id_ed25519
           eval "$(ssh-agent -s)"
           ssh-add ~/.ssh/id_ed25519
-          
+          ssh git@github.com "git remote add origin gitr@github.com:HL7NZ/icp.git"
 
-      - name: Configure git
-        run: ssh git@github.com "git remote add origin acc-fhir-publisher@github.com:HL7NZ/icp.git"
+#       - name: Configure git
+#         run: ssh git@github.com "git remote add origin gitr@github.com:HL7NZ/icp.git"
         
 #       - name: Push
 #         run: ssh git@github.com "git push -u origin trunk && exit"
