@@ -25,17 +25,17 @@ jobs:
         run: |
           install -m 600 -D /dev/null ~/.ssh/id_ed25519
           echo "${{ secrets.ID_ED25519 }}" > ~/.ssh/id_ed25519
+          eval "$(ssh-agent -s)"
           ssh-add ~/.ssh/id_ed25519
-#          ssh-add -l -E sha256
-#          ssh -vT git@github.com
+          
 
       - name: Configure git
         run: ssh git@github.com "git remote add origin git@github.com:HL7NZ/icp.git"
         
-      - name: Push
-        run: ssh git@github.com "git push -u origin trunk && exit"
-      - name: cleanup
-        run: rm -rf ~/.ssh
+#       - name: Push
+#         run: ssh git@github.com "git push -u origin trunk && exit"
+#       - name: cleanup
+#         run: rm -rf ~/.ssh
 
 #       - name: Configure remote and push
 #         run: |
@@ -45,3 +45,6 @@ jobs:
 #           git config --local user.password "${{ secrets.ACC_FHIR_PUBLISHER_PAT }}"
 #           git remote add origin git@github.com:HL7NZ/icp.git
 #           git push -u origin trunk
+# ssh-add -l -E sha256
+#          ssh-add ~/.ssh/id_ed25519
+#          ssh -vT git@github.com
