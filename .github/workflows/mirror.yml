@@ -30,8 +30,11 @@ jobs:
 # ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -C "acc-fhir-publisher@acc.co.nz"
       - name: Configure SSH
         run: |
-          
-          cat ~/.ssh/id_ed25519.pub
+          install -m 600 -D /dev/null ~/.ssh/id_ed25519
+          echo "${{ secrets.ID_ED25519 }}" > ~/.ssh/id_ed25519
+          eval "$(ssh-agent -s)"
+          ssh-add ~/.ssh/id_ed25519
+          ssh -vT git@github.com
           cat ~/.ssh/id_ed25519
 
           
