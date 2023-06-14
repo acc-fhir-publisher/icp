@@ -30,12 +30,12 @@ jobs:
           
 
       - name: Configure git
-        run: ssh git@github.com "git remote add origin git@github.com:HL7NZ/icp.git"
+        run: ssh git@github.com "git remote add origin acc-fhir-publisher@github.com:HL7NZ/icp.git"
         
 #       - name: Push
 #         run: ssh git@github.com "git push -u origin trunk && exit"
-#       - name: cleanup
-#         run: rm -rf ~/.ssh
+      - name: cleanup
+        run: rm -rf ~/.ssh
 
 #       - name: Configure remote and push
 #         run: |
