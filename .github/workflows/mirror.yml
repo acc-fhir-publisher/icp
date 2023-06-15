@@ -21,10 +21,9 @@ jobs:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
           fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
 
-#       - name: cleanup
-#         run: rm -rf ~/.ssh
+      - name: cleanup
+        run: rm -rf ~/.ssh
 
-# ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -C "acc-fhir-publisher@acc.co.nz"
       - name: Configure SSH
         run: |
           install -m 600 -D /dev/null ~/.ssh/id_ed25519
@@ -34,31 +33,3 @@ jobs:
           ssh-add ~/.ssh/id_ed25519
           git remote set-url origin git@github.com:HL7NZ/icp.git
           git push -u origin trunk
-
-#       - name: Configure git
-#         run: ssh git@github.com "git remote set-url origin git@github.com:HL7NZ/icp.git && git push -u origin trunk && exit"
-        
-#       - name: Push
-#         run: ssh git@github.com "git push -u origin trunk && exit"
-#       - name: cleanup
-#         run: rm -rf ~/.ssh
-
-#       - name: Configure remote and push
-#         run: |
-#           git remote rm origin
-#           git config --local user.email "acc-fhir-publisher@acc.co.nz"
-#           git config --local user.name "acc-fhir-publisher"
-#           git config --local user.password "${{ secrets.ACC_FHIR_PUBLISHER_PAT }}"
-#           git remote add origin git@github.com:HL7NZ/icp.git
-#           git push -u origin trunk
-# # ssh-add -l -E sha256
-
-# install -m 600 -D /dev/null ~/.ssh/id_ed25519
-#           echo "${{ secrets.ID_ED25519 }}" > ~/.ssh/id_ed25519
-#           eval "$(ssh-agent -s)"
-#           ssh-add ~/.ssh/id_ed25519
-#           ssh -vT git@github.com
-
-# ssh git@github.com "git remote set-url origin git@github.com:HL7NZ/icp.git"
-#          ssh-add ~/.ssh/id_ed25519
-#          ssh -vT git@github.com
