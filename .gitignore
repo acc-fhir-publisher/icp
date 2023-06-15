@@ -34,3 +34,5 @@ validator_cli.jar
 ig.ini
 *.log
 org.hl7.fhir.validator.jar
+build-ig.sh
+build.sh
