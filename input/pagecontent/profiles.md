@@ -20,7 +20,6 @@ There are three ICP profiles available:
 
 ### Additional Profile resources
 
-\
 There are two additional profiles which are not intended to be used directly, but are required to support the three profiles listed above.  Icp Case is the parent resource, and Icp Patient is a contained resource within each.
 
 <div class="tableGridded"></div>

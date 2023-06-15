@@ -10,9 +10,11 @@ Usage: #example
 * status = #active
 * patient = Reference(patient-unknown)
 * extension[0].url = $icp-service-bundle
-* extension[=].valueCode = #shoulder-bundle1
+* extension[=].valueCode = #icpkar1
 * extension[+].url = $acc-providerid
 * extension[=].valueString = "J99966"
+* extension[+].url = $icp-funding-rationale
+* extension[=].valueCode = #other
 * extension[+].url = $icp-exceptional-funding
 * extension[=].extension[0].url = $icp-funding-rationale
 * extension[=].extension[=].valueCode = #other

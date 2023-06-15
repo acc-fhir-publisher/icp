@@ -16,7 +16,7 @@ Description: "Indicates if exceptional is required for this treatment."
     Icp_FundingRationale named rationale 1..* and
     Icp_supportingDetails named supportingDetails 0..1
 
-* extension[rationale] ^short = "(other | comorbitity-factors | social-support | active-participation | patient-resilience | medication-use | equitable-access | health-literacy | cultural-support | housing-accomodation | finances | travel | return-to-daily-life | return-to-sport | number-of-disciplines | employment | workplace-support | return-to-work-support)"
+* extension[rationale] ^short = "(other | comorbitity-factors | social-support | active-participation | patient-resilience | medication-use | equitable-access | health-literacy | cultural-support | housing-accommodation | finances | travel | return-to-daily-life | return-to-sport | number-of-disciplines | employment | workplace-support | return-to-work-support)"
 * extension[rationale] ^definition = "A categorisation of the rationale for exceptional funding being required."
 * extension[supportingDetails] ^short = "Used to explain the need for exceptional funding being required as well as providing further context for the client exit."
 * extension[supportingDetails] ^definition = "A paragraph outlining the reason/rational. Used to explain the need for exceptional funding being required as well as providing further context for the client exit."
