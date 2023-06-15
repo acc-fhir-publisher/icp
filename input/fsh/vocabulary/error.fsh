@@ -62,3 +62,15 @@ Description: "The type of ICP service. Currently only musculoskeletal (msk) is a
 * #icp-val-14
     "There's an Active ICP Subcase against the specified Claim in Eos but it came from a different Vendor ID."
     "The ICP Case against this claim belongs to a different supplier. Please contact ACC via registrations@acc.co.nz"
+* #icp-val-1000
+    "The claim number can only contain letters and numbers, no more than 12 characters in all."
+    "The claim number can only contain letters and numbers, no more than 12 characters in all."
+* #icp-val-1001
+    "The claim number is required."
+    "The claim number is required."
+* #icp-val-1002
+    "The vendor ID is invalid;  it can only contain letters, numbers, and '/', no more than 12 characters in all."
+    "The vendor ID is invalid;  it can only contain letters, numbers, and '/', no more than 12 characters in all."
+* #icp-val-1003
+    "The provider ID can only contain letters and numbers, no more than 12 characters in all."
+    "The provider ID can only contain letters and numbers, no more than 12 characters in all."
