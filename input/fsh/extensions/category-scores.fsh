@@ -24,5 +24,5 @@ Description: "A complexity category and corresponding complexity score. Also con
     Icp_subcategoryScores named subcategoryscores 0..*
 
 * extension[category] ^short = "The complexity category."
-* extension[categoryscore] ^short = "(low | medium | high | n/a)"
+* extension[categoryscore] ^short = "(low | medium | high | na)"
 * extension[subcategoryscores] ^short = "A set of complexity sub-category and corresponding score."

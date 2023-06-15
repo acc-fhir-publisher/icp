@@ -1,7 +1,7 @@
 ValueSet: ICPcategoryScore
 Id: acc-icp-category-score
 Title: "Category Score"
-Description: "The score (low, medium, high, n/a) for a complexity category."
+Description: "The score (low, medium, high, na) for a complexity category."
 
 * ^url = $icp-category-score-vs
 * ^version = "0.1.0"
@@ -12,7 +12,7 @@ Description: "The score (low, medium, high, n/a) for a complexity category."
 CodeSystem: ICPcategoryScore
 Id: acc-icp-category-score
 Title: "Category Score"
-Description: "The score (low, medium, high, n/a) for a complexity category."
+Description: "The score (low, medium, high, na) for a complexity category."
 
 * ^url = $icp-category-score-cs
 * ^caseSensitive = true
@@ -22,4 +22,4 @@ Description: "The score (low, medium, high, n/a) for a complexity category."
 * #low "Low"
 * #medium "Medium"
 * #high "High"
-* #na "N/A"
+* #na "Not Applicable"
