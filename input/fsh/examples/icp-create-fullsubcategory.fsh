@@ -6,7 +6,7 @@ Description: "Example ICP Case Create - Full Complexity Array"
 * meta.profile = $icp-case-create
 * identifier.system = $icp-acc-claim-number
 * identifier.use = #official
-* identifier.value = "A101112"
+* identifier.value = "10056282764"
 * type = $icp-service-type-cs#msk
 * contained = patient-unknown
 * managingOrganization = Reference(Organization/ORG123)
