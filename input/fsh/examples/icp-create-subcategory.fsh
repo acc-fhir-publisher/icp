@@ -12,10 +12,8 @@ Usage: #example
 * period.start = "2022-11-17"
 * status = #active
 * patient = Reference(patient-unknown)
-* extension[0].url = $icp-intended-pathway
-* extension[=].valueCode = #surgical
 * extension[+].url = $icp-service-bundle
-* extension[=].valueCode = #shoulder-bundle1
+* extension[=].valueCode = #icpkar1
 * extension[+].url = $icp-acc-client-authority
 * extension[=].valueBoolean = true
 * extension[+].url = $icp-client-participation-agreement
@@ -53,7 +51,20 @@ Usage: #example
 * extension[=].extension[=].extension[+].url = $icp-category-score
 * extension[=].extension[=].extension[=].valueCode = #low
 
+* extension[=].extension[=].extension[+].url = $icp-subcategory-scores
+* extension[=].extension[=].extension[=].extension[0].url = $icp-subcategory
+* extension[=].extension[=].extension[=].extension[=].valueCode = #social-support
+* extension[=].extension[=].extension[=].extension[+].url = $icp-subcategory-score
+* extension[=].extension[=].extension[=].extension[=].valueCode = #low
+
+* extension[=].extension[=].extension[+].url = $icp-subcategory-scores
+* extension[=].extension[=].extension[=].extension[0].url = $icp-subcategory
+* extension[=].extension[=].extension[=].extension[=].valueCode = #active-participation
+* extension[=].extension[=].extension[=].extension[+].url = $icp-subcategory-score
+* extension[=].extension[=].extension[=].extension[=].valueCode = #low
+
 * extension[=].extension[+].url = $icp-category-scores
 * extension[=].extension[=].extension[+].url = $icp-category
 * extension[=].extension[=].extension[=].valueCode = #contextual
 * extension[=].extension[=].extension[+].url = $icp-category-score
+* extension[=].extension[=].extension[=].valueCode = #low
