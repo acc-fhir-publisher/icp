@@ -52,23 +52,23 @@ Description: "Example ICP Case Create - Full Complexity Array"
 * extension[=].extension[=].extension[+].url = $icp-subcategory-scores
 * extension[=].extension[=].extension[=].extension[0].url = $icp-subcategory
 * extension[=].extension[=].extension[=].extension[0].valueCode = #comorbitity-factors
-* extension[=].extension[=].extension[=].extension[+].url = $icp-category-score
-* extension[=].extension[=].extension[=].extension[=].url = #na
+* extension[=].extension[=].extension[=].extension[+].url = $icp-subcategory-score
+* extension[=].extension[=].extension[=].extension[=].valueCode = #na
 * extension[=].extension[=].extension[+].url = $icp-subcategory-scores
 * extension[=].extension[=].extension[=].extension[0].url = $icp-subcategory
 * extension[=].extension[=].extension[=].extension[0].valueCode = #social-support
-* extension[=].extension[=].extension[=].extension[+].url = $icp-category-score
-* extension[=].extension[=].extension[=].extension[=].url = #medium
+* extension[=].extension[=].extension[=].extension[+].url = $icp-subcategory-score
+* extension[=].extension[=].extension[=].extension[=].valueCode = #medium
 * extension[=].extension[=].extension[+].url = $icp-subcategory-scores
 * extension[=].extension[=].extension[=].extension[0].url = $icp-subcategory
 * extension[=].extension[=].extension[=].extension[0].valueCode = #active-participation
-* extension[=].extension[=].extension[=].extension[+].url = $icp-category-score
-* extension[=].extension[=].extension[=].extension[=].url = #low
+* extension[=].extension[=].extension[=].extension[+].url = $icp-subcategory-score
+* extension[=].extension[=].extension[=].extension[=].valueCode = #low
 * extension[=].extension[=].extension[+].url = $icp-subcategory-scores
 * extension[=].extension[=].extension[=].extension[0].url = $icp-subcategory
 * extension[=].extension[=].extension[=].extension[0].valueCode = #patient-resilience
-* extension[=].extension[=].extension[=].extension[+].url = $icp-category-score
-* extension[=].extension[=].extension[=].extension[=].url = #high
+* extension[=].extension[=].extension[=].extension[+].url = $icp-subcategory-score
+* extension[=].extension[=].extension[=].extension[=].valueCode = #high
 
  
 
@@ -80,18 +80,18 @@ Description: "Example ICP Case Create - Full Complexity Array"
 * extension[=].extension[=].extension[+].url = $icp-subcategory-scores
 * extension[=].extension[=].extension[=].extension[0].url = $icp-subcategory
 * extension[=].extension[=].extension[=].extension[0].valueCode = #medication-use
-* extension[=].extension[=].extension[=].extension[+].url = $icp-category-score
-* extension[=].extension[=].extension[=].extension[=].url = #high
+* extension[=].extension[=].extension[=].extension[+].url = $icp-subcategory-score
+* extension[=].extension[=].extension[=].extension[=].valueCode = #high
 * extension[=].extension[=].extension[+].url = $icp-subcategory-scores
 * extension[=].extension[=].extension[=].extension[0].url = $icp-subcategory
 * extension[=].extension[=].extension[=].extension[0].valueCode = #equitable-access
-* extension[=].extension[=].extension[=].extension[+].url = $icp-category-score
-* extension[=].extension[=].extension[=].extension[=].url = #na
+* extension[=].extension[=].extension[=].extension[+].url = $icp-subcategory-score
+* extension[=].extension[=].extension[=].extension[=].valueCode = #na
 * extension[=].extension[=].extension[+].url = $icp-subcategory-scores
 * extension[=].extension[=].extension[=].extension[0].url = $icp-subcategory
 * extension[=].extension[=].extension[=].extension[0].valueCode = #health-literacy
-* extension[=].extension[=].extension[=].extension[+].url = $icp-category-score
-* extension[=].extension[=].extension[=].extension[=].url = #low
+* extension[=].extension[=].extension[=].extension[+].url = $icp-subcategory-score
+* extension[=].extension[=].extension[=].extension[=].valueCode = #low
 
  
 
@@ -103,8 +103,8 @@ Description: "Example ICP Case Create - Full Complexity Array"
 * extension[=].extension[=].extension[+].url = $icp-subcategory-scores
 * extension[=].extension[=].extension[=].extension[0].url = $icp-subcategory
 * extension[=].extension[=].extension[=].extension[0].valueCode = #finances
-* extension[=].extension[=].extension[=].extension[+].url = $icp-category-score
-* extension[=].extension[=].extension[=].extension[=].url = #high
+* extension[=].extension[=].extension[=].extension[+].url = $icp-subcategory-score
+* extension[=].extension[=].extension[=].extension[=].valueCode = #high
 
  
 
@@ -116,18 +116,18 @@ Description: "Example ICP Case Create - Full Complexity Array"
 * extension[=].extension[=].extension[+].url = $icp-subcategory-scores
 * extension[=].extension[=].extension[=].extension[0].url = $icp-subcategory
 * extension[=].extension[=].extension[=].extension[0].valueCode = #finances
-* extension[=].extension[=].extension[=].extension[+].url = $icp-category-score
-* extension[=].extension[=].extension[=].extension[=].url = #high
+* extension[=].extension[=].extension[=].extension[+].url = $icp-subcategory-score
+* extension[=].extension[=].extension[=].extension[=].valueCode = #high
 * extension[=].extension[=].extension[+].url = $icp-subcategory-scores
 * extension[=].extension[=].extension[=].extension[0].url = $icp-subcategory
 * extension[=].extension[=].extension[=].extension[0].valueCode = #travel
-* extension[=].extension[=].extension[=].extension[+].url = $icp-category-score
-* extension[=].extension[=].extension[=].extension[=].url = #na
+* extension[=].extension[=].extension[=].extension[+].url = $icp-subcategory-score
+* extension[=].extension[=].extension[=].extension[=].valueCode = #na
 * extension[=].extension[=].extension[+].url = $icp-subcategory-scores
 * extension[=].extension[=].extension[=].extension[0].url = $icp-subcategory
 * extension[=].extension[=].extension[=].extension[0].valueCode = #return-to-daily-life
-* extension[=].extension[=].extension[=].extension[+].url = $icp-category-score
-* extension[=].extension[=].extension[=].extension[=].url = #low
+* extension[=].extension[=].extension[=].extension[+].url = $icp-subcategory-score
+* extension[=].extension[=].extension[=].extension[=].valueCode = #low
 
  
 
@@ -139,18 +139,18 @@ Description: "Example ICP Case Create - Full Complexity Array"
 * extension[=].extension[=].extension[+].url = $icp-subcategory-scores
 * extension[=].extension[=].extension[=].extension[0].url = $icp-subcategory
 * extension[=].extension[=].extension[=].extension[0].valueCode = #employment
-* extension[=].extension[=].extension[=].extension[+].url = $icp-category-score
-* extension[=].extension[=].extension[=].extension[=].url = #high
+* extension[=].extension[=].extension[=].extension[+].url = $icp-subcategory-score
+* extension[=].extension[=].extension[=].extension[=].valueCode = #high
 * extension[=].extension[=].extension[+].url = $icp-subcategory-scores
 * extension[=].extension[=].extension[=].extension[0].url = $icp-subcategory
 * extension[=].extension[=].extension[=].extension[0].valueCode = #workplace-support
-* extension[=].extension[=].extension[=].extension[+].url = $icp-category-score
-* extension[=].extension[=].extension[=].extension[=].url = #na
+* extension[=].extension[=].extension[=].extension[+].url = $icp-subcategory-score
+* extension[=].extension[=].extension[=].extension[=].valueCode = #na
 * extension[=].extension[=].extension[+].url = $icp-subcategory-scores
 * extension[=].extension[=].extension[=].extension[0].url = $icp-subcategory
 * extension[=].extension[=].extension[=].extension[0].valueCode = #return-to-work-support
-* extension[=].extension[=].extension[=].extension[+].url = $icp-category-score
-* extension[=].extension[=].extension[=].extension[=].url = #low
+* extension[=].extension[=].extension[=].extension[+].url = $icp-subcategory-score
+* extension[=].extension[=].extension[=].extension[=].valueCode = #low
 
 
 
