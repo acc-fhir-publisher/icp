@@ -1,7 +1,7 @@
 Extension: Icp_categoryScore
 Id: acc-icp-category-score
 Title: "Category Score"
-Description: "The score (low, medium, high, n/a) for a complexity category."
+Description: "The score (low, medium, high, na) for a complexity category."
 * ^url = $icp-category-score
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^version = "0.1.0"

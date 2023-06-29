@@ -20,7 +20,12 @@ Description: "The source of the referral.  e.g. Internal is from within the supp
 * ^version = "0.1.0"
 * ^experimental = false
 
-* #internal "Internal"
-* #external "External"
-* #acc "ACC"
-* #self "Self"
+* #gp "GP referral"
+* #physio "Physio referral"
+* #specialist "Specialist referral"
+* #allied "Other Allied health referral"
+* #employer "Employer referral"
+* #rongoa "Rongoa referral"
+* #other "Other referral type"
+* #acc "ACC referral"
+* #patient "Patient-led referral"

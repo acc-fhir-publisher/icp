@@ -12,10 +12,8 @@ Usage: #example
 * period.start = "2022-11-17"
 * status = #active
 * patient = Reference(patient-unknown)
-* extension[0].url = $icp-intended-pathway
-* extension[=].valueCode = #surgical
 * extension[+].url = $icp-service-bundle
-* extension[=].valueCode = #shoulder-bundle1
+* extension[=].valueCode = #icpkar1
 * extension[+].url = $icp-acc-client-authority
 * extension[=].valueBoolean = true
 * extension[+].url = $icp-client-participation-agreement
@@ -41,7 +39,7 @@ Usage: #example
 
 * extension[+].url = $icp-referral-source
 * extension[=].extension[0].url = $icp-referral-source-type
-* extension[=].extension[=].valueCode = #internal
+* extension[=].extension[=].valueCode = #gp
 * extension[=].extension[+].url = "receivedDate"
 * extension[=].extension[=].valueDate = "2022-11-17"
 * extension[+].url = $icp-exceptional-funding

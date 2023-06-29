@@ -28,7 +28,7 @@ Description: "A categorisation of the rationale for exceptional funding being re
 * #equitable-access "Equitable Access"
 * #health-literacy "Health Literacy"
 * #cultural-support "Cultural Support"
-* #housing-accomodation "Housing Accomodation"
+* #housing-accommodation "Housing Accommodation"
 * #finances "Finances"
 * #travel "Travel"
 * #return-to-daily-life "Return to Daily Life"
