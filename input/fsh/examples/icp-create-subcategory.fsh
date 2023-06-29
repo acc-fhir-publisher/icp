@@ -1,5 +1,5 @@
 
-Instance: icp-create
+Instance: icp-create-subcategory
 InstanceOf: EpisodeOfCare
 Usage: #example
 * meta.profile = $icp-case-create
@@ -26,19 +26,11 @@ Usage: #example
 * extension[=].valueString = "J99966"
 * extension[+].url = $icp-triage-assessment-date
 * extension[=].valueDate = "2022-11-17"
-
 * extension[+].url = $icp-diagnoses
 * extension[=].extension[0].url = $icp-diagnosis-codes
 * extension[=].extension[=].valueCodeableConcept = $SCT#45326000 "Shoulder pain"
 * extension[=].extension[+].url = $icp-diagnosis-side
 * extension[=].extension[=].valueCode = #left
-
-* extension[+].url = $icp-diagnoses
-* extension[=].extension[0].url = $icp-diagnosis-codes
-* extension[=].extension[=].valueCodeableConcept = $SCT#45326000 "Shoulder pain"
-* extension[=].extension[+].url = $icp-diagnosis-side
-* extension[=].extension[=].valueCode = #left
-
 * extension[+].url = $icp-referral-source
 * extension[=].extension[0].url = $icp-referral-source-type
 * extension[=].extension[=].valueCode = #internal
@@ -65,4 +57,3 @@ Usage: #example
 * extension[=].extension[=].extension[+].url = $icp-category
 * extension[=].extension[=].extension[=].valueCode = #contextual
 * extension[=].extension[=].extension[+].url = $icp-category-score
-* extension[=].extension[=].extension[=].valueCode = #medium
