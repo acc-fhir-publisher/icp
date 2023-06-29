@@ -20,6 +20,7 @@ Alias: $icp-exceptional-funding = http://hl7.org.nz/fhir/StructureDefinition/acc
 Alias: $icp-complexity-scores = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-complexity-scores
 Alias: $icp-category-scores = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-category-scores
 Alias: $icp-subcategory-scores = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-subcategory-scores
+Alias: $icp-diagnoses = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnoses
 Alias: $icp-acc-client-authority = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-client-authority
 Alias: $icp-client-participation-agreement = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-client-participation-agreement
 Alias: $icp-additional-acc-support = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-additional-acc-support
@@ -38,6 +39,14 @@ Alias: $icp-status = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-status
 Alias: $icp-status-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-status
 Alias: $icp-status-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-status
 
+Alias: $icp-diagnosis-codes = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnosis-codes
+Alias: $icp-diagnosis-codes-cs = http://hl7.org.nz/fhir/CodeSystem//acc-icp-diagnosis-codes
+Alias: $icp-diagnosis-codes-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-diagnosis-codes
+
+Alias: $icp-intended-pathway = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-intended-pathway
+Alias: $icp-intended-pathway-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-intended-pathway
+Alias: $icp-intended-pathway-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-intended-pathway
+
 Alias: $icp-service-type = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-type
 Alias: $icp-service-type-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-type
 Alias: $icp-service-type-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-service-type
@@ -45,6 +54,10 @@ Alias: $icp-service-type-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-service-ty
 Alias: $icp-service-bundle = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-bundle
 Alias: $icp-service-bundle-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-bundle
 Alias: $icp-service-bundle-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-service-bundle
+
+Alias: $icp-diagnosis-side = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnosis-side
+Alias: $icp-diagnosis-side-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-diagnosis-side
+Alias: $icp-diagnosis-side-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-diagnosis-side
 
 Alias: $icp-referral-source-type = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-source-type
 Alias: $icp-referral-source-type-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-referral-source-type
