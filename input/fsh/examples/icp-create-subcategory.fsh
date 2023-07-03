@@ -36,7 +36,7 @@ Usage: #example
 * extension[=].extension[=].valueCode = #left
 * extension[+].url = $icp-referral-source
 * extension[=].extension[0].url = $icp-referral-source-type
-* extension[=].extension[=].valueCode = #internal
+* extension[=].extension[=].valueCode = #gp
 * extension[=].extension[+].url = "receivedDate"
 * extension[=].extension[=].valueDate = "2022-11-17"
 * extension[+].url = $icp-exceptional-funding

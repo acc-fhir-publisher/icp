@@ -43,10 +43,6 @@ Alias: $icp-diagnosis-codes = http://hl7.org.nz/fhir/StructureDefinition/acc-icp
 Alias: $icp-diagnosis-codes-cs = http://hl7.org.nz/fhir/CodeSystem//acc-icp-diagnosis-codes
 Alias: $icp-diagnosis-codes-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-diagnosis-codes
 
-Alias: $icp-intended-pathway = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-intended-pathway
-Alias: $icp-intended-pathway-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-intended-pathway
-Alias: $icp-intended-pathway-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-intended-pathway
-
 Alias: $icp-service-type = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-type
 Alias: $icp-service-type-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-type
 Alias: $icp-service-type-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-service-type

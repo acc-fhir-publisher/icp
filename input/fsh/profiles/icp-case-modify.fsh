@@ -2,7 +2,7 @@ Profile:        IcpCaseModify
 Parent:         acc-icp-case
 Id:             acc-icp-case-modify
 Title:          "ACC ICP Episode of Care Service Bundle Update Resource"
-Description:    "This profile supports suppliers needing to inform ACC of a change to the selected Service Bundle, Intended Pathway (surgical/non-surgical), and or Exceptional Funding Required."
+Description:    "This profile supports suppliers needing to inform ACC of a change to the selected Service Bundle and/or Exceptional Funding Required."
 * obeys active-status-invariant
 
 * ^url = $icp-case-modify
