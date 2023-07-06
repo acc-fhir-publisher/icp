@@ -28,8 +28,8 @@ Alias: $icp-covers-all-claim-diagnoses = http://hl7.org.nz/fhir/StructureDefinit
 Alias: $icp-period = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-period
 Alias: $icp-referral-source = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-source
 Alias: $acc-providerid = http://hl7.org.nz/fhir/StructureDefinition/acc-providerid
-
 Alias: $icp-acc-claim-number = http://hl7.org.nz/fhir/ns/acc-icp-claim-number
+
 Alias: $hpi-organisation = https://standards.digital.health.nz/id/hpi-organisation
 Alias: $nhi-patient = https://standards.digital.health.nz/ns/nhi-id
 Alias: $iso3166-1-2 = http://hl7.org/fhir/ValueSet/iso3166-1-2
@@ -86,6 +86,10 @@ Alias: $icp-subcategory-score-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-subca
 Alias: $icp-exit-reason = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exit-reason
 Alias: $icp-exit-reason-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-exit-reason
 Alias: $icp-exit-reason-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-exit-reason
+
+Alias: $acc-readcode = http://hl7.org.nz/fhir/StructureDefinition/acc-read-code
+Alias: $acc-readcode-cs = http://hl7.org.nz/fhir/CodeSystem/acc-read-code
+Alias: $acc-readcode-vs = http://hl7.org.nz/fhir/ValueSet/acc-read-code
 
 Alias: $icp-error-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-error
 Alias: $icp-error-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-error

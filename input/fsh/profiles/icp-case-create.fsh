@@ -24,6 +24,7 @@ Description:    "ICP Case Create is to be used by the supplier to furnish ACC wi
     $icp-acc-client-authority named accClientAuthority 1..1 and
     $icp-client-participation-agreement named clientParticipationAgreement 1..1 and
     $icp-covers-all-claim-diagnoses named coversAllClaimDiagnoses 0..1 and
+    $icp-diagnoses named diagnoses 1..10 and
     $icp-triage-assessment-date named triageAssessmentDate 1..1 and
     $icp-referral-source named referralSource 1..1 and
     $icp-complexity-scores named complexityScores 1..1 and
@@ -33,6 +34,7 @@ Description:    "ICP Case Create is to be used by the supplier to furnish ACC wi
 * extension[accClientAuthority] ^short = "Indicates that the Client has agreed to ACC being able to collect, store, use, &amp; share their information."
 * extension[clientParticipationAgreement] ^short = "Indicates that the Client has agreed to participating in ICP."
 * extension[coversAllClaimDiagnoses] ^short = "Indicates whether or not the ICP case is treating all the diagnoses on the claim."
+* extension[diagnoses] ^short = "The diagnoses for the injury being treated."
 * extension[triageAssessmentDate] ^short = "The date the triage assessment was completed."
 * extension[referralSource] ^short = "(gp | physio | specialist | allied | employer | rognoa | other | acc | patient)"
 * extension[complexityScores] ^short = "The scores obtained from the ICP complexity assessment/tool."

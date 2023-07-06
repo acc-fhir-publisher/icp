@@ -27,13 +27,13 @@ Usage: #example
 
 * extension[+].url = $icp-diagnoses
 * extension[=].extension[0].url = $icp-diagnosis-codes
-* extension[=].extension[=].valueCodeableConcept = $SCT#45326000 "Shoulder pain"
+* extension[=].extension[=].valueCodeableConcept = $acc-readcode-cs#SN2.. "Effects of heat and light"
 * extension[=].extension[+].url = $icp-diagnosis-side
 * extension[=].extension[=].valueCode = #left
 
 * extension[+].url = $icp-diagnoses
 * extension[=].extension[0].url = $icp-diagnosis-codes
-* extension[=].extension[=].valueCodeableConcept = $SCT#45326000 "Shoulder pain"
+* extension[=].extension[=].valueCodeableConcept = $acc-readcode-cs#SN2.. "Effects of heat and light"
 * extension[=].extension[+].url = $icp-diagnosis-side
 * extension[=].extension[=].valueCode = #left
 

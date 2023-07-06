@@ -30,7 +30,7 @@ Description: "Example ICP Case Create - Full Complexity Array"
 
 * extension[+].url = $icp-diagnoses
 * extension[=].extension[0].url = $icp-diagnosis-codes
-* extension[=].extension[=].valueCodeableConcept.coding = $SCT#45326000 "Shoulder pain"
+* extension[=].extension[=].valueCodeableConcept.coding = $acc-readcode-cs#SN2.. "Effects of heat and light"
 * extension[=].extension[+].url = $icp-diagnosis-side
 * extension[=].extension[=].valueCode = #left
 

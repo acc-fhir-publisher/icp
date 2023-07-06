@@ -11,6 +11,8 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 
 |Id |Canonical url |
 |--- |--- | ---|
+|[acc-icp-diagnosiscodes](ValueSet-acc-icp-diagnosis-codes.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-diagnosis-codes|
+|[acc-read-code](ValueSet-acc-read-code.html)|http://hl7.org.nz/fhir/ValueSet/acc-read-code|
 |[icp-category](ValueSet-acc-icp-category.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-category|
 |[icp-exit-reason](ValueSet-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-exit-reason|
 |[icp-funding-rationale](ValueSet-acc-icp-funding-rationale.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-funding-rationale|
@@ -36,6 +38,7 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 
 |Id |Canonical url |
 |--- |--- | ---|
+|[acc-read-code](CodeSystem-acc-read-code.html)|http://hl7.org.nz/fhir/CodeSystem/acc-read-code|
 |[icp-category](CodeSystem-acc-icp-category.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-category|
 |[icp-exit-reason](CodeSystem-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-exit-reason|
 |[icp-funding-rationale](CodeSystem-acc-icp-funding-rationale.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-funding-rationale|

@@ -7,7 +7,9 @@ Description: "The diagnosis codes for the injury being treated."
 * ^version = "0.1.0"
 * ^experimental = false
 
-* include $SCT#45326000 "Shoulder pain"
+* include codes from system $acc-readcode-cs
+
+// icd9, icd10, and snomed
 * include codes from system $SCT
 * include codes from system $ICD-9CM-diagnosiscodes
 * include codes from system $icd9
