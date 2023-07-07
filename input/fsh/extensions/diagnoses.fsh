@@ -12,12 +12,17 @@ Description: "The diagnoses for the injury being treated."
 * ^contact[0].telecom[0].value = "admin@hl7.org.nz"
 * ^contact[0].telecom[0].use = #work
 * ^copyright = "HL7 New Zealand© 2020+; Licensed Under Creative Commons No Rights Reserved."
+
 * ^context.type = #element
 * ^context.expression = "EpisodeOfCare"
 
 * extension contains
-    Icp_diagnosisCodes named diagnosisCode 1..1 and
-    Icp_diagnosisSide named diagnosisSide 1..1
+    $icp-diagnosis named diagnosis 1..10 and
+    covers-all-claim-diagnoses 0..1
 
-* extension[diagnosisCode] ^short = "The diagnosi codes for the injury being treated."
-* extension[diagnosisSide] ^short = "The body side this diagnosis code relates to."
+* extension[covers-all-claim-diagnoses].url = "covers-all-claim-diagnoses" (exactly)
+* extension[covers-all-claim-diagnoses].value[x] only boolean
+* extension[covers-all-claim-diagnoses].valueBoolean 0..1
+
+* extension[covers-all-claim-diagnoses] ^short = "Indicates whether or not the ICP case is treating all the diagnoses on the claim."
+* extension[diagnosis] ^short = "The diagnoses for the injury being treated."

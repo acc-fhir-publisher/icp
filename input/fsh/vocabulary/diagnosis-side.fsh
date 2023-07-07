@@ -21,4 +21,4 @@ Description: "The body side this diagnosis code relates to."
 
 * #left "Left"
 * #right "Right"
-* #na "N/A"
+* #na "Not Applicable"

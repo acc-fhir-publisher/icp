@@ -18,11 +18,8 @@ Description: "The score (low, medium, high) for each category/sub-category obtai
 * ^context[=].expression = "EpisodeOfCare"
 * ^context[+].type = #element
 * ^context[=].expression = "EpisodeOfCare.extension"
-
 * ^context[+].type = #element
-* ^context[=].expression = "Icp_complexityScores"
-* ^context[+].type = #element
-* ^context[=].expression = "Icp_complexityScores.extension"
+* ^context[=].expression = "EpisodeOfCare.extension.extension"
 
 * value[x] only code
 * valueCode 1..1

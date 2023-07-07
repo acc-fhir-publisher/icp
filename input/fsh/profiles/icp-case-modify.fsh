@@ -16,12 +16,12 @@ Description:    "This profile supports suppliers needing to inform ACC of a chan
 * extension contains
     $icp-service-bundle named serviceBundle 1..1 and
     $icp-funding-rationale named changeRationale 1..* and
-    $icp-exceptional-funding named exceptionalFunding 0..1 and
-    $icp-supporting-details named supportingDetails 0..1
+    $icp-supporting-details named supportingDetails 0..1 and
+    $icp-exceptional-funding named exceptionalFunding 0..1
 
 * extension[serviceBundle] ^short = "The updated ICP service bundle for the treatment."
 * extension[changeRationale] ^short = "(other | comorbitity-factors | social-support | active-participation | patient-resilience | medication-use | equitable-access | health-literacy | cultural-support | housing-accommodation | finances | travel | return-to-daily-life | return-to-sport | number-of-disciplines | employment | workplace-support | return-to-work-support)"
-* extension[exceptionalFunding] ^short = "Indicates if exceptionalfunding is required for this treatment."
-* extension[supportingDetails] ^short = "Used to explain the need for exceptional funding being required as well as providing further context for the client exit."
+* extension[exceptionalFunding] ^short = "Indicates if exceptionalfunding is required for this treatment and the funding type."
+* extension[supportingDetails] ^short = "Used to explain the need for exceptional funding being required."
 
 // require invariant to require supporting details when exceptionalFunding is 'other'

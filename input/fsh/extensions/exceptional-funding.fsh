@@ -1,7 +1,13 @@
+Invariant: conditionally-required-field
+Severity: #error
+Description: "If 'rationale' contains 'other', 'supportingDetails' must be populated"
+Expression: "rationale contains 'other' implies supportingDetails.exists()"
+
 Extension: IcpExceptionalFunding
 Id: acc-icp-exceptional-funding
 Title: "Exceptional Funding"
 Description: "Indicates if exceptional is required for this treatment."
+// * obeys conditionally-required-field
 
 * ^url = $icp-exceptional-funding
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
@@ -13,8 +19,8 @@ Description: "Indicates if exceptional is required for this treatment."
 * extension 1..*
 
 * extension contains
-    Icp_FundingRationale named rationale 1..* and
-    Icp_supportingDetails named supportingDetails 0..1
+    $icp-funding-rationale named rationale 1..* and
+    $icp-supporting-details named supportingDetails 0..1
 
 * extension[rationale] ^short = "(other | comorbitity-factors | social-support | active-participation | patient-resilience | medication-use | equitable-access | health-literacy | cultural-support | housing-accommodation | finances | travel | return-to-daily-life | return-to-sport | number-of-disciplines | employment | workplace-support | return-to-work-support)"
 * extension[rationale] ^definition = "A categorisation of the rationale for exceptional funding being required."

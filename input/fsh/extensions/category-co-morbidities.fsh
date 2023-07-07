@@ -1,8 +1,8 @@
-Extension: Icp_category
-Id: acc-icp-category
-Title: "Category"
+Extension: Icp_category_co_morbidities
+Id: acc-icp-category-co-morbidities
+Title: "Category Co-morbidities"
 Description: "The complexity category."
-* ^url = $icp-category
+* ^url = $icp-category-co-morbidities
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^version = "0.1.0"
 * ^status = #draft
@@ -19,11 +19,12 @@ Description: "The complexity category."
 * ^context[=].expression = "EpisodeOfCare.extension"
 * ^context[+].type = #element
 * ^context[=].expression = "EpisodeOfCare.extension.extension"
-* ^context[+].type = #element
-* ^context[=].expression = "Icp_categoryScores"
-* ^context[+].type = #element
-* ^context[=].expression = "Icp_categoryScores.extension"
 
-* value[x] only code
-* valueCode 1..1
-* valueCode from $icp-category-vs (required)
+* extension contains
+    $icp-complexity-score named complexityScore 0..1 and
+    co-morbidity-factors 1..1
+
+* extension[co-morbidity-factors].url = "co-morbidity-factors" (exactly)
+* extension[co-morbidity-factors].value[x] only code
+* extension[co-morbidity-factors].valueCode 1..1
+* extension[co-morbidity-factors].valueCode from $icp-complexity-score-vs (required)

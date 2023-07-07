@@ -21,21 +21,19 @@ Description:    "ICP Case Create is to be used by the supplier to furnish ACC wi
 * extension 1..*
 * extension contains
     $icp-service-bundle named serviceBundle 1..1 and
-    $icp-acc-client-authority named accClientAuthority 1..1 and
-    $icp-client-participation-agreement named clientParticipationAgreement 1..1 and
-    $icp-covers-all-claim-diagnoses named coversAllClaimDiagnoses 0..1 and
-    $icp-diagnoses named diagnoses 1..10 and
-    $icp-triage-assessment-date named triageAssessmentDate 1..1 and
     $icp-referral-source named referralSource 1..1 and
+    $icp-diagnoses named diagnoses 1..1 and
     $icp-complexity-scores named complexityScores 1..1 and
-    $icp-exceptional-funding named exceptionalFunding 0..1
+    $icp-exceptional-funding named exceptionalFunding 0..1 and
+    $icp-acc-client-authority named acc-client-authority 1..1 and
+    $icp-client-participation-agreement named client-participation-agreement 1..1 and
+    $icp-triage-assessment-date named triage-assessment-date 1..1
 
 * extension[serviceBundle] ^short = "(icpkar1 | icpkar2 | icpkar3 | icpkrr1 | icpkrr2 | icpkrr3 | icpkrr4 | icpkrr5 | icpspr1 | icpspr2 | icpspr3 | icpspr4 | icpspr5 | icpspr6 | cpspr7  icpspr8 | icpshr1 | icpshr2 | icpshr3 | icpshr4 | icpshr5 | icpshr6)"
-* extension[accClientAuthority] ^short = "Indicates that the Client has agreed to ACC being able to collect, store, use, &amp; share their information."
-* extension[clientParticipationAgreement] ^short = "Indicates that the Client has agreed to participating in ICP."
-* extension[coversAllClaimDiagnoses] ^short = "Indicates whether or not the ICP case is treating all the diagnoses on the claim."
+* extension[acc-client-authority] ^short = "Indicates that the Client has agreed to ACC being able to collect, store, use, &amp; share their information."
+* extension[client-participation-agreement] ^short = "Indicates that the Client has agreed to participating in ICP."
+* extension[triage-assessment-date] ^short = "The date the triage assessment was completed."
 * extension[diagnoses] ^short = "The diagnoses for the injury being treated."
-* extension[triageAssessmentDate] ^short = "The date the triage assessment was completed."
 * extension[referralSource] ^short = "(gp | physio | specialist | allied | employer | rognoa | other | acc | patient)"
 * extension[complexityScores] ^short = "The scores obtained from the ICP complexity assessment/tool."
 * extension[exceptionalFunding] ^short = "Indicates if exceptional funding is required for this treatment."

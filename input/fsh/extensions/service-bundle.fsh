@@ -12,6 +12,7 @@ Description: "Indicates the ICP service bundle selected for the treatment."
 * ^contact[0].telecom[0].value = "admin@hl7.org.nz"
 * ^contact[0].telecom[0].use = #work
 * ^copyright = "HL7 New Zealand© 2020+; Licensed Under Creative Commons No Rights Reserved."
+
 * ^context.type = #element
 * ^context.expression = "EpisodeOfCare"
 

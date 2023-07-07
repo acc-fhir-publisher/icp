@@ -1,8 +1,8 @@
-Extension: Icp_categoryScore
-Id: acc-icp-category-score
-Title: "Category Score"
-Description: "The score (low, medium, high, na) for a complexity category."
-* ^url = $icp-category-score
+Extension: Icp_category_disciplines
+Id: acc-icp-category-disciplines
+Title: "Category disciplines"
+Description: "The complexity category."
+* ^url = $icp-category-disciplines
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
 * ^version = "0.1.0"
 * ^status = #draft
@@ -13,18 +13,18 @@ Description: "The score (low, medium, high, na) for a complexity category."
 * ^contact[0].telecom[0].use = #work
 * ^copyright = "HL7 New Zealand© 2020+; Licensed Under Creative Commons No Rights Reserved."
 
-
 * ^context[+].type = #element
 * ^context[=].expression = "EpisodeOfCare"
 * ^context[+].type = #element
 * ^context[=].expression = "EpisodeOfCare.extension"
 * ^context[+].type = #element
 * ^context[=].expression = "EpisodeOfCare.extension.extension"
-* ^context[+].type = #element
-* ^context[=].expression = "Icp_complexityScores"
-* ^context[+].type = #element
-* ^context[=].expression = "Icp_complexityScores.extension"
 
-* value[x] only code
-* valueCode 1..1
-* valueCode from $icp-category-score-vs (required)
+* extension contains
+    $icp-complexity-score named complexityScore 0..1 and
+    number-of-disciplines 1..1
+
+* extension[number-of-disciplines].url = "number-of-disciplines" (exactly)
+* extension[number-of-disciplines].value[x] only code
+* extension[number-of-disciplines].valueCode 1..1
+* extension[number-of-disciplines].valueCode from $icp-complexity-score-vs (required)
