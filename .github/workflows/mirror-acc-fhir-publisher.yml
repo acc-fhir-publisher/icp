@@ -1,6 +1,6 @@
 # this mirrors all changes from the icp to the icp-mirror repository
 
-name: mirror
+name: mirror-accf-fhir-publisher
 
 # sdfsdf
 on:
