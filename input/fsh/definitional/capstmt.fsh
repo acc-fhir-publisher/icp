@@ -17,7 +17,7 @@ Usage: #definition
 This is the computable resource that describes the RESTful endpoint
 """
 
-* date = "2023-05-30"
+* date = "2023-07-10"
 * status = #draft
 * kind = #instance
 * software.name = "ACC Integration API"
