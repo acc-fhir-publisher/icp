@@ -23,7 +23,6 @@ This is the computable resource that describes the RESTful endpoint
 * software.name = "ACC Integration API"
 * fhirVersion = #4.0.1
 * format[0] = #json
-// * messaging.endpoint.protocol = $message-transport#http
 
 * implementation.description = "The ICP endpoint accessed by PMS vendors to create, modify and exit an ICP Episode of Care"
 * implementation.url = "https://provider.api-compliance.acc.co.nz/fhir/v1/claims/integratedcarepathway"
