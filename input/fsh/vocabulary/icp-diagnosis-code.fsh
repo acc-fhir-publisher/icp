@@ -7,7 +7,8 @@ Description: "The diagnosis codes for the injury being treated."
 * ^version = "0.1.0"
 * ^experimental = false
 
+// * include codes from system $SCT
+
 * include codes from system $acc-readcode-cs
-* include codes from system $SCT
-* include codes from system $icd9
-* include codes from system $icd10ae
+* include codes from system $acc-icd10-cs
+* include codes from system $acc-icd9-cs

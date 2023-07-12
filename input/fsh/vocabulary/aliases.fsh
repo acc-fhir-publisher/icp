@@ -50,6 +50,11 @@ Alias: $acc-readcode = http://hl7.org.nz/fhir/StructureDefinition/acc-read-code
 Alias: $acc-readcode-cs = http://hl7.org.nz/fhir/CodeSystem/acc-read-code
 Alias: $acc-readcode-vs = http://hl7.org.nz/fhir/ValueSet/acc-read-code
 
+Alias: $acc-icd9-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icd9
+Alias: $acc-icd9-vs = http://hl7.org.nz/fhir/ValueSet/acc-icd9
+Alias: $acc-icd10-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icd10
+Alias: $acc-icd10-vs = http://hl7.org.nz/fhir/ValueSet/acc-icd10
+
 Alias: $icp-exit-reason = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exit-reason
 Alias: $icp-exit-reason-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-exit-reason
 Alias: $icp-exit-reason-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-exit-reason

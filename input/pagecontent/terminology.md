@@ -13,6 +13,8 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |--- |--- | ---|
 |[acc-icp-diagnosis-code](ValueSet-acc-icp-diagnosis-code.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-diagnosis-code|
 |[acc-read-code](ValueSet-acc-read-code.html)|http://hl7.org.nz/fhir/ValueSet/acc-read-code|
+|[acc-icd-9](ValueSet-acc-icd9.html)|http://hl7.org.nz/fhir/ValueSet/acc-icd9-code|
+|[acc-icd-10](ValueSet-acc-icd10.html)|http://hl7.org.nz/fhir/ValueSet/acc-icd10-code|
 |[icp-exit-reason](ValueSet-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-exit-reason|
 |[icp-funding-rationale](ValueSet-acc-icp-funding-rationale.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-funding-rationale|
 |[icp-referral-source-type](ValueSet-acc-icp-referral-source-type.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-referral-source-type|
@@ -34,7 +36,8 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |Id |Canonical url |
 |--- |--- | ---|
 |[acc-read-code](CodeSystem-acc-read-code.html)|http://hl7.org.nz/fhir/CodeSystem/acc-read-code|
-|[icp-category](CodeSystem-acc-icp-category.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-category|
+|[acc-icd-9](CodeSystem-acc-icd9.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icd-9|
+|[acc-icd-10](CodeSystem-acc-icd10.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icd-10|
 |[icp-exit-reason](CodeSystem-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-exit-reason|
 |[icp-funding-rationale](CodeSystem-acc-icp-funding-rationale.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-funding-rationale|
 |[icp-referral-source-type](CodeSystem-acc-icp-referral-source-type.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-referral-source-type|
