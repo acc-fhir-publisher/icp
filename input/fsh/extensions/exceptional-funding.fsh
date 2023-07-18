@@ -27,4 +27,4 @@ Description: "Indicates if exceptional is required for this treatment."
 * extension[supporting-details].valueString 0..1
 * extension[supporting-details].valueString obeys supporting-details-max-length-invariant
 * extension[supporting-details] ^short = "Used to explain the need for exceptional funding being required as well as providing further context for the client exit."
-* extension[supporting-details] ^definition = "A paragraph outlining the reason/rational. Used to explain the need for exceptional funding being required as well as providing further context for the client exit."
+* extension[supporting-details] ^definition = "A paragraph outlining the reason/rationale. Used to explain the need for exceptional funding being required as well as providing further context for the client exit."

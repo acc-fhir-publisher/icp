@@ -40,16 +40,24 @@ Description: "Integrated Care Pathways Exit Reason"
 * extension[supporting-details].valueString 0..1
 * extension[supporting-details].valueString obeys supporting-details-max-length-invariant
 * extension[supporting-details] ^short = "Used to explain the client exit reason not being 'Recovery goal achieved'."
-* extension[supporting-details] ^definition = "A paragraph outlining the reason/rational for the client exit.  Required when the exit reason is not 'Recovery goal achieved'."
+* extension[supporting-details] ^definition = "A paragraph outlining the reason/rationale for the client exit.  Required when the exit reason is not 'Recovery goal achieved' or additional ACC support required."
 
 * extension[outcome-summary].url = "outcome-summary" (exactly)
 * extension[outcome-summary].value[x] only string
 * extension[outcome-summary].valueString 0..1
 * extension[outcome-summary].valueString obeys outcome-summary-max-length-invariant
-* extension[outcome-summary] ^short = "A summary of the client's outcome."
-* extension[outcome-summary] ^definition = "A summary of the client's outcome."
+* extension[outcome-summary] ^short = "A summary of the client's recovery outcome."
+* extension[outcome-summary] ^definition = "A summary of the client's recovery outcome.  Required when the exit reason is not 'Recovery goal achieved' or additional ACC support required."
+
+* obeys recovery-goal-not-achieved-or-acc-support-invariant
 
 Invariant: outcome-summary-max-length-invariant
 Description: "'supporting-details' must be no more than 5000 characters."
 Expression: "value.length() <= 5000"
 Severity: #error
+
+
+Invariant: recovery-goal-not-achieved-or-acc-support-invariant
+Severity: #error
+Description: "if 'additional-acc-support-needed' is true or reason is not 'goal-achieved', supporting-details and outcome-summary are required."
+Expression: "(extension.where(url='additional-acc-support-needed').value = true or extension.where(url='reason').value != 'goal-achieved') implies (extension.where(url='supporting-details').value.exists() and extension.where(url='outcome-summary').value.exists())"

@@ -31,6 +31,7 @@ Alias: $icp-acc-claim-number = http://hl7.org.nz/fhir/ns/acc-icp-claim-number
 Alias: $icp-referral-source = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-source
 Alias: $icp-diagnoses = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnoses
 Alias: $icp-diagnosis = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnosis
+Alias: $icp-service-bundle-change = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-bundle-change
 
 Alias: $icp-service-bundle = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-bundle
 Alias: $icp-service-bundle-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-bundle

@@ -11,12 +11,17 @@ Description:    "This profile supports suppliers needing to inform ACC of a chan
 * type 0..0
 * period 0..0
 
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #closed
+* extension ^slicing.ordered = false
+
 * extension 2..3
 * extension contains
-    $icp-service-bundle named serviceBundle 1..1 and
-    $icp-exceptional-funding named exceptionalFunding 0..1
+    $icp-service-bundle-change named service-bundle-change 1..1 and
+    $icp-exceptional-funding named exceptional-funding 0..1
 
-* extension[serviceBundle] ^short = "The updated ICP service bundle for the treatment."
-* extension[exceptionalFunding] ^short = "Indicates if exceptionalfunding is required for this treatment and the funding type."
+* extension[service-bundle-change] ^short = "The updated ICP service bundle for the treatment."
+* extension[exceptional-funding] ^short = "Indicates if exceptionalfunding is required for this treatment and the funding type."
 
 * obeys active-status-invariant

@@ -13,8 +13,10 @@ Description: "Indicates the ICP service bundle selected for the treatment."
 * ^contact[0].telecom[0].use = #work
 * ^copyright = "ACC New Zealand© 2023+; Licensed Under Creative Commons No Rights Reserved."
 
-* ^context.type = #element
-* ^context.expression = "EpisodeOfCare"
+* ^context[0].type = #element
+* ^context[=].expression = "EpisodeOfCare"
+* ^context[+].type = #element
+* ^context[=].expression = "EpisodeOfCare.extension"
 
 * value[x] only code
 * valueCode 1..1

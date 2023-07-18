@@ -17,6 +17,11 @@ Description:    "ICP Case Create is to be used by the supplier to furnish ACC wi
 * type.coding.code 1..1
 * type.coding.code ^short = "msk"
 
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #closed
+* extension ^slicing.ordered = false
+
 * extension 8..9
 * extension contains
     $icp-service-bundle named serviceBundle 1..1 and

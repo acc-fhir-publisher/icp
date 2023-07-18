@@ -53,7 +53,7 @@ Description:    "The ACC ICP Case resource based on Episode of Care"
 * identifier ^slicing.description = "ICP identifiers"
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #open
+* identifier ^slicing.rules = #closed
 * identifier ^slicing.ordered = false
 
 * identifier contains

@@ -17,6 +17,5 @@ WARNING: ImplementationGuide: Rule ig-0: 'Name should be usable as an identifier
 # known warning
 INFORMATION: StructureDefinition.where(url = 'http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient'):	The Implementation Guide contains no explicitly linked examples for this profile
 
-WARNING: The Implementation Guide contains no examples for this extension
-WARNING: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
-WARNING: Name should be usable as an identifier for the module by machine processing applications such as code generation
+The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
