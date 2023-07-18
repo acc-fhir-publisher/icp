@@ -28,6 +28,6 @@ Expression: "status = 'finished'"
 
 Invariant: when-acc-support-invariant
 Severity: #error
-Description: "if 'additional-acc-support-needed' is true, supporting-details and outcome-summary are required."
+Description: "if 'additional-acc-support-needed' is true or reason is not 'goal-achieved', supporting-details and outcome-summary are required."
 Expression: "((EpisodeOfCare.extension.where(url='http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exit-reason').extension.where(url='additional-acc-support-needed').value = true or EpisodeOfCare.extension.where(url='http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exit-reason').extension.where(url='reason').value != 'goal-achieved') implies (EpisodeOfCare.extension.where(url='http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exit-reason').extension.where(url='supporting-details').value.exists() and EpisodeOfCare.extension.where(url='http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exit-reason').extension.where(url='outcome-summary').value.exists()))"
 // Expression: "(extension[exit-reason].extension[additional-acc-support-needed].value = true or extension[exit-reason].extension[reason].value) != 'goal-achieved') implies (extension[exit-reason].extension[supporting-details].value.exists() and extension[exit-reason].extension[outcome-summary].value.exists())"
