@@ -1,4 +1,4 @@
-Instance: A101113-2002-11-17
+Instance: A101115-2002-11-17
 InstanceOf: EpisodeOfCare
 Usage: #example
 Description: "Example of an EpisodeOfCare with an exit reason"
@@ -7,7 +7,7 @@ Description: "Example of an EpisodeOfCare with an exit reason"
 
 * identifier.system = $icp-acc-claim-number
 * identifier.use = #official
-* identifier.value = "A101113"
+* identifier.value = "A101115"
 
 * contained = patient-unknown
 * patient = Reference(patient-unknown)
@@ -20,6 +20,10 @@ Description: "Example of an EpisodeOfCare with an exit reason"
 
 * extension[+].url = $icp-exit-reason
 * extension[=].extension[0].url = "reason"
-* extension[=].extension[=].valueCode = #goal-achieved
+* extension[=].extension[=].valueCode = #non-compliance
 * extension[=].extension[+].url = "additional-acc-support-needed"
 * extension[=].extension[=].valueBoolean = false
+* extension[=].extension[+].url = "supporting-details"
+* extension[=].extension[=].valueString = "some info  to support other reason"
+* extension[=].extension[+].url = "outcome-summary"
+* extension[=].extension[=].valueString = "up to 5000 characters"

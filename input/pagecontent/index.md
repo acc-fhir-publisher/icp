@@ -20,7 +20,7 @@ The following tabs are available from the navbar at the top.
 
 This tab lists all the extensions defined in this guide, where an extension is an additional element that can be recorded in a resource. The extension definition describes the purpose of the extension, its name and [dataType/s](http://hl7.org/fhir/datatypes.html).
 
-Clicking on the link in the 'id' column will display the detail page for that extension. Extensions can have a single value, or can be composed of multiple 'child' elements - an example is the [Funding Rationale](StructureDefinition-acc-icp-funding-rationale.html) extension. The snapshot tab in the details page (about halfway down) lists all the parts of the extension - including a link to the ValueSet if the element is coded.
+Clicking on the link in the 'id' column will display the detail page for that extension. Extensions can have a single value, or can be composed of multiple 'child' elements - an example is the [Exceptional Funding Extension](StructureDefinition-acc-icp-exceptional-funding.html) extension. The snapshot tab in the details page (about halfway down) lists all the parts of the extension - including a link to the ValueSet if the element is coded.
 
 ### Terminology
 
@@ -45,4 +45,4 @@ This is a tab automatically generated during the build of the Implementation Gui
 
 Contains links to the main FHIR specification, as well downloads for the full IG or the artifacts defined in the guide (Extension Definitions, ValueSets and CodeSystems.)
 
-If you would like to make any feedback on this Implementation Guide, email admin@hl7.org.nz
+If you would like to make any feedback on this Implementation Guide, email integratedcarepathways@acc.co.nz or raise an issue on the [ICP GitHub repository](https://github.com/acc-fhir-publisher/icp)

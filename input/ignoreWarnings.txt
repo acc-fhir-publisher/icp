@@ -9,6 +9,7 @@ Code System URI 'urn:iso:std:iso:3166-1-2' is unknown so the code cannot be vali
 
 # known warning
 The Implementation Guide contains no explicitly linked examples for this profile
+The Implementation Guide contains no examples for this profile
 
 # known warning
 WARNING: ImplementationGuide: Rule ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed

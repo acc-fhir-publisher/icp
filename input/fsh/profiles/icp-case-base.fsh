@@ -3,7 +3,6 @@ Parent:         EpisodeOfCare
 Id:             acc-icp-case
 Title:          "ACC ICP Episode of Care Resource"
 Description:    "The ACC ICP Case resource based on Episode of Care"
-* obeys end-date-when-active-invariant and end-date-when-finished-invariant
 
 * ^url = $icp-case
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
@@ -64,11 +63,12 @@ Description:    "The ACC ICP Case resource based on Episode of Care"
 * identifier[icpclaimnumber].value 1..1
 * identifier[icpclaimnumber] ^short = "The ACC claim number to be used in combination with the contained patient's date of birth, as the ICP case idenfitier."
 
-* extension 1..*
 * extension contains
     $acc-providerid named accProviderId 1..1
 
 * extension[accProviderId] ^short = "The ACC provider ID associated with the ICP case"
+
+* obeys end-date-when-active-invariant and end-date-when-finished-invariant
 
 Invariant: date-invariant
 Severity: #error
@@ -80,15 +80,15 @@ Severity: #error
 Description: "The date value cannot be in the future"
 Expression: "$this <= today()"
 
+Invariant: supporting-details-max-length-invariant
+Description: "'supporting-details' must be no more than 250 characters."
+Expression: "value.length() <= 250"
+Severity: #error
+
 Invariant: active-status-invariant
 Severity: #error
 Description: "The status attribute must be set to 'active'."
 Expression: "status = 'active'"
-
-Invariant: start-date-when-active-finished-invariant
-Severity: #error
-Description: "Start date is required when status is active"
-Expression: "status = 'active' or status = 'finished' implies period.start.exists()"
 
 Invariant: end-date-when-active-invariant
 Severity: #error

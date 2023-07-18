@@ -20,7 +20,6 @@ Alias: $icp-triage-assessment-date = http://hl7.org.nz/fhir/StructureDefinition/
 Alias: $icp-acc-client-authority = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-client-authority
 Alias: $icp-client-participation-agreement = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-client-participation-agreement
 Alias: $icp-exceptional-funding = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exceptional-funding
-Alias: $icp-supporting-details = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-supporting-details
 Alias: $icp-complexity-scores = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-complexity-scores
 Alias: $icp-category-co-morbidities = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-category-co-morbidities
 Alias: $icp-category-psychosocial = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-category-psychosocial
@@ -29,7 +28,6 @@ Alias: $icp-category-disciplines = http://hl7.org.nz/fhir/StructureDefinition/ac
 Alias: $icp-category-vocational = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-category-vocational
 Alias: $acc-providerid = http://hl7.org.nz/fhir/StructureDefinition/acc-providerid
 Alias: $icp-acc-claim-number = http://hl7.org.nz/fhir/ns/acc-icp-claim-number
-Alias: $icp-additional-acc-support = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-additional-acc-support
 Alias: $icp-referral-source = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-source
 Alias: $icp-diagnoses = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnoses
 Alias: $icp-diagnosis = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnosis
@@ -38,7 +36,6 @@ Alias: $icp-service-bundle = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-
 Alias: $icp-service-bundle-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-bundle
 Alias: $icp-service-bundle-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-service-bundle
 
-Alias: $icp-funding-rationale = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-funding-rationale
 Alias: $icp-funding-rationale-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-funding-rationale
 Alias: $icp-funding-rationale-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-funding-rationale
 

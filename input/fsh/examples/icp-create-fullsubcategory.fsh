@@ -1,8 +1,8 @@
 Instance: ICP456789
 InstanceOf: EpisodeOfCare
 Usage: #example
-Title: "ACC ICP Case Create - Full Complexity Array"
 Description: "Example ICP Case Create - Full Complexity Array"
+
 * meta.profile = $icp-case-create
 * identifier.system = $icp-acc-claim-number
 * identifier.use = #official
@@ -14,7 +14,7 @@ Description: "Example ICP Case Create - Full Complexity Array"
 * status = #active
 * patient = Reference(patient-unknown)
 
-* extension[+].url = $icp-service-bundle
+* extension[0].url = $icp-service-bundle
 * extension[=].valueCode = #icpkar1
 * extension[+].url = $icp-acc-client-authority
 * extension[=].valueBoolean = true
@@ -46,14 +46,10 @@ Description: "Example ICP Case Create - Full Complexity Array"
 * extension[=].extension[=].valueCode = #low
 
 * extension[=].extension[+].url = $icp-category-co-morbidities
-* extension[=].extension[=].extension[0].url = $icp-complexity-score
-* extension[=].extension[=].extension[=].valueCode = #low
 * extension[=].extension[=].extension[+].url = "co-morbidity-factors"
 * extension[=].extension[=].extension[=].valueCode = #low
 
 * extension[=].extension[+].url = $icp-category-psychosocial
-* extension[=].extension[=].extension[0].url = $icp-complexity-score
-* extension[=].extension[=].extension[=].valueCode = #low
 * extension[=].extension[=].extension[+].url = "social-support-network"
 * extension[=].extension[=].extension[=].valueCode = #low
 * extension[=].extension[=].extension[+].url = "patient-resilience"
@@ -70,8 +66,6 @@ Description: "Example ICP Case Create - Full Complexity Array"
 * extension[=].extension[=].extension[=].valueCode = #low
 
 * extension[=].extension[+].url = $icp-category-contextual
-* extension[=].extension[=].extension[0].url = $icp-complexity-score
-* extension[=].extension[=].extension[=].valueCode = #low
 * extension[=].extension[=].extension[+].url = "housing-accommodation"
 * extension[=].extension[=].extension[=].valueCode = #low
 * extension[=].extension[=].extension[+].url = "travel"
@@ -84,7 +78,13 @@ Description: "Example ICP Case Create - Full Complexity Array"
 * extension[=].extension[=].extension[=].valueCode = #low
 
 * extension[=].extension[+].url = $icp-category-disciplines
-* extension[=].extension[=].extension[0].url = $icp-complexity-score
-* extension[=].extension[=].extension[=].valueCode = #low
 * extension[=].extension[=].extension[+].url = "number-of-disciplines"
+* extension[=].extension[=].extension[=].valueCode = #low
+
+* extension[=].extension[+].url = $icp-category-vocational
+* extension[=].extension[=].extension[+].url = "employment"
+* extension[=].extension[=].extension[=].valueCode = #low
+* extension[=].extension[=].extension[+].url = "return-to-work"
+* extension[=].extension[=].extension[=].valueCode = #low
+* extension[=].extension[=].extension[+].url = "workplace-support"
 * extension[=].extension[=].extension[=].valueCode = #low

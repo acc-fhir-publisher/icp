@@ -1,6 +1,8 @@
 Instance: icp-create
 InstanceOf: EpisodeOfCare
 Usage: #example
+Description: "Example of an ICP EpisodeOfCare resource for entering into ACC Integrated Care Pathways"
+
 * meta.profile = $icp-case-create
 * identifier.system = $icp-acc-claim-number
 * identifier.use = #official
@@ -11,7 +13,8 @@ Usage: #example
 * period.start = "2022-11-17"
 * status = #active
 * patient = Reference(patient-unknown)
-* extension[+].url = $icp-service-bundle
+
+* extension[0].url = $icp-service-bundle
 * extension[=].valueCode = #icpkar1
 * extension[+].url = $icp-acc-client-authority
 * extension[=].valueBoolean = true
@@ -44,11 +47,11 @@ Usage: #example
 * extension[=].extension[=].valueDate = "2022-11-17"
 
 * extension[+].url = $icp-exceptional-funding
-* extension[=].extension[0].url = $icp-funding-rationale
+* extension[=].extension[0].url = "rationale"
 * extension[=].extension[=].valueCode = #social-support
-* extension[=].extension[+].url = $icp-funding-rationale
+* extension[=].extension[+].url = "rationale"
 * extension[=].extension[=].valueCode = #other
-* extension[=].extension[+].url = $icp-supporting-details
+* extension[=].extension[+].url = "supporting-details"
 * extension[=].extension[=].valueString = "supporting details"
 
 * extension[+].url = $icp-complexity-scores
@@ -56,14 +59,10 @@ Usage: #example
 * extension[=].extension[=].valueCode = #low
 
 * extension[=].extension[+].url = $icp-category-co-morbidities
-* extension[=].extension[=].extension[0].url = $icp-complexity-score
-* extension[=].extension[=].extension[=].valueCode = #low
 * extension[=].extension[=].extension[+].url = "co-morbidity-factors"
 * extension[=].extension[=].extension[=].valueCode = #low
 
 * extension[=].extension[+].url = $icp-category-psychosocial
-* extension[=].extension[=].extension[0].url = $icp-complexity-score
-* extension[=].extension[=].extension[=].valueCode = #low
 * extension[=].extension[=].extension[+].url = "social-support-network"
 * extension[=].extension[=].extension[=].valueCode = #low
 * extension[=].extension[=].extension[+].url = "patient-resilience"
@@ -80,8 +79,6 @@ Usage: #example
 * extension[=].extension[=].extension[=].valueCode = #low
 
 * extension[=].extension[+].url = $icp-category-contextual
-* extension[=].extension[=].extension[0].url = $icp-complexity-score
-* extension[=].extension[=].extension[=].valueCode = #low
 * extension[=].extension[=].extension[+].url = "housing-accommodation"
 * extension[=].extension[=].extension[=].valueCode = #low
 * extension[=].extension[=].extension[+].url = "travel"
@@ -94,7 +91,5 @@ Usage: #example
 * extension[=].extension[=].extension[=].valueCode = #low
 
 * extension[=].extension[+].url = $icp-category-disciplines
-* extension[=].extension[=].extension[0].url = $icp-complexity-score
-* extension[=].extension[=].extension[=].valueCode = #low
 * extension[=].extension[=].extension[+].url = "number-of-disciplines"
 * extension[=].extension[=].extension[=].valueCode = #low

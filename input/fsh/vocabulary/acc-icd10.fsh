@@ -15,7 +15,6 @@ Description: "The ICD-10 subset accepted by ACC"
 
 * ^url = $acc-icd10-cs
 * ^caseSensitive = true
-* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 * ^version = "0.1.0"
 * ^experimental = false
 
