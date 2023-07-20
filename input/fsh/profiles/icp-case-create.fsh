@@ -17,6 +17,8 @@ Description:    "ICP Case Create is to be used by the supplier to furnish ACC wi
 * type.coding.code 1..1
 * type.coding.code ^short = "msk"
 
+* status ^definition = "The Status of the ICP case (must be Active)."
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #closed

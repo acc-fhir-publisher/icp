@@ -15,6 +15,8 @@ Description:    "This profile supports suppliers needing to inform ACC of a pati
 * extension ^slicing.rules = #closed
 * extension ^slicing.ordered = false
 
+* status ^definition = "The Status of the ICP case (must be Finished)."
+
 * extension 2..2
 * extension contains    
     $icp-exit-reason named exit-reason 1..1

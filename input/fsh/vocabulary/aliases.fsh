@@ -4,6 +4,7 @@ Alias: $icd9 = http://terminology.hl7.org/CodeSystem/icd9
 Alias: $ICD10CM = http://hl7.org/fhir/sid/icd-10-cm
 Alias: $ICD10PCS = http://www.cms.gov/Medicare/Coding/ICD10
 Alias: $icd10ae = http://terminology.hl7.org/CodeSystem/icd10ae
+
 Alias: $episode-of-case-status = http://hl7.org/fhir/episode-of-care-status
 
 Alias: $hpi-organisation = https://standards.digital.health.nz/id/hpi-organisation
@@ -16,6 +17,9 @@ Alias: $icp-case-modify = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-cas
 Alias: $icp-case-exit = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-exit
 Alias: $icp-patient = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient
 
+Alias: $acc-providerid = http://hl7.org.nz/fhir/StructureDefinition/acc-providerid
+Alias: $acc-claim-number = http://hl7.org.nz/fhir/ns/acc-claim-number
+
 Alias: $icp-triage-assessment-date = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-triage-assessment-date
 Alias: $icp-acc-client-authority = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-client-authority
 Alias: $icp-client-participation-agreement = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-client-participation-agreement
@@ -26,8 +30,6 @@ Alias: $icp-category-psychosocial = http://hl7.org.nz/fhir/StructureDefinition/a
 Alias: $icp-category-contextual = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-category-contextual
 Alias: $icp-category-disciplines = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-category-disciplines
 Alias: $icp-category-vocational = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-category-vocational
-Alias: $acc-providerid = http://hl7.org.nz/fhir/StructureDefinition/acc-providerid
-Alias: $icp-acc-claim-number = http://hl7.org.nz/fhir/ns/acc-icp-claim-number
 Alias: $icp-referral-source = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-source
 Alias: $icp-diagnoses = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnoses
 Alias: $icp-diagnosis = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnosis
@@ -37,8 +39,11 @@ Alias: $icp-service-bundle = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-
 Alias: $icp-service-bundle-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-bundle
 Alias: $icp-service-bundle-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-service-bundle
 
-Alias: $icp-funding-rationale-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-funding-rationale
-Alias: $icp-funding-rationale-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-funding-rationale
+Alias: $icp-service-bundle-change-rationale-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-bundle-change-rationale
+Alias: $icp-service-bundle-change-rationale-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-service-bundle-change-rationale
+
+Alias: $icp-exceptional-funding-rationale-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-exceptional-funding-rationale
+Alias: $icp-exceptional-funding-rationale-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-exceptional-funding-rationale
 
 Alias: $icp-complexity-score = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-complexity-score
 Alias: $icp-complexity-score-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-complexity-score

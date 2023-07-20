@@ -11,6 +11,8 @@ Description:    "This profile supports suppliers needing to inform ACC of a chan
 * type 0..0
 * period 0..0
 
+* status ^definition = "The Status of the ICP case (must be Active)."
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #closed

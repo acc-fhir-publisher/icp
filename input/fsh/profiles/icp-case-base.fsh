@@ -59,7 +59,7 @@ Description:    "The ACC ICP Case resource based on Episode of Care"
 * identifier contains
     icpclaimnumber 1..1
 
-* identifier[icpclaimnumber].system = $icp-acc-claim-number (exactly)
+* identifier[icpclaimnumber].system = $acc-claim-number (exactly)
 * identifier[icpclaimnumber].value 1..1
 * identifier[icpclaimnumber] ^short = "The ACC claim number to be used in combination with the contained patient's date of birth, as the ICP case idenfitier."
 

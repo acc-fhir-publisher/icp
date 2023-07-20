@@ -7,7 +7,7 @@ Description: "Example of an ICP EpisodeOfCare resource with a subcategory"
 
 * contained = patient-unknown
 
-* identifier.system = $icp-acc-claim-number
+* identifier.system = $acc-claim-number
 * identifier.use = #official
 * identifier.value = "10056282764"
 * patient = Reference(patient-unknown)

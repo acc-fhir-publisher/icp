@@ -1,20 +1,17 @@
 
 ## New Zealand ICP Implementation Guide
 
-This is the Integrated Care Pathways Implementation Guide (IG) for New Zealand and contains the extensions used for PMS Vendors to create and manage ICP claims.  This IG also includes relevant terminology.
+This is the Integrated Care Pathways Implementation Guide (IG) for New Zealand, provided by ACC, and contains the profiles and extensions used for PMS Vendors to create and manage ICP claims.  This IG also includes relevant terminology.
 
-<!--
-# Must Support
-
-Many of the elements in profiles are marked as 'Must Support'. This means that clients using these profiles must understand what the elements mean, and have a strategy for dealing them - such as storing them in local repositories or displaying them to the user. They should not be ignored if present.
-
-Note that 'Must Support' does not mean the same as 'Required', as they may be absent.
-
--->
-\
-\
-\
 The following tabs are available from the navbar at the top.
+
+/
+/
+/
+
+### Profiles
+
+This tab lists all the profiles defined in this guide. A profile is a set of constraints on a [Resource](http://hl7.org/fhir/resourcelist.html) or [Data Type](http://hl7.org/fhir/datatypes.html) - for example, the [ICP Case Create](StructureDefinition-acc-icp-case-create.html) resource has a profile defined for it in this guide. The profile defines which elements are required, and which are optional, and may also define additional constraints on the data in those elements. The ICP Case Create profile also defines that the 'patient' element must have a contained [ICP Patient](http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient) resource.
 
 ### Extensions
 
@@ -33,9 +30,11 @@ These resources can be used by Terminology Servers (like [Terminz](https://termi
 
 There is a lot more detail on terminology in the [FHIR specification](http://hl7.org/fhir/terminology-module.html). The section on [Terminology Services](http://hl7.org/fhir/terminology-service.html) is also useful.
 
-### Identifiers
+### Naming System
 
-Identifiers are used to unambiguously identify something. Examples in New Zealand are the NHI (National Health Identifier) or HPI (Health Practitioner index). Each type of identifier has a url that uniquely identifies it - for example the value for the NHI is https://standards.digital.health.nz/ns/nhi-id. This url will be present in the 'system' value in a resource instance. Note that the url will not necessarily 'resolve' - entering it into a web browser will not result in anything.
+This tab lists the [NamingSystem](http://hl7.org/fhir/namingsystem.html) resources defined in this guide, which are used to define the identifiers used in the guide.
+
+Identifiers are used to unambiguously identify something. Examples in New Zealand are the NHI (National Health Identifier) or HPI (Health Practitioner index). Each type of identifier has a url that uniquely identifies it - for example the ACC claim number is http://hl7.org.nz/fhir/NamingSystem/icpclaimnumber. This url will be present in the 'system' value in a resource instance. Note that the url will not necessarily 'resolve' - entering it into a web browser will not result in anything.
 
 ### Artifact Index
 
@@ -45,4 +44,4 @@ This is a tab automatically generated during the build of the Implementation Gui
 
 Contains links to the main FHIR specification, as well downloads for the full IG or the artifacts defined in the guide (Extension Definitions, ValueSets and CodeSystems.)
 
-If you would like to make any feedback on this Implementation Guide, email integratedcarepathways@acc.co.nz or raise an issue on the [ICP GitHub repository](https://github.com/acc-fhir-publisher/icp)
+If you would like to make any feedback on this Implementation Guide, email <mailto:integratedcarepathways@acc.co.nz> or raise an issue on the [ICP GitHub repository](https://github.com/acc-fhir-publisher/icp)

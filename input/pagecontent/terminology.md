@@ -16,7 +16,8 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |[acc-icd-9](ValueSet-acc-icd9.html)|http://hl7.org.nz/fhir/ValueSet/acc-icd9-code|
 |[acc-icd-10](ValueSet-acc-icd10.html)|http://hl7.org.nz/fhir/ValueSet/acc-icd10-code|
 |[icp-exit-reason](ValueSet-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-exit-reason|
-|[icp-funding-rationale](ValueSet-acc-icp-funding-rationale.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-funding-rationale|
+|[icp-exceptional-funding-rationale](ValueSet-acc-icp-exceptional-funding-rationale.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-exceptional-funding-rationale|
+|[icp-service-bundle-change-rationale](ValueSet-acc-icp-service-bundle-change-rationale.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-service-bundle-change-rationale|
 |[icp-referral-source-type](ValueSet-acc-icp-referral-source-type.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-referral-source-type|
 |[icp-service-bundle](ValueSet-acc-icp-service-bundle.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-service-bundle|
 |[icp-service-type](ValueSet-acc-icp-service-type.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-service-type|
@@ -39,7 +40,8 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |[acc-icd-9](CodeSystem-acc-icd9.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icd-9|
 |[acc-icd-10](CodeSystem-acc-icd10.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icd-10|
 |[icp-exit-reason](CodeSystem-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-exit-reason|
-|[icp-funding-rationale](CodeSystem-acc-icp-funding-rationale.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-funding-rationale|
+|[icp-exceptional-funding-rationale](CodeSystem-acc-icp-exceptional-funding-rationale.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-exceptional-funding-rationale|
+|[icp-service-bundle-change-rationale](CodeSystem-acc-icp-service-bundle-change-rationale.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-bundle-change-rationale|
 |[icp-referral-source-type](CodeSystem-acc-icp-referral-source-type.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-referral-source-type|
 |[icp-service-bundle](CodeSystem-acc-icp-service-bundle.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-bundle|
 |[icp-service-type](CodeSystem-acc-icp-service-type.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-type|

@@ -5,7 +5,7 @@ Description: "Example of an EpisodeOfCare with an exit reason"
 
 * meta.profile = $icp-case-exit
 
-* identifier.system = $icp-acc-claim-number
+* identifier.system = $acc-claim-number
 * identifier.use = #official
 * identifier.value = "A101113"
 

@@ -6,7 +6,7 @@ Description: "Example of an EpisodeOfCare service bundle modification request"
 * meta.profile = $icp-case-modify
 * contained = patient-unknown
 
-* identifier.system = $icp-acc-claim-number
+* identifier.system = $acc-claim-number
 * identifier.use = #official
 * identifier.value = "A101112"
 

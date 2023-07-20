@@ -4,7 +4,7 @@ Usage: #example
 Description: "Example of an ICP EpisodeOfCare resource for entering into ACC Integrated Care Pathways"
 
 * meta.profile = $icp-case-create
-* identifier.system = $icp-acc-claim-number
+* identifier.system = $acc-claim-number
 * identifier.use = #official
 * identifier.value = "A101112"
 * type = $icp-service-type-cs#msk

@@ -1,26 +1,26 @@
-ValueSet: ICPFundingRationale
-Id: acc-icp-funding-rationale
-Title: "Funding Rationale"
-Description: "A categorisation of the rationale for exceptional funding being required."
+ValueSet: ICPBundleChangeRationale
+Id: acc-icp-service-bundle-change-rationale
+Title: "Service Bundle Change Rationale"
+Description: "A categorisation of the rationale for modifying a service bundle."
 
-* ^url = $icp-funding-rationale-vs
+* ^url = $icp-service-bundle-change-rationale-vs
 * ^version = "0.1.0"
 * ^experimental = false
-* include codes from system $icp-funding-rationale-cs
+* include codes from system $icp-service-bundle-change-rationale-cs
 
 
-CodeSystem: ICPFundingRationale
-Id: acc-icp-funding-rationale
-Title: "Funding Rationale"
-Description: "A categorisation of the rationale for exceptional funding being required."
+CodeSystem: ICPBundleChangeRationale
+Id: acc-icp-service-bundle-change-rationale
+Title: "Service Bundle Change Rationale"
+Description: "A categorisation of the rationale for modifying a service bundle."
 
-* ^url = $icp-funding-rationale-cs
+* ^url = $icp-service-bundle-change-rationale-cs
 * ^caseSensitive = true
 * ^version = "0.1.0"
 * ^experimental = false
 
 * #other "Other"
-* #comorbitity-factors "Comorbitity Factors"
+* #comorbidity-factors "Comorbidity Factors"
 * #social-support "Social Support"
 * #active-participation "Active Participation"
 * #patient-resilience "Patient Resilience"
