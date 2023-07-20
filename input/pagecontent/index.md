@@ -3,11 +3,9 @@
 
 This is the Integrated Care Pathways Implementation Guide (IG) for New Zealand, provided by ACC, and contains the profiles and extensions used for PMS Vendors to create and manage ICP claims.  This IG also includes relevant terminology.
 
-The following tabs are available from the navbar at the top.
-
-/
-/
-/
+\
+\
+The following tabs are available from the navbar at the top.  
 
 ### Profiles
 

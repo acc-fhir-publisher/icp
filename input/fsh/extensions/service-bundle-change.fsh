@@ -20,7 +20,7 @@ Description: "An extension to capture the reason for a change in the ICP Service
 * extension[rationale].value[x] only code
 * extension[rationale].valueCode 1..1
 * extension[rationale].valueCode from $icp-service-bundle-change-rationale-vs (required)
-* extension[rationale] ^short = "(other | comorbitity-factors | social-support | active-participation | patient-resilience | medication-use | equitable-access | health-literacy | cultural-support | housing-accommodation | finances | travel | return-to-daily-life | return-to-sport | number-of-disciplines | employment | workplace-support | return-to-work-support)"
+* extension[rationale] ^short = "(other | comorbidity-factors | social-support | active-participation | patient-resilience | medication-use | equitable-access | health-literacy | cultural-support | housing-accommodation | finances | travel | return-to-daily-life | return-to-sport | number-of-disciplines | employment | workplace-support | return-to-work-support)"
 * extension[rationale] ^definition = "A categorisation of the rationale for service bundle change."
 
 * extension[supporting-details].url = "supporting-details" (exactly)

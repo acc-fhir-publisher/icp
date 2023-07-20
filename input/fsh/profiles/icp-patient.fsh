@@ -1,7 +1,7 @@
 Profile:        IcpPatient
 Parent:         NzPatient
 Id:             acc-icp-patient
-Title:          "ICP Patient"
+Title:          "ACC ICP Patient"
 Description:    "The ACC ICP Patient resource based on NzPatient.  Used to verify that an ICP Case has a valid claim."
 
 * ^url = $icp-patient

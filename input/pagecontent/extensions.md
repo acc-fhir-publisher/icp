@@ -13,5 +13,5 @@
 |[Complexity Scores](StructureDefinition-acc-icp-complexity-scores.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-complexity-scores|The scores obtained from the ICP complexity assessment/tool.|
 |[Complexity Score](StructureDefinition-acc-icp-complexity-score.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-complexity-score|The score (low, medium, high) for each category/sub-category obtained from the ICP complexity assessment/tool.|
 |[Exceptional Funding](StructureDefinition-acc-icp-exceptional-funding.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exceptional-funding|Indicates if exceptional is required for this treatment.|
-|[Service Bundle Change](StructureDefinition-acc-icp-service-bundle-change.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-bundle-change|Indicates if exceptional is required for this treatment.|
+|[Service Bundle Change](StructureDefinition-acc-icp-service-bundle-change.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-bundle-change|Indicates if rational for a service bundle change.|
 |[Exit Reason](StructureDefinition-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exit-reason|A classification of the type reason for the client exit, e.g. client moved, or non-compliance, etc.|

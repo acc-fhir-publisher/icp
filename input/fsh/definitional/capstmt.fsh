@@ -2,7 +2,7 @@ Alias: $message-transport = http://terminology.hl7.org/CodeSystem/message-transp
 
 Instance:   acc-icp-capabilitystatement
 InstanceOf: CapabilityStatement
-Title:          "ICP Capability Statement"
+Title:          "Capability Statement"
 Description:    "Represents API exposed to enter an ACC integrated Care Pathways (ICP) Episode of Care"
 Usage: #definition
 
