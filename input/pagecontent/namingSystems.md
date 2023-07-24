@@ -7,4 +7,4 @@ These are identifiers defined in this IG. They are defined using [NamingSystem](
 
 |Description | Url | Other Identifiers |Responsible |
 |--- |--- | --- | ---|
-|[ACC Claim Number](NamingSystem-icpclaimnumber.html) |http://hl7.org.nz/fhir/NamingSystem/icpclaimnumber| |ACC |
+|[ACC Claim Number](NamingSystem-icpclaimnumber.html) |http://hl7.org.nz/fhir/ns/acc-claim-number| |ACC |

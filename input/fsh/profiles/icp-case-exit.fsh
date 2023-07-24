@@ -5,8 +5,7 @@ Title:          "ACC ICP Episode of Care Exit Resource"
 Description:    "This profile supports suppliers needing to inform ACC of a patient being exited from their ICP service."
 
 * ^url = $icp-case-exit
-* ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
-* ^status = #draft
+* insert Acc-Metadata
 
 * type 0..0
 

@@ -5,8 +5,7 @@ Title:          "ACC ICP Case Create Resource"
 Description:    "ICP Case Create is to be used by the supplier to furnish ACC with the required information following the completion of the triage assessment and the decision to accept the patient into their ICP service."
 
 * ^url = $icp-case-create
-* ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
-* ^status = #draft
+* insert Acc-Metadata
 
 * type 1..1
 * type ^short = "The type of ICP service. Currently only musculoskeletal (msk) is allowed, with more to be added in the future, e.g. concussion."

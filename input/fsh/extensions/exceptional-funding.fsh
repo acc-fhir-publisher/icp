@@ -3,7 +3,7 @@ Id: acc-icp-exceptional-funding
 Title: "Exceptional Funding"
 Description: "Indicates if exceptional is required for this treatment."
 * ^url = $icp-exceptional-funding
-* ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
+* insert Acc-Metadata
 
 * ^context[0].type = #element
 * ^context[=].expression = "EpisodeOfCare"
@@ -25,6 +25,11 @@ Description: "Indicates if exceptional is required for this treatment."
 * extension[supporting-details].url = "supporting-details" (exactly)
 * extension[supporting-details].value[x] only string
 * extension[supporting-details].valueString 0..1
-* extension[supporting-details].valueString obeys supporting-details-max-length-invariant
+* extension[supporting-details].valueString obeys supporting-details-max500-length-invariant
 * extension[supporting-details] ^short = "Used to explain the need for exceptional funding being required as well as providing further context for the client exit."
 * extension[supporting-details] ^definition = "A paragraph outlining the reason/rationale. Used to explain the need for exceptional funding being required as well as providing further context for the client exit."
+
+Invariant: supporting-details-max500-length-invariant
+Description: "'supporting-details' must be no more than 500 characters."
+Expression: "value.length() <= 500"
+Severity: #error

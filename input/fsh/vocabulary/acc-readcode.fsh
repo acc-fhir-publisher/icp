@@ -4,8 +4,7 @@ Title: "Read Code"
 Description: "Read codes for health providers in New Zealand for the purpose of mapping SNOMED to Read in the use of registering ACC Claims."
 
 * ^url = $acc-readcode-vs
-* ^version = "0.1.0"
-* ^experimental = false
+* insert Acc-Vocabulary-Metadata
 * include codes from system $acc-readcode-cs
 
 
@@ -16,8 +15,7 @@ Description: "Read codes for health providers in New Zealand for the purpose of 
 
 * ^url = $acc-readcode-cs
 * ^caseSensitive = true
-* ^version = "0.1.0"
-* ^experimental = false
+* insert Acc-Vocabulary-Metadata
 
 * #14L.. "H/O: drug allergy"
 * #158.. "H/O: abnormal uterine bleeding"

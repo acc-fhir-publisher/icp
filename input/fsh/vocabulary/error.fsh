@@ -4,8 +4,7 @@ Title: "Error"
 Description: "The type of ICP service. Currently only musculoskeletal (msk) is allowed, with more to be added in the future, e.g. concussion."
 
 * ^url = $icp-error-vs
-* ^version = "0.1.0"
-* ^experimental = false
+* insert Acc-Vocabulary-Metadata
 
 * include codes from system $icp-error-cs
 
@@ -17,8 +16,7 @@ Description: "The type of ICP service. Currently only musculoskeletal (msk) is a
 
 * ^url = $icp-error-cs
 * ^caseSensitive = true
-* ^version = "0.1.0"
-* ^experimental = false
+* insert Acc-Vocabulary-Metadata
 
 * #icp-val-01
     "Invalid Provider ID"

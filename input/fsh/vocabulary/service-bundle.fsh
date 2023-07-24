@@ -4,8 +4,7 @@ Title: "Service Bundle"
 Description: "The ICP service bundles available as a selected treatment."
 
 * ^url = $icp-service-bundle-vs
-* ^version = "0.1.0"
-* ^experimental = false
+* insert Acc-Vocabulary-Metadata
 
 * include codes from system $icp-service-bundle-cs
 
@@ -17,8 +16,7 @@ Description: "The ICP service bundles available as a selected treatment."
 
 * ^url = $icp-service-bundle-cs
 * ^caseSensitive = true
-* ^version = "0.1.0"
-* ^experimental = false
+* insert Acc-Vocabulary-Metadata
 
 * #icpkar1 "Rehab Bundle Payment for Knee Arthroscopy and Debridement Level 1"
 * #icpkar2 "Rehab Bundle Payment for Knee Arthroscopy and Debridement Level 2"

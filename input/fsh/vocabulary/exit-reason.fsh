@@ -4,8 +4,7 @@ Title: "Exit Reason"
 Description: "New Zealand codes for Integrated Care Pathways case exit reasons"
 
 * ^url = $icp-exit-reason-vs
-* ^version = "0.1.0"
-* ^experimental = false
+* insert Acc-Vocabulary-Metadata
 * include codes from system $icp-exit-reason-cs
 
 
@@ -16,8 +15,7 @@ Description: "New Zealand codes for Integrated Care Pathways case exit reasons"
 
 * ^url = $icp-exit-reason-cs
 * ^caseSensitive = true
-* ^version = "0.1.0"
-* ^experimental = false
+* insert Acc-Vocabulary-Metadata
 
 * #goal-achieved "Recovery goal achieved"
 * #partially-achieved "Recovery goal partially achieved"

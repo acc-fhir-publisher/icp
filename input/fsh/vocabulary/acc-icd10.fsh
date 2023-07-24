@@ -4,8 +4,7 @@ Title: "ACC ICD-10 Codes"
 Description: "ICD-10 codes for health providers in New Zealand for the purpose of mapping SNOMED to Read in the use of registering ACC Claims."
 
 * ^url = $acc-icd10-vs
-* ^version = "0.1.0"
-* ^experimental = false
+* insert Acc-Vocabulary-Metadata
 * include codes from system $acc-icd10-cs
 
 CodeSystem: ACCIcd10Code
@@ -15,8 +14,7 @@ Description: "The ICD-10 subset accepted by ACC"
 
 * ^url = $acc-icd10-cs
 * ^caseSensitive = true
-* ^version = "0.1.0"
-* ^experimental = false
+* insert Acc-Vocabulary-Metadata
 
 * #1100000 "Electroencephalography"
 * #1100300 "Electroencephalography of >= 3 hours duration"

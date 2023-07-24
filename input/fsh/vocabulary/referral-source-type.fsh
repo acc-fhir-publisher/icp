@@ -4,8 +4,7 @@ Title: "Referral Source Type"
 Description: "The source of the referral.  e.g. Internal is from within the supplier/consortium group."
 
 * ^url = $icp-referral-source-type-vs
-* ^version = "0.1.0"
-* ^experimental = false
+* insert Acc-Vocabulary-Metadata
 
 * include codes from system $icp-referral-source-type-cs
 
@@ -17,8 +16,7 @@ Description: "The source of the referral.  e.g. Internal is from within the supp
 
 * ^url = $icp-referral-source-type-cs
 * ^caseSensitive = true
-* ^version = "0.1.0"
-* ^experimental = false
+* insert Acc-Vocabulary-Metadata
 
 * #gp "GP referral"
 * #physio "Physio referral"

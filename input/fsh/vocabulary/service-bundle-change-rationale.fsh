@@ -4,8 +4,7 @@ Title: "Service Bundle Change Rationale"
 Description: "A categorisation of the rationale for modifying a service bundle."
 
 * ^url = $icp-service-bundle-change-rationale-vs
-* ^version = "0.1.0"
-* ^experimental = false
+* insert Acc-Vocabulary-Metadata
 * include codes from system $icp-service-bundle-change-rationale-cs
 
 
@@ -16,8 +15,7 @@ Description: "A categorisation of the rationale for modifying a service bundle."
 
 * ^url = $icp-service-bundle-change-rationale-cs
 * ^caseSensitive = true
-* ^version = "0.1.0"
-* ^experimental = false
+* insert Acc-Vocabulary-Metadata
 
 * #other "Other"
 * #comorbidity-factors "Comorbidity Factors"

@@ -4,8 +4,7 @@ Title: "Diagnosis Codes"
 Description: "The diagnosis codes for the injury being treated."
 
 * ^url = $icp-diagnoses-code-vs
-* ^version = "0.1.0"
-* ^experimental = false
+* insert Acc-Vocabulary-Metadata
 
 // * include codes from system $SCT
 

@@ -5,8 +5,7 @@ Title:          "ACC ICP Episode of Care Service Bundle Update Resource"
 Description:    "This profile supports suppliers needing to inform ACC of a change to the selected Service Bundle and/or Exceptional Funding Required."
 
 * ^url = $icp-case-modify
-* ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
-* ^status = #draft
+* insert Acc-Metadata
 
 * type 0..0
 * period 0..0

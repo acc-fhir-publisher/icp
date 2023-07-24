@@ -3,7 +3,7 @@ Id: acc-icp-service-bundle-change
 Title: "ICP Service Bundle Change"
 Description: "An extension to capture the reason for a change in the ICP Service Bundle."
 * ^url = $icp-service-bundle-change
-* ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
+* insert Acc-Metadata
 
 * ^context[0].type = #element
 * ^context[=].expression = "EpisodeOfCare"
@@ -26,7 +26,7 @@ Description: "An extension to capture the reason for a change in the ICP Service
 * extension[supporting-details].url = "supporting-details" (exactly)
 * extension[supporting-details].value[x] only string
 * extension[supporting-details].valueString 0..1
-* extension[supporting-details].valueString obeys supporting-details-max-length-invariant
+* extension[supporting-details].valueString obeys supporting-details-max50-length-invariant
 * extension[supporting-details] ^short = "Used to explain the need for a service bundle change, required  when the rationale is 'other'."
 * extension[supporting-details] ^definition = "A paragraph outlining the reason/rationale for a modification to the ICP case's service bundle."
 
@@ -36,3 +36,8 @@ Invariant: other-rationale-invariant
 Severity: #error
 Description: "if 'additional-acc-support-needed' is true or reason is not 'goal-achieved', supporting-details and outcome-summary are required."
 Expression: "(extension.where(url='rationale').value = 'other' implies extension.where(url='supporting-details').value.exists())"
+
+Invariant: supporting-details-max50-length-invariant
+Description: "'supporting-details' must be no more than 250 characters."
+Expression: "value.length() <= 50"
+Severity: #error

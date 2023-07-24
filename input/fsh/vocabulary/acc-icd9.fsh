@@ -4,8 +4,7 @@ Title: "ACC ICD-9 Codes"
 Description: "ICD-9 codes for health providers in New Zealand for the purpose of mapping SNOMED to Read in the use of registering ACC Claims."
 
 * ^url = $acc-icd9-vs
-* ^version = "0.1.0"
-* ^experimental = false
+* insert Acc-Vocabulary-Metadata
 * include codes from system $acc-icd9-cs
 
 CodeSystem: ACCIcd9Code
@@ -15,8 +14,7 @@ Description: "The ICD-9 subset accepted by ACC"
 
 * ^url = $acc-icd9-cs
 * ^caseSensitive = true
-* ^version = "0.1.0"
-* ^experimental = false
+* insert Acc-Vocabulary-Metadata
 
 * #1.24 "Craniotomy"
 * #1.25 "Craniectomy"

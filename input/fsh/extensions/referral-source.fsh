@@ -4,7 +4,7 @@ Title: "Referral Source"
 Description: "The source of the ICP referral, e.g. ACC referral, GP referral, rongoa referral, etc."
 
 * ^url = $icp-referral-source
-* ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
+* insert Acc-Metadata
 
 * ^context[0].type = #element
 * ^context[=].expression = "EpisodeOfCare"

@@ -5,8 +5,7 @@ Title:          "ACC ICP Episode of Care Resource"
 Description:    "The ACC ICP Case resource based on Episode of Care"
 
 * ^url = $icp-case
-* ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
-* ^status = #draft
+* insert Acc-Metadata
 
 * statusHistory 0..0
 * referralRequest 0..0
@@ -79,11 +78,6 @@ Invariant: date-not-in-future-invariant
 Severity: #error
 Description: "The date value cannot be in the future"
 Expression: "$this <= today()"
-
-Invariant: supporting-details-max-length-invariant
-Description: "'supporting-details' must be no more than 250 characters."
-Expression: "value.length() <= 250"
-Severity: #error
 
 Invariant: active-status-invariant
 Severity: #error

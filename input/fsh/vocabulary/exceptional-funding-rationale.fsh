@@ -4,8 +4,7 @@ Title: "Exceptional Funding Rationale"
 Description: "A categorisation of the rationale for exceptional funding being required."
 
 * ^url = $icp-exceptional-funding-rationale-vs
-* ^version = "0.1.0"
-* ^experimental = false
+* insert Acc-Vocabulary-Metadata
 * include codes from system $icp-exceptional-funding-rationale-cs
 
 
@@ -16,8 +15,7 @@ Description: "A categorisation of the rationale for exceptional funding being re
 
 * ^url = $icp-exceptional-funding-rationale-cs
 * ^caseSensitive = true
-* ^version = "0.1.0"
-* ^experimental = false
+* insert Acc-Vocabulary-Metadata
 
 * #other "Other"
 * #comorbidity-factors "Comorbidity Factors"

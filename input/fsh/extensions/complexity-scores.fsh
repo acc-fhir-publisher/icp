@@ -4,7 +4,7 @@ Title: "Complexity Scores"
 Description: "The scores obtained from the ICP complexity assessment/tool."
 
 * ^url = $icp-complexity-scores
-* ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
+* insert Acc-Metadata
 
 * ^context[0].type = #element
 * ^context[=].expression = "EpisodeOfCare"
