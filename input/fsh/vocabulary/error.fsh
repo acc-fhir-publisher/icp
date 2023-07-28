@@ -72,3 +72,6 @@ Description: "The type of ICP service. Currently only musculoskeletal (msk) is a
 * #icp-val-1003
     "The provider ID can only contain letters and numbers, no more than 12 characters in all."
     "The provider ID can only contain letters and numbers, no more than 12 characters in all."
+* #icp-val-1004
+    "The ICP Case against this claim is currently being processed. Please try again in 5 minutes or contact ACC on 0800 101 996 ext. 77097 to discuss."
+    "The ICP Case against this claim is currently being processed. Please try again in 5 minutes or contact ACC on 0800 101 996 ext. 77097 to discuss."
