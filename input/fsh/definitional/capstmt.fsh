@@ -56,3 +56,22 @@ ICP EpisodeOfCare exit
 The ICP Exit Episode of Care contains the data that ICP suppliers send ACC on exiting the Episode of Care.
 
 """
+// ============== The Clinical and Functional Measurements endpoint
+
+* rest.resource.type = #ACCObservation
+
+* rest.resource.supportedProfile[0] = $icp-observation-clinical
+* rest.resource.interaction[0].code = #create
+* rest.resource.interaction[=].documentation[0] = """
+Observation clinical measures
+The ICP Clinical measures contains the data that ICP suppliers send ACC on completion of triage and they decide to enrol a patient into their ICP-MSK service.
+
+"""
+
+* rest.resource.supportedProfile[+] = $icp-observation-prom
+* rest.resource.interaction[+].code = #create
+* rest.resource.interaction[=].documentation[0] = """
+Observation patient measures
+The ICP Patient measures contains the data that ICP suppliers send ACC on completion of triage and they decide to enrol a patient into their ICP-MSK service.
+
+"""

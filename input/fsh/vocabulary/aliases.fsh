@@ -1,3 +1,4 @@
+//base
 Alias: $SCT = http://snomed.info/sct
 Alias: $ICD-9CM-diagnosiscodes = http://terminology.hl7.org/CodeSystem/ICD-9CM-diagnosiscodes
 Alias: $icd9 = http://terminology.hl7.org/CodeSystem/icd9 
@@ -6,20 +7,22 @@ Alias: $ICD10PCS = http://www.cms.gov/Medicare/Coding/ICD10
 Alias: $icd10ae = http://terminology.hl7.org/CodeSystem/icd10ae
 
 Alias: $episode-of-case-status = http://hl7.org/fhir/episode-of-care-status
+Alias: $observation-status = http://hl7.org/fhir/observation-status
 
 Alias: $hpi-organisation = https://standards.digital.health.nz/id/hpi-organisation
 Alias: $nhi-patient = https://standards.digital.health.nz/ns/nhi-id
 Alias: $iso3166-1-2 = http://hl7.org/fhir/ValueSet/iso3166-1-2
-
+//profile 
 Alias: $icp-case = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case
 Alias: $icp-case-create = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-create
 Alias: $icp-case-modify = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-modify
 Alias: $icp-case-exit = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-exit
 Alias: $icp-patient = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient
+Alias: $icp-case-clinical = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-clinical-measures
 
 Alias: $acc-providerid = http://hl7.org.nz/fhir/StructureDefinition/acc-providerid
 Alias: $acc-claim-number = http://hl7.org.nz/fhir/ns/acc-claim-number
-
+//extensions
 Alias: $icp-triage-assessment-date = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-triage-assessment-date
 Alias: $icp-acc-client-authority = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-client-authority
 Alias: $icp-client-participation-agreement = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-client-participation-agreement
@@ -76,3 +79,39 @@ Alias: $icp-referral-source-type-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-re
 
 Alias: $icp-error-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-error
 Alias: $icp-error-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-error
+
+
+//patientcarevalue sets
+Alias: $icp-date-time-system = http://hl7.org.nz/fhir/Cardinality/icp-date-time-system
+Alias: $icp-stage-observation-care = http://hl7.org.nz/fhir/StructureDefinition/icp-stage-observation-care
+Alias: $icp-body-site-system = http://hl7.org.nz/fhir/Cardinality/acc-icp-body-site-system
+
+//icp-case-observation-base
+Alias: $acc-icp-observation-base = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-observation-base
+Alias: $icp-observation-clinical = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-observation-clinical
+Alias: $icp-case-stage-measure-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-case-stage-measure
+Alias: $icp-observation-prom = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-observation-prom
+Alias: $icp-data-absent-reason-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-data-absent-reason
+Alias: $icp-data-absent-reason-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-data-absent-reason
+Alias: $icp-status-observation-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-observation-status
+//bodysite
+Alias: $icp-body-site-measure-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-body-site-measure
+Alias: $icp-body-site-measure-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-body-site-measure
+
+
+//code
+Alias: $icp-clinical-care-measure = http://hl7.org.nz/fhir/StructureDefinition/icp-clinical-care-measure
+Alias: $icp-clinical-observation-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-clinical-observation
+Alias: $icp-clinical-observation-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-clinical-observation
+Alias: $icp-patient-observation-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-patient-observation
+Alias: $icp-patient-observation-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-patient-observation
+
+//category
+Alias: $icp-category-clinical-observation-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-category-clinical-observation
+Alias: $icp-category-clinical-observation-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-category-clinical-observation
+Alias: $icp-category-patient-observation-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-category-patient-observation
+Alias: $icp-category-patient-observation-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-category-patient-observation
+
+//stage
+Alias: $icp-stage-observation-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-stage-observation
+Alias: $icp-stage-observation-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-stage-observation
