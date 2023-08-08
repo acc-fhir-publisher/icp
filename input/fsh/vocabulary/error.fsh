@@ -75,3 +75,6 @@ Description: "The type of ICP service. Currently only musculoskeletal (msk) is a
 * #icp-val-1004
     "The ICP Case against this claim is currently being processed. Please try again in 5 minutes or contact ACC on 0800 101 996 ext. 77097 to discuss."
     "The ICP Case against this claim is currently being processed. Please try again in 5 minutes or contact ACC on 0800 101 996 ext. 77097 to discuss."
+* #icp-val-9000
+    "There is an ACC system issue. You'll need to resubmit your content later. Advise ACC Digital Operations at digitaloperations@acc.co.nz."
+    "There is an ACC system issue. You'll need to resubmit your content later. Advise ACC Digital Operations at digitaloperations@acc.co.nz."
