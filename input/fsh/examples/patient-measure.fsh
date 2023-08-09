@@ -1,9 +1,9 @@
-Instance: icp-clinical
+Instance: icp-patient-measure
 InstanceOf: Observation
 Usage: #example
 Description: "Example of an ICP Observation resource for entering into ACC Integrated Care Pathways"
 
-* meta.profile = $icp-observation-clinical
+* meta.profile = $icp-observation-prom
 * identifier.system = $acc-claim-number
 * identifier.use = #official
 * identifier.value = "A101112"
@@ -23,16 +23,9 @@ Description: "Example of an ICP Observation resource for entering into ACC Integ
 * extension[+].url = $icp-stage-observation-care
 * extension[=].valueCode = #baseline
 
-// * dataAbsentReason = #not-tested
-
-// * valueQuantity.unit = "kg"
-* valueQuantity.code = #kg
-* valueQuantity.value = 10.6
-* valueQuantity.system = "http://unitsofmeasure.org"
-
+* dataAbsentReason = #not-tested
 
 
 * code.coding[+].system = $icp-clinical-observation-cs
-* code.coding[=].code = #shoulder-abduction-45deg-hand-held-dynamometer
-* code.coding[=].display = "Shoulder abduction 45deg hand held dynamometer"
-
+* code.coding[=].code = #KOOS
+* code.coding[=].display = "Knee injury and Osteoarthritis Outcome Score"

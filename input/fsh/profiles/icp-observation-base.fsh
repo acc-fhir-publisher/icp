@@ -44,21 +44,19 @@ Description: "ACC Integrated Care Pathway Observation"
 * bodySite 1..1
 * bodySite ^short = "The body site of the ICP case Observation is restricted to the body site of the injury."
 
-* effectiveDateTime only dateTime obeys date-not-in-future-invariant
+* effectiveDateTime only dateTime
+* effectiveDateTime obeys date-not-in-future-invariant
 * effectiveDateTime 1..1
 * effectiveDateTime ^short = "The date and time that the ICP case Observation was created."
-* effectiveDateTime ^definition = "The date and time that the ICP case Observation was created."   
+* effectiveDateTime ^definition = "The date and time that the ICP case Observation was created."
 
 * dataAbsentReason from $icp-data-absent-reason-vs
 * dataAbsentReason 0..1
 * dataAbsentReason ^short = "The reason why the ICP case Observation is not present."
-
-* value[x] only Quantity
-* valueQuantity 0..1 
 
 * extension contains
     $acc-providerid named accProviderId 1..1 and
     $icp-stage-observation-care named stage 1..1
 
 * extension[accProviderId] ^short = "The ACC provider ID associated with the ICP case"
-* extension[stage] ^short = "some words for the stage"
+* extension[stage] ^short = "The stage of the ICP case Observation."
