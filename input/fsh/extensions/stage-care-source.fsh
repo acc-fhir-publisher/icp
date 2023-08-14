@@ -1,5 +1,5 @@
-Extension: StageCareSource
-Id: icp-recorded-outcome-stage
+Extension: RecordedOutcomeStage
+Id: acc-icp-recorded-outcome-stage
 Title: "Stage Care Source"
 Description: "The stages in the care process that the patient has been through."
 
