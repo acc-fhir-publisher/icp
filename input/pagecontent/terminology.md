@@ -23,6 +23,12 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |[icp-service-type](ValueSet-acc-icp-service-type.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-service-type|
 |[icp-status](ValueSet-acc-icp-status.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-status|
 |[icp-error-codes](ValueSet-acc-icp-error.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-error|
+|[icp-bodysite](ValueSet-acc-icp-bodysite.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-body-site-measure|
+|[icp-observation-status](ValueSet-acc-icp-observation-status.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-observation-status|
+|[icp-patient-observation](ValueSet-acc-icp-patient-observation.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-patient-observation|
+|[recorded-outcome-stage](ValueSet-acc-icp-recorded-outcome-stage.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-recorded-outcome-stage|
+|[icp-clinical-observation](ValueSet-acc-icp-clinical-observation.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-clinical-observation|
+|[data-absent-reason](ValueSet-acc-icp-data-absent-reason.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-data-absent-reason|
 
 ### CodeSystems
 

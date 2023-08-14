@@ -1,4 +1,4 @@
-ValueSet: ClinicalObservation
+ValueSet: ICPClinicalObservation
 Id: acc-icp-clinical-observation
 Title: "clinical-observation"
 Description: "clinical-observation"
