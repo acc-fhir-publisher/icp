@@ -15,3 +15,4 @@
 |[Exceptional Funding](StructureDefinition-acc-icp-exceptional-funding.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exceptional-funding|Indicates if exceptional is required for this treatment.|
 |[Service Bundle Change](StructureDefinition-acc-icp-service-bundle-change.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-bundle-change|Indicates if rational for a service bundle change.|
 |[Exit Reason](StructureDefinition-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exit-reason|A classification of the type reason for the client exit, e.g. client moved, or non-compliance, etc.|
+|[Stage Care Source](StructureDefinition-acc-icp-stage-care-source.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-recorded-outcome-stage|The patient recorded stage of the ICP Observation, e.g. adhoc, exit etc|
