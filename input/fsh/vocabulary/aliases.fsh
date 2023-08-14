@@ -19,9 +19,9 @@ Alias: $icp-case-create = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-cas
 Alias: $icp-case-modify = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-modify
 Alias: $icp-case-exit = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-exit
 Alias: $icp-patient = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient
-Alias: $acc-icp-measurement-base = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-base
-Alias: $icp-measurement-clinical = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-observation-clinical
-Alias: $icp-measurement-prom = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-observation-prom
+Alias: $icp-measurement-base = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-base
+Alias: $icp-measurement-clinical = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-clinical
+Alias: $icp-measurement-prom = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-prom
 
 // naming system
 Alias: $acc-claim-number = http://hl7.org.nz/fhir/ns/acc-claim-number
@@ -60,16 +60,16 @@ Alias: $icp-service-bundle = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-
 Alias: $icp-service-bundle-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-bundle
 Alias: $icp-service-bundle-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-service-bundle
 
+Alias: $icp-complexity-score = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-complexity-score
+Alias: $icp-complexity-score-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-complexity-score
+Alias: $icp-complexity-score-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-complexity-score
+
 // value sets with a coding system
 Alias: $icp-service-bundle-change-rationale-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-bundle-change-rationale
 Alias: $icp-service-bundle-change-rationale-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-service-bundle-change-rationale
 
 Alias: $icp-exceptional-funding-rationale-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-exceptional-funding-rationale
 Alias: $icp-exceptional-funding-rationale-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-exceptional-funding-rationale
-
-Alias: $icp-complexity-score = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-complexity-score
-Alias: $icp-complexity-score-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-complexity-score
-Alias: $icp-complexity-score-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-complexity-score
 
 Alias: $acc-icd9-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icd9
 Alias: $acc-icd9-vs = http://hl7.org.nz/fhir/ValueSet/acc-icd9

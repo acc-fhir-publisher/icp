@@ -4,7 +4,7 @@ Id: acc-icp-measurement-base
 Title: "ACC Integrated Care Pathway Observation"
 Description: "ACC Integrated Care Pathway Observation"
 
-* ^url = $acc-icp-measurement-base
+* ^url = $icp-measurement-base
 * insert Acc-Metadata
 
 * identifier ^slicing.description = "ICP identifiers"
