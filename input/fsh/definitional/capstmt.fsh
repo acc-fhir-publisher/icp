@@ -58,7 +58,7 @@ The ICP Exit Episode of Care contains the data that ICP suppliers send ACC on ex
 """
 // ============== The Clinical and Functional Measurements endpoint
 
-* rest.resource.type = #ACCObservation
+* rest.resource.type = #Observation
 
 * rest.resource.supportedProfile[0] = $icp-measurement-clinical
 * rest.resource.interaction[0].code = #create
