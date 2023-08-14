@@ -1,10 +1,10 @@
-Profile: PatientObservation
-Parent: acc-icp-observation-base
-Id: acc-icp-observation-prom
+Profile: IcpMeasurementPatient
+Parent: acc-icp-measurement-base
+Id: acc-icp-measurement-prom
 Title: "ACC Integrated Care Pathway Patient Observation"
 Description: "ACC Integrated Care Pathway patient Observation"
 
-* ^url = $icp-observation-prom
+* ^url = $icp-measurement-prom
 * insert Acc-Metadata
 
 * code from $icp-patient-observation-vs (required)
@@ -20,6 +20,3 @@ Invariant: prom-quantity-invariant
 Severity: #error
 Description: "The value should be between 0 and 150."
 Expression: "$this.toString().matches('^(?:0*(?:[0-9]|[1-9][0-9]|1[0-4][0-9]|150))$')"
-
-
-

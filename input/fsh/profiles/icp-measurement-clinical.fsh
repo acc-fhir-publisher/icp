@@ -1,12 +1,11 @@
-Profile: ClinicalObservation
-Parent: acc-icp-observation-base
-Id: acc-icp-observation-clinical
+Profile: IcpMeasurementClinical
+Parent: acc-icp-measurement-base
+Id: acc-icp-measurement-clinical
 Title: "ACC Integrated Care Pathway Clinical Observation"
 Description: "ACC Integrated Care Pathway Clinical Observation"
 
-* ^url = $icp-observation-clinical
+* ^url = $icp-measurement-clinical
 * insert Acc-Metadata
-
 
 * code from $icp-clinical-observation-vs (required)
 * code 1..1

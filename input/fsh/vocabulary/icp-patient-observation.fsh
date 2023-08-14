@@ -1,4 +1,4 @@
-ValueSet: PatientObservation
+ValueSet: ICPPatientObservation
 Id: acc-icp-patient-observation
 Title: "patient-observation"
 Description: "Patient-observation"

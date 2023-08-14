@@ -60,7 +60,7 @@ The ICP Exit Episode of Care contains the data that ICP suppliers send ACC on ex
 
 * rest.resource.type = #ACCObservation
 
-* rest.resource.supportedProfile[0] = $icp-observation-clinical
+* rest.resource.supportedProfile[0] = $icp-measurement-clinical
 * rest.resource.interaction[0].code = #create
 * rest.resource.interaction[=].documentation[0] = """
 Observation clinical measures
@@ -68,7 +68,7 @@ The ICP Clinical measures contains the data that ICP suppliers send ACC on compl
 
 """
 
-* rest.resource.supportedProfile[+] = $icp-observation-prom
+* rest.resource.supportedProfile[+] = $icp-measurement-prom
 * rest.resource.interaction[+].code = #create
 * rest.resource.interaction[=].documentation[0] = """
 Observation patient measures

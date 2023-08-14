@@ -1,31 +1,29 @@
-Instance: icp-patient-measure
+Instance: icp-patient-measure-with-value
 InstanceOf: Observation
 Usage: #example
-Description: "Example of an ICP Observation resource for entering into ACC Integrated Care Pathways"
+Description: "Example of an ICP Observation resource captured against an ACC Integrated Care Pathways case"
 
-* meta.profile = $icp-observation-prom
+* meta.profile = $icp-measurement-prom
 * identifier.system = $acc-claim-number
 * identifier.use = #official
 * identifier.value = "A101112"
 * contained = patient-unknown
 * performer = Reference(Organization/ORG123)
-* status = #final
 * subject = Reference(patient-unknown)
+* status = #final
 
-* extension[+].url = $acc-providerid
-* extension[=].valueString = "J99966"
+* valueQuantity.value = 10.6
 
-* bodySite.coding[+].code = $SCT#72696002
-
-* effectiveDateTime = "2022-11-17"
-* extension[+].url = $icp-stage-observation-care
-* extension[=].valueCode = #baseline
-
+* effectiveDateTime = "2023-08-09T15:30:00Z"
 * dataAbsentReason.coding[+].system = $icp-data-absent-reason-cs
 * dataAbsentReason.coding[=].code = #not-tested
 * dataAbsentReason.coding[=].display = "Not Tested"
-
-
+* bodySite.coding[+].code = $SCT#72696002
 * code.coding[+].system = $icp-patient-observation-cs
 * code.coding[=].code = #koos
 * code.coding[=].display = "Knee injury and Osteoarthritis Outcome Score"
+
+* extension[+].url = $acc-providerid
+* extension[=].valueString = "J99966"
+* extension[+].url = $icp-recorded-outcome-stage
+* extension[=].valueCode = #baseline

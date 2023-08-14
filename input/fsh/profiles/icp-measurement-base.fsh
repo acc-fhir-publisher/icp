@@ -1,10 +1,10 @@
-Profile: ObservationBase
+Profile: IcpMeasurement
 Parent: Observation
-Id: acc-icp-observation-base
+Id: acc-icp-measurement-base
 Title: "ACC Integrated Care Pathway Observation"
 Description: "ACC Integrated Care Pathway Observation"
 
-* ^url = $acc-icp-observation-base
+* ^url = $acc-icp-measurement-base
 * insert Acc-Metadata
 
 * identifier ^slicing.description = "ICP identifiers"
@@ -56,7 +56,7 @@ Description: "ACC Integrated Care Pathway Observation"
 
 * extension contains
     $acc-providerid named accProviderId 1..1 and
-    $icp-stage-observation-care named stage 1..1
+    $icp-recorded-outcome-stage named stage 1..1
 
 * extension[accProviderId] ^short = "The ACC provider ID associated with the ICP case"
 * extension[stage] ^short = "The stage of the ICP case Observation."
