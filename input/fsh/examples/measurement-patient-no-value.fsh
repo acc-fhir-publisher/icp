@@ -13,13 +13,15 @@ Description: "Example of an ICP Observation resource captured against an ACC Int
 * effectiveDateTime = "2023-08-09T15:30:00Z"
 * status = #final
 
+
 * bodySite.coding[+].code = $SCT#72696002
+
 * dataAbsentReason.coding[+].system = $icp-data-absent-reason-cs
 * dataAbsentReason.coding[=].code = #not-tested
 * dataAbsentReason.coding[=].display = "Not Tested"
 * code.coding[+].system = $icp-patient-observation-cs
 * code.coding[=].code = #koos
-* code.coding[=].display = "Knee injury and Osteoarthritis Outcome Score"
+* code.coding[=].display = "KOOS"
 
 * extension[+].url = $acc-providerid
 * extension[=].valueString = "J99966"

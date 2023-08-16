@@ -19,4 +19,4 @@ Description: "ACC Integrated Care Pathway patient Observation"
 Invariant: prom-quantity-invariant
 Severity: #error
 Description: "The value should be between 0 and 150."
-Expression: "$this.toString().matches('^(?:0*(?:[0-9]|[1-9][0-9]|1[0-4][0-9]|150))$')"
+Expression: "$this.value.toString().matches('^(?:0*(?:[0-9]|[1-9][0-9]|1[0-4][0-9]|150))$')"

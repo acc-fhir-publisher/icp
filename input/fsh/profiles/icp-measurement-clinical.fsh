@@ -21,4 +21,4 @@ Description: "ACC Integrated Care Pathway Clinical Observation"
 Invariant: clinical-quantity-invariant
 Severity: #error
 Description: "The value should be a number between 0 and 100, with up to 2 decimal places"
-Expression: "$this.toString().matches('^(?:100(?:\\.0{1,2})?|\\d{1,2}(?:\\.\\d{1,2})?)$')"
+Expression: "$this.value.as(decimal) >= 0 and $this.value.as(decimal) <= 100 and $this.value.as(decimal).precision() <= 2"

@@ -13,7 +13,7 @@ Description: "Example of an ICP Observation resource captured as a measurement a
 * effectiveDateTime = "2023-08-09T15:30:00Z"
 * status = #final
 
-* bodySite.coding[+].code = $SCT#72696002
+* bodySite.coding[+].code =  $SCT#72696002
 * dataAbsentReason.coding[+].system = $icp-data-absent-reason-cs
 * dataAbsentReason.coding[=].code = #not-tested
 * dataAbsentReason.coding[=].display = "Not Tested"

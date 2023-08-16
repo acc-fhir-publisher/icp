@@ -15,7 +15,7 @@ Description: "Example of an ICP Observation resource captured as a measurement a
 
 * bodySite.coding[+].code = $SCT#72696002
 * valueQuantity.code = #kg
-* valueQuantity.value = 10.6
+* valueQuantity.value = 10.60
 * valueQuantity.system = "http://unitsofmeasure.org"
 
 * code.coding[+].system = $icp-clinical-observation-cs
