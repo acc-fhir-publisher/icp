@@ -1,5 +1,5 @@
 Profile: IcpMeasurementClinical
-Parent: acc-icp-measurement-base
+Parent: acc-icp-measurement
 Id: acc-icp-measurement-clinical
 Title: "ACC Integrated Care Pathway Clinical Observation"
 Description: "ACC Integrated Care Pathway Clinical Observation"

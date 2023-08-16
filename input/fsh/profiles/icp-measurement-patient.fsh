@@ -1,5 +1,5 @@
 Profile: IcpMeasurementPatient
-Parent: acc-icp-measurement-base
+Parent: acc-icp-measurement
 Id: acc-icp-measurement-prom
 Title: "ACC Integrated Care Pathway Patient Observation"
 Description: "ACC Integrated Care Pathway patient Observation"
