@@ -18,10 +18,10 @@ Alias: $icp-case = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case
 Alias: $icp-case-create = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-create
 Alias: $icp-case-modify = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-modify
 Alias: $icp-case-exit = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-exit
-Alias: $icp-patient = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient
-Alias: $icp-measurement-base = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-base
+Alias: $icp-measurement = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement
 Alias: $icp-measurement-clinical = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-clinical
 Alias: $icp-measurement-prom = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-prom
+Alias: $icp-patient = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient
 
 // naming system
 Alias: $acc-claim-number = http://hl7.org.nz/fhir/ns/acc-claim-number

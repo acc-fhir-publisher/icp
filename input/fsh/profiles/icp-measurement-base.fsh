@@ -1,10 +1,10 @@
 Profile: IcpMeasurement
 Parent: Observation
-Id: acc-icp-measurement-base
+Id: acc-icp-measurement
 Title: "ACC Integrated Care Pathway Observation"
 Description: "ACC Integrated Care Pathway Observation"
 
-* ^url = $icp-measurement-base
+* ^url = $icp-measurement
 * insert Acc-Metadata
 
 * identifier ^slicing.description = "ICP identifiers"

@@ -10,14 +10,13 @@ An ICP "Episode of Care" is also referred to as an "ICP Case". It runs from the 
 
 The ICP "Observation" resource is used to record the triage assessment and the decision to enter the patient into the ICP service.
 
-
 There are five ICP profiles available:
 
 <div class="tableGridded"></div>
 
 |Id |Canonical url | Description | |
 |--- |--- | --- | ---|
-|[IcpCaseCreate](StructureDefinition-acc-icp-case-create.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-create|ICP Case Create is to be used by the supplier to furnish ACC with the required information following the completion of the triage assessment and the decision to accept the patient into their ICP service.|[example](EpisodeOfCare-icp-create.html)|0
+|[IcpCaseCreate](StructureDefinition-acc-icp-case-create.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-create|ICP Case Create is to be used by the supplier to furnish ACC with the required information following the completion of the triage assessment and the decision to accept the patient into their ICP service.|[example](EpisodeOfCare-icp-create.html)|
 |[IcpCaseModify](StructureDefinition-acc-icp-case-modify.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-modify|This profile supports suppliers needing to inform ACC of a change to the selected Service Bundle and/or Exceptional Funding Required.|[example](EpisodeOfCare-A101112-2022-11-17.html)|
 |[IcpCaseExit](StructureDefinition-acc-icp-case-exit.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-finished|This profile supports suppliers needing to inform ACC of a patient being exited from their ICP service.|[example](EpisodeOfCare-A101113-2002-11-17.html)|
 |[IcpMeasurementClinical](StructureDefinition-acc-icp-measurement-clinical.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-clinical|This profile supports suppliers needing to inform ACC of a clinical measurement taken during the ICP service.|[example](Observation-icp-clinical-measurement-with-value.html)|
