@@ -95,8 +95,8 @@ Alias: $icp-data-absent-reason-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-da
 Alias: $icp-body-site-measure-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-body-site-measure
 Alias: $icp-body-site-measure-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-body-site-measure
 
-Alias: $icp-clinical-observation-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-clinical-observation
-Alias: $icp-clinical-observation-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-clinical-observation
+Alias: $icp-clinical-measurement-standard-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-clinical-measurement-standard
+Alias: $icp-clinical-measurement-standard-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-clinical-measurement-standard
 
 Alias: $icp-patient-observation-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-patient-observation
 Alias: $icp-patient-observation-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-patient-observation
