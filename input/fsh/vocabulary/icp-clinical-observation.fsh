@@ -1,19 +1,19 @@
-ValueSet: ICPClinicalObservation
-Id: acc-icp-clinical-observation
-Title: "clinical-observation"
-Description: "clinical-observation"
+ValueSet: ICPClinicalMeasurementStandard
+Id: acc-icp-clinical-measurement-standard
+Title: "clinical-measurement-standard"
+Description: "The measurement standards applicable to site-specific clinical measures for ICPMSK."
 
-* ^url = $icp-clinical-observation-vs
+* ^url = $icp-clinical-measurement-standard-vs
 * insert Acc-Vocabulary-Metadata
-* include codes from system $icp-clinical-observation-cs
+* include codes from system $icp-clinical-measurement-standard-cs
 
-CodeSystem: ICPClinicalObservation
-Id: acc-icp-clinical-observation
-Title: "ICP Code Clinical Observation"
-Description: "ICP Code Clinical Observation"
+CodeSystem: ICPClinicalMeasurementStandard
+Id: acc-icp-clinical-measurement-standard
+Title: "clinical-measurement-standard"
+Description: "The measurement standards applicable to site-specific clinical measures for ICPMSK."
 
 
-* ^url = $icp-clinical-observation-cs
+* ^url = $icp-clinical-measurement-standard-cs
 * ^caseSensitive = true
 * insert Acc-Vocabulary-Metadata
 
