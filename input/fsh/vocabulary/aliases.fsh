@@ -98,8 +98,8 @@ Alias: $icp-body-site-measure-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-bod
 Alias: $icp-clinical-measurement-standard-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-clinical-measurement-standard
 Alias: $icp-clinical-measurement-standard-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-clinical-measurement-standard
 
-Alias: $icp-patient-observation-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-patient-observation
-Alias: $icp-patient-observation-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-patient-observation
+Alias: $icp-prom-measurement-standard-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-prom-measurement-standard
+Alias: $icp-prom-measurement-standard-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-prom-measurement-standard
 
 Alias: $icp-category-clinical-observation-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-category-clinical-observation
 Alias: $icp-category-clinical-observation-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-category-clinical-observation
