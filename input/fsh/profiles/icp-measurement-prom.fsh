@@ -1,8 +1,8 @@
-Profile: IcpMeasurementPatient
+Profile: IcpMeasurementPROM
 Parent: acc-icp-measurement
 Id: acc-icp-measurement-prom
-Title: "ACC Integrated Care Pathway Patient Observation"
-Description: "ACC Integrated Care Pathway patient Observation"
+Title: "ACC Integrated Care Pathway Site-Specific PROM"
+Description: "This resource profile supports suppliers providing a site-specific patient reported outcome measure (PROM) to ACC."
 
 * ^url = $icp-measurement-prom
 * insert Acc-Metadata
@@ -14,9 +14,9 @@ Description: "ACC Integrated Care Pathway patient Observation"
 * value[x] only Quantity
 * valueQuantity obeys prom-quantity-invariant
 * valueQuantity 0..1
-* valueQuantity ^short = "The quantity value of the ICP case Patient Observation."
+* valueQuantity ^short = "The quantity value the PROM."
 
 Invariant: prom-quantity-invariant
 Severity: #error
-Description: "The value should be between 0 and 150."
+Description: "The value must be between 0 and 150."
 Expression: "$this.value.toString().matches('^(?:0*(?:[0-9]|[1-9][0-9]|1[0-4][0-9]|150))$')"
