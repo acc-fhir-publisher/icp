@@ -17,7 +17,7 @@ Description: "Example of an ICP Observation resource captured as a measurement a
 * dataAbsentReason.coding[+].system = $icp-data-absent-reason-cs
 * dataAbsentReason.coding[=].code = #not-tested
 * dataAbsentReason.coding[=].display = "Not Tested"
-* code.coding[+].system = $icp-clinical-observation-cs
+* code.coding[+].system = $icp-clinical-measurement-standard-cs
 * code.coding[=].code = #shoulder-abduction-45deg-hand-held-dynamometer
 * code.coding[=].display = "Shoulder abduction 45deg hand held dynamometer"
 

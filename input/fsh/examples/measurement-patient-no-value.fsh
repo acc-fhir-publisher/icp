@@ -19,7 +19,7 @@ Description: "Example of an ICP Observation resource captured against an ACC Int
 * dataAbsentReason.coding[+].system = $icp-data-absent-reason-cs
 * dataAbsentReason.coding[=].code = #not-tested
 * dataAbsentReason.coding[=].display = "Not Tested"
-* code.coding[+].system = $icp-patient-observation-cs
+* code.coding[+].system = $icp-prom-measurement-standard-cs
 * code.coding[=].code = #koos
 * code.coding[=].display = "KOOS"
 

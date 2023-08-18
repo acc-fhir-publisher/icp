@@ -7,7 +7,7 @@ Description: "This resource profile supports suppliers providing site-specific c
 * ^url = $icp-measurement-clinical
 * insert Acc-Metadata
 
-* code from $icp-clinical-observation-vs (required)
+* code from $icp-clinical-measurement-standard-vs (required)
 * code 1..1
 * code ^definition = "Type of clinical component observation"
 

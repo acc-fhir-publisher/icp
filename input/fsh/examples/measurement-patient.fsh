@@ -16,7 +16,7 @@ Description: "Example of an ICP Observation resource captured against an ACC Int
 
 * effectiveDateTime = "2023-08-09T15:30:00Z"
 * bodySite.coding[+].code = $SCT#72696002
-* code.coding[+].system = $icp-patient-observation-cs
+* code.coding[+].system = $icp-prom-measurement-standard-cs
 * code.coding[=].code = #koos
 * code.coding[=].display = "KOOS"
 
