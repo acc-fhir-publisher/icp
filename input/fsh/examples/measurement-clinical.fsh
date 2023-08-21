@@ -1,7 +1,7 @@
-Instance: icp-clinical-measurement-with-value
+Instance: icp-clinical-measurement-shoulder-strength
 InstanceOf: Observation
 Usage: #example
-Description: "Example of an ICP Observation resource captured as a measurement against an ACC Integrated Care Pathways case"
+Description: "A baseline measure of shoulder function through a 'shoulder abduction 45deg hand held dynamometer' test"
 
 * meta.profile = $icp-measurement-clinical
 * identifier.system = $acc-claim-number
@@ -13,7 +13,10 @@ Description: "Example of an ICP Observation resource captured as a measurement a
 * status = #final
 * effectiveDateTime = "2023-08-09T15:30:00Z"
 
-* bodySite.coding[+].code = $SCT#72696002
+* bodySite.coding[+].code = # 16982005
+* bodySite.coding[=].system = $SCT
+* bodySite.coding[=].display = "Shoulder region structure"
+
 * valueQuantity.code = #kg
 * valueQuantity.value = 10.60
 * valueQuantity.system = "http://unitsofmeasure.org"
@@ -24,5 +27,6 @@ Description: "Example of an ICP Observation resource captured as a measurement a
 
 * extension[+].url = $acc-providerid
 * extension[=].valueString = "J99966"
+
 * extension[+].url = $icp-recorded-outcome-stage
 * extension[=].valueCode = #baseline
