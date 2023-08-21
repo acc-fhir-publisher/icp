@@ -14,7 +14,7 @@ Description: "This resource profile supports suppliers providing a site-specific
 * value[x] only Quantity
 * valueQuantity obeys prom-quantity-invariant
 * valueQuantity 0..1
-* valueQuantity ^short = "The quantity value the PROM."
+* valueQuantity ^short = "The PROM assessment score."
 
 Invariant: prom-quantity-invariant
 Severity: #error
