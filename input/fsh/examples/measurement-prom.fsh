@@ -1,7 +1,7 @@
-Instance: icp-patient-measure-with-value
+Instance: icp-prom-measurement
 InstanceOf: Observation
 Usage: #example
-Description: "Example of an ICP Observation resource captured against an ACC Integrated Care Pathways case"
+Description: "A patient-reported outcome measurement"
 
 * meta.profile = $icp-measurement-prom
 * identifier.system = $acc-claim-number
@@ -15,7 +15,8 @@ Description: "Example of an ICP Observation resource captured against an ACC Int
 * valueQuantity.value = 101
 
 * effectiveDateTime = "2023-08-09T15:30:00Z"
-* bodySite.coding[+].code = $SCT#72696002
+* bodySite.coding[+].code = #72696002
+* bodySite.coding[=].system = $SCT
 * code.coding[+].system = $icp-prom-measurement-standard-cs
 * code.coding[=].code = #koos
 * code.coding[=].display = "KOOS"
