@@ -11,12 +11,19 @@ Description: "This resource profile supports suppliers providing a site-specific
 * code 1..1
 * code ^definition = "Type of patient component observation"
 
-* value[x] only Quantity
-* valueQuantity obeys prom-quantity-invariant
-* valueQuantity 0..1
-* valueQuantity ^short = "The PROM assessment score."
+
+* valueInteger obeys prom-quantity-invariant
+* valueInteger 0..1
+* valueInteger ^short = "The PROM assessment score."
+
+* obeys RequireDataAbsentOrValueInteger
 
 Invariant: prom-quantity-invariant
 Severity: #error
 Description: "The value must be between 0 and 150."
 Expression: "$this.value.toString().matches('^(?:0*(?:[0-9]|[1-9][0-9]|1[0-4][0-9]|150))$')"
+
+Invariant: RequireDataAbsentOrValueInteger
+Severity: #error
+Description: "Either DataAbsentReason or ValueInteger must exist."
+Expression: "exists(dataAbsentReason) or exists(valueInteger)"

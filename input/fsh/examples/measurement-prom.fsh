@@ -12,7 +12,7 @@ Description: "A baseline KOOS patient-reported outcome measurement"
 * subject = Reference(patient-unknown)
 * status = #final
 
-* valueQuantity.value = 101
+* valueInteger = 101
 
 * effectiveDateTime = "2023-08-09T15:30:00Z"
 
