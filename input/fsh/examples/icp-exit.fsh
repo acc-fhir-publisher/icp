@@ -1,4 +1,4 @@
-Instance: A101113-2002-11-17
+Instance: icp-exit-case
 InstanceOf: EpisodeOfCare
 Usage: #example
 Description: "Example of an EpisodeOfCare with an exit reason"

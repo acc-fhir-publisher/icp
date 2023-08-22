@@ -13,7 +13,7 @@ Description: "A baseline measure of shoulder function through a 'shoulder abduct
 * status = #final
 * effectiveDateTime = "2023-08-09T15:30:00Z"
 
-* bodySite.coding[+].code = # 16982005
+* bodySite.coding[+].code = #16982005
 * bodySite.coding[=].system = $SCT
 * bodySite.coding[=].display = "Shoulder region structure"
 

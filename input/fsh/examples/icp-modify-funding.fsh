@@ -1,4 +1,4 @@
-Instance: A101112-2022-11-17
+Instance: icp-modify-case
 InstanceOf: EpisodeOfCare
 Usage: #example
 Description: "Example of an EpisodeOfCare service bundle modification request"
