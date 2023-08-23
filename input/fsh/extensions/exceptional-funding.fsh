@@ -30,6 +30,6 @@ Description: "Indicates if exceptional is required for this treatment."
 * extension[supporting-details] ^definition = "A paragraph outlining the reason/rationale. Used to explain the need for exceptional funding being required as well as providing further context for the client exit."
 
 Invariant: supporting-details-max500-length-invariant
-Description: "'supporting-details' must be no more than 500 characters."
+Description: "supporting-details must be no more than 500 characters."
 Expression: "value.length() <= 500"
 Severity: #error
