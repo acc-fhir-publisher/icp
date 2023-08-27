@@ -24,7 +24,7 @@ Alias: $icp-measurement-prom = http://hl7.org.nz/fhir/StructureDefinition/acc-ic
 Alias: $icp-patient = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient
 
 // naming system
-Alias: $acc-claim-number = http://hl7.org.nz/fhir/ns/acc-claim-number
+Alias: $acc-claim-number = https://standards.digital.health.nz/ns/acc-45-number
 
 // extensions
 Alias: $acc-providerid = http://hl7.org.nz/fhir/StructureDefinition/acc-providerid

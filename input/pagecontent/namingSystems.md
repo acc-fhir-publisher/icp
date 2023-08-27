@@ -7,4 +7,4 @@ These are identifiers defined in this IG. They are defined using [NamingSystem](
 
 |Description | Url | Other Identifiers |Responsible |
 |--- |--- | --- | ---|
-|[ACC Claim Number](NamingSystem-icpclaimnumber.html) |http://hl7.org.nz/fhir/ns/acc-claim-number| |ACC |
+|[ACC Claim Number](NamingSystem-icpclaimnumber.html) |https://standards.digital.health.nz/ns/acc-45-number| |ACC |

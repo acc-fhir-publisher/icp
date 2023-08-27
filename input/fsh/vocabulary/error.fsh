@@ -61,8 +61,8 @@ Description: "The type of ICP service. Currently only musculoskeletal (msk) is a
     "There's an Active ICP Subcase against the specified Claim in Eos but it came from a different Vendor ID."
     "The ICP Case against this claim belongs to a different supplier. Please contact ACC via registrations@acc.co.nz"
 * #icp-val-1000
-    "The claim number can only contain letters and numbers, no more than 12 characters in all."
-    "The claim number can only contain letters and numbers, no more than 12 characters in all."
+    "The claim number can only contain letters and numbers, no more than 7 characters in all."
+    "The claim number can only contain letters and numbers, no more than 7 characters in all."
 * #icp-val-1001
     "The claim number is required."
     "The claim number is required."
@@ -75,6 +75,9 @@ Description: "The type of ICP service. Currently only musculoskeletal (msk) is a
 * #icp-val-1004
     "The ICP Case against this claim is currently being processed. Please try again in 5 minutes or contact ACC on 0800 101 996 ext. 77097 to discuss."
     "The ICP Case against this claim is currently being processed. Please try again in 5 minutes or contact ACC on 0800 101 996 ext. 77097 to discuss."
+* #icp-val-1005
+    "The date cannot be before 1900-01-01."
+    "The date cannot be before 1900-01-01."
 * #icp-val-9000
     "There is an ACC system issue. You'll need to resubmit your content later. Advise ACC Digital Operations at digitaloperations@acc.co.nz."
     "There is an ACC system issue. You'll need to resubmit your content later. Advise ACC Digital Operations at digitaloperations@acc.co.nz."

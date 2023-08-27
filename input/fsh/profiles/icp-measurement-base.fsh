@@ -16,6 +16,7 @@ Description: "ACC Integrated Care Pathway Observation"
     icpclaimnumber 1..1
 * identifier[icpclaimnumber].system = $acc-claim-number (exactly)
 * identifier[icpclaimnumber].value 1..1
+* identifier[icpclaimnumber].value obeys acc-claim-number-invariant
 * identifier[icpclaimnumber] ^short = "The ACC claim number to be used in combination with the contained patient's date of birth, as the ICP case idenfitier."
 
 * contained ^slicing.discriminator.type = #type
