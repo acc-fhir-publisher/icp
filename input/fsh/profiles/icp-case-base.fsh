@@ -60,7 +60,7 @@ Description:    "The ACC ICP Case resource based on Episode of Care"
 
 * identifier[icpclaimnumber].system = $acc-claim-number (exactly)
 * identifier[icpclaimnumber].value 1..1
-* identifier[icpclaimnumber].value obeys acc-claim-number-invariant
+* identifier[icpclaimnumber].value obeys acc-claim-number
 * identifier[icpclaimnumber] ^short = "The ACC claim number to be used in combination with the contained patient's date of birth, as the ICP case idenfitier."
 
 * extension contains
@@ -95,7 +95,7 @@ Severity: #error
 Description: "End date is required when status is finished"
 Expression: "status = 'finished' implies period.end.exists()"
 
-Invariant: acc-claim-number-invariant
+Invariant: acc-claim-number
 Severity: #error
 Description: "The claim number format is invalid; it must be in the form A999999, AA99999, 9999AAA or 99999AA, where A is any capital letter, 9 is any single digit, and there are 7 characters altogether."
-Expression: "$this.toString().matches('^[A-Z][A-Z0-9][0-9]{5}|[0-9]{4}[A-Z0-9][A-Z]{2}$')"
+Expression: "$this.toString().matches('^[A-Z][0-9]{6}$|^[A-Z]{2}[0-9]{5}$|^[0-9]{4}[A-Z]{3}$|^[0-9]{5}[A-Z]{2}$')"
