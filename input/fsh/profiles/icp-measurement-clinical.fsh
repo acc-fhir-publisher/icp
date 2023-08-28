@@ -19,7 +19,7 @@ Description: "This resource profile supports suppliers providing site-specific c
 * valueQuantity.system = "http://unitsofmeasure.org"
 
 
-* obeys RequireDataAbsentOrValueQuantity
+* obeys require-data-absent-or-value-quantity-invariant
 
 Invariant: clinical-quantity-invariant
 Severity: #error
@@ -31,7 +31,7 @@ Severity: #error
 Description: "The clinical component observation must have a code and system"
 Expression: "$this.code.exists() and $this.system.exists() and $this.unit.empty()"
 
-Invariant: RequireDataAbsentOrValueQuantity
+Invariant: require-data-absent-or-value-quantity-invariant
 Severity: #error
 Description: "Either DataAbsentReason or ValueQuantity must exist."
 Expression: "exists(dataAbsentReason) or exists(valueQuantity)"
