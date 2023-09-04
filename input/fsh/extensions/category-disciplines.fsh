@@ -11,6 +11,10 @@ Description: "The complexity category."
 * ^context[=].expression = "EpisodeOfCare.extension"
 * ^context[+].type = #element
 * ^context[=].expression = "EpisodeOfCare.extension.extension"
+* ^context[+].type = #element
+* ^context[=].expression = "Encounter.extension"
+* ^context[+].type = #element
+* ^context[=].expression = "Encounter.extension.extension"
 
 * extension 1..1
 * extension contains

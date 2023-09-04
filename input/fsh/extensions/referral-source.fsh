@@ -9,9 +9,7 @@ Description: "The source of the ICP referral, e.g. ACC referral, GP referral, ro
 * ^context[0].type = #element
 * ^context[=].expression = "EpisodeOfCare"
 * ^context[+].type = #element
-* ^context[=].expression = "EpisodeOfCare.extension"
-* ^context[+].type = #element
-* ^context[=].expression = "EpisodeOfCare.extension.extension"
+* ^context[=].expression = "Encounter"
 
 * extension 1..2
 * extension contains
@@ -22,7 +20,7 @@ Description: "The source of the ICP referral, e.g. ACC referral, GP referral, ro
 * extension[referral-source-type].value[x] only code
 * extension[referral-source-type].valueCode 1..1
 * extension[referral-source-type].valueCode from $icp-referral-source-type-vs (required)
-* extension[referral-source-type] ^short = "(gp | physio | specialist | allied | employer | rognoa | other | acc | patient)"
+* extension[referral-source-type] ^short = "(gp | physio | specialist | allied | employer | rongoa | other | acc | patient)"
 
 * extension[received-date].url = "received-date" (exactly)
 * extension[received-date].value[x] only date

@@ -64,9 +64,9 @@ Description:    "The ACC ICP Case resource based on Episode of Care"
 * identifier[icpclaimnumber] ^short = "The ACC claim number to be used in combination with the contained patient's date of birth, as the ICP case idenfitier."
 
 * extension contains
-    $acc-providerid named accProviderId 1..1
+    $acc-providerid named acc-providerid 1..1
 
-* extension[accProviderId] ^short = "The ACC provider ID associated with the ICP case"
+* extension[acc-providerid] ^short = "The ACC provider ID associated with the ICP case"
 
 * obeys end-date-when-active-invariant and end-date-when-finished-invariant
 

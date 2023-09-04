@@ -6,8 +6,10 @@ Alias: $ICD10CM = http://hl7.org/fhir/sid/icd-10-cm
 Alias: $ICD10PCS = http://www.cms.gov/Medicare/Coding/ICD10
 Alias: $icd10ae = http://terminology.hl7.org/CodeSystem/icd10ae
 
-Alias: $episode-of-case-status = http://hl7.org/fhir/episode-of-care-status
+Alias: $episode-of-care-status = http://hl7.org/fhir/episode-of-care-status
 Alias: $observation-status = http://hl7.org/fhir/observation-status
+Alias: $encounter-status = http://hl7.org/fhir/encounter-status
+Alias: $resource-status = 	http://hl7.org/fhir/resource-status
 
 Alias: $hpi-organisation = https://standards.digital.health.nz/id/hpi-organisation
 Alias: $nhi-patient = https://standards.digital.health.nz/ns/nhi-id
@@ -15,6 +17,8 @@ Alias: $iso3166-1-2 = http://hl7.org/fhir/ValueSet/iso3166-1-2
 
 // profile 
 Alias: $icp-case = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case
+Alias: $icp-referral-decline = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-decline
+Alias: $icp-encounter-referral-decline = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-encounter-referral-decline
 Alias: $icp-case-create = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-create
 Alias: $icp-case-modify = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-modify
 Alias: $icp-case-exit = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-exit
@@ -28,6 +32,7 @@ Alias: $acc-claim-number = https://standards.digital.health.nz/ns/acc-45-number
 
 // extensions
 Alias: $acc-providerid = http://hl7.org.nz/fhir/StructureDefinition/acc-providerid
+Alias: $icp-triage = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-triage
 Alias: $icp-triage-assessment-date = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-triage-assessment-date
 Alias: $icp-acc-client-authority = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-client-authority
 Alias: $icp-client-participation-agreement = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-client-participation-agreement
@@ -42,6 +47,8 @@ Alias: $icp-referral-source = http://hl7.org.nz/fhir/StructureDefinition/acc-icp
 Alias: $icp-diagnoses = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnoses
 Alias: $icp-diagnosis = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnosis
 Alias: $icp-service-bundle-change = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-bundle-change
+Alias: $icp-declined = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-declined
+
 
 // value sets with a coding system and a dedicated extension
 Alias: $acc-readcode = http://hl7.org.nz/fhir/StructureDefinition/acc-read-code
@@ -51,6 +58,9 @@ Alias: $acc-readcode-vs = http://hl7.org.nz/fhir/ValueSet/acc-read-code
 Alias: $icp-exit-reason = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exit-reason
 Alias: $icp-exit-reason-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-exit-reason
 Alias: $icp-exit-reason-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-exit-reason
+
+Alias: $icp-declined-reason-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-declined-reason
+Alias: $icp-declined-reason-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-declined-reason
 
 Alias: $icp-recorded-outcome-stage = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-recorded-outcome-stage
 Alias: $icp-recorded-outcome-stage-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-recorded-outcome-stage
@@ -107,7 +117,9 @@ Alias: $icp-category-clinical-observation-cs = http://hl7.org.nz/fhir/CodeSystem
 Alias: $icp-category-patient-observation-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-category-patient-observation
 Alias: $icp-category-patient-observation-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-category-patient-observation
 
+
 // value sets without a coding system
-Alias: $icp-status-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-status
 Alias: $icp-diagnoses-code-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-diagnosis-code
+Alias: $icp-status-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-status
 Alias: $icp-status-observation-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-observation-status
+Alias: $icp-encounter-status-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-encounter-status

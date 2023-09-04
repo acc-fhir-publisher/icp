@@ -10,6 +10,8 @@ Description: "The scores obtained from the ICP complexity assessment/tool."
 * ^context[=].expression = "EpisodeOfCare"
 * ^context[+].type = #element
 * ^context[=].expression = "EpisodeOfCare.extension"
+* ^context[+].type = #element
+* ^context[=].expression = "Encounter.extension"
 
 * extension contains
     $icp-complexity-score named complexityScore 1..1 and

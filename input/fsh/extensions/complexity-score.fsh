@@ -11,6 +11,10 @@ Description: "The score (low, medium, high) for each category/sub-category obtai
 * ^context[=].expression = "EpisodeOfCare.extension"
 * ^context[+].type = #element
 * ^context[=].expression = "EpisodeOfCare.extension.extension"
+* ^context[+].type = #element
+* ^context[=].expression = "Encounter.extension"
+* ^context[+].type = #element
+* ^context[=].expression = "Encounter.extension.extension"
 
 * value[x] only code
 * valueCode 1..1

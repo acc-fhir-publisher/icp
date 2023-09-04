@@ -8,6 +8,8 @@ Description: "Indicates that the Client has agreed to ACC being able to collect,
 
 * ^context.type = #element
 * ^context.expression = "EpisodeOfCare"
+* ^context[+].type = #element
+* ^context[=].expression = "Encounter.extension"
 
 * extension 0..0
 * value[x] only boolean
