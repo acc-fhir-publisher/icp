@@ -1,9 +1,7 @@
 name: IG Build
-
 on:
-  push:
-    branches:
-      - action-flow
+  workflow_dispatch
+  
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
