@@ -24,11 +24,9 @@ java -jar publisher.jar -ig .
 
 # Unzip the .tar.gz file
 mkdir package
-pwd
-ls -a
-ls -a output
 cp output/package.r4.tgz package
 cp package-test.json ./package/package.json
+cd package
 #tar -xzf output/package.r4.tgz
 
 
