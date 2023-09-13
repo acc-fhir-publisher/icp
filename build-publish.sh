@@ -23,11 +23,12 @@ java -jar publisher.jar -ig .
 #!/bin/bash
 
 # Unzip the .tar.gz file
-mkdir /package
+mkdir package
 pwd
 ls -a
-cp /output/package.r4.tgz ./package
-cp ./package-test.json ./package/package.json
+ls -a output
+cp output/package.r4.tgz package
+cp package-test.json ./package/package.json
 #tar -xzf output/package.r4.tgz
 
 
