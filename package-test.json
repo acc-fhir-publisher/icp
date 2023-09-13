@@ -1,6 +1,6 @@
 {
-    "name": "@Gokul-Moorthi_accnz/ICP",
-    "version": "1.0.0",
+    "name": "icp",
+    "version": "1.0.1",
     "publishConfig": {
         "registry": "https://npm.pkg.github.com/integration-services-accnz"
       },
