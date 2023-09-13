@@ -1,7 +1,7 @@
 name: IG Build
 on:
   workflow_dispatch
-  
+
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
@@ -24,25 +24,38 @@ jobs:
         run: |
           /apps/icp/build-publish.sh
 
-     
-      - name: NPM Publish
-        env:
-          REGISTRY_URL: https://pkgs.dev.azure.com/accapplications/IntegrationServices/_packaging/Integration-Suraj/npm/registry
-          USERNAME: ${{secrets.NPM_USERNAME}}
-          PAT: ${{secrets.NPM_PASSWORD}}
-          EMAIL_ADDRESS: ${{secrets.EMAIL_ADDRESS}}
-        run: |
-          cd /apps/icp/package         
-          npm config --userconfig .npmrc set registry $REGISTRY_URL/
-          npm config --userconfig .npmrc set //$REGISTRY_URL/:username $USERNAME
-          npm config --userconfig .npmrc set //$REGISTRY_URL/:_password $PAT
-          npm config --userconfig .npmrc set //$REGISTRY_URL/:email $EMAIL_ADDRESS
-          npm whoami
-          # Set the registry URL and authentication
-           echo "//$REGISTRY_URL/:_authToken=\${{secrets.NPM_PASSWORD}}" >> ~/.npmrc
-           npm whoami
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14 # Adjust to your Node.js version
+        
 
-          # Publish the npm package
-          npm version $(npm view hl7.org.nz.fhir.ig.icp.r4 version)
-          npm version prerelease
-          npm publish
+      - name: Authenticate with GitHub Package Registry
+        run: echo "//npm.pkg.github.com/:_authToken=\${{ secrets.PACKAGE_GITHUB_TOKEN }}" > ~/.npmrc
+
+
+      - name: Publish to GitHub Package Registry
+        run: npm publish
+
+      # - name: NPM Publish
+      #   env:
+      #     REGISTRY_URL: https://pkgs.dev.azure.com/accapplications/IntegrationServices/_packaging/Integration-Suraj/npm/registry
+      #     USERNAME: ${{secrets.NPM_USERNAME}}
+      #     PAT: ${{secrets.NPM_PASSWORD}}
+      #     EMAIL_ADDRESS: ${{secrets.EMAIL_ADDRESS}}
+      #   run: |
+      #     cd /apps/icp/package         
+      #     npm config --userconfig .npmrc set registry $REGISTRY_URL/
+      #     npm config --userconfig .npmrc set //$REGISTRY_URL/:username $USERNAME
+      #     npm config --userconfig .npmrc set //$REGISTRY_URL/:_password $PAT
+      #     npm config --userconfig .npmrc set //$REGISTRY_URL/:email $EMAIL_ADDRESS
+      #     npm whoami
+      #     # Set the registry URL and authentication
+      #      echo "//$REGISTRY_URL/:_authToken=\${{secrets.NPM_PASSWORD}}" >> ~/.npmrc
+      #      npm whoami
+
+      #     # Publish the npm package
+      #     npm version $(npm view hl7.org.nz.fhir.ig.icp.r4 version)
+      #     npm version prerelease
+      #     npm publish
+

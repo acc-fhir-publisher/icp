@@ -23,7 +23,10 @@ java -jar publisher.jar -ig .
 #!/bin/bash
 
 # Unzip the .tar.gz file
-tar -xzf output/package.r4.tgz
+mkdir /package
+cp /output/package.tgz ./package
+cp /.github/package.json ./package
+#tar -xzf output/package.r4.tgz
 
 
 

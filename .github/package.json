@@ -1,0 +1,18 @@
+{
+    "name": "@Gokul-Moorthi_accnz/ICP",
+    "version": "1.0.0",
+    "canonical": "http://hl7.org.nz/fhir/icp",
+    "url": "http://hl7.org.nz/fhir/icp",
+    "title": "New Zealand ICP Implementation Guide",
+    "description": "The ICP facade",
+    "language": "en",
+    "author": "ACC Integration",
+    "maintainers": [
+        {
+            "name": "ACC Integration",
+            "email": "integrationsupport@acc.co.nz"
+        }
+    ],
+    "license": "CC0-1.0"
+  }
+  
