@@ -38,6 +38,8 @@ jobs:
         run: |
           cd /apps/icp/package
           ls -a
+          cat .npmrc
+          npm config get registry
           npm publish
 
       # - name: NPM Publish
