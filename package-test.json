@@ -2,7 +2,7 @@
     "name": "@Gokul-Moorthi_accnz/ICP",
     "version": "1.0.0",
     "publishConfig": {
-        "registry": "https://npm.pkg.github.com"
+        "registry": "https://npm.pkg.github.com/integration-services-accnz"
       },
     "canonical": "http://hl7.org.nz/fhir/icp",
     "url": "http://hl7.org.nz/fhir/icp",
