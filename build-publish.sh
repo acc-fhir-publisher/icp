@@ -24,6 +24,8 @@ java -jar publisher.jar -ig .
 
 # Unzip the .tar.gz file
 mkdir /package
+pwd
+ls
 cp /output/package.tgz ./package
 cp /.github/package.json ./package
 #tar -xzf output/package.r4.tgz
