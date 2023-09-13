@@ -1,6 +1,9 @@
 {
     "name": "@Gokul-Moorthi_accnz/ICP",
     "version": "1.0.0",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+      },
     "canonical": "http://hl7.org.nz/fhir/icp",
     "url": "http://hl7.org.nz/fhir/icp",
     "title": "New Zealand ICP Implementation Guide",

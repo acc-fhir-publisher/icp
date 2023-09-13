@@ -37,6 +37,7 @@ jobs:
       - name: Publish to GitHub Package Registry
         run: |
           cd /apps/icp/package
+          ls -a
           npm publish
 
       # - name: NPM Publish
