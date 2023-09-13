@@ -34,7 +34,7 @@ jobs:
         
 
       - name: Authenticate with GitHub Package Registry
-        run: echo "//npm.pkg.github.com/:_authToken=\${{ secrets.PACKAGE_GITHUB_TOKEN }}" > /apps/icp/package/.npmrc
+        run: echo "//npm.pkg.github.com/:_authToken=\${{ secrets.GITHUB_TOKEN }}" > /apps/icp/package/.npmrc
 
 
       - name: Publish to GitHub Package Registry
