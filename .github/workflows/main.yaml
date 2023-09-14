@@ -32,38 +32,35 @@ jobs:
         with:
           node-version: 14 # Adjust to your Node.js version
           registry-url: https://npm.pkg.github.com/
-        
-
-      # - name: Authenticate with GitHub Package Registry
-      #   run: echo "//npm.pkg.github.com/:_authToken=\${{ secrets.GITHUB_TOKEN }}" > /apps/icp/package/.npmrc
-
-
-      - name: Publish to GitHub Package Registry
+      
+      - name: Create package.json
         run: |
           cd /apps/icp/package
+          echo '{
+            "name": "@integration-services-accnz/icp",
+            "version": "1.0.1",
+            "publishConfig": {
+                "registry": "https://npm.pkg.github.com"
+              },
+            "repository":"https://github.com/integration-services-accnz/icp",
+            "canonical": "http://hl7.org.nz/fhir/icp",
+            "url": "http://hl7.org.nz/fhir/icp",
+            "title": "New Zealand ICP Implementation Guide",
+            "description": "The ICP facade",
+            "language": "en",
+            "author": "ACC Integration",
+            "maintainers": [
+                {
+                    "name": "ACC Integration",
+                    "email": "integrationsupport@acc.co.nz"
+                }
+            ],
+            "license": "CC0-1.0"
+          }' > package.json
+        
+      - name: Publish to GitHub Package Registry
+        run: |
           npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
-      # - name: NPM Publish
-      #   env:
-      #     REGISTRY_URL: https://pkgs.dev.azure.com/accapplications/IntegrationServices/_packaging/Integration-Suraj/npm/registry
-      #     USERNAME: ${{secrets.NPM_USERNAME}}
-      #     PAT: ${{secrets.NPM_PASSWORD}}
-      #     EMAIL_ADDRESS: ${{secrets.EMAIL_ADDRESS}}
-      #   run: |
-      #     cd /apps/icp/package         
-      #     npm config --userconfig .npmrc set registry $REGISTRY_URL/
-      #     npm config --userconfig .npmrc set //$REGISTRY_URL/:username $USERNAME
-      #     npm config --userconfig .npmrc set //$REGISTRY_URL/:_password $PAT
-      #     npm config --userconfig .npmrc set //$REGISTRY_URL/:email $EMAIL_ADDRESS
-      #     npm whoami
-      #     # Set the registry URL and authentication
-      #      echo "//$REGISTRY_URL/:_authToken=\${{secrets.NPM_PASSWORD}}" >> ~/.npmrc
-      #      npm whoami
-
-      #     # Publish the npm package
-      #     npm version $(npm view hl7.org.nz.fhir.ig.icp.r4 version)
-      #     npm version prerelease
-      #     npm publish
 

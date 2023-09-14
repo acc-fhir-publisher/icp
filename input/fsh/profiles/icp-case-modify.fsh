@@ -2,18 +2,27 @@ Profile:        IcpCaseModify
 Parent:         acc-icp-case
 Id:             acc-icp-case-modify
 Title:          "ACC ICP Episode of Care Service Bundle Update Resource"
-Description:    "The ACC ICP Case Service Bundle Update resource based on ACC ICP Case"
-* obeys active-status-invariant
+Description:    "This profile supports suppliers needing to inform ACC of a change to the selected Service Bundle and/or Exceptional Funding Required."
 
 * ^url = $icp-case-modify
-* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
-* ^status = #draft
+* insert Acc-Metadata
 
 * type 0..0
 * period 0..0
 
-* extension 1..*
+* status ^definition = "The Status of the ICP case (must be Active)."
+
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #closed
+* extension ^slicing.ordered = false
+
+* extension 2..3
 * extension contains
-    $icp-service-bundle named serviceBundle 1..1 and
-    $icp-exceptional-funding named changeRationale 1..* and
-    $icp-supporting-details named supportingDetails 0..1
+    $icp-service-bundle-change named service-bundle-change 1..1 and
+    $icp-exceptional-funding named exceptional-funding 0..1
+
+* extension[service-bundle-change] ^short = "The updated ICP service bundle for the treatment."
+* extension[exceptional-funding] ^short = "Indicates if exceptionalfunding is required for this treatment and the funding type."
+
+* obeys active-status-invariant

@@ -1,13 +1,12 @@
 {
     "name": "hl7.org.nz.icp",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "canonical": "http://hl7.org.nz/fhir/icp",
     "url": "http://hl7.org.nz/fhir/icp",
     "title": "New Zealand ICP Implementation Guide",
-    "description": "The ICP facade",
+    "description": "The ACC ICP facade",
     "dependencies": {
-        "hl7.org.nz.fhir.hip-core": "1.1.0",
-        "hl7.fhir.nz.base": "2.0.0",
+        "fhir.org.nz.ig.base": "2.0.0",
         "hl7.fhir.r4.core": "4.0.1",
         "markdown": "^0.5.0",
         "remarkable": "^2.0.1"

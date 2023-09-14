@@ -13,10 +13,10 @@ servers:
 - url: https://apiservicesnpe.acc.co.nz/t01/cp-fhir-exp-api/v1/
   description: ACC Integrated Care Pathways endpoint
 externalDocs:
-  url: https://icp-ig.digital.acc.co.nz/CapabilityStatement-IcpCapabilityStatement.html
+  url: https://build.fhir.org/ig/acc-fhir-publisher/icp
   description: FHIR CapabilityStatement
 paths:
-  /IcpEpisodeOfCare:
+  /EpisodeOfCare:
     post:
       summary: "create-type: Create a new IcpEpisodeOfCare instance"
       requestBody:
@@ -31,6 +31,86 @@ paths:
             application/fhir+json:
               schema:
                 $ref: '#/components/schemas/FHIR-JSON-RESOURCE'
+        '400':
+          description: Error, with details
+          content:
+            application/fhir+json:
+              schema:
+                $ref: '#/components/schemas/OperationOutcome'
+        '401':
+          description: Not Authorized
+          content:
+            application/fhir+json:
+              schema:
+                $ref: '#/components/schemas/OperationOutcome'
+    put:
+      summary: "create-type: Update an IcpEpisodeOfCare respource"
+      requestBody:
+        content:
+          application/fhir+json:
+            schema:
+              $ref: '#/components/schemas/FHIR-JSON-RESOURCE'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/fhir+json:
+              schema:
+                $ref: '#/components/schemas/FHIR-JSON-RESOURCE'
+        '400':
+          description: Error, with details
+          content:
+            application/fhir+json:
+              schema:
+                $ref: '#/components/schemas/OperationOutcome'
+        '401':
+          description: Not Authorized
+          content:
+            application/fhir+json:
+              schema:
+                $ref: '#/components/schemas/OperationOutcome'
+  /Observation:
+    post:
+      summary: "create-type: Create a new IcpEpisodeOfCare instance"
+      requestBody:
+        content:
+          application/fhir+json:
+            schema:
+              $ref: '#/components/schemas/FHIR-JSON-RESOURCE'
+      responses:
+        '200':
+            description: Success
+            content:
+              application/fhir+json:
+                schema:
+                  $ref: '#/components/schemas/FHIR-JSON-RESOURCE'
+        '400':
+          description: Error, with details
+          content:
+            application/fhir+json:
+              schema:
+                $ref: '#/components/schemas/OperationOutcome'
+        '401':
+          description: Not Authorized
+          content:
+            application/fhir+json:
+              schema:
+                $ref: '#/components/schemas/OperationOutcome'
+  /Encounter:
+    post:
+      summary: "create-type: Create an icp case referral decline instance"
+      requestBody:
+        content:
+          application/fhir+json:
+            schema:
+              $ref: '#/components/schemas/FHIR-JSON-RESOURCE'
+      responses:
+        '200':
+            description: Success
+            content:
+              application/fhir+json:
+                schema:
+                  $ref: '#/components/schemas/FHIR-JSON-RESOURCE'
         '400':
           description: Error, with details
           content:

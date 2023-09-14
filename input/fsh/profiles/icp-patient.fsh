@@ -1,11 +1,11 @@
 Profile:        IcpPatient
 Parent:         NzPatient
 Id:             acc-icp-patient
-Title:          "ICP Patient"
-Description:    "The ACC ICP Patient resource based on NzPatient"
+Title:          "ACC ICP Patient"
+Description:    "The ACC ICP Patient resource based on NzPatient.  Used to verify that an ICP Case has a valid claim."
 
 * ^url = $icp-patient
-* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
+* insert Acc-Metadata
 * ^purpose = "An ICP Patient resource is used within an Icp Case, as a data point to verify weither an Icp case has a valid claim"
 * ^text.status = #additional
 

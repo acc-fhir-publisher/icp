@@ -9,28 +9,30 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 
 <div class="tableGridded"></div>
 
-|Id |Canonical url | Description | |
-|--- |--- | --- | ---|
-|[icp-category](ValueSet-acc-icp-category.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-category|New Zealand codes for Integrated Care Pathways Category| |
-|[icp-diagnosis-side](ValueSet-acc-icp-diagnosis-side.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-diagnosis-side|New Zealand codes for Integrated Care Pathways Service Type| |
-|[icp-exit-reason](ValueSet-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-exit-reason|New Zealand codes for Integrated Care Pathways case exit reasons| |
-|[icp-funding-rationale](ValueSet-acc-icp-funding-rationale.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-funding-rationale|New Zealand codes for Integrated Care Pathways funding rationale| |
-|[icp-intended-pathway](ValueSet-acc-icp-funding-rationale.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-intended-pathway|New Zealand codes for Integrated Care Pathways Indended Pathway| |
-|[icp-referral-source-type](ValueSet-acc-icp-referral-source-type.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-referral-source-type|New Zealand codes for Integrated Care Pathways Referral Source Type| |
-|[icp-service-bundle](ValueSet-acc-icp-service-bundle.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-service-bundle|New Zealand codes for Integrated Care Pathways serviceBundle| |
-|[icp-service-type](ValueSet-acc-icp-service-type.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-service-type|New Zealand codes for Integrated Care Pathways Service Type| |
-|[icp-status](ValueSet-acc-icp-status.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-status|New Zealand codes for Integrated Care Pathways Status| |
-|[icp-subcategory](ValueSet-acc-icp-subcategory.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-subcategory|New Zealand codes for Integrated Care Pathways Subcategory| |
-|[icp-subcategory-score](ValueSet-acc-icp-subcategory-score.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-subcategory-score|New Zealand codes for Integrated Care Pathways Subcategory Score| |
-|[icp-category-score](ValueSet-acc-icp-category-score.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-category-score|New Zealand codes for Integrated Care Pathways Category Score| |
-|[icp-complexity-score](ValueSet-acc-icp-complexity-score.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-complexity-score|New Zealand codes for Integrated Care Pathways Total Complexity Score| |
-|[icp-diagnosis-codes](ValueSet-acc-icp-diagnosis-codes.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-diagnosis-codes|New Zealand codes for Integrated Care Pathways Diagnosis Codes| |
-
-\
+|Id |Canonical url |
+|--- |--- | ---|
+|[acc-icp-diagnosis-code](ValueSet-acc-icp-diagnosis-code.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-diagnosis-code|
+|[acc-read-code](ValueSet-acc-read-code.html)|http://hl7.org.nz/fhir/ValueSet/acc-read-code|
+|[acc-icd-9](ValueSet-acc-icd9.html)|http://hl7.org.nz/fhir/ValueSet/acc-icd9-code|
+|[acc-icd-10](ValueSet-acc-icd10.html)|http://hl7.org.nz/fhir/ValueSet/acc-icd10-code|
+|[icp-exit-reason](ValueSet-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-exit-reason|
+|[icp-exceptional-funding-rationale](ValueSet-acc-icp-exceptional-funding-rationale.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-exceptional-funding-rationale|
+|[icp-service-bundle-change-rationale](ValueSet-acc-icp-service-bundle-change-rationale.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-service-bundle-change-rationale|
+|[icp-referral-source-type](ValueSet-acc-icp-referral-source-type.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-referral-source-type|
+|[icp-service-bundle](ValueSet-acc-icp-service-bundle.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-service-bundle|
+|[icp-service-type](ValueSet-acc-icp-service-type.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-service-type|
+|[icp-status](ValueSet-acc-icp-status.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-status|
+|[icp-error-codes](ValueSet-acc-icp-error.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-error|
+|[icp-bodysite](ValueSet-acc-icp-body-site-measure.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-body-site-measure|
+|[icp-observation-status](ValueSet-acc-icp-observation-status.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-observation-status|
+|[icp-prom-measurement-standard](ValueSet-acc-icp-prom-measurement-standard.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-prom-measurement-standard|
+|[icp-clinical-measurement-standard](ValueSet-acc-icp-clinical-measurement-standard.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-clinical-measurement-standard|
+|[icp-recorded-outcome-stage](ValueSet-acc-icp-recorded-outcome-stage.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-recorded-outcome-stage|
+|[icp-data-absent-reason](ValueSet-acc-icp-data-absent-reason.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-data-absent-reason|
 
 ### CodeSystems
 
-These are code systems that have been defined in this guide. They define specific concepts that are included in ValueSets. It is preferable to use an international code system such as SNOMED, ICD or LOINC - but this is not always possible.
+These are code systems that have been defined in this guide. They define specific concepts that are included in ValueSets.
 
 Each CodeSystem resource has a globally unique url (the canonical url) that is used to unambiguously identify it. The url generally refers to a description of the codesystem, rather than to the FHIR CodeSystem resource.
 
@@ -38,18 +40,20 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 
 <div class="tableGridded"></div>
 
-|Id |Canonical url | Description | |
-|--- |--- | --- | ---|
-|[icp-category](CodeSystem-acc-icp-category.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-category|New Zealand codes for Integrated Care Pathways Category| |
-|[icp-diagnosis-side](CodeSystem-acc-icp-diagnosis-side.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-diagnosis-side|New Zealand codes for Integrated Care Pathways Diagnosis Side| |
-|[icp-exit-reason](CodeSystem-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-exit-reason|New Zealand codes for Integrated Care Pathways case exit reasons| |
-|[icp-funding-rationale](CodeSystem-acc-icp-funding-rationale.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-funding-rationale|New Zealand codes for Integrated Care Pathways funding rationale| |
-|[icp-intended-pathway](CodeSystem-acc-icp-funding-rationale.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-intended-pathway|New Zealand codes for Integrated Care Pathways Indended Pathway| |
-|[icp-referral-source-type](CodeSystem-acc-icp-referral-source-type.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-referral-source-type|New Zealand codes for Integrated Care Pathways Referral Source Type| |
-|[icp-service-bundle](CodeSystem-acc-icp-service-bundle.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-bundle|New Zealand codes for Integrated Care Pathways serviceBundle| |
-|[icp-service-type](CodeSystem-acc-icp-service-type.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-type|New Zealand codes for Integrated Care Pathways Service Type| |
-|[icp-status](CodeSystem-acc-icp-status.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-status|New Zealand codes for Integrated Care Pathways Status| |
-|[icp-subcategory](CodeSystem-acc-icp-subcategory.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-subcategory|New Zealand codes for Integrated Care Pathways Subcategory| |
-|[icp-subcategory-score](CodeSystem-acc-icp-subcategory-score.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-subcategory-score|New Zealand codes for Integrated Care Pathways Subcategory Score| |
-|[icp-category-score](CodeSystem-acc-icp-category-score.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-category-score|New Zealand codes for Integrated Care Pathways Category Score| |
-|[icp-complexity-score](CodeSystem-acc-icp-complexity-score.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-complexity-score|New Zealand codes for Integrated Care Pathways Total Complexity Score| |
+|Id |Canonical url |
+|--- |--- | ---|
+|[acc-read-code](CodeSystem-acc-read-code.html)|http://hl7.org.nz/fhir/CodeSystem/acc-read-code|
+|[acc-icd-9](CodeSystem-acc-icd9.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icd-9|
+|[acc-icd-10](CodeSystem-acc-icd10.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icd-10|
+|[icp-exit-reason](CodeSystem-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-exit-reason|
+|[icp-exceptional-funding-rationale](CodeSystem-acc-icp-exceptional-funding-rationale.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-exceptional-funding-rationale|
+|[icp-service-bundle-change-rationale](CodeSystem-acc-icp-service-bundle-change-rationale.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-bundle-change-rationale|
+|[icp-referral-source-type](CodeSystem-acc-icp-referral-source-type.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-referral-source-type|
+|[icp-service-bundle](CodeSystem-acc-icp-service-bundle.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-bundle|
+|[icp-service-type](CodeSystem-acc-icp-service-type.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-type|
+|[icp-complexity-score](CodeSystem-acc-icp-complexity-score.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-complexity-score|
+|[icp-error-codes](CodeSystem-acc-icp-error.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-error|
+|[icp-prom-measurement-standard](CodeSystem-acc-icp-prom-measurement-standard.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-prom-measurement-standard|
+|[icp-clinical-measurement-standard](CodeSystem-acc-icp-clinical-measurement-standard.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-clinical-measurement-standard|
+|[icp-recorded-outcome-stage](CodeSystem-acc-icp-recorded-outcome-stage.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-recorded-outcome-stage|
+|[icp-data-absent-reason](CodeSystem-acc-icp-data-absent-reason.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-data-absent-reason|

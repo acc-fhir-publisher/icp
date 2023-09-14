@@ -1,17 +1,25 @@
 Extension: Icp_complexityScores
 Id: acc-icp-complexity-scores
 Title: "Complexity Scores"
-Description: "Complexity scores for an ICP claim"
+Description: "The scores obtained from the ICP complexity assessment/tool."
 
 * ^url = $icp-complexity-scores
-* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
-* ^context[+].type = #element
+* insert Acc-Metadata
+
+* ^context[0].type = #element
 * ^context[=].expression = "EpisodeOfCare"
 * ^context[+].type = #element
 * ^context[=].expression = "EpisodeOfCare.extension"
+* ^context[+].type = #element
+* ^context[=].expression = "Encounter.extension"
 
 * extension contains
-    ICP_complexityScore named complexityScore 1..1 and
-    ICP_categoryScores named categoryScores 0..*
-
+    $icp-complexity-score named complexityScore 1..1 and
+    $icp-category-co-morbidities named categoryCoMorbidities 1..1 and
+    $icp-category-psychosocial named categoryPsychosocial 1..1 and
+    $icp-category-contextual named categoryContextual 1..1 and
+    $icp-category-disciplines named categoryDisciplines 1..1 and
+    $icp-category-vocational named categoryVocational 0..1
     
+* extension[complexityScore] ^short = "(low | medium | high)"
+* extension[categoryVocational] ^short = "Indicates whether the vocational complexity scores are applicable."

@@ -2,20 +2,25 @@ Profile:        IcpCaseExit
 Parent:         acc-icp-case
 Id:             acc-icp-case-exit
 Title:          "ACC ICP Episode of Care Exit Resource"
-Description:    "The ACC ICP Case Exit resource based on ACC ICP Case"
-* obeys finished-status-invariant and start-date-when-active-finished-invariant
+Description:    "This profile supports suppliers needing to inform ACC of a patient being exited from their ICP service."
 
 * ^url = $icp-case-exit
-* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
-* ^status = #draft
+* insert Acc-Metadata
 
 * type 0..0
 
-* extension 1..4
-* extension contains
-    $icp-exit-reason named reason 1..1 and
-    $icp-supporting-details named supportingDetails 1..1 and
-    $icp-additional-acc-support named additionalAccSupportNeeded 1..1
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #closed
+* extension ^slicing.ordered = false
+
+* status ^definition = "The Status of the ICP case (must be Finished)."
+
+* extension 2..2
+* extension contains    
+    $icp-exit-reason named exit-reason 1..1
+
+* obeys finished-status-invariant
 
 Invariant: finished-status-invariant
 Severity: #error

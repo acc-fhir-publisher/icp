@@ -1,13 +1,16 @@
 Extension: Icp_triageAssessmentDate
 Id: acc-icp-triage-assessment-date
 Title: "Triage Assessment Date"
-Description: "The date when the triage was performed for the resulting assessment for an ICP referral."
+Description: "The date the triage assessment was completed."
 
 * ^url = $icp-triage-assessment-date
-* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
-* ^context.type = #element
-* ^context.expression = "EpisodeOfCare"
-* ^status = #draft
+* insert Acc-Metadata
+
+
+* ^context[0].type = #element
+* ^context[=].expression = "EpisodeOfCare"
+* ^context[+].type = #element
+* ^context[=].expression = "Encounter.extension"
 
 * extension 0..0
 * value[x] only date

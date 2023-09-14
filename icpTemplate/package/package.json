@@ -1,6 +1,6 @@
 {
     "name": "nz.fhir.template.icp",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "type": "fhir.template",
     "license": "CC0-1.0",
     "description": "ICP NZ FHIR Template",
@@ -9,6 +9,6 @@
     "baseDEP": "hl7.fhir.template",
     "base": "fhir.base.template",
     "dependencies": {
-        "fhir.base.template": "current"
+        "fhir.base.template": "0.4.0"
     }
 }

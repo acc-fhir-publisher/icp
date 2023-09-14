@@ -1,5 +1,7 @@
 Instance: patient-unknown
 InstanceOf: Patient
 Usage: #inline
-* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient"
-* birthDate = "2002-11-17"
+Description: "Contained patient examples reference"
+
+* meta.profile = $icp-patient
+* birthDate = "2003-03-20"

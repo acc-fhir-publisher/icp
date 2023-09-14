@@ -4,8 +4,8 @@ Title: "Client Participation Agreement"
 Description: "Indicates that the Client has agreed to participating in ICP."
 
 * ^url = $icp-client-participation-agreement
-* ^jurisdiction.coding = urn:iso:std:iso:3166#NZL
-* ^status = #draft
+* insert Acc-Metadata
+
 * ^context.type = #element
 * ^context.expression = "EpisodeOfCare"
 
