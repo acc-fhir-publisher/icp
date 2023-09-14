@@ -8,7 +8,7 @@ cp /publisher.jar /apps/icp/publisher.jar
 cd /apps/icp
 
 # Run sushi command
-# sushi -s -o .
+sushi -s -o .
 
 #check the location of fhir folder
 #ls /github/home/.fhir/packages/
@@ -17,7 +17,7 @@ cp -r /github/home/.fhir /root/.fhir
 ls /root/.fhir/packages/
 
 # Run publisher command
-java -jar publisher.jar -ig .
+java -jar publisher.jar -ig . -no-sushi
 
 #publish the the file into npm repo
 #!/bin/bash
