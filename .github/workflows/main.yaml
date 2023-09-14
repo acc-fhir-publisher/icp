@@ -33,16 +33,13 @@ jobs:
           node-version: 14 # Adjust to your Node.js version
         
 
-      - name: Authenticate with GitHub Package Registry
-        run: echo "//npm.pkg.github.com/:_authToken=\${{ secrets.GITHUB_TOKEN }}" > /apps/icp/package/.npmrc
+      # - name: Authenticate with GitHub Package Registry
+      #   run: echo "//npm.pkg.github.com/:_authToken=\${{ secrets.GITHUB_TOKEN }}" > /apps/icp/package/.npmrc
 
 
       - name: Publish to GitHub Package Registry
         run: |
           cd /apps/icp/package
-          ls -a
-          cat .npmrc
-          npm config get registry
           npm publish
 
       # - name: NPM Publish
