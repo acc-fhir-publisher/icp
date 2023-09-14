@@ -7,6 +7,8 @@ cp /publisher.jar /apps/icp/publisher.jar
 # Navigate to the ig folder
 cd /apps/icp
 
+export JAVA_OPTS="-Xmx4g"
+
 # Run sushi command
 sushi -s -o .
 
@@ -17,7 +19,7 @@ cp -r /github/home/.fhir /root/.fhir
 ls /root/.fhir/packages/
 
 # Run publisher command
-java -jar publisher.jar -ig . -no-sushi
+java $JAVA_OPTS -jar publisher.jar -ig . -no-sushi
 
 #publish the the file into npm repo
 #!/bin/bash
