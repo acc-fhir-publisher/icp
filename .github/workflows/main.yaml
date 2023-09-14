@@ -16,10 +16,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
-      - name: Check Heap Space
-        run: |
-          free -m  
         
       - name: Set Java Heap Space
         run: |
