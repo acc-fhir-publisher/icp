@@ -16,6 +16,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        
+      - name: Set Java Heap Space
+        run: |
+          echo "export JAVA_TOOL_OPTIONS='-Xmx2g'" >> $GITHUB_ENV
 
       - name: Copy shell script file
         run: |
