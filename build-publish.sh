@@ -8,7 +8,7 @@ cp /publisher.jar /apps/icp/publisher.jar
 cd /apps/icp
 
 # Run sushi command
-sushi -s -o .
+# sushi -s -o .
 
 #check the location of fhir folder
 #ls /github/home/.fhir/packages/
@@ -22,12 +22,8 @@ java -jar publisher.jar -ig .
 #publish the the file into npm repo
 #!/bin/bash
 
-# Unzip the .tar.gz file
+# Copy the generated zipped file to the package folder
 mkdir package
 cp output/package.r4.tgz package
-cp package-test.json ./package/package.json
-cd package
 #tar -xzf output/package.r4.tgz
-
-
 
