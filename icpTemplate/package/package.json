@@ -9,6 +9,6 @@
     "baseDEP": "hl7.fhir.template",
     "base": "fhir.base.template",
     "dependencies": {
-        "fhir.base.template": "0.4.0"
+        "fhir.base.template": "current"
     }
 }
