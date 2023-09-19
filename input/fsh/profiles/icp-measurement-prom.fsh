@@ -17,6 +17,7 @@ Description: "This resource profile supports suppliers providing a site-specific
 
 * obeys require-data-absent-or-value-integer-invariant
 
+
 Invariant: prom-quantity-invariant
 Severity: #error
 Description: "The value must be between 0 and 150."
