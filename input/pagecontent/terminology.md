@@ -34,6 +34,7 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |[icp-encounter-class](ValueSet-acc-icp-encounter-class.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-encounter-class|
 |[icp-diagnoses-code](ValueSet-acc-icp-diagnosis-code.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-diagnosis-code|
 |[icp-status-observation](ValueSet-acc-icp-observation-status.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-observation-status|
+|[icp-referral-declined-reason](ValueSet-acc-icp-declined-reason.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-declined-reason|
 
 ### CodeSystems
 
@@ -62,4 +63,4 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |[icp-recorded-outcome-stage](CodeSystem-acc-icp-recorded-outcome-stage.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-recorded-outcome-stage|
 |[icp-data-absent-reason](CodeSystem-acc-icp-data-absent-reason.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-data-absent-reason|
 |[icp-exit-reason](CodeSystem-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-exit-reason|
-|[icp-referral-declined-reason](ValueSet-acc-icp-referral-declined-reason.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-declined-reason|
+|[icp-referral-declined-reason](CodeSystem-acc-icp-declined-reason.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-declined-reason|
