@@ -75,3 +75,15 @@ Observation patient measures
 The ICP Patient measures contains the patient record observation data that ICP suppliers send ACC while the patient is accepted into ICP.
 
 """
+
+// ============== The Encounter endpoint
+
+* rest.resource[+].type = #Encounter
+
+* rest.resource[=].supportedProfile[+] = $icp-referral-decline
+* rest.resource[=].interaction[+].code = #create
+* rest.resource[=].interaction[=].documentation[0] = """
+Encounter create
+The ICP Referral Decline contains the data that ICP suppliers send ACC on completion of triage and they decide to decline the referral into the ICP-MSK service.
+
+"""

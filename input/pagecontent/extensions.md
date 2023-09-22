@@ -3,7 +3,7 @@
 
 |Id |Canonical url | Description |
 |--- |--- | --- |
-|[AccProviderId](StructureDefinition-acc-providerid.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-providerid|This should represent the person providing the data to ACC.|
+|[ACC ProviderId](StructureDefinition-acc-providerid.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-providerid|This should represent the person providing the data to ACC.|
 |[Service Bundle](StructureDefinition-acc-icp-service-bundle.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-bundle|Indicates the ICP service bundle selected for the treatment|
 |[ClientAuthority](StructureDefinition-acc-icp-client-authority.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-client-authority|Indicates that the Client has agreed to ACC being able to collect, store, use, &amp; share their information.|
 |[ClientParticipationAgreement](StructureDefinition-acc-icp-client-participation-agreement.html)|http://hl7.org.nz/fhir/StructureDefinition/client-participation-agreement|Indicates that the Client has agreed to participating in ICP.|
@@ -16,3 +16,5 @@
 |[Service Bundle Change](StructureDefinition-acc-icp-service-bundle-change.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-bundle-change|Indicates if rational for a service bundle change.|
 |[Exit Reason](StructureDefinition-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exit-reason|A classification of the type reason for the client exit, e.g. client moved, or non-compliance, etc.|
 |[Stage Care Source](StructureDefinition-acc-icp-recorded-outcome-stage.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-recorded-outcome-stage|The patient recorded stage of the ICP Observation, e.g. adhoc, exit etc|
+|[Referral Declined](StructureDefinition-acc-icp-referral-declined.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-deferral-declined|The declined reason and details for declining the referral|
+|[Triage](StructureDefinition-acc-icp-triage.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-triage|The triage assessment of the patient must be present when a triage has been performed|

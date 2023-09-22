@@ -10,17 +10,20 @@ An ICP "Episode of Care" is also referred to as an "ICP Case". It runs from the 
 
 The ICP Observation/Measurement resource is used to provide clinical/functional measurement details to ACC. (AKA site-specific clinical measures and PROMs)
 
-There are five ICP profiles available:
+The ICP Referral Decline resource is used to provide details of a referral decline to ACC, which may include details of triage performed.
+
+There are various ICP profiles available:
 
 <div class="tableGridded"></div>
 
 |Id |Canonical url | Description | |
 |--- |--- | --- | ---|
-|[IcpCaseCreate](StructureDefinition-acc-icp-case-create.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-create|ICP Case Create is to be used by the supplier to furnish ACC with the required information following the completion of the triage assessment and the decision to accept the patient into their ICP service.|[example](EpisodeOfCare-icp-create-case.html)|
-|[IcpCaseModify](StructureDefinition-acc-icp-case-modify.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-modify|This profile supports suppliers needing to inform ACC of a change to the selected Service Bundle and/or Exceptional Funding Required.|[example](EpisodeOfCare-icp-modify-case.html)|
-|[IcpCaseExit](StructureDefinition-acc-icp-case-exit.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-finished|This profile supports suppliers needing to inform ACC of a patient being exited from their ICP service.|[example](EpisodeOfCare-icp-exit-case.html)|
-|[IcpMeasurementClinical](StructureDefinition-acc-icp-measurement-clinical.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-clinical|This profile supports suppliers providing site-specific clinical measures to ACC.|[example](Observation-icp-clinical-measurement-shoulder-strength.html)|
-|[IcpMeasurementPROM](StructureDefinition-acc-icp-measurement-prom.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-prom|This profile supports suppliers providing site-specific patient reported outcome measures (PROMs) to ACC.|[example](Observation-icp-prom-measurement.html)|
+|[Icp Case Create](StructureDefinition-acc-icp-case-create.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-create|ICP Case Create is to be used by the supplier to furnish ACC with the required information following the completion of the triage assessment and the decision to accept the patient into their ICP service.|[example](EpisodeOfCare-icp-create-case.html)|
+|[Icp Case Modify](StructureDefinition-acc-icp-case-modify.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-modify|This profile supports suppliers needing to inform ACC of a change to the selected Service Bundle and/or Exceptional Funding Required.|[example](EpisodeOfCare-icp-modify-case.html)|
+|[Icp Case Exit](StructureDefinition-acc-icp-case-exit.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-finished|This profile supports suppliers needing to inform ACC of a patient being exited from their ICP service.|[example](EpisodeOfCare-icp-exit-case.html)|
+|[Icp Measurement Clinical](StructureDefinition-acc-icp-measurement-clinical.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-clinical|This profile supports suppliers providing site-specific clinical measures to ACC.|[example](Observation-icp-clinical-measurement-shoulder-strength.html)|
+|[Icp Measurement PROM](StructureDefinition-acc-icp-measurement-prom.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-prom|This profile supports suppliers providing site-specific patient reported outcome measures (PROMs) to ACC.|[example](Observation-icp-prom-measurement.html)|
+|[Icp Referral Decline](StructureDefinition-acc-icp-referral-decline.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-decline|This profile supports providers submitting referral decline to ACC, which may include details of triage performed.|[example](Encounter-icp-referral-decline.html)|
 
 ### Additional Profile resources
 

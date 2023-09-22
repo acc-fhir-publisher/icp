@@ -10,6 +10,8 @@ Description: "This represents the person submitting this form to ACC.  It should
 * ^context[=].expression = "EpisodeOfCare"
 * ^context[+].type = #element
 * ^context[=].expression = "Observation"
+* ^context[+].type = #element
+* ^context[=].expression = "Encounter"
 
 * extension 0..0
 * value[x] only string

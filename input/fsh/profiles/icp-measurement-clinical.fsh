@@ -18,8 +18,8 @@ Description: "This resource profile supports suppliers providing site-specific c
 * valueQuantity.code = #kg
 * valueQuantity.system = "http://unitsofmeasure.org"
 
-
 * obeys require-data-absent-or-value-quantity-invariant
+
 
 Invariant: clinical-quantity-invariant
 Severity: #error

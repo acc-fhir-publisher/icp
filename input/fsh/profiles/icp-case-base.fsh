@@ -36,7 +36,7 @@ Description:    "The ACC ICP Case resource based on Episode of Care"
 * period.end 0..1
 * period.end obeys date-invariant and date-not-in-future-invariant
 
-* status from $icp-status-vs (required)
+* status from $icp-episodeofcare-status-vs (required)
 * status ^short = "active | finished"
 * status ^definition = "The Status of the ICP case (Active or Finished)."
 

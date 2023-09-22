@@ -15,13 +15,11 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |[acc-read-code](ValueSet-acc-read-code.html)|http://hl7.org.nz/fhir/ValueSet/acc-read-code|
 |[acc-icd-9](ValueSet-acc-icd9.html)|http://hl7.org.nz/fhir/ValueSet/acc-icd9-code|
 |[acc-icd-10](ValueSet-acc-icd10.html)|http://hl7.org.nz/fhir/ValueSet/acc-icd10-code|
-|[icp-exit-reason](ValueSet-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-exit-reason|
 |[icp-exceptional-funding-rationale](ValueSet-acc-icp-exceptional-funding-rationale.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-exceptional-funding-rationale|
 |[icp-service-bundle-change-rationale](ValueSet-acc-icp-service-bundle-change-rationale.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-service-bundle-change-rationale|
 |[icp-referral-source-type](ValueSet-acc-icp-referral-source-type.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-referral-source-type|
 |[icp-service-bundle](ValueSet-acc-icp-service-bundle.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-service-bundle|
 |[icp-service-type](ValueSet-acc-icp-service-type.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-service-type|
-|[icp-status](ValueSet-acc-icp-status.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-status|
 |[icp-error-codes](ValueSet-acc-icp-error.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-error|
 |[icp-bodysite](ValueSet-acc-icp-body-site-measure.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-body-site-measure|
 |[icp-observation-status](ValueSet-acc-icp-observation-status.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-observation-status|
@@ -29,6 +27,14 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |[icp-clinical-measurement-standard](ValueSet-acc-icp-clinical-measurement-standard.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-clinical-measurement-standard|
 |[icp-recorded-outcome-stage](ValueSet-acc-icp-recorded-outcome-stage.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-recorded-outcome-stage|
 |[icp-data-absent-reason](ValueSet-acc-icp-data-absent-reason.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-data-absent-reason|
+|[icp-exit-reason](ValueSet-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-exit-reason|
+|[icp-referral-declined-reason](ValueSet-acc-icp-declined-reason.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-declined-reason|
+|[icp-episodeofcare-status](ValueSet-acc-icp-episodeofcare-status.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-episodeofcare-status|
+|[icp-encounter-status](ValueSet-acc-icp-encounter-status.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-encounter-status|
+|[icp-encounter-class](ValueSet-acc-icp-encounter-class.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-encounter-class|
+|[icp-diagnoses-code](ValueSet-acc-icp-diagnosis-code.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-diagnosis-code|
+|[icp-status-observation](ValueSet-acc-icp-observation-status.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-observation-status|
+|[icp-referral-declined-reason](ValueSet-acc-icp-declined-reason.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-declined-reason|
 
 ### CodeSystems
 
@@ -45,7 +51,6 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |[acc-read-code](CodeSystem-acc-read-code.html)|http://hl7.org.nz/fhir/CodeSystem/acc-read-code|
 |[acc-icd-9](CodeSystem-acc-icd9.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icd-9|
 |[acc-icd-10](CodeSystem-acc-icd10.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icd-10|
-|[icp-exit-reason](CodeSystem-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-exit-reason|
 |[icp-exceptional-funding-rationale](CodeSystem-acc-icp-exceptional-funding-rationale.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-exceptional-funding-rationale|
 |[icp-service-bundle-change-rationale](CodeSystem-acc-icp-service-bundle-change-rationale.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-bundle-change-rationale|
 |[icp-referral-source-type](CodeSystem-acc-icp-referral-source-type.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-referral-source-type|
@@ -57,3 +62,5 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |[icp-clinical-measurement-standard](CodeSystem-acc-icp-clinical-measurement-standard.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-clinical-measurement-standard|
 |[icp-recorded-outcome-stage](CodeSystem-acc-icp-recorded-outcome-stage.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-recorded-outcome-stage|
 |[icp-data-absent-reason](CodeSystem-acc-icp-data-absent-reason.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-data-absent-reason|
+|[icp-exit-reason](CodeSystem-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-exit-reason|
+|[icp-referral-declined-reason](CodeSystem-acc-icp-declined-reason.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-declined-reason|

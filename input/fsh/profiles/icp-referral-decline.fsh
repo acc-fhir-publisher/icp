@@ -51,8 +51,12 @@ Description:    "ICP Case Create is to be used by the supplier to furnish ACC wi
 * serviceType.coding.code ^short = "msk"
 
 * status from $icp-encounter-status-vs (required)
-* status ^short = "triaged | finished"
-* status ^definition = "The Status of the encounter (Triaged or Finished)."
+* status ^short = "finished"
+* status ^definition = "The Status of the encounter can only be finished (Finished)."
+
+* class from $icp-encounter-class-vs (required)
+* class ^short = "PRENC"
+* class ^definition = "The class of the encounter can only be pre-admission (pre-admission)."
 
 * identifier ^slicing.description = "ICP identifiers"
 * identifier ^slicing.discriminator.type = #value
@@ -78,8 +82,10 @@ Description:    "ICP Case Create is to be used by the supplier to furnish ACC wi
 * extension contains
     $acc-providerid named acc-providerid 1..1 and
     $icp-referral-source named referral-source 1..1 and
-    $icp-declined named declined 1..1 and
+    $icp-referral-declined named referral-declined 1..1 and
     $icp-triage named triage 0..1
 
-* extension[acc-providerid] ^short = "The ACC provider ID associated with the ICP case"
+* extension[acc-providerid] ^short = "The ACC provider Id of the practioner providing this information"
 * extension[referral-source] ^short = "(gp | physio | specialist | allied | employer | rongoa | other | acc | patient)"
+* extension[referral-declined] ^short = "The declined reason and details for declining the referral"
+* extension[triage] ^short = "The triage assessment of the patient must be present when a triage has been performed"

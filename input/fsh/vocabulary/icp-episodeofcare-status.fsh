@@ -1,9 +1,9 @@
 ValueSet: ICPStatusVS
-Id: acc-icp-status
+Id: acc-icp-episodeofcare-status
 Title: "Status"
 Description: "The Status of the ICP case (Active or Finished)"
 
-* ^url = $icp-status-vs
+* ^url = $icp-episodeofcare-status-vs
 * insert Acc-Vocabulary-Metadata
 
 * $episode-of-care-status#active "Active"
