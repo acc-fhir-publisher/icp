@@ -10,7 +10,7 @@ An ICP "Episode of Care" is also referred to as an "ICP Case". It runs from the 
 
 The ICP Observation/Measurement resource is used to provide clinical/functional measurement details to ACC. (AKA site-specific clinical measures and PROMs)
 
-The ICP Referral Decline resource is used to provide details of a referral decline to ACC, which may include details of triage performed.
+The ICP Referral Decline resource is used to provide details of a "ICP referral decline" information to ACC. This includes pre-triage declines as well as declines that occur after triage been complete.
 
 There are various ICP profiles available:
 
@@ -23,7 +23,7 @@ There are various ICP profiles available:
 |[Icp Case Exit](StructureDefinition-acc-icp-case-exit.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-finished|This profile supports suppliers needing to inform ACC of a patient being exited from their ICP service.|[example](EpisodeOfCare-icp-exit-case.html)|
 |[Icp Measurement Clinical](StructureDefinition-acc-icp-measurement-clinical.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-clinical|This profile supports suppliers providing site-specific clinical measures to ACC.|[example](Observation-icp-clinical-measurement-shoulder-strength.html)|
 |[Icp Measurement PROM](StructureDefinition-acc-icp-measurement-prom.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-prom|This profile supports suppliers providing site-specific patient reported outcome measures (PROMs) to ACC.|[example](Observation-icp-prom-measurement.html)|
-|[Icp Referral Decline](StructureDefinition-acc-icp-referral-decline.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-decline|This profile supports providers submitting referral decline to ACC, which may include details of triage performed.|[example](Encounter-icp-referral-decline.html)|
+|[Icp Referral Decline](StructureDefinition-acc-icp-referral-decline.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-decline|This profile supports providers providing ICP Referral Decline information to ACC.|[example](Encounter-icp-referral-decline.html)|
 
 ### Additional Profile resources
 
