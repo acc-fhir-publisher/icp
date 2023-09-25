@@ -10,7 +10,7 @@ An ICP "Episode of Care" is also referred to as an "ICP Case". It runs from the 
 
 The ICP Observation/Measurement resource is used to provide clinical/functional measurement details to ACC. (AKA site-specific clinical measures and PROMs)
 
-The ICP Referral Decline resource is used to provide details of a "ICP referral decline" information to ACC. This includes pre-triage declines as well as declines that occur after triage been complete.
+The ICP Referral Decline resource is used to provide ACC with the relevant details when an ICP supplier declines an ICP referral. This includes pre-triage declines as well as declines that occur aftertriage been complete.
 
 There are various ICP profiles available:
 
