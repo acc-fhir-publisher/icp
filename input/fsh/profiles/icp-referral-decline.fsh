@@ -2,7 +2,7 @@ Profile:        IcpReferralDecline
 Parent:         Encounter
 Id:             acc-icp-referral-decline
 Title:          "ACC ICP Referral Decline Resource"
-Description:    "ICP Case Create is to be used by the supplier to furnish ACC with the required information following the completion of the triage assessment and the decision to accept the patient into their ICP service."
+Description:    "The ICP Referral Decline profile is to be used by ICP suppliers to furnish ACC with the required information following them declining an ICP referral."
 
 * ^url = $icp-referral-decline
 * insert Acc-Metadata
