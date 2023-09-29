@@ -1,45 +1,71 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
+name: IG Build
 on:
-  workflow_dispatch:
-#   push:
-#     branches: [ trunk ]
-#   pull_request:
-#     branches: [ trunk ]
+  workflow_dispatch
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  build-and-publish:
     runs-on: ubuntu-latest
-     
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    container:
+      image: accnewzealand/ig-publisher:latest
+      credentials:
+        username: ${{ secrets.DOCKER_HUB_USERNAME }}
+        password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+    permissions:
+      packages: write
+      contents: read  
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Set Java Heap Space
+        run: |
+          echo "export JAVA_TOOL_OPTIONS='-Xmx2g'" >> $GITHUB_ENV
 
-      - name: Update the image to the latest publisher
-        uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-          args: ./_updatePublisher.sh --force
+      - name: Copy shell script file
+        run: |
+          mkdir -p /apps/icp
+          cp -r * /apps/icp/
+          chmod +x /apps/icp/build-publish.sh
 
-      - name: Run sushi to generate the ig.ini file
-        uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-          args: sushi
+      - name: Run shell script
+        run: |
+          /apps/icp/build-publish.sh
 
-      - name: Run the IG publisher
-        uses: docker://hl7fhir/ig-publisher-base:latest
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          args: ./_genonce.sh -no-sushi
-          
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output
+          node-version: 16 # Adjust to your Node.js version
+          registry-url: https://npm.pkg.github.com/
+      
+      - name: Create package.json
+        run: |
+          cd /apps/icp/package
+          echo '{
+            "name": "@integration-services-accnz/icp",
+            "version": "1.0.3",
+            "publishConfig": {
+                "registry": "https://npm.pkg.github.com"
+              },
+            "repository":"https://github.com/integration-services-accnz/icp",
+            "canonical": "http://hl7.org.nz/fhir/icp",
+            "url": "http://hl7.org.nz/fhir/icp",
+            "title": "New Zealand ICP Implementation Guide",
+            "description": "The ICP facade",
+            "language": "en",
+            "author": "ACC Integration",
+            "maintainers": [
+                {
+                    "name": "ACC Integration",
+                    "email": "integrationsupport@acc.co.nz"
+                }
+            ],
+            "license": "CC0-1.0"
+          }' > package.json
+        
+      - name: Publish to GitHub Package Registry
+        run: |
+          cd /apps/icp/package
+          npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
