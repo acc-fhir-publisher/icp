@@ -81,3 +81,12 @@ Description: "The type of ICP service. Currently only musculoskeletal (msk) is a
 * #icp-val-9000
     "There is an ACC system issue. You'll need to resubmit your content later. Advise ACC Digital Operations at digitaloperations@acc.co.nz."
     "There is an ACC system issue. You'll need to resubmit your content later. Advise ACC Digital Operations at digitaloperations@acc.co.nz."
+* #icp-auth-2000
+    "{EmailAddress} isn't a valid user. Contact ACC Digital Operations at digitaloperations@acc.co.nz to arrange permission."
+    "{EmailAddress} isn't a valid user. Contact ACC Digital Operations at digitaloperations@acc.co.nz to arrange permission."
+* #icp-auth-2001
+    "You are not authorised to access this service. Contact ACC Digital Operations at digitaloperations@acc.co.nz to arrange permission."
+    "You are not authorised to access this service. Contact ACC Digital Operations at digitaloperations@acc.co.nz to arrange permission."
+* #icp-auth-2002
+    "You are not authorised to access this vendor record. Contact ACC Digital Operations at digitaloperations@acc.co.nz to arrange permission."
+    "You are not authorised to access this vendor record. Contact ACC Digital Operations at digitaloperations@acc.co.nz to arrange permission."  
