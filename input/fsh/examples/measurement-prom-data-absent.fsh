@@ -13,10 +13,6 @@ Description: "A KOOS patient-reported outcome measurement at exit where the test
 * effectiveDateTime = "2023-08-09T15:30:00Z"
 * status = #final
 
-* bodySite.coding[+].code = #72696002
-* bodySite.coding[=].system = $SCT
-* bodySite.coding[=].display = "Knee region structure"
-
 * dataAbsentReason.coding[+].system = $icp-data-absent-reason-cs
 * dataAbsentReason.coding[=].code = #not-tested
 * dataAbsentReason.coding[=].display = "Not Tested"

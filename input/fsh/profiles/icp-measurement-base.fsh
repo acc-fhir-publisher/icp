@@ -7,6 +7,23 @@ Description: "ACC Integrated Care Pathway Observation"
 * ^url = $icp-measurement
 * insert Acc-Metadata
 
+* basedOn 0..0
+* partOf 0..0
+* category 0..0
+* focus 0..0
+* encounter 0..0
+* issued 0..0
+* interpretation 0..0
+* note 0..0
+* bodySite 0..0
+* method 0..0
+* specimen 0..0
+* device 0..0
+* referenceRange 0..0
+* hasMember 0..0
+* derivedFrom 0..0
+* component 0..0
+
 * identifier ^slicing.description = "ICP identifiers"
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
@@ -41,10 +58,6 @@ Description: "ACC Integrated Care Pathway Observation"
 * status ^short = "final"
 * status ^definition = "The Status of the ICP case Observation is restricted to final."
 
-* bodySite from $icp-body-site-measure-vs (required)
-* bodySite 1..1
-* bodySite ^short = "The body site of the ICP case Observation is restricted to the body site of the injury."
-
 * effectiveDateTime only dateTime
 * effectiveDateTime obeys date-not-in-future-invariant
 * effectiveDateTime 1..1
@@ -55,6 +68,7 @@ Description: "ACC Integrated Care Pathway Observation"
 * dataAbsentReason 0..1
 * dataAbsentReason ^short = "The reason why the ICP case Observation is not present."
 
+* extension 2..2
 * extension contains
     $acc-providerid named acc-providerid 1..1 and
     $icp-recorded-outcome-stage named stage 1..1

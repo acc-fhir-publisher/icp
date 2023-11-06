@@ -21,7 +21,6 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |[icp-service-bundle](ValueSet-acc-icp-service-bundle.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-service-bundle|
 |[icp-service-type](ValueSet-acc-icp-service-type.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-service-type|
 |[icp-error-codes](ValueSet-acc-icp-error.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-error|
-|[icp-bodysite](ValueSet-acc-icp-body-site-measure.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-body-site-measure|
 |[icp-observation-status](ValueSet-acc-icp-observation-status.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-observation-status|
 |[icp-prom-measurement-standard](ValueSet-acc-icp-prom-measurement-standard.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-prom-measurement-standard|
 |[icp-clinical-measurement-standard](ValueSet-acc-icp-clinical-measurement-standard.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-clinical-measurement-standard|
