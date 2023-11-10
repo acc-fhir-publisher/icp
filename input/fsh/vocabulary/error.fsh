@@ -49,8 +49,8 @@ Description: "The type of ICP service. Currently only musculoskeletal (msk) is a
     "This claim requires assessment from an ACC staff member before it can be entered into ICP"
     "This claim requires assessment from an ACC staff member before it can be entered into ICP. Please contact ACC on 0800 101 996 ext. 77097 to discuss."
 * #icp-val-11
-    "That claim already has an ICP subcase"
-    "That claim already has an ICP subcase."
+    "This claim already has an ICP Case against it."
+    "This claim already has an ICP Case against it. Please contact ACC on 0800 101 996 ext. 77097 to discuss."
 * #icp-val-12
     "There's no ICP Subcase against the specified Claim in Eos"
     "Unable to find an ICP Case against this Claim. Please contact ACC via registrations@acc.co.nz"
