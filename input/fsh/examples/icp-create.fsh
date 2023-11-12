@@ -93,3 +93,11 @@ Description: "Example of an ICP EpisodeOfCare resource for entering into ACC Int
 * extension[=].extension[+].url = $icp-category-disciplines
 * extension[=].extension[=].extension[+].url = "number-of-disciplines"
 * extension[=].extension[=].extension[=].valueCode = #low
+
+* extension[=].extension[+].url = $icp-category-vocational
+* extension[=].extension[=].extension[+].url = "employment"
+* extension[=].extension[=].extension[=].valueCode = #low
+* extension[=].extension[=].extension[+].url = "return-to-work"
+* extension[=].extension[=].extension[=].valueCode = #low
+* extension[=].extension[=].extension[+].url = "workplace-support"
+* extension[=].extension[=].extension[=].valueCode = #low
