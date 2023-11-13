@@ -37,7 +37,7 @@ Description: "Integrated Care Pathways Referral Declined"
 * extension[recommended-next-steps].url = "recommended-next-steps" (exactly)
 * extension[recommended-next-steps].value[x] only string
 * extension[recommended-next-steps].valueString 1..1
-* extension[recommended-next-steps].valueString obeys recommended-next-steps-1000-length-invariant
+* extension[recommended-next-steps].valueString obeys recommended-next-steps-999-length-invariant
 
 * obeys other-reason-invariant and not-other-reason-invariant
 
@@ -46,7 +46,7 @@ Description: "'other-reason' must be no more than 110 characters."
 Expression: "value.length() <= 110"
 Severity: #error
 
-Invariant: recommended-next-steps-1000-length-invariant
-Description: "'recommended-next-steps' must be no more than 1000 characters."
-Expression: "value.length() <= 1000"
+Invariant: recommended-next-steps-999-length-invariant
+Description: "'recommended-next-steps' must be less than 1000 characters."
+Expression: "value.length() <= 999"
 Severity: #error
