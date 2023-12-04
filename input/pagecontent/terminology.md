@@ -18,7 +18,7 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |[icp-exceptional-funding-rationale](ValueSet-acc-icp-exceptional-funding-rationale.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-exceptional-funding-rationale|
 |[icp-service-bundle-change-rationale](ValueSet-acc-icp-service-bundle-change-rationale.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-service-bundle-change-rationale|
 |[icp-referral-source-type](ValueSet-acc-icp-referral-source-type.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-referral-source-type|
-|[icp-service-bundle](ValueSet-acc-icp-service-bundle.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-service-bundle|
+|[icp-service-bundle-msk](ValueSet-acc-icp-service-bundle-msk.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-service-bundle-msk|
 |[icp-service-type](ValueSet-acc-icp-service-type.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-service-type|
 |[icp-error-codes](ValueSet-acc-icp-error.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-error|
 |[icp-observation-status](ValueSet-acc-icp-observation-status.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-observation-status|
@@ -53,7 +53,7 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |[icp-exceptional-funding-rationale](CodeSystem-acc-icp-exceptional-funding-rationale.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-exceptional-funding-rationale|
 |[icp-service-bundle-change-rationale](CodeSystem-acc-icp-service-bundle-change-rationale.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-bundle-change-rationale|
 |[icp-referral-source-type](CodeSystem-acc-icp-referral-source-type.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-referral-source-type|
-|[icp-service-bundle](CodeSystem-acc-icp-service-bundle.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-bundle|
+|[icp-service-bundle-msk](CodeSystem-acc-icp-service-bundle-msk.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-bundle-msk|
 |[icp-service-type](CodeSystem-acc-icp-service-type.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-type|
 |[icp-complexity-score](CodeSystem-acc-icp-complexity-score.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-complexity-score|
 |[icp-error-codes](CodeSystem-acc-icp-error.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-error|

@@ -65,9 +65,9 @@ Alias: $icp-recorded-outcome-stage = http://hl7.org.nz/fhir/StructureDefinition/
 Alias: $icp-recorded-outcome-stage-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-recorded-outcome-stage
 Alias: $icp-recorded-outcome-stage-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-recorded-outcome-stage
 
-Alias: $icp-service-bundle = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-bundle
-Alias: $icp-service-bundle-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-bundle
-Alias: $icp-service-bundle-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-service-bundle
+Alias: $icp-service-bundle-msk = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-bundle-msk
+Alias: $icp-service-bundle-msk-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-bundle-msk
+Alias: $icp-service-bundle-msk-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-service-bundle-msk
 
 Alias: $icp-complexity-score = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-complexity-score
 Alias: $icp-complexity-score-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-complexity-score

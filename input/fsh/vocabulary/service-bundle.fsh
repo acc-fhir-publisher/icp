@@ -1,20 +1,20 @@
 ValueSet: ICPServiceBundle
-Id: acc-icp-service-bundle
+Id: acc-icp-service-bundle-msk
 Title: "Service Bundle"
 Description: "The ICP service bundles available as a selected treatment."
 
-* ^url = $icp-service-bundle-vs
+* ^url = $icp-service-bundle-msk-vs
 * insert Acc-Vocabulary-Metadata
 
-* include codes from system $icp-service-bundle-cs
+* include codes from system $icp-service-bundle-msk-cs
 
 
 CodeSystem: ICPServiceBundle
-Id: acc-icp-service-bundle
+Id: acc-icp-service-bundle-msk
 Title: "Service Bundle"
 Description: "The ICP service bundles available as a selected treatment."
 
-* ^url = $icp-service-bundle-cs
+* ^url = $icp-service-bundle-msk-cs
 * ^caseSensitive = true
 * insert Acc-Vocabulary-Metadata
 

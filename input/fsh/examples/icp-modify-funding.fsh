@@ -18,7 +18,7 @@ Description: "Example of an EpisodeOfCare service bundle modification request"
 * extension[=].valueString = "J99966"
 
 * extension[+].url = $icp-service-bundle-change
-* extension[=].extension[0].url = $icp-service-bundle
+* extension[=].extension[0].url = $icp-service-bundle-msk
 * extension[=].extension[=].valueCode = #icpkar2
 * extension[=].extension[+].url = "rationale"
 * extension[=].extension[=].valueCode = #other

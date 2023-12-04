@@ -12,7 +12,7 @@ Description: "An extension to capture the reason for a change in the ICP Service
 
 * extension 2..3
 * extension contains
-    $icp-service-bundle named service-bundle 1..1 and
+    $icp-service-bundle-msk named service-bundle 1..1 and
     rationale 1..1 and
     supporting-details 0..1
 

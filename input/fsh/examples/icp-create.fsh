@@ -14,7 +14,7 @@ Description: "Example of an ICP EpisodeOfCare resource for entering into ACC Int
 * status = #active
 * patient = Reference(patient-unknown)
 
-* extension[0].url = $icp-service-bundle
+* extension[0].url = $icp-service-bundle-msk
 * extension[=].valueCode = #icpkar1
 * extension[+].url = $acc-providerid
 * extension[=].valueString = "J99966"

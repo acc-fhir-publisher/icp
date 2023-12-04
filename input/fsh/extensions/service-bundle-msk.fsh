@@ -1,8 +1,8 @@
 Extension: Icp_ServiceBundle
-Id: acc-icp-service-bundle
+Id: acc-icp-service-bundle-msk
 Title: "Service Bundle"
-Description: "Indicates the ICP service bundle selected for the treatment."
-* ^url = $icp-service-bundle
+Description: "Indicates the ICP service bundle MSK selected for the treatment."
+* ^url = $icp-service-bundle-msk
 * insert Acc-Metadata
 
 * ^context[0].type = #element
@@ -12,4 +12,4 @@ Description: "Indicates the ICP service bundle selected for the treatment."
 
 * value[x] only code
 * valueCode 1..1
-* valueCode from $icp-service-bundle-vs (required)
+* valueCode from $icp-service-bundle-msk-vs (required)

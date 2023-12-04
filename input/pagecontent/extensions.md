@@ -4,7 +4,7 @@
 |Id |Canonical url | Description |
 |--- |--- | --- |
 |[ACC ProviderId](StructureDefinition-acc-providerid.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-providerid|This should represent the person providing the data to ACC.|
-|[Service Bundle](StructureDefinition-acc-icp-service-bundle.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-bundle|Indicates the ICP service bundle selected for the treatment|
+|[Service Bundle](StructureDefinition-acc-icp-service-bundle-msk.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-bundle-msk|Indicates the ICP MSK service bundle selected for the treatment|
 |[ClientAuthority](StructureDefinition-acc-icp-client-authority.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-client-authority|Indicates that the Client has agreed to ACC being able to collect, store, use, &amp; share their information.|
 |[ClientParticipationAgreement](StructureDefinition-acc-icp-client-participation-agreement.html)|http://hl7.org.nz/fhir/StructureDefinition/client-participation-agreement|Indicates that the Client has agreed to participating in ICP.|
 |[Diagnoses](StructureDefinition-acc-icp-diagnoses.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-covers-all-claim-diagnoses|Indicates whether or not the ICP case is treating all the diagnoses on the claim.|
