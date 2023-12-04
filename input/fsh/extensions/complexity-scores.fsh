@@ -7,12 +7,12 @@ Description: "The scores obtained from the ICP complexity assessment/tool."
 * insert Acc-Metadata
 
 * ^context[0].type = #element
-* ^context[=].expression = "EpisodeOfCare"
-* ^context[+].type = #element
-* ^context[=].expression = "EpisodeOfCare.extension"
-* ^context[+].type = #element
 * ^context[=].expression = "Encounter.extension"
 
+* ^context[+].type = #element
+* ^context[=].expression = "EpisodeOfCare.extension"
+
+* extension 5..6
 * extension contains
     $icp-complexity-score named complexityScore 1..1 and
     $icp-category-co-morbidities named categoryCoMorbidities 1..1 and

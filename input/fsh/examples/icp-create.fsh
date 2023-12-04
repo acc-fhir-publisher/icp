@@ -16,14 +16,8 @@ Description: "Example of an ICP EpisodeOfCare resource for entering into ACC Int
 
 * extension[0].url = $icp-service-bundle
 * extension[=].valueCode = #icpkar1
-* extension[+].url = $icp-acc-client-authority
-* extension[=].valueBoolean = true
-* extension[+].url = $icp-client-participation-agreement
-* extension[=].valueBoolean = true
 * extension[+].url = $acc-providerid
 * extension[=].valueString = "J99966"
-* extension[+].url = $icp-triage-assessment-date
-* extension[=].valueDate = "2022-11-17"
 
 * extension[+].url = $icp-diagnoses
 * extension[=].extension[0].url = "covers-all-claim-diagnoses"
@@ -54,50 +48,59 @@ Description: "Example of an ICP EpisodeOfCare resource for entering into ACC Int
 * extension[=].extension[+].url = "supporting-details"
 * extension[=].extension[=].valueString = "supporting details"
 
-* extension[+].url = $icp-complexity-scores
-* extension[=].extension[0].url = $icp-complexity-score
-* extension[=].extension[=].valueCode = #low
+* extension[+].url = $icp-triage
 
-* extension[=].extension[+].url = $icp-category-co-morbidities
-* extension[=].extension[=].extension[+].url = "co-morbidity-factors"
-* extension[=].extension[=].extension[=].valueCode = #low
+* extension[=].extension[0].url = $icp-acc-client-authority
+* extension[=].extension[=].valueBoolean = true
+* extension[=].extension[+].url = $icp-client-participation-agreement
+* extension[=].extension[=].valueBoolean = true
+* extension[=].extension[+].url = $icp-triage-assessment-date
+* extension[=].extension[=].valueDate = "2022-11-17"
 
-* extension[=].extension[+].url = $icp-category-psychosocial
-* extension[=].extension[=].extension[+].url = "social-support-network"
-* extension[=].extension[=].extension[=].valueCode = #low
-* extension[=].extension[=].extension[+].url = "patient-resilience"
-* extension[=].extension[=].extension[=].valueCode = #low
-* extension[=].extension[=].extension[+].url = "equitable-access"
-* extension[=].extension[=].extension[=].valueCode = #low
-* extension[=].extension[=].extension[+].url = "cultural-support"
-* extension[=].extension[=].extension[=].valueCode = #low
-* extension[=].extension[=].extension[+].url = "active-participation"
-* extension[=].extension[=].extension[=].valueCode = #low
-* extension[=].extension[=].extension[+].url = "medication-use"
-* extension[=].extension[=].extension[=].valueCode = #low
-* extension[=].extension[=].extension[+].url = "health-literacy"
+* extension[=].extension[+].url = $icp-complexity-scores
+* extension[=].extension[=].extension[0].url = $icp-complexity-score
 * extension[=].extension[=].extension[=].valueCode = #low
 
-* extension[=].extension[+].url = $icp-category-contextual
-* extension[=].extension[=].extension[+].url = "housing-accommodation"
-* extension[=].extension[=].extension[=].valueCode = #low
-* extension[=].extension[=].extension[+].url = "travel"
-* extension[=].extension[=].extension[=].valueCode = #low
-* extension[=].extension[=].extension[+].url = "return-to-sport"
-* extension[=].extension[=].extension[=].valueCode = #low
-* extension[=].extension[=].extension[+].url = "finances"
-* extension[=].extension[=].extension[=].valueCode = #low
-* extension[=].extension[=].extension[+].url = "return-to-adls"
-* extension[=].extension[=].extension[=].valueCode = #low
+* extension[=].extension[=].extension[+].url = $icp-category-co-morbidities
+* extension[=].extension[=].extension[=].extension[0].url = "co-morbidity-factors"
+* extension[=].extension[=].extension[=].extension[=].valueCode = #low
 
-* extension[=].extension[+].url = $icp-category-disciplines
-* extension[=].extension[=].extension[+].url = "number-of-disciplines"
-* extension[=].extension[=].extension[=].valueCode = #low
+* extension[=].extension[=].extension[+].url = $icp-category-psychosocial
+* extension[=].extension[=].extension[=].extension[0].url = "social-support-network"
+* extension[=].extension[=].extension[=].extension[=].valueCode = #low
+* extension[=].extension[=].extension[=].extension[+].url = "patient-resilience"
+* extension[=].extension[=].extension[=].extension[=].valueCode = #low
+* extension[=].extension[=].extension[=].extension[+].url = "equitable-access"
+* extension[=].extension[=].extension[=].extension[=].valueCode = #low
+* extension[=].extension[=].extension[=].extension[+].url = "cultural-support"
+* extension[=].extension[=].extension[=].extension[=].valueCode = #low
+* extension[=].extension[=].extension[=].extension[+].url = "active-participation"
+* extension[=].extension[=].extension[=].extension[=].valueCode = #low
+* extension[=].extension[=].extension[=].extension[+].url = "medication-use"
+* extension[=].extension[=].extension[=].extension[=].valueCode = #low
+* extension[=].extension[=].extension[=].extension[+].url = "health-literacy"
+* extension[=].extension[=].extension[=].extension[=].valueCode = #low
 
-* extension[=].extension[+].url = $icp-category-vocational
-* extension[=].extension[=].extension[+].url = "employment"
-* extension[=].extension[=].extension[=].valueCode = #low
-* extension[=].extension[=].extension[+].url = "return-to-work"
-* extension[=].extension[=].extension[=].valueCode = #low
-* extension[=].extension[=].extension[+].url = "workplace-support"
-* extension[=].extension[=].extension[=].valueCode = #low
+* extension[=].extension[=].extension[+].url = $icp-category-contextual
+* extension[=].extension[=].extension[=].extension[0].url = "housing-accommodation"
+* extension[=].extension[=].extension[=].extension[=].valueCode = #low
+* extension[=].extension[=].extension[=].extension[+].url = "travel"
+* extension[=].extension[=].extension[=].extension[=].valueCode = #low
+* extension[=].extension[=].extension[=].extension[+].url = "return-to-sport"
+* extension[=].extension[=].extension[=].extension[=].valueCode = #low
+* extension[=].extension[=].extension[=].extension[+].url = "finances"
+* extension[=].extension[=].extension[=].extension[=].valueCode = #low
+* extension[=].extension[=].extension[=].extension[+].url = "return-to-adls"
+* extension[=].extension[=].extension[=].extension[=].valueCode = #low
+
+* extension[=].extension[=].extension[+].url = $icp-category-disciplines
+* extension[=].extension[=].extension[=].extension[0].url = "number-of-disciplines"
+* extension[=].extension[=].extension[=].extension[=].valueCode = #low
+
+* extension[=].extension[=].extension[+].url = $icp-category-vocational
+* extension[=].extension[=].extension[=].extension[0].url = "employment"
+* extension[=].extension[=].extension[=].extension[=].valueCode = #low
+* extension[=].extension[=].extension[=].extension[+].url = "return-to-work"
+* extension[=].extension[=].extension[=].extension[=].valueCode = #low
+* extension[=].extension[=].extension[=].extension[+].url = "workplace-support"
+* extension[=].extension[=].extension[=].extension[=].valueCode = #low

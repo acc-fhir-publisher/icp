@@ -6,13 +6,8 @@ Description: "The psychosocial category."
 * insert Acc-Metadata
 
 * ^context[0].type = #element
-* ^context[=].expression = "EpisodeOfCare"
-* ^context[+].type = #element
-* ^context[=].expression = "EpisodeOfCare.extension"
-* ^context[+].type = #element
 * ^context[=].expression = "EpisodeOfCare.extension.extension"
-* ^context[+].type = #element
-* ^context[=].expression = "Encounter.extension"
+
 * ^context[+].type = #element
 * ^context[=].expression = "Encounter.extension.extension"
 
