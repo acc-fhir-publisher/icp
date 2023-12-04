@@ -1,4 +1,4 @@
-name: IG Build
+name: Publish IG Package to GitHub
 on:
   workflow_dispatch
 
