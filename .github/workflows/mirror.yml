@@ -1,6 +1,6 @@
 # this mirrors all changes from the icp to the icp-mirror repository
 
-name: mirror-hl7nz
+name: Publish to hl7nz
 
 # sdfsdf
 on:
