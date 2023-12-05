@@ -17,7 +17,7 @@ Description: "A baseline measure of shoulder function through a 'shoulder abduct
 * valueQuantity.value = 10.60
 * valueQuantity.system = "http://unitsofmeasure.org"
 
-* code.coding[+].system = $icp-clinical-measurement-standard-cs
+* code.coding[+].system = $icp-clinical-measurement-standard-msk-cs
 * code.coding[=].code = #shoulder-abduction-45deg-hand-held-dynamometer
 * code.coding[=].display = "Shoulder abduction 45deg hand held dynamometer"
 

@@ -22,8 +22,8 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |[icp-service-type](ValueSet-acc-icp-service-type.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-service-type|
 |[icp-error-codes](ValueSet-acc-icp-error.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-error|
 |[icp-observation-status](ValueSet-acc-icp-observation-status.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-observation-status|
-|[icp-prom-measurement-standard](ValueSet-acc-icp-prom-measurement-standard.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-prom-measurement-standard|
-|[icp-clinical-measurement-standard](ValueSet-acc-icp-clinical-measurement-standard.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-clinical-measurement-standard|
+|[icp-prom-msk-measurement-standard](ValueSet-acc-icp-prom-msk-measurement-standard.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-prom-msk-measurement-standard|
+|[icp-clinical-msk-measurement-standard](ValueSet-acc-icp-clinical-msk-measurement-standard.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-clinical-msk-measurement-standard|
 |[icp-recorded-outcome-stage](ValueSet-acc-icp-recorded-outcome-stage.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-recorded-outcome-stage|
 |[icp-data-absent-reason](ValueSet-acc-icp-data-absent-reason.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-data-absent-reason|
 |[icp-exit-reason](ValueSet-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-exit-reason|
@@ -57,8 +57,8 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |[icp-service-type](CodeSystem-acc-icp-service-type.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-type|
 |[icp-complexity-score](CodeSystem-acc-icp-complexity-score.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-complexity-score|
 |[icp-error-codes](CodeSystem-acc-icp-error.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-error|
-|[icp-prom-measurement-standard](CodeSystem-acc-icp-prom-measurement-standard.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-prom-measurement-standard|
-|[icp-clinical-measurement-standard](CodeSystem-acc-icp-clinical-measurement-standard.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-clinical-measurement-standard|
+|[icp-prom-msk-measurement-standard](CodeSystem-acc-icp-prom-msk-measurement-standard.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-prom-msk-measurement-standard|
+|[icp-clinical-msk-measurement-standard](CodeSystem-acc-icp-clinical-msk-measurement-standard.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-clinical-msk-measurement-standard|
 |[icp-recorded-outcome-stage](CodeSystem-acc-icp-recorded-outcome-stage.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-recorded-outcome-stage|
 |[icp-data-absent-reason](CodeSystem-acc-icp-data-absent-reason.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-data-absent-reason|
 |[icp-exit-reason](CodeSystem-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icp-exit-reason|

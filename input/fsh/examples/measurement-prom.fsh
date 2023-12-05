@@ -16,7 +16,7 @@ Description: "A baseline KOOS patient-reported outcome measurement"
 
 * effectiveDateTime = "2023-08-09T15:30:00Z"
 
-* code.coding[+].system = $icp-prom-measurement-standard-cs
+* code.coding[+].system = $icp-prom-measurement-standard-msk-cs
 * code.coding[=].code = #koos
 * code.coding[=].display = "KOOS"
 

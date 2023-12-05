@@ -1,19 +1,19 @@
-ValueSet: ICPClinicalMeasurementStandard
-Id: acc-icp-clinical-measurement-standard
-Title: "clinical-measurement-standard"
+ValueSet: ICPClinicalMskMeasurementStandard
+Id: acc-icp-clinical-msk-measurement-standard
+Title: "clinical-msk-measurement-standard"
 Description: "The measurement standards applicable to site-specific clinical measures for ICPMSK."
 
-* ^url = $icp-clinical-measurement-standard-vs
+* ^url = $icp-clinical-measurement-standard-msk-vs
 * insert Acc-Vocabulary-Metadata
-* include codes from system $icp-clinical-measurement-standard-cs
+* include codes from system $icp-clinical-measurement-standard-msk-cs
 
-CodeSystem: ICPClinicalMeasurementStandard
-Id: acc-icp-clinical-measurement-standard
-Title: "clinical-measurement-standard"
+CodeSystem: ICPClinicalMskMeasurementStandard
+Id: acc-icp-clinical-msk-measurement-standard
+Title: "clinical-msk-measurement-standard"
 Description: "The measurement standards applicable to site-specific clinical measures for ICPMSK."
 
 
-* ^url = $icp-clinical-measurement-standard-cs
+* ^url = $icp-clinical-measurement-standard-msk-cs
 * ^caseSensitive = true
 * insert Acc-Vocabulary-Metadata
 

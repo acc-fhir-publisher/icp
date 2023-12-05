@@ -101,11 +101,11 @@ Alias: $icp-error-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-error
 Alias: $icp-data-absent-reason-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-data-absent-reason
 Alias: $icp-data-absent-reason-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-data-absent-reason
 
-Alias: $icp-clinical-measurement-standard-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-clinical-measurement-standard
-Alias: $icp-clinical-measurement-standard-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-clinical-measurement-standard
+Alias: $icp-clinical-measurement-standard-msk-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-clinical-msk-measurement-standard
+Alias: $icp-clinical-measurement-standard-msk-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-clinical-msk-measurement-standard
 
-Alias: $icp-prom-measurement-standard-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-prom-measurement-standard
-Alias: $icp-prom-measurement-standard-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-prom-measurement-standard
+Alias: $icp-prom-measurement-standard-msk-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-prom-msk-measurement-standard
+Alias: $icp-prom-measurement-standard-msk-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-prom-msk-measurement-standard
 
 Alias: $icp-category-clinical-observation-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-category-clinical-observation
 Alias: $icp-category-clinical-observation-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-category-clinical-observation

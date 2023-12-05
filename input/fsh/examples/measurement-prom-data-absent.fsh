@@ -17,7 +17,7 @@ Description: "A KOOS patient-reported outcome measurement at exit where the test
 * dataAbsentReason.coding[=].code = #not-tested
 * dataAbsentReason.coding[=].display = "Not Tested"
 
-* code.coding[+].system = $icp-prom-measurement-standard-cs
+* code.coding[+].system = $icp-prom-measurement-standard-msk-cs
 * code.coding[=].code = #koos
 * code.coding[=].display = "KOOS"
 
