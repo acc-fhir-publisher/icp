@@ -28,7 +28,7 @@ These resources can be used by Terminology Servers (like [Terminz](https://termi
 
 There is a lot more detail on terminology in the [FHIR specification](http://hl7.org/fhir/terminology-module.html). The section on [Terminology Services](http://hl7.org/fhir/terminology-service.html) is also useful.
 
-### Naming System
+### Identifiers
 
 This tab lists the [NamingSystem](http://hl7.org/fhir/namingsystem.html) resources defined in this guide, which are used to define the identifiers used in the guide.
 

@@ -55,6 +55,7 @@ Description:    "The ACC ICP Case resource based on Episode of Care"
 * identifier ^slicing.rules = #closed
 * identifier ^slicing.ordered = false
 
+* identifier 1..1
 * identifier contains
     icpclaimnumber 1..1
 
@@ -62,6 +63,10 @@ Description:    "The ACC ICP Case resource based on Episode of Care"
 * identifier[icpclaimnumber].value 1..1
 * identifier[icpclaimnumber].value obeys acc-claim-number
 * identifier[icpclaimnumber] ^short = "The ACC claim number to be used in combination with the contained patient's date of birth, as the ICP case idenfitier."
+* identifier[icpclaimnumber].id 0..0
+* identifier[icpclaimnumber].extension 0..0
+* identifier[icpclaimnumber].period 0..0
+* identifier[icpclaimnumber].assigner 0..0
 
 * extension contains
     $acc-providerid named acc-providerid 1..1

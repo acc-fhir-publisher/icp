@@ -1,6 +1,6 @@
 RuleSet: Acc-Metadata
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
-* ^version = "0.1.0"
+* ^version = "0.1.1"
 * ^status = #draft
 * ^date = "2022-11-20"
 * ^publisher = "ACC New Zealand"
@@ -12,5 +12,5 @@ RuleSet: Acc-Metadata
 
 
 RuleSet: Acc-Vocabulary-Metadata
-* ^version = "0.1.0"
+* ^version = "0.1.1"
 * ^experimental = false

@@ -29,12 +29,19 @@ Description: "ACC Integrated Care Pathway Observation"
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #closed
 * identifier ^slicing.ordered = false
+
+* identifier 1..1
 * identifier contains
     icpclaimnumber 1..1
+
 * identifier[icpclaimnumber].system = $acc-claim-number (exactly)
 * identifier[icpclaimnumber].value 1..1
 * identifier[icpclaimnumber].value obeys acc-claim-number
 * identifier[icpclaimnumber] ^short = "The ACC claim number to be used in combination with the contained patient's date of birth, as the ICP case idenfitier."
+* identifier[icpclaimnumber].id 0..0
+* identifier[icpclaimnumber].extension 0..0
+* identifier[icpclaimnumber].period 0..0
+* identifier[icpclaimnumber].assigner 0..0
 
 * contained ^slicing.discriminator.type = #type
 * contained ^slicing.discriminator.path = "$this"

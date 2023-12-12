@@ -27,7 +27,7 @@ parameters:
 dependencies:
   fhir.org.nz.ig.base:
      uri: 'http://fhir.org.nz/ig/base/ImplementationGuide/fhir.org.nz.ig.base'
-     version: 2.0.0
+     version: 2.1.2
 pages:
   index.md:
     title: IG Home
@@ -37,5 +37,5 @@ pages:
     title: Extensions
   terminology.md:
     title: Terminology
-  namingSystems.md:
-    title: Naming Systems
+  identifiers.md:
+    title: Identifiers

@@ -64,6 +64,7 @@ Description:    "The ICP Referral Decline profile is to be used by ICP suppliers
 * identifier ^slicing.rules = #closed
 * identifier ^slicing.ordered = false
 
+* identifier 1..1
 * identifier contains
     icpclaimnumber 1..1
 
@@ -71,7 +72,10 @@ Description:    "The ICP Referral Decline profile is to be used by ICP suppliers
 * identifier[icpclaimnumber].value 1..1
 * identifier[icpclaimnumber].value obeys acc-claim-number
 * identifier[icpclaimnumber] ^short = "The ACC claim number to be used in combination with the contained patient's date of birth, as the ICP case idenfitier."
-
+* identifier[icpclaimnumber].id 0..0
+* identifier[icpclaimnumber].extension 0..0
+* identifier[icpclaimnumber].period 0..0
+* identifier[icpclaimnumber].assigner 0..0
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
