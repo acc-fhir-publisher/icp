@@ -7,4 +7,4 @@ These are identifiers defined in this IG. They are defined using [NamingSystem](
 
 |Description | Url | Other Identifiers |Responsible |
 |--- |--- | --- | ---|
-|[ACC 45 Number](https://build.fhir.org/ig/HL7NZ/nzbase/namingSystems.html) |https://standards.digital.health.nz/ns/acc-45-number| |HISO |
+|[ACC 45 Number](https://fhir.org.nz/ig/base/namingSystems.html) |https://standards.digital.health.nz/ns/acc-45-number| |HISO |

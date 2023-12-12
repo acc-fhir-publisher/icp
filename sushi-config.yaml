@@ -27,7 +27,7 @@ parameters:
 dependencies:
   fhir.org.nz.ig.base:
      uri: 'http://fhir.org.nz/ig/base/ImplementationGuide/fhir.org.nz.ig.base'
-     version: 2.1.2
+     version: 3.0.0
 pages:
   index.md:
     title: IG Home
