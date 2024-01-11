@@ -7,7 +7,7 @@ Description: "Example of an EpisodeOfCare with an exit reason"
 
 * identifier.system = $acc-claim-number
 * identifier.use = #official
-* identifier.value = "A101113"
+* identifier.value = "AB12345"
 
 * contained = patient-unknown
 * patient = Reference(patient-unknown)

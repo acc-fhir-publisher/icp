@@ -6,7 +6,7 @@ Description: "A KOOS patient-reported outcome measurement at exit where the test
 * meta.profile = $icp-measurement-prom
 * identifier.system = $acc-claim-number
 * identifier.use = #official
-* identifier.value = "A101112"
+* identifier.value = "AB12345"
 * contained = patient-unknown
 * performer = Reference(Organization/ORG123)
 * subject = Reference(patient-unknown)

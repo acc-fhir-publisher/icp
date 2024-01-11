@@ -42,7 +42,7 @@ jobs:
           cd /apps/icp/package
           echo '{
             "name": "@integration-services-accnz/icp",
-            "version": "1.0.14",
+            "version": "1.0.15",
             "publishConfig": {
                 "registry": "https://npm.pkg.github.com"
               },

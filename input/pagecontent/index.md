@@ -32,7 +32,7 @@ There is a lot more detail on terminology in the [FHIR specification](http://hl7
 
 This tab lists the [NamingSystem](http://hl7.org/fhir/namingsystem.html) resources defined in this guide, which are used to define the identifiers used in the guide.
 
-Identifiers are used to unambiguously identify something. Examples in New Zealand are the NHI (National Health Identifier) or HPI (Health Practitioner index). Each type of identifier has a url that uniquely identifies it - for example the ACC claim number is http://hl7.org.nz/fhir/NamingSystem/icpclaimnumber. This url will be present in the 'system' value in a resource instance. Note that the url will not necessarily 'resolve' - entering it into a web browser will not result in anything.
+Identifiers are used to unambiguously identify something. Examples in New Zealand are the NHI (National Health Identifier) or HPI (Health Practitioner index). Each type of identifier has a url that uniquely identifies it - for example The ACC 45 number is http://hl7.org.nz/fhir/NamingSystem/icpclaimnumber. This url will be present in the 'system' value in a resource instance. Note that the url will not necessarily 'resolve' - entering it into a web browser will not result in anything.
 
 ### Artifact Index
 

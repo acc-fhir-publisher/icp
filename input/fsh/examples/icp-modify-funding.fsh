@@ -8,7 +8,7 @@ Description: "Example of an EpisodeOfCare service bundle modification request"
 
 * identifier.system = $acc-claim-number
 * identifier.use = #official
-* identifier.value = "A101112"
+* identifier.value = "AB12345"
 
 * status = #active
 * managingOrganization = Reference(Organization/ORG123)

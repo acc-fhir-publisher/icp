@@ -71,7 +71,9 @@ Description:    "The ICP Referral Decline profile is to be used by ICP suppliers
 * identifier[icpclaimnumber].system = $acc-claim-number (exactly)
 * identifier[icpclaimnumber].value 1..1
 * identifier[icpclaimnumber].value obeys acc-claim-number
-* identifier[icpclaimnumber] ^short = "The ACC claim number to be used in combination with the contained patient's date of birth, as the ICP case idenfitier."
+* identifier[icpclaimnumber].value = "AB12345"
+* identifier[icpclaimnumber].value ^short = "The ACC 45 number."
+* identifier[icpclaimnumber] ^short = "The ACC 45 number to be used in combination with the contained patient's date of birth, as the ICP case idenfitier."
 * identifier[icpclaimnumber].id 0..0
 * identifier[icpclaimnumber].extension 0..0
 * identifier[icpclaimnumber].period 0..0

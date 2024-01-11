@@ -6,7 +6,7 @@ Description: "A baseline KOOS patient-reported outcome measurement"
 * meta.profile = $icp-measurement-prom
 * identifier.system = $acc-claim-number
 * identifier.use = #official
-* identifier.value = "A101112"
+* identifier.value = "AB12345"
 * contained = patient-unknown
 * performer = Reference(Organization/ORG123)
 * subject = Reference(patient-unknown)

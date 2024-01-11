@@ -6,7 +6,7 @@ Description: "Example of an ICP EpisodeOfCare resource for entering into ACC Int
 * meta.profile = $icp-case-create
 * identifier.system = $acc-claim-number
 * identifier.use = #official
-* identifier.value = "A101112"
+* identifier.value = "AB12345"
 * type = $icp-service-type-cs#msk
 * contained = patient-unknown
 * managingOrganization = Reference(Organization/ORG123)

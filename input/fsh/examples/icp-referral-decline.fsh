@@ -8,7 +8,7 @@ Description: "Example of a referral decline Encounter"
 
 * identifier.system = $acc-claim-number
 * identifier.use = #official
-* identifier.value = "A101112"
+* identifier.value = "AB12345"
 
 * status = #finished
 * class = $encounter-class#PRENC

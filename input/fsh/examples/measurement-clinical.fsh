@@ -6,7 +6,7 @@ Description: "A baseline measure of shoulder function through a 'shoulder abduct
 * meta.profile = $icp-measurement-clinical
 * identifier.system = $acc-claim-number
 * identifier.use = #official
-* identifier.value = "A101112"
+* identifier.value = "AB12345"
 * contained = patient-unknown
 * performer = Reference(Organization/ORG123)
 * subject = Reference(patient-unknown)
