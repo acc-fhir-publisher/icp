@@ -42,4 +42,4 @@ This is a tab automatically generated during the build of the Implementation Gui
 
 Contains links to the main FHIR specification, as well downloads for the full IG or the artifacts defined in the guide (Extension Definitions, ValueSets and CodeSystems.)
 
-If you would like to make any feedback on this Implementation Guide, email <mailto:integratedcarepathways@acc.co.nz> or raise an issue on the [ICP GitHub repository](https://github.com/acc-fhir-publisher/icp)
+If you would like to make any feedback on this Implementation Guide, email <mailto:digitaloperations@acc.co.nz>

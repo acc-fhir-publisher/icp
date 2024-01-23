@@ -7,10 +7,10 @@ info:
     url: http://spdx.org/licenses/CC0-1.0.html
   contact:
     name: ACC
-    email: integrationsupport@acc.co.nz
+    email: digitaloperations@acc.co.nz
   version: 1.0.0
 servers:
-- url: https://apiservicesnpe.acc.co.nz/t01/cp-fhir-exp-api/v1/
+- url: https://provider.api-compliance.acc.co.nz/fhir/v1/integratedcarepathway/EpisodeOfCare
   description: ACC Integrated Care Pathways endpoint
 externalDocs:
   url: https://build.fhir.org/ig/acc-fhir-publisher/icp
