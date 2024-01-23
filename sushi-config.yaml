@@ -3,7 +3,7 @@ canonical: http://hl7.org.nz/fhir
 name: icp
 title: New Zealand ICP Implementation Guide
 description: This is the New Zealand ICP Implementation Guide
-status: draft # draft | active | retired | unknown
+status: active # draft | active | retired | unknown
 version: 0.1.1
 fhirVersion: 4.0.1
 copyrightYear: 2023+
