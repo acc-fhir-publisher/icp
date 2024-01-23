@@ -18,7 +18,7 @@ This is the computable resource that describes the RESTful endpoint
 """
 
 * date = "2023-08-17"
-* status = #draft
+* status = #active
 * kind = #instance
 * software.name = "ACC Integration API"
 * fhirVersion = #4.0.1

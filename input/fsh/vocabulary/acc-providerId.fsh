@@ -5,7 +5,8 @@ Description: "This represents the person submitting this form to ACC.  It should
 
 * ^url = $acc-providerid
 * ^jurisdiction.coding = urn:iso:std:iso:3166-1-2#NZ "New Zealand"
-* ^status = #draft
+* ^status = #active
+* insert Acc-Vocabulary-Metadata
 * ^context[0].type = #element
 * ^context[=].expression = "EpisodeOfCare"
 * ^context[+].type = #element
