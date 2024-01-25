@@ -4,7 +4,7 @@ name: icp
 title: New Zealand ICP Implementation Guide
 description: This is the New Zealand ICP Implementation Guide
 status: active # draft | active | retired | unknown
-version: 0.1.1
+version: 1.0.0
 fhirVersion: 4.0.1
 copyrightYear: 2023+
 license: CC0-1.0
