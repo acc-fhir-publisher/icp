@@ -21,12 +21,18 @@ Description: "Example of an EpisodeOfCare service bundle modification request"
 * extension[=].extension[0].url = $icp-service-bundle-msk
 * extension[=].extension[=].valueCode = #icpkar2
 * extension[=].extension[+].url = "rationale"
+* extension[=].extension[=].valueCode = #social-support
+* extension[=].extension[+].url = "rationale"
 * extension[=].extension[=].valueCode = #other
 * extension[=].extension[+].url = "supporting-details"
 * extension[=].extension[=].valueString = "service bundle change supporting details"
 
 * extension[+].url = $icp-exceptional-funding
 * extension[=].extension[0].url = "rationale"
+* extension[=].extension[=].valueCode = #social-support
+* extension[=].extension[0].url = "rationale"
+* extension[=].extension[=].valueCode = #medication-use
+* extension[=].extension[+].url = "rationale"
 * extension[=].extension[=].valueCode = #other
 * extension[=].extension[+].url = "supporting-details"
 * extension[=].extension[=].valueString = "exceptional funding supporting details"

@@ -10,10 +10,10 @@ Description: "An extension to capture the reason for a change in the ICP Service
 * ^context[+].type = #element
 * ^context[=].expression = "EpisodeOfCare.extension"
 
-* extension 2..3
+* extension 2..*
 * extension contains
     $icp-service-bundle-msk named service-bundle 1..1 and
-    rationale 1..1 and
+    rationale 1..* and
     supporting-details 0..1
 
 * extension[rationale].url = "rationale" (exactly)
