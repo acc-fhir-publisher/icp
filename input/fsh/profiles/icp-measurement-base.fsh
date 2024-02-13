@@ -37,7 +37,6 @@ Description: "ACC Integrated Care Pathway Observation"
 * identifier[icpclaimnumber].system = $acc-claim-number (exactly)
 * identifier[icpclaimnumber].value 1..1
 * identifier[icpclaimnumber].value obeys acc-claim-number
-* identifier[icpclaimnumber].value = "AB12345"
 * identifier[icpclaimnumber].value ^short = "The ACC 45 number."
 * identifier[icpclaimnumber] ^short = "The ACC 45 number to be used in combination with the contained patient's date of birth, as the ICP case idenfitier."
 * identifier[icpclaimnumber].id 0..0
