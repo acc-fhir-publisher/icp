@@ -69,8 +69,8 @@ Description: "ACC Integrated Care Pathway Observation"
 * effectiveDateTime only dateTime
 * effectiveDateTime obeys date-not-in-future-invariant
 * effectiveDateTime 1..1
-* effectiveDateTime ^short = "The date and time that the ICP case Observation was created."
-* effectiveDateTime ^definition = "The date and time that the ICP case Observation was created.  This should be in UTC format, and coverted for UTC as well.  e.g. New Zealand Daylight Savings time of 2024-02-19T11:17:44Z should be 2024-02-18T22:17:44Z"
+* effectiveDateTime ^short = "The date and time that the ICP case Observation was created.  This must be in UTC yyyy-MM-dd'T'HH:mm:ss'Z'."
+* effectiveDateTime ^definition = "The date and time that the ICP case Observation was created.  This should be in UTC format, and converted to UTC.  e.g. New Zealand Daylight Savings time of 2024-02-19T11:17:44Z should be 2024-02-18T22:17:44Z"
 
 * dataAbsentReason from $icp-data-absent-reason-vs
 * dataAbsentReason 0..1
