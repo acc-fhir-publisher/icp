@@ -74,7 +74,7 @@ Description: "ACC Integrated Care Pathway Observation"
 
 * dataAbsentReason from $icp-data-absent-reason-vs
 * dataAbsentReason 0..1
-* dataAbsentReason ^short = "The reason why the ICP case Observation is not present."
+* dataAbsentReason ^short = "The reason why the ICP case Observation value is not present."
 
 * extension 2..2
 * extension contains

@@ -2,7 +2,20 @@ Profile: IcpMeasurementClinical
 Parent: acc-icp-measurement
 Id: acc-icp-measurement-clinical
 Title: "ACC Integrated Care Pathway Clinical Observation"
-Description: "This resource profile supports suppliers providing site-specific clinical measures to ACC for ICP purposes."
+Description: """
+This resource profile supports suppliers providing site-specific clinical measures to ACC for ICP purposes.
+
+When the valueQuantity is provided, the value is expressed as a percentage from the following calculation:
+
+<div class="tableGridded"></div>
+
+| Measurement | Calculation |
+|--- |--- |
+| Shoulder | Kilogram of force measurement of the injured arm as a percentage of the measurement from the non-injured arm |
+| Lower back | Kilogram of force measurement of the lower back as a percentage of the normative value of 20kg (195Nm) |
+| Knee | Kilogram of force measurement of the injured knee as a percentage of the measurement from the non-injured knee |
+
+"""
 
 * ^url = $icp-measurement-clinical
 * insert Acc-Metadata
@@ -14,7 +27,13 @@ Description: "This resource profile supports suppliers providing site-specific c
 * value[x] only Quantity
 * valueQuantity obeys clinical-quantity-invariant and mandatory-icp-measurement-clinical-invariant
 * valueQuantity 0..1
-* valueQuantity ^short = "The strength measurement, expressed in kilograms of force."
+* valueQuantity ^short = "The strength measurement, expressed as a percentage from the calculation.  See the definition for more information."
+* valueQuantity ^definition = """
+    * The strength measurement, expressed as a percentage from the following calculation:
+        * Shoulder: Kilogram of force measurement of the injured arm as a percentage of the measurement from the non-injured arm
+        * Lower back: Kilogram of force measurement of the lower back as a percentage of the normative value of 20kg (195Nm)
+        * Knee: Kilogram of force measurement of the injured knee as a percentage of the measurement from the non-injured knee
+"""
 * valueQuantity.code = #kg
 * valueQuantity.system = "http://unitsofmeasure.org"
 
