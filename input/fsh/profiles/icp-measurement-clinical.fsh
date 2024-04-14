@@ -20,6 +20,8 @@ When the valueQuantity is provided, the value is expressed as a percentage from 
 * ^url = $icp-measurement-clinical
 * insert Acc-Metadata
 
+* derivedFrom 0..0
+
 * code from $icp-clinical-measurement-standard-msk-vs (required)
 * code 1..1
 * code ^definition = "Type of clinical component observation"

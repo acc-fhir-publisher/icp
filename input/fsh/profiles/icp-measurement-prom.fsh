@@ -7,6 +7,8 @@ Description: "This resource profile supports suppliers providing a site-specific
 * ^url = $icp-measurement-prom
 * insert Acc-Metadata
 
+* derivedFrom 0..0
+
 * code from $icp-prom-measurement-standard-msk-vs (required)
 * code 1..1
 * code ^definition = "Type of patient component observation"
