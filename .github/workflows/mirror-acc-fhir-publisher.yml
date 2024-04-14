@@ -26,6 +26,10 @@ jobs:
       - name: cleanup
         run: rm -rf ~/.ssh
 
+      - name: Set branch name
+        id: extract_branch
+        run: echo "::set-output name=branch::${GITHUB_REF#refs/heads/}"
+
       - name: Configure SSH and push
         run: |
           install -m 600 -D /dev/null ~/.ssh/id_ed25519
@@ -33,4 +37,4 @@ jobs:
           eval "$(ssh-agent -s)"
           ssh-add ~/.ssh/id_ed25519
           git remote set-url origin git@github.com:acc-fhir-publisher/icp.git
-          git push -u origin trunk
+          git push -u origin ${{ steps.extract_branch.outputs.branch }}
