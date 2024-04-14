@@ -21,7 +21,6 @@ Description: "ACC Integrated Care Pathway Observation"
 * device 0..0
 * referenceRange 0..0
 * hasMember 0..0
-* derivedFrom 0..0
 * component 0..0
 
 * identifier ^slicing.description = "ICP identifiers"
@@ -46,7 +45,7 @@ Description: "ACC Integrated Care Pathway Observation"
 
 * contained ^slicing.discriminator.type = #type
 * contained ^slicing.discriminator.path = "$this"
-* contained ^slicing.rules = #closed
+* contained ^slicing.rules = #open
 * contained ^slicing.description = "Slicing to specifiy an icp patient resource must be returned as a contained resource for the ICP case"
 * contained contains patient 1..1
 * contained[patient] only $icp-patient

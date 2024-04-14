@@ -11,6 +11,7 @@ Alias: $observation-status = http://hl7.org/fhir/observation-status
 Alias: $encounter-status = http://hl7.org/fhir/encounter-status
 Alias: $encounter-class = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $resource-status = 	http://hl7.org/fhir/resource-status
+Alias: $questionnaire-response = http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse
 
 Alias: $hpi-organisation = https://standards.digital.health.nz/id/hpi-organisation
 Alias: $nhi-patient = https://standards.digital.health.nz/ns/nhi-id
@@ -27,6 +28,7 @@ Alias: $icp-case-exit = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-
 Alias: $icp-measurement = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement
 Alias: $icp-measurement-clinical = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-clinical
 Alias: $icp-measurement-prom = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-prom
+Alias: $icp-measurement-bist = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-bist
 Alias: $icp-referral-decline = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-decline
 Alias: $icp-patient = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient
 
