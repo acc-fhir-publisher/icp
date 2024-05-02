@@ -38,7 +38,7 @@ Description: "The type of ICP service. Currently only musculoskeletal (msk) is a
     "This claim has been declined for cover and cannot be entered into ICP."
 * #icp-val-07
     "TPA Exclusion"
-    "This claim is managed by a Third Party Administrator (TPA) and cannot be entered into ICP. Please ask the Client to contact their TPA Provider and discuss having their claim returned to ACC if they would like to enter ICP."
+    "The employer we hold on file for this Client belongs to the Accredited Employer Programme and cannot be entered into ICP. If this is a non-work injury, please ask the Client to contact their Third Party Administrator Provider and discuss having their claim returned to ACC if they would like to enter ICP."
 * #icp-val-08
     "This claim is not eligible for ICP"
     "This claim is not eligible for ICP. Please check that the correct claim number has been used."

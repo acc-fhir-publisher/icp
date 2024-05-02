@@ -13,8 +13,8 @@ Description: "A baseline measure of shoulder function through a 'shoulder abduct
 * status = #final
 * effectiveDateTime = "2023-08-09T15:30:00Z"
 
-* valueQuantity.code = #kg
-* valueQuantity.value = 10.60
+* valueQuantity.code = #%
+* valueQuantity.value = 80.00
 * valueQuantity.system = "http://unitsofmeasure.org"
 
 * code.coding[+].system = $icp-clinical-measurement-standard-msk-cs

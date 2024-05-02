@@ -25,7 +25,7 @@ When the valueQuantity is provided, the value is expressed as a percentage from 
 * code ^definition = "Type of clinical component observation"
 
 * value[x] only Quantity
-* valueQuantity obeys clinical-quantity-invariant and mandatory-icp-measurement-clinical-invariant
+* valueQuantity obeys clinical-quantity-invariant
 * valueQuantity 0..1
 * valueQuantity ^short = "The strength measurement, expressed as a percentage from the calculation.  See the definition for more information."
 * valueQuantity ^definition = """
@@ -34,7 +34,10 @@ When the valueQuantity is provided, the value is expressed as a percentage from 
         * Lower back: Kilogram of force measurement of the lower back as a percentage of the normative value of 20kg (195Nm)
         * Knee: Kilogram of force measurement of the injured knee as a percentage of the measurement from the non-injured knee
 """
-* valueQuantity.code = #kg
+* valueQuantity.code from ICPClinicalMeasurementQuantityType
+* valueQuantity.code 1..1
+* valueQuantity.system 1..1
+* valueQuantity.value 1..1
 * valueQuantity.system = "http://unitsofmeasure.org"
 
 * obeys require-data-absent-or-value-quantity-invariant
@@ -44,11 +47,6 @@ Invariant: clinical-quantity-invariant
 Severity: #error
 Description: "The value must be a number between 0 and 100, with up to 2 decimal places"
 Expression: "$this.value.as(decimal) >= 0 and $this.value.as(decimal) <= 100 and $this.value.as(decimal).precision() <= 2"
-
-Invariant: mandatory-icp-measurement-clinical-invariant
-Severity: #error
-Description: "The clinical component observation must have a code and system"
-Expression: "$this.code.exists() and $this.system.exists() and $this.unit.empty()"
 
 Invariant: require-data-absent-or-value-quantity-invariant
 Severity: #error
