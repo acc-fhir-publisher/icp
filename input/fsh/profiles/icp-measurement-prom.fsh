@@ -39,7 +39,7 @@ These PROMS must be submitted through the PROM and Clinical measures API via the
 Invariant: prom-quantity-invariant
 Severity: #error
 Description: "The value must be between 0 and 100."
-Expression: "$this.value.toString().matches('^(?:0*(?:[0-9]|[1-9][0-9]|1[0-4][0-9]|100))$')"
+Expression: "$this.value.toString().matches('^(?:0*|[1-9][0-9]?|100)$')"
 
 Invariant: require-data-absent-or-value-integer-invariant
 Severity: #error
