@@ -16,8 +16,8 @@ These PROMS must be submitted through the PROM and Clinical measures API via the
 
 | Body site | Measurement standard | Measurement |
 |--- |--- |--- |
-| Shoulder | QuickDASH | QuickDASH values range from 1 to 100 |
-| Lower back |  Oswestry Disability Index |  Oswestry values 0 to 50 |
+| Shoulder | QuickDASH | QuickDASH values range from 0 to 100 |
+| Lower back |  Oswestry Disability Index |  Oswestry values 0 to 100 |
 | Knee | Knee Injury and Osteoarthritis Outcome Score (KOOS) | KOOS values 0 to 100 |
 
 """
@@ -38,8 +38,8 @@ These PROMS must be submitted through the PROM and Clinical measures API via the
 
 Invariant: prom-quantity-invariant
 Severity: #error
-Description: "The value must be between 0 and 150."
-Expression: "$this.value.toString().matches('^(?:0*(?:[0-9]|[1-9][0-9]|1[0-4][0-9]|150))$')"
+Description: "The value must be between 0 and 100."
+Expression: "$this.value.toString().matches('^(?:0*(?:[0-9]|[1-9][0-9]|1[0-4][0-9]|100))$')"
 
 Invariant: require-data-absent-or-value-integer-invariant
 Severity: #error
