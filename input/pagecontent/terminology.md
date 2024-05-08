@@ -34,6 +34,7 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |[icp-diagnoses-code](ValueSet-acc-icp-diagnosis-code.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-diagnosis-code|
 |[icp-status-observation](ValueSet-acc-icp-observation-status.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-observation-status|
 |[icp-referral-declined-reason](ValueSet-acc-icp-declined-reason.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-declined-reason|
+|[icp-clinical-msk-measurement-quantity-type](ValueSet-acc-icp-clinical-msk-measurement-quantity-type.html)|http://unitsofmeasure.org|
 
 ### CodeSystems
 

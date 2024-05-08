@@ -34,11 +34,11 @@ When the valueQuantity is provided, the value is expressed as a percentage from 
         * Lower back: Kilogram of force measurement of the lower back as a percentage of the normative value of 20kg (195Nm)
         * Knee: Kilogram of force measurement of the injured knee as a percentage of the measurement from the non-injured knee
 """
-* valueQuantity.code from ICPClinicalMeasurementQuantityType
+* valueQuantity.code from ICPClinicalMskMeasurementQuantityType
 * valueQuantity.code 1..1
 * valueQuantity.system 1..1
-* valueQuantity.value 1..1
 * valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.value 1..1
 
 * obeys require-data-absent-or-value-quantity-invariant
 
