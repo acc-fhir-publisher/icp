@@ -17,8 +17,8 @@ Description: "New Zealand codes for Integrated Care Pathways referral decline re
 * ^caseSensitive = true
 * insert Acc-Vocabulary-Metadata
 
-* #accredited-employer "Accredited Employer (work injury)"
-* #accredited-employer-non-work "Accredited Employer (non-work injury)"
+* #accredited-employer "Accredited Employer"
+// * #accredited-employer-non-work "Accredited Employer (non-work injury)"
 * #client-not-contactable "Client not contactable"
 * #client-declined-entry-to-icpmsk "Client declined entry to ICPMSK"
 * #body-site-out-of-scope-ineligible "Body site out of scope/ineligible"
