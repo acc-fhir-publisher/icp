@@ -1,6 +1,6 @@
 ValueSet: ICPServiceBundleMsk
 Id: acc-icp-service-bundle-msk
-Title: "Service Bundle"
+Title: "Service Bundle MSK"
 Description: "The ICP MSK service bundles available as a selected treatment."
 
 * ^url = $icp-service-bundle-msk-vs
@@ -11,7 +11,7 @@ Description: "The ICP MSK service bundles available as a selected treatment."
 
 CodeSystem: ICPServiceBundleMsk
 Id: acc-icp-service-bundle-msk
-Title: "Service Bundle"
+Title: "Service Bundle MSK"
 Description: "The ICP MSK service bundles available as a selected treatment."
 
 * ^url = $icp-service-bundle-msk-cs

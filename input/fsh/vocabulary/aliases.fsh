@@ -71,6 +71,10 @@ Alias: $icp-service-bundle-msk = http://hl7.org.nz/fhir/StructureDefinition/acc-
 Alias: $icp-service-bundle-msk-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-bundle-msk
 Alias: $icp-service-bundle-msk-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-service-bundle-msk
 
+Alias: $icp-service-bundle-tbi = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-bundle-tbi
+Alias: $icp-service-bundle-tbi-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-bundle-tbi
+Alias: $icp-service-bundle-tbi-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-service-bundle-tbi
+
 Alias: $icp-complexity-score = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-complexity-score
 Alias: $icp-complexity-score-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-complexity-score
 Alias: $icp-complexity-score-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-complexity-score
