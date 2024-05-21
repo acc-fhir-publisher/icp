@@ -23,6 +23,8 @@ Alias: $acc-claim-number = https://standards.digital.health.nz/ns/acc-45-number
 // profiles
 Alias: $icp-case = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case
 Alias: $icp-case-create = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-create
+Alias: $icp-msk-case-create = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-msk-case-create
+Alias: $icp-tbi-case-create = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-case-create
 Alias: $icp-case-modify = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-modify
 Alias: $icp-case-exit = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-exit
 Alias: $icp-measurement = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement
