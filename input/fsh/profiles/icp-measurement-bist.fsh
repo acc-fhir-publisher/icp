@@ -1,6 +1,6 @@
 Profile: IcpMeasurementBIST
 Parent: acc-icp-measurement
-Id: acc-icp-measurement-bist
+Id: acc-icp-tbi-measurement-bist
 Title: "ACC Integrated Care Pathway TBI BIST"
 Description: """
 This resource profile supports suppliers providing a BIST document to ACC.

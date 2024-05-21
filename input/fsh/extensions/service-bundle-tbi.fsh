@@ -1,7 +1,7 @@
-Extension: Icp_ServiceBundle
+Extension: IcpTbi_ServiceBundle
 Id: acc-icp-service-bundle-tbi
 Title: "Service Bundle TBI"
-Description: "Indicates the ICP service bundle TBI selected for the treatment."
+Description: "Indicates the ICP TBI service bundle selected for the treatment."
 * ^url = $icp-service-bundle-tbi
 * insert Acc-Metadata
 

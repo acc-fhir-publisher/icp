@@ -10,9 +10,11 @@ An ICP "Episode of Care" is also referred to as an "ICP Case". It runs from the 
 
 The ICP Observation/Measurement resource is used to provide clinical/functional measurement details to ACC. (AKA site-specific clinical measures and PROMs)
 
-The ICP Referral Decline resource is used to provide ACC with the relevant details when an ICP supplier declines an ICP referral. This includes pre-triage declines as well as declines that occur aftertriage been complete.
+The ICP Referral Decline resource is used to provide ACC with the relevant details when an ICP supplier declines an ICP referral. This includes pre-triage declines as well as declines that occur after triage has been completed.
 
 There are various ICP profiles available:
+
+#### Muskular Skeletal (MSK) Profiles
 
 <div class="tableGridded"></div>
 
@@ -24,6 +26,15 @@ There are various ICP profiles available:
 |[Icp Measurement Clinical](StructureDefinition-acc-icp-measurement-clinical.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-clinical|This profile supports suppliers providing site-specific clinical measures to ACC.|[example](Observation-icp-clinical-measurement-shoulder-strength.html)|
 |[Icp Measurement PROM](StructureDefinition-acc-icp-measurement-prom.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-prom|This profile supports suppliers providing site-specific patient reported outcome measures (PROMs) to ACC.|[example](Observation-icp-prom-measurement.html)|
 |[Icp Referral Decline](StructureDefinition-acc-icp-referral-decline.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-decline|This profile enables ICP suppliers to provide the relevant details to ACC when they decline an ICP referral.|[example](Encounter-icp-referral-decline.html)|
+
+#### Traumatic Brain Injury (TBI) Profiles
+
+<div class="tableGridded"></div>
+
+|Id |Canonical url | Description | |
+|--- |--- | --- | ---|
+|[Icp TBI Referral Accept](StructureDefinition-acc-icp-tbi-case-create.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-case-create|This profile enables ICP TBI suppliers to provide the relevant details to ACC when they accept an ICP referral.|[example](EpisodeOfCare-icp-tbi-case-create.html)|
+|[Icp TBI Measurement BIST](StructureDefinition-acc-icp-tbi-measurement-bist.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-measurement-bist|This profile supports suppliers providing a completed BIST to ACC.|[example](Observation-icp-tbi-bist-measurement.html)|
 
 ### Additional Profile resources
 
