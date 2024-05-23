@@ -18,6 +18,6 @@ Description: "The ICP TBI service bundles available as a selected treatment."
 * ^caseSensitive = true
 * insert Acc-Vocabulary-Metadata
 
-* #icpcon1 "Rehab Bundle Payment for Concoussion Level 1"
-* #icpcon2 "Rehab Bundle Payment for Concoussion Level 2"
-* #icpcon3 "Rehab Bundle Payment for Concoussion Level 3"
+* #icpcon1 "Rehab Bundle Payment for Concussion Level 1"
+* #icpcon2 "Rehab Bundle Payment for Concussion Level 2"
+* #icpcon3 "Rehab Bundle Payment for Concussion Level 3"

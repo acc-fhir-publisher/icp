@@ -18,32 +18,32 @@ There are various ICP profiles available:
 
 <div class="tableGridded"></div>
 
-|Id |Canonical url | Description | |
+|Name |Canonical url | Description | |
 |--- |--- | --- | ---|
-|[Icp Case Create](StructureDefinition-acc-icp-case-create.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-create|ICP Case Create is to be used by the supplier to furnish ACC with the required information following the completion of the triage assessment and the decision to accept the patient into their ICP service.|[example](EpisodeOfCare-icp-create-case.html)|
-|[Icp Case Modify](StructureDefinition-acc-icp-case-modify.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-modify|This profile supports suppliers needing to inform ACC of a change to the selected Service Bundle and/or Exceptional Funding Required.|[example](EpisodeOfCare-icp-modify-case.html)|
-|[Icp Case Exit](StructureDefinition-acc-icp-case-exit.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-finished|This profile supports suppliers needing to inform ACC of a patient being exited from their ICP service.|[example](EpisodeOfCare-icp-exit-case.html)|
-|[Icp Measurement Clinical](StructureDefinition-acc-icp-measurement-clinical.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-clinical|This profile supports suppliers providing site-specific clinical measures to ACC.|[example](Observation-icp-clinical-measurement-shoulder-strength.html)|
-|[Icp Measurement PROM](StructureDefinition-acc-icp-measurement-prom.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-prom|This profile supports suppliers providing site-specific patient reported outcome measures (PROMs) to ACC.|[example](Observation-icp-prom-measurement.html)|
-|[Icp Referral Decline](StructureDefinition-acc-icp-referral-decline.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-decline|This profile enables ICP suppliers to provide the relevant details to ACC when they decline an ICP referral.|[example](Encounter-icp-referral-decline.html)|
+|[Referral Accept](StructureDefinition-acc-icp-case-create.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-create|ICP Case Create is to be used by the supplier to furnish ACC with the required information following the completion of the triage assessment and the decision to accept the patient into their ICP service.|[example](EpisodeOfCare-icp-create-case.html)|
+|[Service Bundle Update](StructureDefinition-acc-icp-case-modify.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-modify|This profile supports suppliers needing to inform ACC of a change to the selected Service Bundle and/or Exceptional Funding Required.|[example](EpisodeOfCare-icp-modify-case.html)|
+|[Case Exit](StructureDefinition-acc-icp-case-exit.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-finished|This profile supports suppliers needing to inform ACC of a patient being exited from their ICP service.|[example](EpisodeOfCare-icp-exit-case.html)|
+|[Clinical Measurement](StructureDefinition-acc-icp-measurement-clinical.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-clinical|This profile supports suppliers providing site-specific clinical measures to ACC.|[example](Observation-icp-clinical-measurement-shoulder-strength.html)|
+|[PROM Measurement](StructureDefinition-acc-icp-measurement-prom.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-prom|This profile supports suppliers providing site-specific patient reported outcome measures (PROMs) to ACC.|[example](Observation-icp-prom-measurement.html)|
+|[Referral Decline](StructureDefinition-acc-icp-referral-decline.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-decline|This profile enables ICP suppliers to provide the relevant details to ACC when they decline an ICP referral.|[example](Encounter-icp-referral-decline.html)|
 
 #### Traumatic Brain Injury (TBI) Profiles
 
 <div class="tableGridded"></div>
 
-|Id |Canonical url | Description | |
+|Name |Canonical url | Description | |
 |--- |--- | --- | ---|
-|[Icp TBI Referral Accept](StructureDefinition-acc-icp-tbi-case-create.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-case-create|This profile enables ICP TBI suppliers to provide the relevant details to ACC when they accept an ICP referral.|[example](EpisodeOfCare-icp-tbi-case-create.html)|
-|[Icp TBI Measurement BIST](StructureDefinition-acc-icp-tbi-measurement-bist.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-measurement-bist|This profile supports suppliers providing a completed BIST to ACC.|[example](Observation-icp-tbi-bist-measurement.html)|
+|[Referral Accept](StructureDefinition-acc-icp-tbi-case-create.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-case-create|This profile enables ICP TBI suppliers to provide the relevant details to ACC when they accept an ICP referral.|[example](EpisodeOfCare-icp-tbi-case-create.html)|
+|[BIST Measurement](StructureDefinition-acc-icp-tbi-measurement-bist.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-measurement-bist|This profile supports suppliers providing a completed BIST to ACC.|[example](Observation-icp-tbi-bist-measurement.html)|
 
 ### Additional Profile resources
 
-There are two additional profiles which are not intended to be used directly, but are required to support the three profiles listed above.  Icp Case is the parent resource, and Icp Patient is a contained resource within each.
+There are three additional profiles which are not intended to be used directly.  ICP Case is the parent resource for EpisodeOfCare resources, ICP Measurement is the parent resource for Observation resources, Icp Patient is a contained resource within each profile.  These apply to both MSK and TBI profiles, and serve to apply common constraints across all ICP profiles.
 
 <div class="tableGridded"></div>
 
-|Id |Canonical url | Description|
+|Name |Canonical url | Description|
 |--- |--- | ---|
-|IcpCase|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case|This is the base profile/structure that Case-Create, Case-Update, and Case-Exit build upon.|
-|IcpPatient|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient|This is used as a contained resource within Case-Create, Case-Update, Case-Exit, Measurement-Clinical and Measurement-Patient. It represents the patient being treated.|
-|IcpMeasurement|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement|This is the base profile/structure that Measurement-Clinical and Measurement-PROM build upon.|
+|ICP Case|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case|This is the base profile/structure that Case-Create, Case-Update, and Case-Exit build upon.|
+|ICP Patient|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient|This is used as a contained resource within Case-Create, Case-Update, Case-Exit, Measurement-Clinical and Measurement-Patient. It represents the patient being treated.|
+|ICP Measurement|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement|This is the base profile/structure that Measurement-Clinical and Measurement-PROM build upon.|

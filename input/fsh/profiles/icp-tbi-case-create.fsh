@@ -25,8 +25,18 @@ Description:    "ICP TBI Case Create is to be used by the supplier to furnish AC
 
 * extension 2..*
 * extension contains
-    $icp-service-bundle-tbi named service-bundle-tbi 1..1
+    $icp-service-bundle-tbi named service-bundle-tbi 1..1 and
+    $icp-referral-source named referral-source 1..1 and
+    $icp-diagnoses named diagnoses 1..1 and
+    $icp-triage named idt-assessment 1..1
+
+* extension[idt-assessment].extension[complexityScores] 0..0
+* extension[idt-assessment].extension[client-participation-agreement].valueBoolean 1..1
 
 * extension[service-bundle-tbi] ^short = "(icpcon1 | icpcon2 | icpcon3)"
+* extension[diagnoses] ^short = "The diagnoses for the injury being treated."
+* extension[referral-source] ^short = "(gp | physio | specialist | allied | employer | rongoa | other | acc | patient)"
+* extension[idt-assessment] ^short = "The IDT-assessment assessment of the patient must be present when an IDT-assessment has been performed."
+
 
 * obeys active-status-invariant and start-date-when-active-finished-invariant

@@ -12,11 +12,11 @@ Description: "Integrated Care Pathways Triage"
 * ^context[+].type = #element
 * ^context[=].expression = "EpisodeOfCare"
 
-* extension 3..4
+* extension 2..4
 * extension contains
     $icp-triage-assessment-date named triage-assessment-date 1..1 and
     $icp-acc-client-authority named acc-client-authority 1..1 and
-    $icp-complexity-scores named complexityScores 1..1 and
+    $icp-complexity-scores named complexityScores 0..1 and
     $icp-client-participation-agreement named client-participation-agreement 0..1
 
 * extension[triage-assessment-date] ^short = "The date the triage assessment was completed."
