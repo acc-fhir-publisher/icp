@@ -43,6 +43,6 @@ Description: "if 'rationale' is not 'other', supporting-details must not be popu
 Expression: "(extension.where(url='rationale').where(value = 'other').empty() implies extension.where(url='supporting-details').value.empty())"
 
 Invariant: supporting-details-max50-length-invariant
-Description: "'supporting-details' must be no more than 250 characters."
+Description: "'supporting-details' must be no more than 50 characters."
 Expression: "value.length() <= 50"
 Severity: #error

@@ -5,6 +5,7 @@ Alias: $icd9 = http://terminology.hl7.org/CodeSystem/icd9
 Alias: $ICD10CM = http://hl7.org/fhir/sid/icd-10-cm
 Alias: $ICD10PCS = http://www.cms.gov/Medicare/Coding/ICD10
 Alias: $icd10ae = http://terminology.hl7.org/CodeSystem/icd10ae
+Alias: $loinc = http://loinc.org
 
 Alias: $episode-of-care-status = http://hl7.org/fhir/episode-of-care-status
 Alias: $observation-status = http://hl7.org/fhir/observation-status
@@ -14,10 +15,10 @@ Alias: $resource-status = 	http://hl7.org/fhir/resource-status
 Alias: $questionnaire-response = http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse
 
 Alias: $hpi-organisation = https://standards.digital.health.nz/id/hpi-organisation
-Alias: $nhi-patient = https://standards.digital.health.nz/ns/nhi-id
 Alias: $iso3166-1-2 = http://hl7.org/fhir/ValueSet/iso3166-1-2
 
 // naming systems
+Alias: $nhi-patient = https://standards.digital.health.nz/ns/nhi-id
 Alias: $acc-claim-number = https://standards.digital.health.nz/ns/acc-45-number
 
 // profiles
@@ -81,7 +82,7 @@ Alias: $icp-complexity-score = http://hl7.org.nz/fhir/StructureDefinition/acc-ic
 Alias: $icp-complexity-score-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-complexity-score
 Alias: $icp-complexity-score-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-complexity-score
 
-// value sets with a new coding system
+// value sets with a (new) coding system
 Alias: $icp-service-bundle-change-rationale-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-bundle-change-rationale
 Alias: $icp-service-bundle-change-rationale-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-service-bundle-change-rationale
 
@@ -102,6 +103,8 @@ Alias: $icp-diagnosis-side-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-diagnosi
 
 Alias: $icp-referral-source-type-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-referral-source-type
 Alias: $icp-referral-source-type-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-referral-source-type
+Alias: $icp-msk-referral-source-type-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-msk-referral-source-type
+Alias: $icp-tbi-referral-source-type-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-tbi-referral-source-type
 
 Alias: $icp-error-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-error
 Alias: $icp-error-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-error
@@ -114,6 +117,8 @@ Alias: $icp-clinical-measurement-standard-msk-cs = http://hl7.org.nz/fhir/CodeSy
 
 Alias: $icp-prom-measurement-standard-msk-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-prom-msk-measurement-standard
 Alias: $icp-prom-measurement-standard-msk-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-prom-msk-measurement-standard
+
+Alias: $icp-bist-measurement-standard-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-bist-measurement-standard
 
 Alias: $icp-category-clinical-observation-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-category-clinical-observation
 Alias: $icp-category-clinical-observation-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-category-clinical-observation

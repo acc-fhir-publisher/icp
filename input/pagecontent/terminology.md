@@ -25,6 +25,7 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |[icp-observation-status](ValueSet-acc-icp-observation-status.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-observation-status|
 |[icp-prom-msk-measurement-standard](ValueSet-acc-icp-prom-msk-measurement-standard.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-prom-msk-measurement-standard|
 |[icp-clinical-msk-measurement-standard](ValueSet-acc-icp-clinical-msk-measurement-standard.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-clinical-msk-measurement-standard|
+|[acc-icp-bist-measurement-standard](ValueSet-acc-icp-bist-measurement-standard.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-bist-measurement-standard|
 |[icp-recorded-outcome-stage](ValueSet-acc-icp-recorded-outcome-stage.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-recorded-outcome-stage|
 |[icp-data-absent-reason](ValueSet-acc-icp-data-absent-reason.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-data-absent-reason|
 |[icp-exit-reason](ValueSet-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-exit-reason|
