@@ -38,7 +38,7 @@ There are various ICP profiles available:
 
 ### Additional Profile resources
 
-There are three additional profiles which are not intended to be used directly.  ICP Case is the parent resource for EpisodeOfCare resources, ICP Measurement is the parent resource for Observation resources, Icp Patient is a contained resource within each profile.  These apply to both MSK and TBI profiles, and serve to apply common constraints across all ICP profiles.
+There are two additional profiles which are not intended to be used directly, but are required to support the three profiles listed above.  Icp Case is the parent resource, and Icp Patient is a contained resource within each.
 
 <div class="tableGridded"></div>
 
