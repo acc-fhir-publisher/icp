@@ -27,8 +27,8 @@ Description: "An extension to capture the reason for a change in the ICP Service
 * extension[supporting-details].value[x] only string
 * extension[supporting-details].valueString 0..1
 * extension[supporting-details].valueString obeys supporting-details-max50-length-invariant
-* extension[supporting-details] ^short = "Used to explain the need for a service bundle change, required  when the rationale is 'other'."
-* extension[supporting-details] ^definition = "A paragraph outlining the reason/rationale for a modification to the ICP case's service bundle."
+* extension[supporting-details] ^short = "Used to identify the category not defined in the complexity tool for a service bundle change, required  when the rationale is 'other'."
+* extension[supporting-details] ^definition = "A reason/rationale category identifier of a modification to the ICP case's service bundle."
 
 * obeys other-rationale-invariant and not-other-rationale-invariant
 
