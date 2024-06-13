@@ -33,9 +33,12 @@ pages:
     title: IG Home
   profiles.md:
     title: Profiles
+  usecases.md: 
+    title: Use Cases
   extensions.md:
     title: Extensions
   terminology.md:
     title: Terminology
   identifiers.md:
     title: Identifiers
+  

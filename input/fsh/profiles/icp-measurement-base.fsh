@@ -49,8 +49,8 @@ Description: "ACC Integrated Care Pathway Observation"
 * contained ^slicing.description = "Slicing to specifiy an icp patient resource must be returned as a contained resource for the ICP case"
 * contained contains patient 1..1
 * contained[patient] only $icp-patient
-* contained[patient] ^short = "Patient's details."
-* contained[patient] ^definition = "Contained patient resource containing required patient's date of birth."
+* contained[patient] ^short = "Patient's date of birth."
+* contained[patient] ^definition = "Contained patient resource for the required patient's date of birth."
 
 * performer only Reference(Organization)
 * performer 1..1
