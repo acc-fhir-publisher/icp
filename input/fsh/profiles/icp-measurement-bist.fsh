@@ -24,7 +24,7 @@ This resource profile supports suppliers providing a BIST document to ACC.
 * contained[patient].extension[ethnicity] ^short = "ICP TBI Ethnicity codes for BIST measurement"
 
 * contained[patient].extension[sex-at-birth] 1..1
-* contained[patient].extension[sex-at-birth] ^short = "(male | female | other | unknown)"
+* contained[patient].extension[sex-at-birth] ^short = "(male | female | other)"
 
 * derivedFrom only Reference(QuestionnaireResponse)
 * derivedFrom 1..1
@@ -32,3 +32,6 @@ This resource profile supports suppliers providing a BIST document to ACC.
 * code from $icp-bist-measurement-standard-vs (required)
 * code 1..1
 * code ^definition = "Type of TBI measurement"
+
+* extension contains
+    $icp-bist-referral named bist-referral 1..1

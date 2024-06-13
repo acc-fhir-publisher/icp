@@ -56,6 +56,8 @@ Alias: $icp-diagnoses = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagn
 Alias: $icp-diagnosis = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnosis
 Alias: $icp-service-bundle-change = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-bundle-change
 Alias: $icp-referral-declined = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-declined
+Alias: $icp-bist-referral = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-bist-referral
+Alias: $icp-bist-referral-source = http://fhir.hl7.org.nz/StructureDefinition/acc-icp-bist-referral-source
 
 // value sets with a new coding system and a dedicated extension
 Alias: $acc-readcode = http://hl7.org.nz/fhir/StructureDefinition/acc-read-code
@@ -108,6 +110,7 @@ Alias: $icp-referral-source-type-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-
 Alias: $icp-referral-source-type-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-referral-source-type
 Alias: $icp-msk-referral-source-type-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-msk-referral-source-type
 Alias: $icp-tbi-referral-source-type-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-tbi-referral-source-type
+Alias: $icp-tbi-bist-referral-source-type-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-tbi-bist-referral-source-type
 
 Alias: $icp-error-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-error
 Alias: $icp-error-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-error
