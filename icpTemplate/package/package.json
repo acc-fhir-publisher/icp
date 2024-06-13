@@ -1,5 +1,5 @@
 {
-    "name": "nz.fhir.template.icp",
+    "name": "ACC.fhir.template.icp",
     "version": "1.0.0",
     "type": "fhir.template",
     "license": "CC0-1.0",
