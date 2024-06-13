@@ -48,6 +48,19 @@ Description: "The source of the referral.  e.g. Internal is from within the supp
 * include $icp-referral-source-type-cs#other
 * include $icp-referral-source-type-cs#urgent-care
 
+ValueSet: ICPTbiBistReferralSourceType
+Id: acc-icp-tbi-bist-referral-source-type
+Title: "TBI Referral Source Type"
+Description: "The source of the referral.  e.g. Internal is from within the supplier/consortium group."
+
+* ^url = $icp-tbi-bist-referral-source-type-vs
+* insert Acc-Vocabulary-Metadata
+
+* include $icp-referral-source-type-cs#emergency
+* include $icp-referral-source-type-cs#community-care
+* include $icp-referral-source-type-cs#vestibular-ocular-physio
+* include $icp-referral-source-type-cs#concussion-service
+* include $icp-referral-source-type-cs#recovered-discharged
 
 CodeSystem: ICPReferralSourceType
 Id: acc-icp-referral-source-type
@@ -68,3 +81,8 @@ Description: "The source of the referral.  e.g. Internal is from within the supp
 * #acc "ACC referral"
 * #patient "Patient-led referral"
 * #urgent-care "Urgent Care referral"
+* #emergency "Emergency referral"
+* #community-care "Community Care referral"
+* #vestibular-ocular-physio "Vestibular Ocular Physio referral"
+* #concussion-service "Concussion Service referral"
+* #recovered-discharged "Recovered/Discharged referral"
