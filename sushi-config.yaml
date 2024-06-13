@@ -3,12 +3,12 @@ canonical: http://hl7.org.nz/fhir
 name: icp
 title: New Zealand ICP Implementation Guide
 description: This is the New Zealand ICP Implementation Guide
-status: active # draft | active | retired | unknown
+status: draft # draft | active | retired | unknown
 version: 1.0.0
 fhirVersion: 4.0.1
 copyrightYear: 2023+
 license: CC0-1.0
-releaseLabel: release # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 publisher:
   name: Accident Compensation Corporation
 

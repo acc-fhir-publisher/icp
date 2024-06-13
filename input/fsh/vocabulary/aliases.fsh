@@ -16,6 +16,9 @@ Alias: $questionnaire-response = http://hl7.org/fhir/StructureDefinition/Questio
 
 Alias: $hpi-organisation = https://standards.digital.health.nz/id/hpi-organisation
 Alias: $iso3166-1-2 = http://hl7.org/fhir/ValueSet/iso3166-1-2
+Alias: $ethnicity = http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity
+Alias: $ethnicity-code-all-cs = https://standards.digital.health.nz/ns/nz-ethnic-group-codes
+Alias: $sex-at-birth = http://hl7.org.nz/fhir/StructureDefinition/sex-at-birth
 
 // naming systems
 Alias: $nhi-patient = https://standards.digital.health.nz/ns/nhi-id
@@ -132,3 +135,4 @@ Alias: $icp-diagnoses-code-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-diagnosi
 Alias: $icp-status-observation-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-observation-status
 Alias: $icp-encounter-status-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-encounter-status
 Alias: $icp-encounter-class-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-encounter-class
+Alias: $icp-bist-ethnicity-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-bist-ethnicity

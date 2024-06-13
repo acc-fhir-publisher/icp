@@ -37,6 +37,7 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |[icp-status-observation](ValueSet-acc-icp-observation-status.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-observation-status|
 |[icp-referral-declined-reason](ValueSet-acc-icp-declined-reason.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-declined-reason|
 |[icp-clinical-msk-measurement-quantity-type](ValueSet-acc-icp-clinical-msk-measurement-quantity-type.html)|http://unitsofmeasure.org|
+|[acc-icp-bist-ethnicity](ValueSet-acc-icp-bist-ethnicity.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-bist-ethnicity|
 
 ### CodeSystems
 
