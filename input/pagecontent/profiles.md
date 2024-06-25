@@ -14,7 +14,7 @@ The ICP Referral Decline resource is used to provide ACC with the relevant detai
 
 There are various ICP profiles available:
 
-#### Muskular Skeletal (MSK) Profiles
+#### Musculoskeletal (MSK) Profiles
 
 <div class="tableGridded"></div>
 
