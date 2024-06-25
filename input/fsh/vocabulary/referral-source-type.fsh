@@ -61,6 +61,7 @@ Description: "The source of the referral.  e.g. Internal is from within the supp
 * include $icp-referral-source-type-cs#vestibular-ocular-physio
 * include $icp-referral-source-type-cs#concussion-service
 * include $icp-referral-source-type-cs#recovered-discharged
+* include $icp-referral-source-type-cs#no-referral
 
 CodeSystem: ICPReferralSourceType
 Id: acc-icp-referral-source-type
@@ -86,3 +87,4 @@ Description: "The source of the referral.  e.g. Internal is from within the supp
 * #vestibular-ocular-physio "Vestibular Ocular Physio referral"
 * #concussion-service "Concussion Service referral"
 * #recovered-discharged "Recovered/Discharged referral"
+* #no-referral "No referral required"
