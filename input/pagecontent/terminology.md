@@ -45,7 +45,7 @@ These are code systems that have been defined in this guide. They define specifi
 
 Each CodeSystem resource has a globally unique url (the canonical url) that is used to unambiguously identify it. The url generally refers to a description of the codesystem, rather than to the FHIR CodeSystem resource.
 
-The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detail on the use of Terminology in FHIR
+The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detail on the use of Terminology within FHIR
 
 <div class="tableGridded"></div>
 

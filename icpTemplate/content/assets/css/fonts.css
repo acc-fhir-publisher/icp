@@ -1,6 +1,6 @@
 /* latin-ext */
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Sofia';
     font-style: normal;
     font-weight: 400;
     src: url(fonts/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
@@ -8,7 +8,7 @@
   }
 /* latin */
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Sofia';
     font-style: normal;
     font-weight: 400;
     src: url(fonts/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
@@ -17,5 +17,5 @@
   
 body, p, li, td, tr, ul.dict li, table.dict td, table.dict td.structure, table.codes td, table.grid th, table.grid td, h1, h2, h3, h4, .heirarchy, tr.heirarchy, table.lmap th, table.lmap td 
 {
-    font-family: "Poppins", sans-serif !important;
+    font-family: "Sofia", sans-serif !important;
 }
