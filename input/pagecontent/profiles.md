@@ -29,13 +29,23 @@ There are various ICP profiles available:
 
 #### Traumatic Brain Injury (TBI) Profiles
 
+##### Community Care Traumatic Brain Injury (TBI) Profiles
+
 <div class="tableGridded"></div>
 
 | Name                                                                  | Canonical url                                                       | Description                                                                                                     |                                                      |
 |-----------------------------------------------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [Patient referral](StructureDefinition-acc-icp-patient-referral.html) | http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient-referral | This profile represents the Community Care patient referral for an IDT assessment has occurred.                 | [example](EpisodeOfCare-icp-tbi-case-create.html)    |
+| [Patient Referral](StructureDefinition-acc-icp-patient-referral.html) | http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient-referral | This profile represents the Community Care patient referral for an IDT assessment has occurred.                 | [example](EpisodeOfCare-icp-tbi-case-create.html)    |
 | [BIST Measurement](StructureDefinition-acc-icp-measurement-bist.html) | http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-bist | This profile supports suppliers providing a completed BIST to ACC.                                              | [example](Observation-icp-tbi-bist-measurement.html) |
+
+##### Community Care Traumatic Brain Injury (TBI) Profiles
+
+<div class="tableGridded"></div>
+
+| Name                                                                  | Canonical url                                                       | Description                                                                                                     |                                                      |
+|-----------------------------------------------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
 | [Referral Accept](StructureDefinition-acc-icp-tbi-case-create.html)   | http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-case-create  | This profile enables ICP TBI suppliers to provide the relevant details to ACC when they accept an ICP referral. | [example](EpisodeOfCare-icp-tbi-case-create.html)    |
+
 
 ### Additional Profile resources
 
