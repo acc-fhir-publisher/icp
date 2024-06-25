@@ -11,12 +11,15 @@ This resource profile supports suppliers providing a BIST document to ACC.
 * insert Acc-Metadata
 
 * value[x] 0..0
+* dataAbsentReason 0..0
 
 * contained contains bist 1..1
 * contained[bist] only $questionnaire-response
 * contained[bist] ^short = "BIST"
 * contained[bist] ^definition = "BIST"
 
+* contained[patient] ^short = "Patient's details."
+* contained[patient] ^definition = "Contained patient resource for the required patient's details."
 * contained[patient].extension[ethnicity] 1..*
 * contained[patient].extension[ethnicity].value[x] only CodeableConcept
 * contained[patient].extension[ethnicity].valueCodeableConcept 1..1
@@ -28,6 +31,8 @@ This resource profile supports suppliers providing a BIST document to ACC.
 
 * derivedFrom only Reference(QuestionnaireResponse)
 * derivedFrom 1..1
+* derivedFrom ^short = "BIST measurement this observation is based on."
+* derivedFrom ^definition = "Contained BIST measurement resource reference."
 
 * code from $icp-bist-measurement-standard-vs (required)
 * code 1..1

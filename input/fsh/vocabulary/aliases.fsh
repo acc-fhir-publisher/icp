@@ -37,6 +37,7 @@ Alias: $icp-measurement-prom = http://hl7.org.nz/fhir/StructureDefinition/acc-ic
 Alias: $icp-measurement-bist = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-bist
 Alias: $icp-referral-decline = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-decline
 Alias: $icp-patient = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient
+Alias: $icp-patient-referral = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient-referral
 
 // extensions
 Alias: $acc-providerid = http://hl7.org.nz/fhir/StructureDefinition/acc-providerid

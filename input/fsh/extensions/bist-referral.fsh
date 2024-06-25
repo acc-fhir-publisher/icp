@@ -9,8 +9,9 @@ Description: "Integrated Care Pathways BIST Referral Reason"
 * ^context[0].type = #element
 * ^context[=].expression = "Observation"
 
-* extension 2..3
+* extension 3..4
 * extension contains
+    $icp-acc-client-authority named acc-client-authority 1..1 and
     recommendation 1..1 and
     $icp-bist-referral-source named referral-type 1..1 and
     referral-reason 0..1
@@ -26,7 +27,7 @@ Description: "Integrated Care Pathways BIST Referral Reason"
 * extension[referral-reason].valueString obeys referral-reason-max250-length-invariant
 * extension[referral-reason] ^short = "Used to explain the rationale when referral reason type is 'Other'."
 
-Invariant: referral-reason-max250-length-invariant
+Invariant: referral-reason-max250-length-invariant         
 Description: "'referral-reason' must be no more than 250 characters."
 Expression: "value.length() <= 250"
 Severity: #error
