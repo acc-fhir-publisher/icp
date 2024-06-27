@@ -16,12 +16,15 @@ parameters:
   show-inherited-invariants: false
   # apply-version: false
   bundle-references-resolve: false
-  suppressed-ids: $examples
   default-version: true
   generate-version: r4
   validation: [allow-any-extensions]
   excludettl: true
   excludexml: true
+  suppressed-ids: $examples
+  no-narrative: $examples
+  no-validate: Organization/ORG123
+  usage-stats-opt-out: true
   
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced

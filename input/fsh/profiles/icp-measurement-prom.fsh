@@ -12,8 +12,6 @@ These PROMS must be submitted through the PROM and Clinical measures API via the
 * Exit
 * Ad-hoc measures may be taken at any time (for example, at the beginning of using exceptional funding if this has been required).
 
-<div class="tableGridded"></div>
-
 | Body site | Measurement standard | Measurement |
 |--- |--- |--- |
 | Shoulder | QuickDASH | QuickDASH values range from 0 to 100 |

@@ -16,8 +16,6 @@ There are various ICP profiles available:
 
 #### Musculoskeletal (MSK) Profiles
 
-<div class="tableGridded"></div>
-
 |Name |Canonical url | Description | |
 |--- |--- | --- | ---|
 |[Referral Accept](StructureDefinition-acc-icp-case-create.html)|http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-create|ICP Case Create is to be used by the supplier to furnish ACC with the required information following the completion of the triage assessment and the decision to accept the patient into their ICP service.|[example](EpisodeOfCare-icp-create-case.html)|
@@ -31,8 +29,6 @@ There are various ICP profiles available:
 
 ##### Community Care Traumatic Brain Injury (TBI) Profiles
 
-<div class="tableGridded"></div>
-
 | Name                                                                  | Canonical url                                                       | Description                                                                                                     |                                                      |
 |-----------------------------------------------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
 | [Patient Referral](StructureDefinition-acc-icp-patient-referral.html) | http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient-referral | This profile represents the Community Care patient referral for an IDT assessment has occurred.                 | [example](EpisodeOfCare-icp-tbi-case-create.html)    |
@@ -40,18 +36,13 @@ There are various ICP profiles available:
 
 ##### Secondary Care Traumatic Brain Injury (TBI) Profiles
 
-<div class="tableGridded"></div>
-
 | Name                                                                  | Canonical url                                                       | Description                                                                                                     |                                                      |
 |-----------------------------------------------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
 | [Referral Accept](StructureDefinition-acc-icp-tbi-case-create.html)   | http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-case-create  | This profile enables ICP TBI suppliers to provide the relevant details to ACC when they accept an ICP referral. | [example](EpisodeOfCare-icp-tbi-case-create.html)    |
 
-
 ### Additional Profile resources
 
 There are two additional profiles which are not intended to be used directly, but are required to support the three profiles listed above. Icp Case is the parent resource, and Icp Patient is a contained resource within each.
-
-<div class="tableGridded"></div>
 
 |Name |Canonical url | Description|
 |--- |--- | ---|
