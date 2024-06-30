@@ -7,9 +7,9 @@ Description: "A baseline KOOS patient-reported outcome measurement"
 * identifier.system = $acc-claim-number
 * identifier.use = #official
 * identifier.value = "AB12345"
-* contained = patient-unknown
+* contained = patient-internal
 * performer = Reference(Organization/ORG123)
-* subject = Reference(patient-unknown)
+* subject = Reference(patient-internal)
 * status = #final
 
 * valueInteger = 99

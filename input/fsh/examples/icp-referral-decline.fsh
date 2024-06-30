@@ -4,7 +4,7 @@ Usage: #example
 Description: "Example of a referral decline Encounter"
 
 * meta.profile = $icp-referral-decline
-* contained = patient-unknown
+* contained = patient-internal
 
 * identifier.system = $acc-claim-number
 * identifier.use = #official
@@ -13,7 +13,7 @@ Description: "Example of a referral decline Encounter"
 * status = #finished
 * class = $encounter-class#PRENC
 * serviceProvider = Reference(Organization/ORG123)
-* subject = Reference(patient-unknown)
+* subject = Reference(patient-internal)
 * serviceType = $icp-service-type-cs#msk
 
 * extension[0].url = $acc-providerid

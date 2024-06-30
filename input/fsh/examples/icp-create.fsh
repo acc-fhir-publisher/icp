@@ -8,11 +8,11 @@ Description: "Example of an ICP EpisodeOfCare resource for entering into ACC Int
 * identifier.use = #official
 * identifier.value = "AB12345"
 * type = $icp-service-type-cs#msk
-* contained = patient-unknown
+* contained = patient-internal
 * managingOrganization = Reference(Organization/ORG123)
 * period.start = "2022-11-17"
 * status = #active
-* patient = Reference(patient-unknown)
+* patient = Reference(patient-internal)
 
 * extension[0].url = $icp-service-bundle-msk
 * extension[=].valueCode = #icpkar1

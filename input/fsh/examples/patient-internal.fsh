@@ -1,4 +1,4 @@
-Instance: patient-unknown
+Instance: patient-internal
 InstanceOf: Patient
 Usage: #inline
 Description: "Contained patient examples reference"
