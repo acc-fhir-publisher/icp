@@ -9,8 +9,8 @@ Description: "Example of an EpisodeOfCare with an exit reason"
 * identifier.use = #official
 * identifier.value = "AB12345"
 
-* contained = patient-unknown
-* patient = Reference(patient-unknown)
+* contained = patient-internal
+* patient = Reference(patient-internal)
 * managingOrganization = Reference(Organization/ORG123)
 * status = #finished
 * period.end = "2022-11-17"

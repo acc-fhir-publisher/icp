@@ -7,9 +7,9 @@ Description: "A KOOS patient-reported outcome measurement at exit where the test
 * identifier.system = $acc-claim-number
 * identifier.use = #official
 * identifier.value = "AB12345"
-* contained = patient-unknown
+* contained = patient-internal
 * performer = Reference(Organization/ORG123)
-* subject = Reference(patient-unknown)
+* subject = Reference(patient-internal)
 * effectiveDateTime = "2023-08-09T15:30:00Z"
 * status = #final
 

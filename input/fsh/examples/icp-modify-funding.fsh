@@ -4,7 +4,7 @@ Usage: #example
 Description: "Example of an EpisodeOfCare service bundle modification request"
 
 * meta.profile = $icp-case-modify
-* contained = patient-unknown
+* contained = patient-internal
 
 * identifier.system = $acc-claim-number
 * identifier.use = #official
@@ -12,7 +12,7 @@ Description: "Example of an EpisodeOfCare service bundle modification request"
 
 * status = #active
 * managingOrganization = Reference(Organization/ORG123)
-* patient = Reference(patient-unknown)
+* patient = Reference(patient-internal)
 
 * extension[0].url = $acc-providerid
 * extension[=].valueString = "J99966"
