@@ -61,7 +61,7 @@ Description: "The type of ICP service. Currently only musculoskeletal (msk) is a
     "There's an Active ICP Subcase against the specified Claim in Eos but it came from a different Vendor ID."
     "The ICP Case against this claim belongs to a different supplier. Please contact ACC via registrations@acc.co.nz"
 * #icp-val-15
-    "The active ICP case against the specified Claim has already been accepted by this Vendor ID."
+    "The active ICP case of the same ICP Service Type against the specified Claim has already been accepted by this Vendor ID."
     "The ICP Case against this claim has already been accepted by this Vendor ID. Please contact ACC via registrations@acc.co.nz"
 * #icp-val-1000
     "The claim number can only contain letters and numbers, no more than 7 characters in all."
