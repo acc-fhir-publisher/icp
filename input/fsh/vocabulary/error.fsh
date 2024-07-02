@@ -49,7 +49,7 @@ Description: "The type of ICP service. Currently only musculoskeletal (msk) is a
     "This claim requires assessment from an ACC staff member before it can be entered into ICP"
     "This claim requires assessment from an ACC staff member before it can be entered into ICP. Please contact ACC on 0800 101 996 ext. 77097 to discuss."
 * #icp-val-11
-    "This claim already has an ICP Case against it."
+    "The active ICP case of the same ICP Service Type already exists for this claim."
     "This claim already has an ICP Case against it. Please contact ACC on 0800 101 996 ext. 77097 to discuss."
 * #icp-val-12
     "There's no ICP Subcase against the specified Claim in Eos"
@@ -61,7 +61,7 @@ Description: "The type of ICP service. Currently only musculoskeletal (msk) is a
     "There's an Active ICP Subcase against the specified Claim in Eos but it came from a different Vendor ID."
     "The ICP Case against this claim belongs to a different supplier. Please contact ACC via registrations@acc.co.nz"
 * #icp-val-15
-    "The active ICP case of the same ICP Service Type against the specified Claim has already been accepted by this Vendor ID."
+    "The active ICP case against the specified Claim has already been accepted by this Vendor ID."
     "The ICP Case against this claim has already been accepted by this Vendor ID. Please contact ACC via registrations@acc.co.nz"
 * #icp-val-1000
     "The claim number can only contain letters and numbers, no more than 7 characters in all."
