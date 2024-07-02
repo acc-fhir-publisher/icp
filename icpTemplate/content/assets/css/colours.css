@@ -40,6 +40,15 @@ table {
   border-collapse: collapse;
   th, td {
     border: 1px solid black;
-    padding: 15px;
+    padding: 12px;
+    font-size: 15px;
   }
+}
+
+p {
+  font-size: medium;
+}
+
+h1, h2, h3 {
+  font-size: revert;
 }
