@@ -14,6 +14,12 @@ The ICP Referral Decline resource is used to provide ACC with the relevant detai
 
 There are various ICP profiles available:
 
+##### Standalone Referral to ICP Service 
+
+| Name                                                                                    | Canonical url                                                       | Description                                                                                                     |                                                      |
+|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
+| [Standalone Referral to ICP Service](StructureDefinition-acc-icp-patient-referral.html) | <http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient-referral> | This profile represents the Community Care patient referral to any ICP Service has occurred.                 | [example](EpisodeOfCare-icp-tbi-case-create.html)    |
+
 #### Musculoskeletal (MSK) Profiles
 
 | Name                                                                          |Canonical url | Description | |
