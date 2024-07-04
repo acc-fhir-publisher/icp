@@ -23,6 +23,5 @@ build-ig.sh
 build.sh
 icp-conformance-module.iml
 
-
-/icpTemplate/**.index.db */
-/icpTemplate/**.index.json */
+/icpTemplate/**/*.index.db
+/icpTemplate/**/*.index.json
