@@ -38,6 +38,7 @@ Alias: $icp-measurement-bist = http://hl7.org.nz/fhir/StructureDefinition/acc-ic
 Alias: $icp-referral-decline = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-decline
 Alias: $icp-patient = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient
 Alias: $icp-patient-referral = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient-referral
+Alias: $icp-bist-patient-referral = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-bist-patient-referral
 
 // extensions
 Alias: $acc-providerid = http://hl7.org.nz/fhir/StructureDefinition/acc-providerid
@@ -112,6 +113,7 @@ Alias: $icp-referral-source-type-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-re
 Alias: $icp-msk-referral-source-type-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-msk-referral-source-type
 Alias: $icp-tbi-referral-source-type-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-tbi-referral-source-type
 Alias: $icp-tbi-bist-referral-source-type-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-tbi-bist-referral-source-type
+Alias: $icp-tbi-bist-referral-type-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-tbi-bist-referral-type
 
 Alias: $icp-error-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-error
 Alias: $icp-error-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-error

@@ -14,11 +14,11 @@ The ICP Referral Decline resource is used to provide ACC with the relevant detai
 
 There are various ICP profiles available:
 
-##### Standalone Referral to ICP Service 
+##### Patient Referral to ICP Service 
 
-| Name                                                                                    | Canonical url                                                       | Description                                                                                                     |                                                      |
-|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [Standalone Referral to ICP Service](StructureDefinition-acc-icp-patient-referral.html) | <http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient-referral> | This profile represents the Community Care patient referral to any ICP Service has occurred.                 | [example](EpisodeOfCare-icp-tbi-case-create.html)    |
+| Name                                                                                 | Canonical url                                                       | Description                                                                                                     |                                                      |
+|--------------------------------------------------------------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
+| [Patient Referral](StructureDefinition-acc-icp-patient-referral.html) | <http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient-referral> | This profile represents the Community Care patient referral to any ICP Service has occurred.                 | [example](EpisodeOfCare-icp-tbi-case-create.html)    |
 
 #### Musculoskeletal (MSK) Profiles
 
@@ -37,7 +37,7 @@ There are various ICP profiles available:
 
 | Name                                                                                    | Canonical url                                                       | Description                                                                                                     |                                                      |
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [Patient Referral to IDT Assessment](StructureDefinition-acc-icp-patient-referral.html) | <http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient-referral> | This profile represents the Community Care patient referral for an IDT assessment has occurred.                 | [example](EpisodeOfCare-icp-tbi-case-create.html)    |
+| [Patient Referral to IDT Assessment](StructureDefinition-acc-icp-bist-patient-referral.html) | <http://hl7.org.nz/fhir/StructureDefinition/acc-icp-bist-patient-referral> | This profile represents the Community Care patient referral for an IDT assessment has occurred.                 | [example](EpisodeOfCare-icp-tbi-case-create.html)    |
 | [BIST Measurement](StructureDefinition-acc-icp-measurement-bist.html)                   | <http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-bist> | This profile supports suppliers providing a completed BIST to ACC.                                              | [example](Observation-icp-tbi-bist-measurement.html) |
 
 ##### Secondary Care

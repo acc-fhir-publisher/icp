@@ -10,7 +10,7 @@ yet in place. There's a [specific note](http://hl7.org/fhir/valueset.html#ident)
 The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has more detail on the use of Terminology in FHIR
 
 |Id |Canonical url |
-|--- |--- | ---|
+|--- | ---|
 |[acc-icp-diagnosis-code](ValueSet-acc-icp-diagnosis-code.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-diagnosis-code|
 |[acc-read-code](ValueSet-acc-read-code.html)|http://hl7.org.nz/fhir/ValueSet/acc-read-code|
 |[acc-icd-9](ValueSet-acc-icd9.html)|http://hl7.org.nz/fhir/ValueSet/acc-icd9-code|
@@ -49,8 +49,8 @@ url generally refers to a description of the codesystem, rather than to the FHIR
 
 The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detail on the use of Terminology within FHIR
 
-|Id |Canonical url |
-|--- |--- | ---|
+|Id | Canonical url |
+|--- | ---|
 |[acc-read-code](CodeSystem-acc-read-code.html)|http://hl7.org.nz/fhir/CodeSystem/acc-read-code|
 |[acc-icd-9](CodeSystem-acc-icd9.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icd-9|
 |[acc-icd-10](CodeSystem-acc-icd10.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icd-10|

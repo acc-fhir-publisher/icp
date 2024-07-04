@@ -12,4 +12,4 @@ Description: "The source of the referral to the BIST."
 
 * value[x] only code
 * valueCode 1..1
-* valueCode from $icp-tbi-bist-referral-source-type-vs (required)
+* valueCode from $icp-tbi-bist-referral-type-vs (required)

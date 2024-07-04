@@ -8,12 +8,13 @@ Description: "Integrated Care Pathways BIST Referral Reason"
 
 * ^context[0].type = #element
 * ^context[=].expression = "Observation"
+* ^context[+].type = #element
+* ^context[=].expression = "ServiceRequest"
 
 * extension 3..4
 * extension contains
     $icp-acc-client-authority named acc-client-authority 1..1 and
     recommendation 1..1 and
-    $icp-bist-referral-source named referral-type 1..1 and
     referral-reason 0..1
 
 * extension[recommendation].url = "recommendation" (exactly)

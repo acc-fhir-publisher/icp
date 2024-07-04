@@ -5,6 +5,7 @@ Thumbs.db
 /output
 /temp
 /template
+/tmp
 .npmrc
 /node_modules
 /.project
@@ -21,3 +22,7 @@ org.hl7.fhir.validator.jar
 build-ig.sh
 build.sh
 icp-conformance-module.iml
+
+
+/icpTemplate/**.index.db */
+/icpTemplate/**.index.json */
