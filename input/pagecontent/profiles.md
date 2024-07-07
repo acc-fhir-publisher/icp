@@ -14,7 +14,7 @@ The ICP Referral Decline resource is used to provide ACC with the relevant detai
 
 There are various ICP profiles available:
 
-##### Patient Referral to ICP Service 
+#### Patient Referral to ICP Service
 
 | Name                                                                                 | Canonical url                                                       | Description                                                                                                     |                                                      |
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------|

@@ -16,8 +16,7 @@ Alias: $questionnaire-response = http://hl7.org/fhir/StructureDefinition/Questio
 
 Alias: $hpi-organisation = https://standards.digital.health.nz/id/hpi-organisation
 Alias: $iso3166-1-2 = http://hl7.org/fhir/ValueSet/iso3166-1-2
-Alias: $ethnicity = http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity
-Alias: $ethnicity-code-all-cs = https://standards.digital.health.nz/ns/ethnic-group-level-4-code
+Alias: $ethnicity-code-cs = https://standards.digital.health.nz/ns/ethnic-group-level-4-code
 Alias: $sex-at-birth = http://hl7.org.nz/fhir/StructureDefinition/sex-at-birth
 
 // naming systems
