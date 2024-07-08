@@ -8,29 +8,26 @@ Description: "This file contains ethnicities used in the ICP BIST message."
 
 * include $ethnicity-code-cs#10000
 * include $ethnicity-code-cs#11111
-// * include $ethnicity-code-all-cs#10
-// * include $ethnicity-code-all-cs#11
-// * include $ethnicity-code-all-cs#12
-// * include $ethnicity-code-all-cs#21
-// * include $ethnicity-code-all-cs#30
-// * include $ethnicity-code-all-cs#31
-// * include $ethnicity-code-all-cs#32
-// * include $ethnicity-code-all-cs#33
-// * include $ethnicity-code-all-cs#34
-// * include $ethnicity-code-all-cs#35
-// * include $ethnicity-code-all-cs#36
-// * include $ethnicity-code-all-cs#37
-// * include $ethnicity-code-all-cs#40
-// * include $ethnicity-code-all-cs#41
-// * include $ethnicity-code-all-cs#42
-// * include $ethnicity-code-all-cs#43
-// * include $ethnicity-code-all-cs#44
-// * include $ethnicity-code-all-cs#51
-// * include $ethnicity-code-all-cs#52
-// * include $ethnicity-code-all-cs#53
-// * include $ethnicity-code-all-cs#54
-// * include $ethnicity-code-all-cs#61
-// * include $ethnicity-code-all-cs#94
-// * include $ethnicity-code-all-cs#95
-// * include $ethnicity-code-all-cs#97
-// * include $ethnicity-code-all-cs#99
+* include $ethnicity-code-cs#12100
+* include $ethnicity-code-cs#21111
+* include $ethnicity-code-cs#30000
+* include $ethnicity-code-cs#31111
+* include $ethnicity-code-cs#32100
+* include $ethnicity-code-cs#33111
+* include $ethnicity-code-cs#34111
+* include $ethnicity-code-cs#35111
+* include $ethnicity-code-cs#36111
+* include $ethnicity-code-cs#37111
+* include $ethnicity-code-cs#40000
+* include $ethnicity-code-cs#41000
+* include $ethnicity-code-cs#42100
+* include $ethnicity-code-cs#43100
+* include $ethnicity-code-cs#44100
+* include $ethnicity-code-cs#51100
+* include $ethnicity-code-cs#52100
+* include $ethnicity-code-cs#53100
+* include $ethnicity-code-cs#61199
+* include $ethnicity-code-cs#94444
+* include $ethnicity-code-cs#95555
+* include $ethnicity-code-cs#97777
+* include $ethnicity-code-cs#99999
