@@ -17,7 +17,7 @@ Description: "This file contains ethnicities used in the ICP BIST message."
 * include $ethnicity-code-cs#34111
 * include $ethnicity-code-cs#35111
 * include $ethnicity-code-cs#36111
-* include $ethnicity-code-cs#37111
+* include $ethnicity-code-cs#37112
 * include $ethnicity-code-cs#40000
 * include $ethnicity-code-cs#41000
 * include $ethnicity-code-cs#42100
