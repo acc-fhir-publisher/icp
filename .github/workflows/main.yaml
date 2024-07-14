@@ -34,7 +34,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 18 # Adjust to your Node.js version
+          node-version: 18
           registry-url: https://npm.pkg.github.com/
       
       - name: Create package.json
@@ -42,7 +42,7 @@ jobs:
           cd /apps/icp/package
           echo '{
             "name": "@integration-services-accnz/icp",
-            "version": "1.1.26",
+            "version": "1.1.27",
             "publishConfig": {
                 "registry": "https://npm.pkg.github.com"
               },
