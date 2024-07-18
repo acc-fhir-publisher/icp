@@ -87,3 +87,15 @@ Encounter create
 The ICP Referral Decline contains the data that ICP suppliers send ACC on completion of patient triage and if they decide to decline the referral into the ACC Integrated Care Pathway service.
 
 """
+
+// ============== The Service Request endpoint
+
+// * rest.resource[+].type = #ServiceRequest
+
+// * rest.resource[=].supportedProfile[+] = $icp-referral-decline
+// * rest.resource[=].interaction[+].code = #create
+// * rest.resource[=].interaction[=].documentation[0] = """
+// Service Request create
+// The ICP Referral Decline contains the data that ICP suppliers send ACC on completion of patient triage and if they decide to decline the referral into the ACC Integrated Care Pathway service.
+
+// """

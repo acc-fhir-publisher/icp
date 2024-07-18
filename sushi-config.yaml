@@ -32,6 +32,9 @@ dependencies:
   fhir.org.nz.ig.base:
      uri: 'http://fhir.org.nz/ig/base/ImplementationGuide/fhir.org.nz.ig.base'
      version: 3.0.0
+  hl7.terminology.r4:
+     uri: 'http://hl7.org/fhir/ImplementationGuide/hl7.terminology.r4'
+     version: 5.5.0
 pages:
   index.md:
     title: IG Home

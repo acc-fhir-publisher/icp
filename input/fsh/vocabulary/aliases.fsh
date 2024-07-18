@@ -5,7 +5,6 @@ Alias: $icd9 = http://terminology.hl7.org/CodeSystem/icd9
 Alias: $ICD10CM = http://hl7.org/fhir/sid/icd-10-cm
 Alias: $ICD10PCS = http://www.cms.gov/Medicare/Coding/ICD10
 Alias: $icd10ae = http://terminology.hl7.org/CodeSystem/icd10ae
-Alias: $loinc = http://loinc.org
 
 Alias: $episode-of-care-status = http://hl7.org/fhir/episode-of-care-status
 Alias: $observation-status = http://hl7.org/fhir/observation-status
@@ -13,6 +12,12 @@ Alias: $encounter-status = http://hl7.org/fhir/encounter-status
 Alias: $encounter-class = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $resource-status = 	http://hl7.org/fhir/resource-status
 Alias: $questionnaire-response = http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse
+Alias: $ordinal-value = http://hl7.org/fhir/StructureDefinition/ordinalValue
+Alias: $usage-context-type-vs = http://hl7.org/fhir/ValueSet/usage-context-type
+Alias: $usage-context-type-cs = http://terminology.hl7.org/CodeSystem/usage-context-type
+Alias: $questionnaire-itemControl = http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl
+Alias: $questionnaire-item-control = http://hl7.org/fhir/questionnaire-item-control
+Alias: $questionnaire-item-type-cs = http://hl7.org/fhir/CodeSystem/questionnaire-item-type
 
 Alias: $hpi-organisation = https://standards.digital.health.nz/id/hpi-organisation
 Alias: $iso3166-1-2 = http://hl7.org/fhir/ValueSet/iso3166-1-2
@@ -39,6 +44,9 @@ Alias: $icp-referral-decline = http://hl7.org.nz/fhir/StructureDefinition/acc-ic
 Alias: $icp-patient = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient
 Alias: $icp-patient-referral = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient-referral
 Alias: $icp-bist-patient-referral = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-bist-patient-referral
+
+// definitions
+Alias: $acc-tbi-start-c = http://hl7.org.nz/fhir/StructureDefinition/acc-tbi-start-c
 
 // extensions
 Alias: $acc-providerid = http://hl7.org.nz/fhir/StructureDefinition/acc-providerid
@@ -135,6 +143,12 @@ Alias: $icp-category-clinical-observation-cs = http://hl7.org.nz/fhir/CodeSystem
 
 Alias: $icp-category-patient-observation-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-category-patient-observation
 Alias: $icp-category-patient-observation-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-category-patient-observation
+
+Alias: $icp-tbi-startc-answeroption-agreedisagree-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-tbi-startc-answeroption-agreedisagree
+Alias: $icp-tbi-startc-answeroption-agreedisagree-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-tbi-startc-answeroption-agreedisagree
+
+Alias: $icp-tbi-startc-answeroption-overall-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-tbi-startc-answeroption-overall
+Alias: $icp-tbi-startc-answeroption-overall-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-tbi-startc-answeroption-overall
 
 // value sets with an existing coding system
 Alias: $icp-episodeofcare-status-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-episodeofcare-status
