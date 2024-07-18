@@ -18,6 +18,7 @@ Alias: $usage-context-type-cs = http://terminology.hl7.org/CodeSystem/usage-cont
 Alias: $questionnaire-itemControl = http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl
 Alias: $questionnaire-item-control = http://hl7.org/fhir/questionnaire-item-control
 Alias: $questionnaire-item-type-cs = http://hl7.org/fhir/CodeSystem/questionnaire-item-type
+Alias: $questionnaire-answers-status = http://hl7.org/fhir/questionnaire-answers-status
 
 Alias: $hpi-organisation = https://standards.digital.health.nz/id/hpi-organisation
 Alias: $iso3166-1-2 = http://hl7.org/fhir/ValueSet/iso3166-1-2
@@ -44,6 +45,8 @@ Alias: $icp-referral-decline = http://hl7.org.nz/fhir/StructureDefinition/acc-ic
 Alias: $icp-patient = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient
 Alias: $icp-patient-referral = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient-referral
 Alias: $icp-bist-patient-referral = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-bist-patient-referral
+Alias: $icp-tbi-start-c = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-start-c
+Alias: $icp-tbi-cover-causation = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-cover-and-causation
 
 // definitions
 Alias: $acc-tbi-start-c = http://hl7.org.nz/fhir/StructureDefinition/acc-tbi-start-c
