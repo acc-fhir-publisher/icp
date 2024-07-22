@@ -4,7 +4,6 @@ Usage: #definition
 Title:          "ACC Cover and Causation"
 Description:    "Represents the Cover and Causation questionnaire for ACC claims"
 
-
 * name = "ACCCover"
 * title = "Cover and Causation"
 * url = $acc-cover-causation

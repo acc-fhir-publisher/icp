@@ -47,6 +47,7 @@ Alias: $icp-patient-referral = http://hl7.org.nz/fhir/StructureDefinition/acc-ic
 Alias: $icp-bist-patient-referral = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-bist-patient-referral
 Alias: $icp-tbi-start-c = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-start-c
 Alias: $icp-tbi-cover-causation = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-cover-and-causation
+Alias: $icp-tbi-bist = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-bist
 
 // definitions
 Alias: $acc-tbi-start-c = http://hl7.org.nz/fhir/StructureDefinition/acc-tbi-start-c

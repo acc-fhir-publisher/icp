@@ -18,6 +18,7 @@ Description:    "ACC Integrated Care Pathway TBI Cover and Causation"
 * item 6..6
 * questionnaire 1..1
 * questionnaire = $acc-cover-causation
+* questionnaire ^short = "ACC Cover and Causation"
 * subject only Reference(IcpPatient)
 * author only Reference(Practitioner)
 * status = $questionnaire-answers-status#completed

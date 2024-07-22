@@ -14,7 +14,7 @@ This resource profile supports suppliers providing a BIST document to ACC.
 * dataAbsentReason 0..0
 
 * contained contains bist 1..1
-* contained[bist] only $questionnaire-response
+* contained[bist] only $icp-tbi-bist
 * contained[bist] ^short = "BIST"
 * contained[bist] ^definition = "BIST"
 

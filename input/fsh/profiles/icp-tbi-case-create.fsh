@@ -23,6 +23,7 @@ Description:    "ICP TBI Case Create is to be used by the supplier to furnish AC
 * contained[cover-and-causation] only $icp-tbi-cover-causation
 * contained[cover-and-causation] ^short = "Cover and Causation"
 * contained[cover-and-causation] ^definition = "Cover and Causation"
+// [Cover and Causation](Questionnaire-acc-cover-causation.html)
 
 * contained contains start-c 1..1
 * contained[start-c] only $icp-tbi-start-c
