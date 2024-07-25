@@ -31,6 +31,7 @@ Alias: $nhi-patient = https://standards.digital.health.nz/ns/nhi-id
 Alias: $acc-claim-number = https://standards.digital.health.nz/ns/acc-45-number
 
 // profiles
+Alias: $acc-provider = http://hl7.org.nz/fhir/StructureDefinition/acc-provider
 Alias: $icp-case = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case
 Alias: $icp-case-create = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-create
 Alias: $icp-msk-case-create = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-msk-case-create
@@ -50,6 +51,7 @@ Alias: $icp-tbi-cover-causation = http://hl7.org.nz/fhir/StructureDefinition/acc
 Alias: $icp-tbi-bist = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-bist
 
 // definitions
+Alias: $acc-bist = http://hl7.org.nz/fhir/StructureDefinition/acc-bist
 Alias: $acc-tbi-start-c = http://hl7.org.nz/fhir/StructureDefinition/acc-tbi-start-c
 Alias: $acc-cover-causation = http://hl7.org.nz/fhir/StructureDefinition/acc-cover-causation
 
@@ -154,6 +156,16 @@ Alias: $icp-tbi-startc-answeroption-agreedisagree-cs = http://hl7.org.nz/fhir/Co
 
 Alias: $icp-tbi-startc-answeroption-overall-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-tbi-startc-answeroption-overall
 Alias: $icp-tbi-startc-answeroption-overall-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-tbi-startc-answeroption-overall
+
+Alias: $icp-tbi-bist-answeroption-yesno-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-tbi-bist-answeroption-yesno
+Alias: $icp-tbi-bist-answeroption-yesnounknown-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-tbi-bist-answeroption-yesno-unknown
+Alias: $icp-tbi-bist-answeroption-yesno-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-tbi-bist-answeroption-yesno
+
+Alias: $icp-tbi-bist-answeroption-range-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-tbi-bist-answeroption-range
+Alias: $icp-tbi-bist-answeroption-range-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-tbi-bist-answeroption-range
+
+Alias: $icp-tbi-bist-answeroption-betterworsesame-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-tbi-bist-answeroption-betterworsesame
+Alias: $icp-tbi-bist-answeroption-betterworsesame-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-tbi-bist-answeroption-betterworsesame
 
 // value sets with an existing coding system
 Alias: $icp-episodeofcare-status-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-episodeofcare-status

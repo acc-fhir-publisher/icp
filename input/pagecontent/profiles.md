@@ -14,12 +14,6 @@ The ICP Referral Decline resource is used to provide ACC with the relevant detai
 
 There are various ICP profiles available:
 
-#### Patient Referral to ICP Service
-
-| Name                                                                                 | Canonical url                                                       | Description                                                                                                     |                                                      |
-|--------------------------------------------------------------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [Patient Referral](StructureDefinition-acc-icp-patient-referral.html) | <http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient-referral> | This profile represents the Community Care patient referral to any ICP Service has occurred.                 | [example](EpisodeOfCare-icp-tbi-case-create.html)    |
-
 #### Musculoskeletal (MSK) Profiles
 
 | Name                                                                          |Canonical url | Description | |
@@ -49,10 +43,12 @@ There are various ICP profiles available:
 
 ### Additional Profile resources
 
-There are two additional profiles which are not intended to be used directly, but are required to support the three profiles listed above. Icp Case is the parent resource, and Icp Patient is a contained resource within each.
+There are additional profiles which are not intended to be used directly, but are required to support the product specific profiles listed above. There are also profiles which are only intended to be used as contained resources, such as Icp Patient, and ACC Provider.
 
 |Name |Canonical url | Description|
 |--- |--- | ---|
-|ICP Case|<http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case>|This is the base profile/structure that Case-Create, Case-Update, and Case-Exit build upon.|
-|ICP Patient|<http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient>|This is used as a contained resource within Case-Create, Case-Update, Case-Exit, Measurement-Clinical and Measurement-Patient. It represents the patient being treated.|
-|ICP Measurement|<http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement>|This is the base profile/structure that Measurement-Clinical and Measurement-PROM build upon.|
+|ACC ICP Patient|<http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient>|This is used as a contained resource within Case-Create, Case-Update, Case-Exit, Measurement-Clinical and Measurement-Patient. It represents the patient being treated.|
+|ACC Provider|<http://hl7.org.nz/fhir/StructureDefinition/acc-provider>|This profile is based on the NzPractitioner resource and extends it with an ACC Provider ID.|
+|ACC ICP Case|<http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case>|This is the base profile/structure that Case-Create, Case-Update, and Case-Exit build upon.|
+|ACC ICP Measurement|<http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement>|This is the base profile/structure that Measurement-Clinical and Measurement-PROM build upon.|
+|ACC Patient Referral|<http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient-referral>|This profile represents the acc patient referral to any ICP Service has occurred.|

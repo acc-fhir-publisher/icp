@@ -18,5 +18,5 @@ Description:    "ACC Integrated Care Pathway TBI BIST"
 * item 1..*
 * questionnaire 1..1
 * subject only Reference(IcpPatient)
-* author only Reference(Practitioner)
+* author only Reference(NzPractitioner)
 * status = $questionnaire-answers-status#completed
