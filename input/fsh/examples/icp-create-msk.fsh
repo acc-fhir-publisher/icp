@@ -1,4 +1,4 @@
-Instance: icp-create-case
+Instance: icp-create-case-msk
 InstanceOf: EpisodeOfCare
 Usage: #example
 Description: "Example of an ICP EpisodeOfCare resource for entering into ACC Integrated Care Pathways"

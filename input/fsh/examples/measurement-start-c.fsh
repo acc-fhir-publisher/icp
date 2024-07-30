@@ -1,6 +1,6 @@
-Instance: icp-tbi-start-c-measurement
+Instance: icp-tbi-start-c-measurement-internal
 InstanceOf: QuestionnaireResponse
-Usage: #example
+Usage: #inline
 * status = #completed
 * questionnaire = "http://hl7.org.nz/fhir/StructureDefinition/acc-tbi-start-c"
 * item[0].linkId = "1"
