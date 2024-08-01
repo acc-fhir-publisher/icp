@@ -1,4 +1,4 @@
-//base
+//base fhir definitions
 Alias: $SCT = http://snomed.info/sct
 Alias: $ICD-9CM-diagnosiscodes = http://terminology.hl7.org/CodeSystem/ICD-9CM-diagnosiscodes
 Alias: $icd9 = http://terminology.hl7.org/CodeSystem/icd9 
@@ -20,13 +20,15 @@ Alias: $questionnaire-item-control = http://hl7.org/fhir/questionnaire-item-cont
 Alias: $questionnaire-item-type-cs = http://hl7.org/fhir/CodeSystem/questionnaire-item-type
 Alias: $questionnaire-answers-status = http://hl7.org/fhir/questionnaire-answers-status
 
+// hl7nz
 Alias: $hpi-organisation = https://standards.digital.health.nz/id/hpi-organisation
 Alias: $iso3166-1-2 = http://hl7.org/fhir/ValueSet/iso3166-1-2
 Alias: $ethnicity-code-cs = https://standards.digital.health.nz/ns/ethnic-group-level-4-code
 Alias: $ethnicity = http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity
 Alias: $sex-at-birth = http://hl7.org.nz/fhir/StructureDefinition/sex-at-birth
+Alias: $administrative-gender = http://hl7.org/fhir/administrative-gender
 
-// naming systems
+// hl7nz naming systems
 Alias: $nhi-patient = https://standards.digital.health.nz/ns/nhi-id
 Alias: $acc-claim-number = https://standards.digital.health.nz/ns/acc-45-number
 
@@ -75,7 +77,6 @@ Alias: $icp-service-bundle-change = http://hl7.org.nz/fhir/StructureDefinition/a
 Alias: $icp-referral-declined = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-declined
 Alias: $icp-bist-referral = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-bist-referral
 Alias: $icp-bist-referral-source = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-bist-referral-source
-Alias: $icp-bist-ethnicity = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-bist-ethnicity
 
 // value sets with a new coding system and a dedicated extension
 Alias: $acc-readcode = http://hl7.org.nz/fhir/StructureDefinition/acc-read-code
