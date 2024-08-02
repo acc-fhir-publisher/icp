@@ -10,7 +10,6 @@ Description:    "The ACC Patient Referral resource."
 * ^text.status = #additional
 
 * basedOn 0..0
-* identifier 0..0
 * instantiatesCanonical 0..0
 * instantiatesUri 0..0
 * replaces 0..0
@@ -30,6 +29,25 @@ Description:    "The ACC Patient Referral resource."
 * patientInstruction 0..0
 * relevantHistory 0..0
 
+* identifier ^slicing.description = "ICP identifiers"
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #closed
+* identifier ^slicing.ordered = false
+
+* identifier 1..1
+* identifier contains
+    icpclaimnumber 1..1
+
+* identifier[icpclaimnumber].system = $acc-claim-number (exactly)
+* identifier[icpclaimnumber].value 1..1
+* identifier[icpclaimnumber].value obeys acc-claim-number
+* identifier[icpclaimnumber].value ^short = "The ACC 45 number."
+* identifier[icpclaimnumber] ^short = "The ACC 45 number to be used in combination with the contained patient's date of birth, as the ICP case idenfitier."
+* identifier[icpclaimnumber].id 0..0
+* identifier[icpclaimnumber].extension 0..0
+* identifier[icpclaimnumber].period 0..0
+* identifier[icpclaimnumber].assigner 0..0
 
 * contained ^slicing.discriminator.type = #type
 * contained ^slicing.discriminator.path = "$this"
