@@ -47,8 +47,8 @@ There are additional profiles which are not intended to be used directly, but ar
 
 |Name |Canonical url | Description|
 |--- |--- | ---|
-|ACC ICP Patient|<http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient>|This is used as a contained resource within Case-Create, Case-Update, Case-Exit, Measurement-Clinical and Measurement-Patient. It represents the patient being treated.|
 |ACC Provider|<http://hl7.org.nz/fhir/StructureDefinition/acc-provider>|This profile is based on the NzPractitioner resource and extends it with an ACC Provider ID.|
+|ACC Patient Referral|<http://hl7.org.nz/fhir/StructureDefinition/acc-patient-referral>|This profile represents the acc patient referral to any ICP Service has occurred.|
+|ACC ICP Patient|<http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient>|This is used as a contained resource within Case-Create, Case-Update, Case-Exit, Measurement-Clinical and Measurement-Patient. It represents the patient being treated.|
 |ACC ICP Case|<http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case>|This is the base profile/structure that Case-Create, Case-Update, and Case-Exit build upon.|
 |ACC ICP Measurement|<http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement>|This is the base profile/structure that Measurement-Clinical and Measurement-PROM build upon.|
-|ACC Patient Referral|<http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient-referral>|This profile represents the acc patient referral to any ICP Service has occurred.|

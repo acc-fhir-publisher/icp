@@ -1,5 +1,5 @@
 Profile:        IcpBistPatientReferral
-Parent:         IcpPatientReferral
+Parent:         ACCPatientReferral
 Id:             acc-icp-bist-patient-referral
 Title:          "ACC ICP Patient Referral for BIST"
 Description:    "The ACC Patient Referral resource for a BIST measurement."

@@ -54,8 +54,8 @@ Alias: $icp-tbi-bist = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-bi
 
 // definitions
 Alias: $acc-bist = http://hl7.org.nz/fhir/StructureDefinition/acc-bist
-Alias: $acc-tbi-start-c = http://hl7.org.nz/fhir/StructureDefinition/acc-tbi-start-c
 Alias: $acc-cover-causation = http://hl7.org.nz/fhir/StructureDefinition/acc-cover-causation
+Alias: $acc-tbi-start-c = http://hl7.org.nz/fhir/StructureDefinition/acc-tbi-start-c
 
 // extensions
 Alias: $acc-providerid = http://hl7.org.nz/fhir/StructureDefinition/acc-providerid
