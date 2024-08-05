@@ -29,9 +29,8 @@ Description:    "The ACC Patient Referral resource."
 * patientInstruction 0..0
 * relevantHistory 0..0
 
-
-* contained ^slicing.discriminator.type = #type
-* contained ^slicing.discriminator.path = "$this"
+* contained ^slicing.discriminator.type = #value
+* contained ^slicing.discriminator.path = "meta.profile[1]"
 * contained ^slicing.rules = #open
 * contained ^slicing.description = "Slicing to specifiy an icp patient resource must be returned as a contained resource for the ICP case"
 

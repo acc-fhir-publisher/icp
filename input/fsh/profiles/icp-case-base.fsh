@@ -17,8 +17,8 @@ Description:    "The ACC ICP Case resource based on Episode of Care"
 * patient only Reference(IcpPatient)
 * patient 1..1
 
-* contained ^slicing.discriminator.type = #type
-* contained ^slicing.discriminator.path = "$this"
+* contained ^slicing.discriminator.type = #value
+* contained ^slicing.discriminator.path = "meta.profile[1]"
 * contained ^slicing.rules = #open
 * contained ^slicing.description = "Slicing to specifiy an icp patient resource must be returned as a contained resource for the ICP case"
 * contained contains patient 1..1
