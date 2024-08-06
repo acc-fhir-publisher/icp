@@ -18,10 +18,15 @@ Description:    "The ACC ICP Case resource based on Episode of Care"
 * patient 1..1
 
 * contained ^slicing.discriminator.type = #value
-* contained ^slicing.discriminator.path = "meta.profile[1]"
+* contained ^slicing.discriminator.path = "id"
 * contained ^slicing.rules = #open
-* contained ^slicing.description = "Slicing to specifiy an icp patient resource must be returned as a contained resource for the ICP case"
-* contained contains patient 1..1
+// * contained ^slicing.ordered = false
+* contained ^slicing.description = "Contained resources"
+
+* contained contains 
+    patient 1..1
+
+* contained[patient].id = "patient-internal"
 * contained[patient] only $icp-patient
 * contained[patient] ^short = "Patient's date of birth."
 * contained[patient] ^definition = "Contained patient resource for the required patient's date of birth."

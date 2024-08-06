@@ -30,18 +30,22 @@ Description:    "The ACC Patient Referral resource."
 * relevantHistory 0..0
 
 * contained ^slicing.discriminator.type = #value
-* contained ^slicing.discriminator.path = "meta.profile[1]"
+* contained ^slicing.discriminator.path = "id"
 * contained ^slicing.rules = #open
+// * contained ^slicing.ordered = false
 * contained ^slicing.description = "Slicing to specifiy an icp patient resource must be returned as a contained resource for the ICP case"
 
-* contained contains acc-provider 1..1
+* contained contains 
+    acc-provider 1..1 and
+    patient 1..1
+
+* contained[acc-provider].id = "acc-provider-internal"
 * contained[acc-provider] only $acc-provider
 * contained[acc-provider] ^short = "The ACC Provider Resource"
 
-* contained contains patient 1..1
+* contained[patient].id = "patient-internal"
 * contained[patient] only $icp-patient
 * contained[patient] ^short = "Patient's date of birth."
-
 
 * identifier ^slicing.description = "ICP identifiers"
 * identifier ^slicing.discriminator.type = #value

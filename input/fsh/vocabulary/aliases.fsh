@@ -77,6 +77,7 @@ Alias: $icp-service-bundle-change = http://hl7.org.nz/fhir/StructureDefinition/a
 Alias: $icp-referral-declined = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-declined
 Alias: $icp-bist-referral = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-bist-referral
 Alias: $icp-bist-referral-source = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-bist-referral-source
+Alias: $icp-idt-assessment = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-idt-assessment
 
 // value sets with a new coding system and a dedicated extension
 Alias: $acc-readcode = http://hl7.org.nz/fhir/StructureDefinition/acc-read-code

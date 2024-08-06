@@ -1,6 +1,7 @@
 Instance: icp-tbi-cover-measurement-internal
 InstanceOf: QuestionnaireResponse
 Usage: #example
+* meta.profile = $icp-tbi-cover-causation
 * status = #completed
 * questionnaire = "http://hl7.org.nz/fhir/StructureDefinition/acc-cover-causation"
 * item[0].linkId = "1"
