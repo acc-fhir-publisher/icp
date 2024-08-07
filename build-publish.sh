@@ -19,7 +19,8 @@ cp -r /github/home/.fhir /root/.fhir
 ls /root/.fhir/packages/
 
 # Run publisher command
-java $JAVA_OPTS -jar publisher.jar -ig . -no-sushi -excludelogbinaryformat -version-comparison n/a -ipa-comparison n/a -ips-comparison n/a -active-tables -usage-stats-opt-out -validation-off -no-check-usage
+java $JAVA_OPTS -jar publisher.jar -ig .
+#  -no-sushi -excludelogbinaryformat -version-comparison n/a -ipa-comparison n/a -ips-comparison n/a -active-tables -usage-stats-opt-out -validation-off -no-check-usage
 
 #publish the the file into npm repo
 #!/bin/bash
