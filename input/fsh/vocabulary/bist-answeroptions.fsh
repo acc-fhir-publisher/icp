@@ -1,5 +1,5 @@
 ValueSet: BISTYesNo
-Id: tbi-bist-yes-no
+Id: acc-icp-tbi-bist-answeroption-yesno
 Title: "BIST Answer Option ( no | yes )"
 Description: "ValueSet for response options Yes and No."
 
@@ -10,7 +10,7 @@ Description: "ValueSet for response options Yes and No."
 * include $icp-tbi-bist-answeroption-yesno-cs#no
 
 ValueSet: BISTYesNoUnknown
-Id: tbi-bist-yes-no-unknown
+Id: acc-icp-tbi-bist-answeroption-yesno-unknown
 Title: "BIST Answer Option ( no | yes | unknown)"
 Description: "ValueSet for response options Yes, No, and Unknown."
 
@@ -23,7 +23,7 @@ Description: "ValueSet for response options Yes, No, and Unknown."
 
 
 CodeSystem: BISTYesNo
-Id: tbi-bist-yes-no
+Id: acc-icp-tbi-bist-answeroption-yesno
 Title: "STarTC Answer Option"
 Description: "CodeSystem for response "
 
@@ -32,17 +32,18 @@ Description: "CodeSystem for response "
 * insert Acc-Vocabulary-Metadata
 
 * #yes "Yes"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#0
+  // * ^property[0].code = $ordinal-value#0
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#0
 * #no "No"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#1
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#1
 * #unknown "Unknown"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#0
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#0
 
 ValueSet: BISTBetterWorseSame
-Id: tbi-bist-better-worse-same
+Id: acc-icp-tbi-bist-answeroption-betterworsesame
 Title: "BIST Answer Option ( Better | Worse | About the same )"
 Description: "ValueSet for response options Better, Worse, and About the same."
 
@@ -52,7 +53,7 @@ Description: "ValueSet for response options Better, Worse, and About the same."
 * include codes from system $icp-tbi-bist-answeroption-betterworsesame-cs
 
 CodeSystem: BISTBetterWorseSame
-Id: tbi-bist-better-worse-same
+Id: acc-icp-tbi-bist-answeroption-betterworsesame
 Title: "BIST Answer Option ( Better | Worse | About the same )"
 Description: "CodeSystem for response "
 
@@ -61,17 +62,17 @@ Description: "CodeSystem for response "
 * insert Acc-Vocabulary-Metadata
 
 * #better "Better"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#0
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#0
 * #worse "Worse"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#1
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#1
 * #aboutthesame "About the same"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#2
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#2
 
 ValueSet: BISTRange
-Id: tbi-bist-range
+Id: acc-icp-tbi-bist-answeroption-range
 Title: "BIST Options Range 0-10 ( 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 )"
 Description: "ValueSet for BIST options range 0-10."
 
@@ -81,7 +82,7 @@ Description: "ValueSet for BIST options range 0-10."
 * include codes from system $icp-tbi-bist-answeroption-range-cs
 
 CodeSystem: BISTRange
-Id: tbi-bist-range
+Id: acc-icp-tbi-bist-answeroption-range
 Title: "BIST Answer Range Option CodeSystem"
 Description: "CodeSystem for response "
 
@@ -90,35 +91,35 @@ Description: "CodeSystem for response "
 * insert Acc-Vocabulary-Metadata
 
 * #0 "0"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#0
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#0
 * #1 "1"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#1
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#1
 * #2 "2"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#2
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#2
 * #3 "3"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#3
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#3
 * #4 "4"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#4
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#4
 * #5 "5"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#5
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#5
 * #6 "6"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#6
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#6
 * #7 "7"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#7
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#7
 * #8 "8"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#8
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#8
 * #9 "9"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#9
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#9
 * #10 "10"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#10
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#10

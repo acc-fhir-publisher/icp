@@ -7,6 +7,11 @@ Description:    "ICP Case Create is to be used by the supplier to furnish ACC wi
 * ^url = $icp-case-create
 * insert Acc-Metadata
 
+* contained contains 
+    patient 1..1
+
+* contained[patient] only $icp-patient
+
 * type 1..1
 * type ^short = "The type of ICP service. Currently only musculoskeletal (msk) is allowed, with more to be added in the future, e.g. concussion."
 * type.coding 1..1
@@ -17,11 +22,6 @@ Description:    "ICP Case Create is to be used by the supplier to furnish ACC wi
 * type.coding.code ^short = "msk"
 
 * status ^definition = "The Status of the ICP case (must be Active)."
-
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #closed
-* extension ^slicing.ordered = false
 
 * extension 5..6
 * extension contains

@@ -18,25 +18,15 @@ Description:    "ICP TBI Case Create is to be used by the supplier to furnish AC
 
 * status ^definition = "The Status of the ICP case (must be Active)."
 
-
 * contained contains 
+    patient 1..1 and
     cover-and-causation 1..1 and
     start-c 1..1
 
-* contained[cover-and-causation].id = "icp-tbi-cover-measurement-internal"
+* contained[patient] only $icp-patient
 * contained[cover-and-causation] only $icp-tbi-cover-causation
-* contained[cover-and-causation] ^short = "Cover and Causation"
-* contained[cover-and-causation] ^definition = "Cover and Causation"
-
-* contained[start-c].id = "icp-tbi-start-c-measurement-internal"
 * contained[start-c] only $icp-tbi-start-c
-* contained[start-c] ^short = "Start-C"
-* contained[start-c] ^definition = "Start-C"
 
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-* extension ^slicing.ordered = false
 
 * extension 3..*
 * extension contains

@@ -1,6 +1,6 @@
 Profile:        IcpTBICoverAndCausation
 Parent:         QuestionnaireResponse
-Id:             acc-icp-tbi-cover
+Id:             acc-icp-tbi-cover-and-causation
 Title:          "ACC Integrated Care Pathway TBI Cover and Causation"
 Description:    "ACC Integrated Care Pathway TBI Cover and Causation"
 
