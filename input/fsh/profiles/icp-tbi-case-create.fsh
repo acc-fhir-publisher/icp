@@ -18,35 +18,28 @@ Description:    "ICP TBI Case Create is to be used by the supplier to furnish AC
 
 * status ^definition = "The Status of the ICP case (must be Active)."
 
+* contained contains 
+    patient 1..1 and
+    cover-and-causation 1..1 and
+    start-c 1..1
 
-* contained contains cover-and-causation 1..1
+* contained[patient] only $icp-patient
 * contained[cover-and-causation] only $icp-tbi-cover-causation
-* contained[cover-and-causation] ^short = "Cover and Causation"
-* contained[cover-and-causation] ^definition = "Cover and Causation"
-// [Cover and Causation](Questionnaire-acc-cover-causation.html)
-
-* contained contains start-c 1..1
 * contained[start-c] only $icp-tbi-start-c
-* contained[start-c] ^short = "Start-C"
-* contained[start-c] ^definition = "Start-C"
 
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #closed
-* extension ^slicing.ordered = false
 
-* extension 2..*
+* extension 3..*
 * extension contains
     $icp-service-bundle-tbi named service-bundle-tbi 1..1 and
     $icp-referral-source named referral-source 1..1 and
-    $icp-diagnoses named diagnoses 1..1 and
-    $icp-triage named idt-assessment 1..1
+    // $icp-diagnoses named diagnoses 1..1 and
+    $icp-idt-assessment named idt-assessment 1..1
 
-* extension[idt-assessment].extension[complexityScores] 0..0
-* extension[idt-assessment].extension[client-participation-agreement].valueBoolean 1..1
+// * extension[idt-assessment].extension[complexityScores] 0..0
+// * extension[idt-assessment].extension[client-participation-agreement].valueBoolean 1..1
 
 * extension[service-bundle-tbi] ^short = "(icpcon1 | icpcon2 | icpcon3)"
-* extension[diagnoses] ^short = "The diagnoses for the injury being treated."
+// * extension[diagnoses] ^short = "The diagnoses for the injury being treated."
 * extension[referral-source] ^short = "(gp | physio | specialist | allied | employer | rongoa | other | acc | patient)"
 * extension[idt-assessment] ^short = "The IDT-assessment assessment of the patient must be present when an IDT-assessment has been performed."
 

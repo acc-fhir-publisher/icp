@@ -46,16 +46,16 @@ Alias: $icp-measurement-prom = http://hl7.org.nz/fhir/StructureDefinition/acc-ic
 Alias: $icp-measurement-bist = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-bist
 Alias: $icp-referral-decline = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-decline
 Alias: $icp-patient = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient
-Alias: $icp-patient-referral = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient-referral
+Alias: $icp-patient-referral = http://hl7.org.nz/fhir/StructureDefinition/acc-patient-referral
 Alias: $icp-bist-patient-referral = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-bist-patient-referral
 Alias: $icp-tbi-start-c = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-start-c
 Alias: $icp-tbi-cover-causation = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-cover-and-causation
 Alias: $icp-tbi-bist = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-bist
 
 // definitions
-Alias: $acc-bist = http://hl7.org.nz/fhir/StructureDefinition/acc-bist
-Alias: $acc-tbi-start-c = http://hl7.org.nz/fhir/StructureDefinition/acc-tbi-start-c
-Alias: $acc-cover-causation = http://hl7.org.nz/fhir/StructureDefinition/acc-cover-causation
+Alias: $acc-bist = http://hl7.org.nz/fhir/Questionnaire/acc-bist
+Alias: $acc-cover-causation = http://hl7.org.nz/fhir/Questionnaire/acc-cover-causation
+Alias: $acc-tbi-start-c = http://hl7.org.nz/fhir/Questionnaire/acc-tbi-start-c
 
 // extensions
 Alias: $acc-providerid = http://hl7.org.nz/fhir/StructureDefinition/acc-providerid
@@ -77,6 +77,7 @@ Alias: $icp-service-bundle-change = http://hl7.org.nz/fhir/StructureDefinition/a
 Alias: $icp-referral-declined = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-declined
 Alias: $icp-bist-referral = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-bist-referral
 Alias: $icp-bist-referral-source = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-bist-referral-source
+Alias: $icp-idt-assessment = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-idt-assessment
 
 // value sets with a new coding system and a dedicated extension
 Alias: $acc-readcode = http://hl7.org.nz/fhir/StructureDefinition/acc-read-code

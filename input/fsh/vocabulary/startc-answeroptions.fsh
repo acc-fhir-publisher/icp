@@ -1,5 +1,5 @@
 ValueSet: STarTCAgreeDisagree
-Id: tbi-startc-agree-disagree
+Id: acc-icp-tbi-startc-answeroption-agreedisagree
 Title: "STarTC Answer Option ( disagree | agree )"
 Description: "ValueSet for response options such as Agree and Disagree."
 
@@ -10,7 +10,7 @@ Description: "ValueSet for response options such as Agree and Disagree."
 
 
 CodeSystem: STarTCAgreeDisagree
-Id: tbi-startc-agree-disagree
+Id: acc-icp-tbi-startc-answeroption-agreedisagree
 Title: "STarTC Answer Option"
 Description: "CodeSystem for response options such as Agree and Disagree with ordinal values."
 
@@ -19,15 +19,15 @@ Description: "CodeSystem for response options such as Agree and Disagree with or
 * insert Acc-Vocabulary-Metadata
 
 * #disagree "Disagree"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#0
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#0
 * #agree "Agree"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#1
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#1
 
 
 ValueSet: STarTCOverall
-Id: tbi-startc-overall
+Id: acc-icp-tbi-startc-answeroption-overall
 Title: "Start-C Overall Options ( not-at-all | slightly | moderately | very-much | extremely )"
 Description: "ValueSet for overall STarT-C concussion symptoms with ordinal values."
 
@@ -37,7 +37,7 @@ Description: "ValueSet for overall STarT-C concussion symptoms with ordinal valu
 * include codes from system $icp-tbi-startc-answeroption-overall-cs
 
 CodeSystem: STarTCOverall
-Id: tbi-startc-overall
+Id: acc-icp-tbi-startc-answeroption-overall
 Title: "Start-C Overall Option CodeSystem"
 Description: "CodeSystem for overall STarT-C concussion symptoms with ordinal values."
 
@@ -46,17 +46,17 @@ Description: "CodeSystem for overall STarT-C concussion symptoms with ordinal va
 * insert Acc-Vocabulary-Metadata
 
 * #not-at-all "Not at all"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#0
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#0
 * #slightly "Slightly"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#0
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#0
 * #moderately "Moderately"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#0
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#0
 * #very-much "Very Much"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#1
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#1
 * #extremely "Extremely"
-  * ^property[0].valueCoding.system = $ordinal-value
-  * ^property[0].valueCoding.code = $ordinal-value#1
+  // * ^property[0].valueCoding.system = $ordinal-value
+  // * ^property[0].valueCoding.code = $ordinal-value#1

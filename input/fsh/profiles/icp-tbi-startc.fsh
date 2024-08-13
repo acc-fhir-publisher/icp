@@ -1,6 +1,6 @@
 Profile:        IcpTBIStartC
 Parent:         QuestionnaireResponse
-Id:             acc-icp-tbi-startc
+Id:             acc-icp-tbi-start-c
 Title:          "ACC Integrated Care Pathway TBI Start C"
 Description:    "ACC Integrated Care Pathway TBI Start C"
 

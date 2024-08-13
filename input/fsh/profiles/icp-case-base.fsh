@@ -17,14 +17,11 @@ Description:    "The ACC ICP Case resource based on Episode of Care"
 * patient only Reference(IcpPatient)
 * patient 1..1
 
-* contained ^slicing.discriminator.type = #type
+* contained ^slicing.discriminator.type = #profile
 * contained ^slicing.discriminator.path = "$this"
 * contained ^slicing.rules = #open
-* contained ^slicing.description = "Slicing to specifiy an icp patient resource must be returned as a contained resource for the ICP case"
-* contained contains patient 1..1
-* contained[patient] only $icp-patient
-* contained[patient] ^short = "Patient's date of birth."
-* contained[patient] ^definition = "Contained patient resource for the required patient's date of birth."
+* contained ^slicing.ordered = false
+* contained ^slicing.description = "Contained resources"
 
 * managingOrganization only Reference(Organization)
 * managingOrganization 1..1
@@ -52,7 +49,7 @@ Description:    "The ACC ICP Case resource based on Episode of Care"
 * identifier ^slicing.description = "ICP identifiers"
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #closed
+* identifier ^slicing.rules = #open
 * identifier ^slicing.ordered = false
 
 * identifier 1..1
@@ -68,6 +65,11 @@ Description:    "The ACC ICP Case resource based on Episode of Care"
 * identifier[icpclaimnumber].extension 0..0
 * identifier[icpclaimnumber].period 0..0
 * identifier[icpclaimnumber].assigner 0..0
+
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension ^slicing.ordered = false
 
 * extension contains
     $acc-providerid named acc-providerid 1..1

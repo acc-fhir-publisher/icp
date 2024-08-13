@@ -7,12 +7,12 @@ Description:    "This profile supports suppliers needing to inform ACC of a pati
 * ^url = $icp-case-exit
 * insert Acc-Metadata
 
-* type 0..0
+* contained contains 
+    patient 1..1
 
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #closed
-* extension ^slicing.ordered = false
+* contained[patient] only $icp-patient
+
+* type 0..0
 
 * status ^definition = "The Status of the ICP case (must be Finished)."
 

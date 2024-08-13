@@ -14,3 +14,4 @@ RuleSet: Acc-Metadata
 RuleSet: Acc-Vocabulary-Metadata
 * ^version = "1.0.0"
 * ^experimental = false
+* ^status = #active

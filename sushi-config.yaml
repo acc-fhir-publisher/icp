@@ -22,7 +22,8 @@ parameters:
   excludettl: true
   excludexml: true
   suppressed-ids: $examples
-  no-validate: Organization/ORG123
+  no-validate: Organization/*
+  i18n-default-lang: en-NZ
   
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
