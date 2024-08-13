@@ -19,7 +19,7 @@ Description:    "The ACC ICP Case resource based on Episode of Care"
 
 * contained ^slicing.discriminator.type = #profile
 * contained ^slicing.discriminator.path = "$this"
-* contained ^slicing.rules = #closed
+* contained ^slicing.rules = #open
 * contained ^slicing.ordered = false
 * contained ^slicing.description = "Contained resources"
 
