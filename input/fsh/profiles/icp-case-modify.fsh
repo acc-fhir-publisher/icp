@@ -7,15 +7,17 @@ Description:    "This profile supports suppliers needing to inform ACC of a chan
 * ^url = $icp-case-modify
 * insert Acc-Metadata
 
+* contained contains 
+    patient 1..1
+
+* contained[patient] only $icp-patient
+
 * type 0..0
 * period 0..0
 
 * status ^definition = "The Status of the ICP case (must be Active)."
 
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #closed
-* extension ^slicing.ordered = false
+
 
 * extension 2..3
 * extension contains

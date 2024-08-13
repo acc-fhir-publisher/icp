@@ -43,10 +43,11 @@ Description: "ACC Integrated Care Pathway Observation"
 * identifier[icpclaimnumber].period 0..0
 * identifier[icpclaimnumber].assigner 0..0
 
-* contained ^slicing.discriminator.type = #type
+* contained ^slicing.discriminator.type = #profile
 * contained ^slicing.discriminator.path = "$this"
 * contained ^slicing.rules = #open
 * contained ^slicing.description = "Slicing to specifiy an icp patient resource must be returned as a contained resource for the ICP case"
+
 * contained contains patient 1..1
 * contained[patient] only $icp-patient
 * contained[patient] ^short = "Patient's date of birth."

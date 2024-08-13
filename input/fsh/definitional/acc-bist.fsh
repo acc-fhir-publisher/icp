@@ -58,15 +58,12 @@ Description:    "Represents the Brain Injury Screening Tool (BIST) for ACC."
   * item[+]
     * linkId = "1.2.1"
     * type = #display
+    * text = "**If high risk indicators present, consider referral to Emergency Department or Concussion Service**"
     * enableWhen
       * id = "1.2.1.1.1"
       * operator = #=
       * question = "1.2"
       * answerString = "Yes"
-    * item[0]
-      * linkId = "1.2.1.1"
-      * text = "**If high risk indicators present, consider referral to Emergency Department or Concussion Service**"
-      * type = #display
   * item[+]
     * linkId = "1.3"
     * text = "Did the incident occur in traumatic circumstances which could result in emotional or psychological reactions (e.g., assault, domestic violence, fatalities in a car accident)"
@@ -76,15 +73,12 @@ Description:    "Represents the Brain Injury Screening Tool (BIST) for ACC."
   * item[+]
     * linkId = "1.3.1"
     * type = #display
+    * text = "**If psychological trauma likely, consider referral to Concussion Service**"
     * enableWhen
       * id = "1.3.1.1.1"
       * operator = #=
       * question = "1.4"
       * answerString = "Yes"
-    * item[0]
-      * linkId = "1.3.1.1"
-      * text = "**If psychological trauma likely, consider referral to Concussion Service**"
-      * type = #display
   * item[+]
     * linkId = "1.4"
     * text = "Did anyone with you at the time of injury say anything else about what happened"
@@ -150,15 +144,12 @@ Description:    "Represents the Brain Injury Screening Tool (BIST) for ACC."
   * item[+]
     * linkId = "1.7.1"
     * type = #display
+    * text = "**If seizure is within a few days of the injury, consider referral to Emergency Department or Concussion Service**"
     * enableWhen
       * id = "1.7.1.1.1"
       * operator = #=
       * question = "1.7"
       * answerString = "Yes"
-    * item[0]
-      * linkId = "1.7.1.1"
-      * text = "**If seizure is within a few days of the injury, consider referral to Emergency Department or Concussion Service**"
-      * type = #display
   * item[+]
     * linkId = "1.8"
     * text = "Are you feeling better, worse, or about the same since the injury"
@@ -168,15 +159,12 @@ Description:    "Represents the Brain Injury Screening Tool (BIST) for ACC."
   * item[+]
     * linkId = "1.8.1"
     * type = #display
+    * text = "**If symptoms have worsened within the first few days of injury, consider referral to the Emergency Department or Concussion Service**"
     * enableWhen
       * id = "1.8.1.1.1"
       * operator = #=
       * question = "1.8"
       * answerString = "Worse"
-    * item[0]
-      * linkId = "1.8.1.1"
-      * text = "**If symptoms have worsened within the first few days of injury, consider referral to the Emergency Department or Concussion Service**"
-      * type = #display
   * item[+]
     * linkId = "1.9"
     * text = "Have you had a concussion or brain injury before"
@@ -217,15 +205,12 @@ Description:    "Represents the Brain Injury Screening Tool (BIST) for ACC."
   * item[+]
     * linkId = "1.9.4"
     * type = #display
+    * text = "**If multiple, recent or unrecovered previous injury, refer to Emergency Department or Concussion Service**"
     * enableWhen
       * id = "1.9.4.1.1"
       * operator = #=
       * question = "1.9"
       * answerString = "Yes"
-    * item[0]
-      * linkId = "1.9.4.1"
-      * text = "**If multiple, recent or unrecovered previous injury, refer to Emergency Department or Concussion Service**"
-      * type = #display
   * item[+]
     * linkId = "1.10"
     * text = "Are you currently taking any medications that thin the blood e.g., anticoagulants"
@@ -235,15 +220,12 @@ Description:    "Represents the Brain Injury Screening Tool (BIST) for ACC."
   * item[+]
     * linkId = "1.10.1"
     * type = #display
+    * text = "**Consider referral to Emergency Department if injury recently sustained (within past few days)**"
     * enableWhen
       * id = "1.10.1.1.1"
       * operator = #=
       * question = "1.10"
       * answerString = "Yes"
-    * item[0]
-      * linkId = "1.10.1.1"
-      * text = "**Consider referral to Emergency Department if injury recently sustained (within past few days)**"
-      * type = #display
   * item[+]
     * linkId = "1.11"
     * text = "Have you ever experienced difficulties with your mental health"
@@ -253,15 +235,12 @@ Description:    "Represents the Brain Injury Screening Tool (BIST) for ACC."
   * item[+]
     * linkId = "1.11.1"
     * type = #display
+    * text = "**The person may be at moderate risk of poor recovery and early specialist input may be required. If not recovered by 7-10 days, consider referral to Concussion Service**"
     * enableWhen
       * id = "1.11.1.1.1"
       * operator = #=
       * question = "1.11"
       * answerString = "Yes"
-    * item[0]
-      * linkId = "1.11.1.1"
-      * text = "**The person may be at moderate risk of poor recovery and early specialist input may be required. If not recovered by 7-10 days, consider referral to Concussion Service**"
-      * type = #display
   * item[+]
     * linkId = "1.12"
     * text = "Do you have a history of migraine (severe headache with vomiting or extreme sensitivity to light and sound)"
@@ -271,16 +250,12 @@ Description:    "Represents the Brain Injury Screening Tool (BIST) for ACC."
   * item[+]
     * linkId = "1.12.1"
     * type = #display
+    * text = "**If not recovered by 7-10 days, consider referral to Concussion Service**"
     * enableWhen
       * id = "1.12.1.1.1"
       * operator = #=
       * question = "1.12"
       * answerString = "Yes"
-    * item[0]
-      * linkId = "1.12.1.1"
-      * text = "**If not recovered by 7-10 days, consider referral to Concussion Service**"
-      * type = #display
-
 * item[+]
   * linkId = "2"
   * text = "Patient questions"
@@ -288,13 +263,10 @@ Description:    "Represents the Brain Injury Screening Tool (BIST) for ACC."
   * item[0]
     * linkId = "2.0"
     * type = #display
-    * item[0]
-      * linkId = "2.0.1"
-      * text = "Compared with before the accident, please rate how much you experience the following symptoms:"
-      * type = #display
+    * text = "Compared with before the accident, please rate how much you experience the following symptoms:"
   * item[+]
     * linkId = "2.1"
-    * type = #display
+    * type = #group
     * text = "**Physical:**"
     * item[0]
       * linkId = "2.1.1"
@@ -328,7 +300,7 @@ Description:    "Represents the Brain Injury Screening Tool (BIST) for ACC."
   * item[+]
     * linkId = "2.2"
     * text = "**Vestibular-ocular:**"
-    * type = #display
+    * type = #group
     * item[0]
       * linkId = "2.2.1"
       * text = "I fell dizzy or like I could be sick"
@@ -360,7 +332,7 @@ Description:    "Represents the Brain Injury Screening Tool (BIST) for ACC."
       * initial[0].valueDecimal = 0
   * item[+]
     * linkId = "2.3"
-    * type = #display
+    * type = #group
     * text = "**Cognitive:**"
     * item[0]
       * linkId = "2.3.1"
@@ -394,7 +366,7 @@ Description:    "Represents the Brain Injury Screening Tool (BIST) for ACC."
   * item[+]
     * linkId = "2.4"
     * text = "**If more than 24 hours post-injury, please also rate these physical symptoms:**"
-    * type = #display
+    * type = #group
     * item[0]
       * linkId = "2.4.1"
       * text = "I get angry or irritated easily"
@@ -432,27 +404,21 @@ Description:    "Represents the Brain Injury Screening Tool (BIST) for ACC."
   * item[+]
     * linkId = "3.1.1"
     * type = #display
+    * text = "**If score is 50 or more, consider referral to Concussion Service as this person is likely to be at moderate risk of poor recovery**"
     * enableWhen
       * id = "3.1.0.0"
       * operator = #>
       * question = "3.1"
       * answerDecimal = 50
-    * item[0]
-      * linkId = "3.1.0"
-      * text = "**If score is 50 or more, consider referral to Concussion Service as this person is likely to be at moderate risk of poor recovery**"
-      * type = #display
   * item[+]
     * linkId = "3.1.2"
     * type = #display
+    * text = "**If < 50, this person is at low risk, monitor and follow up in 7 - 10 days**"
     * enableWhen
       * id = "3.1.2.0"
       * operator = #<=
       * question = "3.1"
       * answerDecimal = 50
-    * item[0]
-      * linkId = "3.1.2.1"
-      * text = "**If < 50, this person is at low risk, monitor and follow up in 7 - 10 days**"
-      * type = #display
   * item[+]
     * linkId = "3.2"
     * text = "Total symptom severity score > 24 hours (out of 160)"
@@ -461,30 +427,24 @@ Description:    "Represents the Brain Injury Screening Tool (BIST) for ACC."
   * item[+]
     * linkId = "3.2.1"
     * type = #display
+    * text = "**If score is 66 or more, consider referral to Concussion Service as this person is likely to be at moderate risk of poor recovery**"
     * enableWhen
       * id = "3.2.1.0"
       * operator = #>=
       * question = "3.2"
       * answerDecimal = 66
-    * item[0]
-      * linkId = "3.2.1.1"
-      * text = "**If score is 66 or more, consider referral to Concussion Service as this person is likely to be at moderate risk of poor recovery**"
-      * type = #display
   * item[+]
     * linkId = "3.2.2"
     * type = #display
+    * text = "**If < 66, this person is at low risk, monitor and follow up in 7 - 10 days. If minimal improvement in scores since previous visit, consider referral to Concussion Service**"
     * enableWhen
       * id = "3.2.2.0"
       * operator = #<
       * question = "3.2"
       * answerDecimal = 66
-    * item[0]
-      * linkId = "3.2.2.1"
-      * text = "**If < 66, this person is at low risk, monitor and follow up in 7 - 10 days. If minimal improvement in scores since previous visit, consider referral to Concussion Service**"
-      * type = #display
   * item[+]
     * linkId = "3.3"
-    * type = #display
+    * type = #group
     * text = "**Injuries to the brain can affect how a person feels, behaves, thinks, and how able they are to do everyday tasks**\n\nOn a scale of 0 to 10, where 0 means that you do not feel the injury has had any impact on you at all, and 10 means you feel that the injury stops you from doing anything, how much do you feel your injury is impacting on you at this point in time:"
     * item[0]
       * linkId = "3.3.1.0"

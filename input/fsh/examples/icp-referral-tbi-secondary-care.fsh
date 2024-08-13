@@ -21,3 +21,14 @@ Description: "Example of an ICP TBI Secondary care refferal aka refferal into"
 * extension[+].url = $acc-providerid
 * extension[=].valueString = "J99966"
 
+* extension[+].url = $icp-referral-source
+* extension[=].extension[0].url = "referral-source-type"
+* extension[=].extension[=].valueCode = #gp
+* extension[=].extension[+].url = "received-date"
+* extension[=].extension[=].valueDate = "2022-11-17"
+
+* extension[+].url = $icp-idt-assessment
+* extension[=].extension[0].url = "cover-and-causation"
+* extension[=].extension[=].valueReference = Reference(icp-tbi-cover-measurement-internal)
+* extension[=].extension[+].url = "start-c"
+* extension[=].extension[=].valueReference = Reference(icp-tbi-start-c-measurement-internal)

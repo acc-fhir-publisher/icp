@@ -1,8 +1,9 @@
 Instance: icp-tbi-start-c-measurement-internal
 InstanceOf: QuestionnaireResponse
 Usage: #inline
+* meta.profile = $icp-tbi-start-c
 * status = #completed
-* questionnaire = "http://hl7.org.nz/fhir/StructureDefinition/acc-tbi-start-c"
+* questionnaire = $acc-tbi-start-c
 * item[0].linkId = "1"
 * item[=].text = "I have had headaches at some time in the last two weeks."
 * item[=].answer.valueCoding = $icp-tbi-startc-answeroption-agreedisagree-cs#agree

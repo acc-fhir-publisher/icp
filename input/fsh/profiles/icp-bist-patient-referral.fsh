@@ -33,18 +33,18 @@ Description:    "The ACC Patient Referral resource for a BIST measurement."
 
 * subject ^short = "This is the patient the (IDT) assessment is to be performed on."
 
-* contained[patient] ^short = "Patient's details."
-* contained[patient] ^definition = "Contained patient resource for the required patient's details."
-* contained[patient].extension[ethnicity] 1..*
-* contained[patient].extension[ethnicity] only $ethnicity
-* contained[patient].extension[ethnicity].valueCodeableConcept 1..1
-* contained[patient].extension[ethnicity].valueCodeableConcept from $icp-bist-ethnicity-vs (required)
-* contained[patient].extension[ethnicity] ^short = "ICP TBI Ethnicity codes for BIST measurement"
+// * contained[patient] ^short = "Patient's details."
+// * contained[patient] ^definition = "Contained patient resource for the required patient's details."
+// * contained[patient].extension[ethnicity] 1..*
+// * contained[patient].extension[ethnicity] only $ethnicity
+// * contained[patient].extension[ethnicity].valueCodeableConcept 1..1
+// * contained[patient].extension[ethnicity].valueCodeableConcept from $icp-bist-ethnicity-vs (required)
+// * contained[patient].extension[ethnicity] ^short = "ICP TBI Ethnicity codes for BIST measurement"
 
-* contained[patient].extension[sex-at-birth] 1..1
-* contained[patient].extension[sex-at-birth] only $sex-at-birth
-* contained[patient].extension[sex-at-birth].valueCodeableConcept 1..1
-* contained[patient].extension[sex-at-birth] ^short = "(male | female | other | unknown)"
+// * contained[patient].extension[sex-at-birth] 1..1
+// * contained[patient].extension[sex-at-birth] only $sex-at-birth
+// * contained[patient].extension[sex-at-birth].valueCodeableConcept 1..1
+// * contained[patient].extension[sex-at-birth] ^short = "(male | female | other | unknown)"
 
 // authoredOn
 // requestor (reference practitioner)
