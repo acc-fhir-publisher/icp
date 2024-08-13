@@ -2,7 +2,7 @@ Instance: icp-patient-referral-IDT
 InstanceOf: ServiceRequest
 Usage: #example
 Description: "Example of an ICP Patient Referral Community care to IDT"
-
+ 
 * meta.profile = $icp-bist-patient-referral
 * identifier.system = $acc-claim-number
 * identifier.use = #official
