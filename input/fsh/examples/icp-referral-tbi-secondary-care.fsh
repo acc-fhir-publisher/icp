@@ -9,8 +9,8 @@ Description: "Example of an ICP TBI Secondary care refferal aka refferal into"
 * identifier.value = "AB12345"
 * type = $icp-service-type-cs#tbi
 * contained[0] = patient-internal
-* contained[+] = icp-tbi-start-c-measurement-internal
 * contained[+] = icp-tbi-cover-measurement-internal
+* contained[+] = icp-tbi-start-c-measurement-internal
 * managingOrganization = Reference(Organization/ORG123)
 * period.start = "2022-11-17"
 * status = #active
