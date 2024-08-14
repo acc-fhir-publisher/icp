@@ -9,6 +9,14 @@ Description:    "The ACC Patient Referral resource for a BIST measurement."
 * ^purpose = "An ICP Patient Referral resource to represent a patient's referral for  an IDT assessment to be completed."
 * ^text.status = #additional
 
+
+* contained contains 
+    acc-provider 1..1 and
+    patient 1..1
+
+* contained[acc-provider] only $acc-provider
+* contained[patient] only $icp-patient
+
 // status
 // intent
 // priority

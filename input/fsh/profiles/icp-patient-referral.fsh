@@ -31,21 +31,14 @@ Description:    "The ACC Patient Referral resource."
 
 * contained ^slicing.discriminator.type = #profile
 * contained ^slicing.discriminator.path = "$this"
-* contained ^slicing.rules = #closed
+* contained ^slicing.rules = #open
 * contained ^slicing.ordered = false
 * contained ^slicing.description = "Slicing to specifiy an icp patient resource must be returned as a contained resource for the ICP case"
-
-* contained contains 
-    acc-provider 1..1 and
-    patient 1..1
-
-* contained[acc-provider] only $acc-provider
-* contained[patient] only $icp-patient
 
 * identifier ^slicing.description = "ICP identifiers"
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #closed
+* identifier ^slicing.rules = #open
 * identifier ^slicing.ordered = false
 
 * identifier 1..1
