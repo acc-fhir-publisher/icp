@@ -10,10 +10,10 @@ Description: "Example of an ICP Patient Referral Community care to IDT"
 * contained[0] = patient-internal-tbi-idt
 * contained[+] = acc-provider-tbi
 * performer = Reference(Organization/ORG123)
-* subject = Reference(patient-internal)
+* subject = Reference(patient-internal-tbi-idt)
 * requester = Reference(acc-provider-tbi)
 * status = #final
-* effectiveDateTime = "2023-08-09T15:30:00Z"
+* authoredOn = "2023-08-09T15:30:00Z"
 * intent = #order
 * authoredOn = "2023-08-09T15:30:00Z"
 
