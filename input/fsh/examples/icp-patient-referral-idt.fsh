@@ -1,5 +1,5 @@
-Instance: icp-patient-referral-idt
-InstanceOf: Observation
+Instance: icp-patient-referral-IDT
+InstanceOf: ServiceRequest
 Usage: #example
 Description: "Example of an ICP Patient Referral Community care to IDT"
  
@@ -11,13 +11,10 @@ Description: "Example of an ICP Patient Referral Community care to IDT"
 * contained[+] = acc-provider-tbi
 * performer = Reference(Organization/ORG123)
 * subject = Reference(patient-internal)
-* requester = Reference(acc-provider-tbi)
 * status = #final
-* intent = #order
-* authoredOn = "2023-08-09T15:30:00Z"
+* effectiveDateTime = "2023-08-09T15:30:00Z"
 
-* category.coding[0].system = $SCT
-* category.coding[0].code = $770656003
-
-* code.coding[+].system = $SCT
-* code.coding[=].code = #110030002
+* code.coding[+].system = $icp-prom-measurement-standard-msk-cs
+* code.coding[=].code = #koos
+* code.coding[=].display = "KOOS"
+ 
