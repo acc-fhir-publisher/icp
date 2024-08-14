@@ -1,4 +1,4 @@
-Instance: icp-patient-referral-idt
+Instance: icp-patient-referral-to-idt
 InstanceOf: ServiceRequest
 Usage: #example
 Description: "Example of an ICP Patient Referral Community care to IDT"
@@ -21,5 +21,4 @@ Description: "Example of an ICP Patient Referral Community care to IDT"
 * category.coding[0].code = #770656003
 
 * code.coding[+].system = $SCT
-* code.coding[=].code = #110030002 
- 
+* code.coding[=].code = #110030002
