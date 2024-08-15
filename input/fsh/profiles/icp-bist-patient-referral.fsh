@@ -10,6 +10,12 @@ Description:    "The ACC Patient Referral resource for a BIST measurement."
 * ^text.status = #additional
 
 
+* contained ^slicing.discriminator.type = #type
+* contained ^slicing.discriminator.path = "$this"
+* contained ^slicing.rules = #open
+* contained ^slicing.ordered = false
+* contained ^slicing.description = "Slicing to specifiy an icp patient resource must be returned as a contained resource for the ICP case"
+
 * contained contains 
     acc-provider 1..1 and
     patient 1..1
@@ -23,14 +29,16 @@ Description:    "The ACC Patient Referral resource for a BIST measurement."
 * reasonCode 0..1
 * reasonCode from $icp-tbi-bist-referral-type-vs (preferred)
 
-* category 1..1
-* category = $SCT#770656003
-* category ^short = "Referral for further assessment." // idt assessment
-* category.coding 1..1
+* category 0..0
+// * category 1..1
+// * category = $SCT#770656003
+// * category ^short = "Referral for further assessment." // idt assessment
+// * category.coding 1..1
 
-* code 1..1
-* code from $icp-bist-measurement-standard-vs (required)
-* code ^definition = "Type of TBI measurement"
+* code 0..0
+// * code 1..1
+// * code from $icp-bist-measurement-standard-vs
+// * code ^definition = "Type of TBI measurement"
 
 // * reasonReference 0..1
 // * reasonReference only Reference(Observation)
@@ -58,3 +66,8 @@ Description:    "The ACC Patient Referral resource for a BIST measurement."
 // requestor (reference practitioner)
 // performerType (idt assessment team / care team / practitioner - physiotherapist) SCTID: 394748003 Primary Care Group
 // performer (whom the patient is being referred to for the idt assessment)
+
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension ^slicing.ordered = false

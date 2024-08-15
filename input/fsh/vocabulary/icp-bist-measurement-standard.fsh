@@ -6,7 +6,7 @@ Description: "This ValueSet includes Snomed codes for traumatic brain injury and
 * ^url = $icp-bist-measurement-standard-vs
 * insert Acc-Vocabulary-Metadata
 
-* include $SCT#110030002
-* include $SCT#127298000
-* include $SCT#127302008
-* include $SCT#127295002
+* $SCT#110030002 "Brain concussion"
+* $SCT#127298000 "Traumatic brain injury with loss of consciousness"
+* $SCT#127302008 "Traumatic brain injury with no loss of consciousness"
+* $SCT#127295002 "Traumatic brain injury"

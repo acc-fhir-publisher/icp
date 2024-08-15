@@ -9,10 +9,10 @@ Description:    "This profile supports suppliers needing to inform ACC of a pati
 
 * type 0..0
 
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #closed
-* extension ^slicing.ordered = false
+// * extension ^slicing.discriminator.type = #value
+// * extension ^slicing.discriminator.path = "url"
+// * extension ^slicing.rules = #closed
+// * extension ^slicing.ordered = false
 
 * status ^definition = "The Status of the ICP case (must be Finished)."
 

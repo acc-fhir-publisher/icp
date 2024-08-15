@@ -1,5 +1,5 @@
 Profile:        ACCProvider
-Parent:         NzPractitioner
+Parent:         Practitioner
 Id:             acc-provider
 Title:          "ACC Provider"
 Description:    "The ACC Provider resource based on NzPractitioner."
@@ -11,6 +11,11 @@ Description:    "The ACC Provider resource based on NzPractitioner."
 
 //elements that have been removed
 * contained 0..0
+
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension ^slicing.ordered = false
 
 // * exensions 1..6
 * extension contains

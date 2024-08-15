@@ -1,5 +1,5 @@
 Profile:        IcpPatient
-Parent:         NzPatient
+Parent:         Patient
 Id:             acc-icp-patient
 Title:          "ACC ICP Patient"
 Description:    "The ACC ICP Patient resource based on NzPatient.  Used to verify that an ICP Case has a valid claim."
@@ -24,3 +24,12 @@ Description:    "The ACC ICP Patient resource based on NzPatient.  Used to verif
 
 * birthDate 1..1
 * birthDate obeys date-invariant and date-not-in-future-invariant
+
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension ^slicing.ordered = false
+
+// * extension contains
+//     $ethnicity named ethnicity 0..* and
+//     $sex-at-birth named sex-at-birth 0..1
