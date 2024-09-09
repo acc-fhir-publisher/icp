@@ -22,7 +22,7 @@ Description: "Integrated Care Pathways Exit Reason"
 * extension[reason].url = "reason" (exactly)
 * extension[reason].value[x] only code
 * extension[reason].valueCode 1..1
-* extension[reason].valueCode from $icp-exit-reason-vs (required)
+* extension[reason].valueCode from $icp-exit-reason-vs (preferred)
 
 * extension[other-reason].url = "other-reason" (exactly)
 * extension[other-reason].value[x] only string

@@ -89,6 +89,8 @@ Alias: $acc-readcode-vs = http://hl7.org.nz/fhir/ValueSet/acc-read-code
 Alias: $icp-exit-reason = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exit-reason
 Alias: $icp-exit-reason-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-exit-reason
 Alias: $icp-exit-reason-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-exit-reason
+Alias: $icp-msk-exit-reason-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-msk-exit-reason
+Alias: $icp-tbi-exit-reason-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-tbi-exit-reason
 
 Alias: $icp-declined-reason-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-declined-reason
 Alias: $icp-declined-reason-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-declined-reason
