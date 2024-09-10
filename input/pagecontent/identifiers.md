@@ -1,7 +1,7 @@
 ### Identifiers
 
 These are the identifiers defined in this IG. They are defined
-using [NamingSystem](http://hl7.org/fhir/namingsystem.html) resources.
+using [NamingSystem](http://hl7.org/fhir/r4/namingsystem.html) resources.
 
 | Description                                                     | Url                                                  | Other Identifiers | Responsible |
 |-----------------------------------------------------------------|------------------------------------------------------|-------------------|-------------|

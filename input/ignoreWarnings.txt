@@ -10,25 +10,31 @@ The link 'http://hl7.org/fhir/workflow.html' for "http://hl7.org/fhir/workflow" 
 The link 'http://hl7.org/fhir/namingsystem.html' for "NamingSystem" cannot be resolved
 The link 'http://hl7.org/fhir/resourcelist.html' for "Resource" cannot be resolved
 The link 'http://hl7.org/fhir/datatypes.html' for "Data Type" cannot be resolved
+The link 'http://hl7.org/fhir/datatypes.html' for "dataType(s)" cannot be resolved
 The link 'http://hl7.org/fhir/valueset.html' for "ValueSets" cannot be resolved
 The link 'http://hl7.org/fhir/codesystem.html' for "CodeSystem" cannot be resolved
 The link 'http://hl7.org/fhir/operations.html' for "operations" cannot be resolved
 The link 'http://hl7.org/fhir/namingsystem.html' for "NamingSystem" cannot be resolved
 The link 'http://hl7.org/fhir/references.html#canonical' for "Canonical" cannot be resolved
+The link 'http://hl7.org/fhir/valueset-operation-expand.html' for "$expand" cannot be resolved
+The link 'http://hl7.org/fhir/terminology-module.html' for "FHIR specification" cannot be resolved
+The link 'http://hl7.org/fhir/terminology-service.html' for "Terminology Services" cannot be resolved
+Canonical URL 'http://hl7.org/fhir/ImplementationGuide/hl7.terminology.r4' does not resolve
 
-
-# known warning
+# known warning - connectivity
 Code System URI 'urn:iso:std:iso:3166-1-2' is unknown so the code cannot be validated
-
-# known warning
+A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8655' could not be found, so the code cannot be validated
 The Implementation Guide contains no explicitly linked examples for this profile
 The Implementation Guide contains no examples for this profile
+ImplementationGuide: Rule ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 
-# known warning
-WARNING: ImplementationGuide: Rule ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+# known warning - examples
+Unable to resolve resource with reference 'Organization/ORG123'
+StructureDefinition.where(url = 'http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient'):	The Implementation Guide contains no explicitly linked examples for this profile
 
-# known warning
-INFORMATION: StructureDefinition.where(url = 'http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient'):	The Implementation Guide contains no explicitly linked examples for this profile
-INFORMATION: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
-INFORMATION: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
-
+# informational
+Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)

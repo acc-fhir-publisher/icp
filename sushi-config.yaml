@@ -41,8 +41,8 @@ pages:
     title: IG Home
   profiles.md:
     title: Profiles
-  usecases.md: 
-    title: Use Cases
+  questionnaires.md:
+    title: Questionnaires
   extensions.md:
     title: Extensions
   terminology.md:

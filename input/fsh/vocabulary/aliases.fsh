@@ -32,27 +32,31 @@ Alias: $administrative-gender = http://hl7.org/fhir/administrative-gender
 Alias: $nhi-patient = https://standards.digital.health.nz/ns/nhi-id
 Alias: $acc-claim-number = https://standards.digital.health.nz/ns/acc-45-number
 
-// profiles
+// base profiles
 Alias: $acc-provider = http://hl7.org.nz/fhir/StructureDefinition/acc-provider
+Alias: $icp-patient = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient
+Alias: $icp-patient-referral = http://hl7.org.nz/fhir/StructureDefinition/acc-patient-referral
 Alias: $icp-case = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case
+Alias: $icp-measurement = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement
+Alias: $icp-encounter = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-encounter
+// profiles
 Alias: $icp-case-create = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-create
 Alias: $icp-msk-case-create = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-msk-case-create
 Alias: $icp-tbi-case-create = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-case-create
 Alias: $icp-case-modify = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-modify
 Alias: $icp-case-exit = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-exit
-Alias: $icp-measurement = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement
 Alias: $icp-measurement-clinical = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-clinical
 Alias: $icp-measurement-prom = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-prom
 Alias: $icp-measurement-bist = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-bist
 Alias: $icp-referral-decline = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-decline
-Alias: $icp-patient = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient
-Alias: $icp-patient-referral = http://hl7.org.nz/fhir/StructureDefinition/acc-patient-referral
 Alias: $icp-bist-patient-referral = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-bist-patient-referral
+Alias: $icp-bist-patient-encounter = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-bist-patient-encounter
 Alias: $icp-tbi-start-c = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-start-c
 Alias: $icp-tbi-cover-causation = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-cover-and-causation
 Alias: $icp-tbi-bist = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-bist
 Alias: $icp-tbi-case-exit = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-case-exit
 Alias: $icp-tbi-referral-decline = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-referral-decline
+Alias: $icp-tbi-bist-encounter = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-bist-encounter
 
 // definitions
 Alias: $acc-bist = http://hl7.org.nz/fhir/Questionnaire/acc-bist
