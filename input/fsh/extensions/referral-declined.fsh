@@ -26,7 +26,7 @@ Description: "Integrated Care Pathways Referral Declined"
 * extension[reason].url = "reason" (exactly)
 * extension[reason].value[x] only code
 * extension[reason].valueCode 1..1
-* extension[reason].valueCode from $icp-declined-reason-vs (required)
+* extension[reason].valueCode from $icp-declined-reason-vs (preferred)
 
 * extension[other-reason].url = "other-reason" (exactly)
 * extension[other-reason].value[x] only string

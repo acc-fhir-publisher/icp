@@ -5,6 +5,7 @@ Alias: $icd9 = http://terminology.hl7.org/CodeSystem/icd9
 Alias: $ICD10CM = http://hl7.org/fhir/sid/icd-10-cm
 Alias: $ICD10PCS = http://www.cms.gov/Medicare/Coding/ICD10
 Alias: $icd10ae = http://terminology.hl7.org/CodeSystem/icd10ae
+Alias: $encounter-participant-type = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
 
 Alias: $episode-of-care-status = http://hl7.org/fhir/episode-of-care-status
 Alias: $observation-status = http://hl7.org/fhir/observation-status
@@ -98,6 +99,7 @@ Alias: $icp-tbi-exit-reason-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-tbi-exi
 
 Alias: $icp-declined-reason-cs = http://hl7.org.nz/fhir/CodeSystem/acc-icp-declined-reason
 Alias: $icp-declined-reason-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-declined-reason
+Alias: $icp-tbi-declined-reason-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-tbi-declined-reason
 
 Alias: $icp-recorded-outcome-stage = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-recorded-outcome-stage
 Alias: $icp-recorded-outcome-stage-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-recorded-outcome-stage
@@ -184,3 +186,4 @@ Alias: $icp-status-observation-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-obse
 Alias: $icp-encounter-status-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-encounter-status
 Alias: $icp-encounter-class-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-encounter-class
 Alias: $icp-bist-ethnicity-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-bist-ethnicity
+Alias: $icp-encounter-participant-type-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-encounter-participant-type

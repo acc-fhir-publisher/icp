@@ -7,6 +7,7 @@ Thumbs.db
 /template
 /tmp
 .npmrc
+.fhir/
 /node_modules
 /.project
 /target/
