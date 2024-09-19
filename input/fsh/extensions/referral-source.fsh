@@ -19,7 +19,7 @@ Description: "The source of the ICP referral, e.g. ACC referral, GP referral, ro
 * extension[referral-source-type].url = "referral-source-type" (exactly)
 * extension[referral-source-type].value[x] only code
 * extension[referral-source-type].valueCode 1..1
-* extension[referral-source-type].valueCode from $icp-referral-source-type-vs (required)
+* extension[referral-source-type].valueCode from $icp-referral-source-type-vs (preferred)
 * extension[referral-source-type] ^short = "(gp | physio | specialist | allied | employer | rongoa | other | acc | patient)"
 
 * extension[received-date].url = "received-date" (exactly)

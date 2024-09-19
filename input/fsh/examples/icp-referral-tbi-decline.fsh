@@ -17,7 +17,7 @@ Description: "Example of a referral decline TBI Encounter"
 * contained[+] = icp-tbi-start-c-measurement-internal
 
 * participant.individual = Reference(acc-provider-tbi)
-* participant.type = #PPRF
+* participant.type = $encounter-participant-type#PPRF
 
 * status = #finished
 * class = $encounter-class#PRENC

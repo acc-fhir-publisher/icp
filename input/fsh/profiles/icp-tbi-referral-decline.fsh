@@ -99,11 +99,13 @@ Description:    "The ICP Referral Decline profile is to be used by ICP suppliers
 // * extension ^slicing.rules = #closed
 // * extension ^slicing.ordered = false
     
-* extension 3..*
+* extension 2..*
 * extension contains
     $icp-referral-source named referral-source 1..1 and
     $icp-referral-declined named referral-declined 1..1 and
-    $icp-idt-assessment named referral-assessment 1..1
+    $icp-idt-assessment named referral-assessment 0..1
+
+* extension[referral-source].extension[referral-source-type].valueCode from $icp-tbi-referral-source-type-vs (required)  
 
 * extension[referral-declined].extension[reason].valueCode from $icp-tbi-declined-reason-vs (required)
    // $icp-idt named triage 0..1
