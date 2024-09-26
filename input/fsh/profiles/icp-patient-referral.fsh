@@ -49,7 +49,6 @@ Description:    "The ACC Patient Referral resource."
 * identifier[icpclaimnumber].period 0..0
 * identifier[icpclaimnumber].assigner 0..0
 
-
 // status
 // intent
 // priority
@@ -60,15 +59,19 @@ Description:    "The ACC Patient Referral resource."
 * authoredOn ^short = "The date and time that the Patient referral to an IDT assessment is created.  This must be in UTC yyyy-MM-dd'T'HH:mm:ss'Z'."
 * authoredOn ^definition = "The date and time that the Patient referral to an IDT assessment is created.  This should be in UTC format, and converted to UTC.  e.g. New Zealand Daylight Savings time of 2024-02-19T11:17:44Z should be 2024-02-18T22:17:44Z"
 
-* performer only Reference(Organization)
-* performer 1..1
-* performer ^short = "This is the ACC Vendor ID, in most cases this is the organisation's HPI ID."
-
 * requester 1..1
 * requester only Reference(ACCProvider)
+* requester ^short = "This represents the pracitioner referring the patient to a concussion supplier."
 
 * subject 1..1
 * subject only Reference(IcpPatient)
 
-// * extension contains
-//     $acc-providerid named acc-providerid 1..1
+
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension ^slicing.ordered = false
+
+// TODO - this must be migrated to PractitionerRole
+* extension contains
+    $acc-vendorid named acc-vendorid 1..1

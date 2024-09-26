@@ -35,6 +35,9 @@ Alias: $acc-claim-number = https://standards.digital.health.nz/ns/acc-45-number
 
 // base profiles
 Alias: $acc-provider = http://hl7.org.nz/fhir/StructureDefinition/acc-provider
+Alias: $acc-vendor = http://hl7.org.nz/fhir/StructureDefinition/acc-vendor
+Alias: $acc-tbi-provider = http://hl7.org.nz/fhir/StructureDefinition/acc-tbi-provider
+
 Alias: $icp-patient = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient
 Alias: $icp-patient-referral = http://hl7.org.nz/fhir/StructureDefinition/acc-patient-referral
 Alias: $icp-case = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case
@@ -66,6 +69,7 @@ Alias: $acc-tbi-start-c = http://hl7.org.nz/fhir/Questionnaire/acc-tbi-start-c
 
 // extensions
 Alias: $acc-providerid = http://hl7.org.nz/fhir/StructureDefinition/acc-providerid
+Alias: $acc-vendorid = http://hl7.org.nz/fhir/StructureDefinition/acc-vendorid
 Alias: $icp-triage = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-triage
 Alias: $icp-triage-assessment-date = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-triage-assessment-date
 Alias: $icp-acc-client-authority = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-client-authority
