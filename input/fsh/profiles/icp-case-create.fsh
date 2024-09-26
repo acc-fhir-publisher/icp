@@ -34,6 +34,8 @@ Description:    "ICP Case Create is to be used by the supplier to furnish ACC wi
 * extension[triage].extension[complexityScores] 1..1
 * extension[triage].extension[client-participation-agreement].valueBoolean 1..1
 
+* extension[referral-source].extension[referral-source-type].valueCode from $icp-referral-source-type-vs (required)
+
 * extension[service-bundle-msk] ^short = "(icpkar1 | icpkar2 | icpkar3 | icpkrr1 | icpkrr2 | icpkrr3 | icpkrr4 | icpkrr5 | icpspr1 | icpspr2 | icpspr3 | icpspr4 | icpspr5 | icpspr6 | icpspr7 | icpspr8 | icpshr1 | icpshr2 | icpshr3 | icpshr4 | icpshr5 | icpshr6)"
 * extension[exceptional-funding] ^short = "Indicates if exceptional funding is required for this treatment."
 * extension[diagnoses] ^short = "The diagnoses for the injury being treated."
