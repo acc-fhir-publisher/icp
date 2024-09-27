@@ -49,6 +49,11 @@ Description:    "The ACC Patient Referral resource."
 * identifier[icpclaimnumber].period 0..0
 * identifier[icpclaimnumber].assigner 0..0
 
+* contained ^slicing.discriminator.type = #profile
+* contained ^slicing.discriminator.path = "$this"
+* contained ^slicing.rules = #open
+* contained ^slicing.ordered = false
+* contained ^slicing.description = "Contained resources"
 // status
 // intent
 // priority
@@ -65,7 +70,6 @@ Description:    "The ACC Patient Referral resource."
 
 * subject 1..1
 * subject only Reference(IcpPatient)
-
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

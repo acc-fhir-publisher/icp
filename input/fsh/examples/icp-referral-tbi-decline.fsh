@@ -9,9 +9,7 @@ Description: "Example of a referral decline TBI Encounter"
 * identifier.system = $acc-claim-number
 * identifier.use = #official
 * identifier.value = "AB12345"
-* contained[0] = acc-provider-tbi
-// * contained[=].extension[0].url = $acc-providerid
-// * contained[=].extension[=].valueString = "J99966"
+* contained[0] = acc-provider
 * contained[+] = patient-internal
 * contained[+] = icp-tbi-cover-measurement-internal
 * contained[+] = icp-tbi-start-c-measurement-internal

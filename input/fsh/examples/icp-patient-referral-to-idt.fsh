@@ -7,18 +7,22 @@ Description: "Example of an ICP Patient Referral Community care to IDT"
 * identifier.system = $acc-claim-number
 * identifier.use = #official
 * identifier.value = "AB12345"
-* contained[0] = patient-internal
-* contained[+] = acc-provider-tbi
-* contained[+] = acc-provider-tbi-performer
 
+* contained[0] = acc-provider
+* contained[+] = patient-internal
+* contained[+] = acc-provider-tbi-performer
+// * contained[+] = icp-tbi-cover-measurement-internal
+// * contained[+] = icp-tbi-start-c-measurement-internal
+
+* requester = Reference(acc-provider)
 * subject = Reference(patient-internal)
-* requester = Reference(acc-provider-tbi)
 * performer = Reference(acc-provider-tbi-performer)
 
 * status = #completed
 * authoredOn = "2023-08-09T15:30:00Z"
 * intent = #order
 * supportingInfo = Reference(http://hl7.org.nz/fhir/Questionnaire/acc-bist/bist-internal:1)
+* reasonCode = $icp-referral-source-type-cs#no-referral
 
 // * category.coding.system = $SCT
 // * category.coding.code = #770656003
@@ -30,5 +34,11 @@ Description: "Example of an ICP Patient Referral Community care to IDT"
 // * extension[+].url = $sex-at-birth
 // * extension[=].valueCodeableConcept = $administrative-gender#male
 
-* extension[0].url = $acc-vendorid
-* extension[=].valueString = "J99966"
+// * extension[0].url = $acc-vendorid
+// * extension[=].valueString = "J99966"
+
+// * extension[+].url = $icp-idt-assessment
+// * extension[=].extension[0].url = "cover-and-causation"
+// * extension[=].extension[=].valueReference = Reference(icp-tbi-cover-measurement-internal)
+// * extension[=].extension[+].url = "start-c"
+// * extension[=].extension[=].valueReference = Reference(icp-tbi-start-c-measurement-internal)

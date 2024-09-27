@@ -14,6 +14,7 @@ Description:    "The ACC Provider resource based on NzPractitioner."
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
+
 * extension ^slicing.rules = #open
 * extension ^slicing.ordered = false
 

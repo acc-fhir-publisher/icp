@@ -12,6 +12,9 @@ Description: "Integrated Care Pathways IDT Assessment"
 * ^context[+].type = #element
 * ^context[=].expression = "Encounter"
 
+// * ^context[+].type = #element
+// * ^context[=].expression = "ServiceRequest"
+
 * extension 0..2
 * extension contains
     cover-and-causation 0..1 MS and

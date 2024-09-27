@@ -1,13 +1,54 @@
 Profile:        IcpBistPatientReferral
-Parent:         ACCPatientReferral
+Parent:         ServiceRequest
 Id:             acc-icp-bist-patient-referral
 Title:          "ACC ICP Patient Referral for BIST"
 Description:    "The ACC Patient Referral resource for a BIST measurement."
 
 * ^url = $icp-bist-patient-referral
 * insert Acc-Metadata
-* ^purpose = "An ICP Patient Referral resource to represent a patient's referral for  an IDT assessment to be completed."
+* ^purpose = "A Patient Referral resource to represent a patient's referral for  an IDT assessment to be completed."
 * ^text.status = #additional
+
+
+* basedOn 0..0
+* instantiatesCanonical 0..0
+* instantiatesUri 0..0
+* replaces 0..0
+* requisition 0..0
+* doNotPerform 0..0
+* orderDetail 0..0
+* quantity[x] 0..0
+* encounter 0..0
+* occurrence[x] 0..0
+* asNeeded[x] 0..0
+* specimen 0..0
+* bodySite 0..0
+* locationCode 0..0
+* locationReference 0..0
+* insurance 0..0
+* note 0..0
+* patientInstruction 0..0
+* relevantHistory 0..0
+
+* identifier ^slicing.description = "ICP identifiers"
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.ordered = false
+
+* identifier 1..1
+* identifier contains
+    icpclaimnumber 1..1
+
+* identifier[icpclaimnumber].system = $acc-claim-number (exactly)
+* identifier[icpclaimnumber].value 1..1
+* identifier[icpclaimnumber].value obeys acc-claim-number
+* identifier[icpclaimnumber].value ^short = "The ACC 45 number."
+* identifier[icpclaimnumber] ^short = "The ACC 45 number to be used in combination with the contained patient's date of birth, as the ICP case idenfitier."
+* identifier[icpclaimnumber].id 0..0
+* identifier[icpclaimnumber].extension 0..0
+* identifier[icpclaimnumber].period 0..0
+* identifier[icpclaimnumber].assigner 0..0
 
 
 * contained ^slicing.discriminator.type = #profile
@@ -18,12 +59,16 @@ Description:    "The ACC Patient Referral resource for a BIST measurement."
 
 * contained contains 
     acc-provider 1..1 and
-    acc-tbi-provider 1..1 and
-    patient 1..1
+    patient 1..1 and
+    acc-tbi-provider 1..1
+    // cover-and-causation 1..1 and
+    // start-c 1..1
 
 * contained[acc-provider] only $acc-provider
-* contained[acc-tbi-provider] only $acc-tbi-provider
 * contained[patient] only $icp-patient
+* contained[acc-tbi-provider] only $acc-tbi-provider
+// * contained[cover-and-causation] only $icp-tbi-cover-causation
+// * contained[start-c] only $icp-tbi-start-c
 
 // status
 // intent
@@ -63,6 +108,32 @@ Description:    "The ACC Patient Referral resource for a BIST measurement."
 // * contained[patient].extension[sex-at-birth] ^short = "(male | female | other | unknown)"
 // performerType (idt assessment team / care team / practitioner - physiotherapist) SCTID: 394748003 Primary Care Group
 
-* performer only Reference(ACCProvider)
+
+* authoredOn only dateTime
+* authoredOn obeys dateTime-not-in-future-invariant
+* authoredOn 1..1
+* authoredOn ^short = "The date and time that the Patient referral to an IDT assessment is created.  This must be in UTC yyyy-MM-dd'T'HH:mm:ss'Z'."
+* authoredOn ^definition = "The date and time that the Patient referral to an IDT assessment is created.  This should be in UTC format, and converted to UTC.  e.g. New Zealand Daylight Savings time of 2024-02-19T11:17:44Z should be 2024-02-18T22:17:44Z"
+
+* subject 1..1
+* subject only Reference(IcpPatient)
+
+* requester 1..1
+* requester only Reference(ACCProvider)
+* requester ^short = "This represents the pracitioner referring the patient to a concussion supplier."
+
 * performer 1..1
-* performer ^short = "This represents the ACC-approved concussion supplier the patient is being referred to."
+// * performer[0] only Reference(ACCTbiProvider)
+// * performer only Reference(ACCTbiProvider)
+// * performer ^short = "This represents the ACC-approved concussion supplier the patient is being referred to."
+
+// * extension ^slicing.discriminator.type = #value
+// * extension ^slicing.discriminator.path = "url"
+// * extension ^slicing.rules = #open
+// * extension ^slicing.ordered = false
+
+// TODO - this must be migrated to PractitionerRole
+// * extension contains
+//     $acc-vendorid named acc-vendorid 1..1 
+    // and
+    // $icp-idt-assessment named idt-assessment 1..1

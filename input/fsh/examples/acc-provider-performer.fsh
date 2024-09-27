@@ -1,8 +1,8 @@
 Instance: acc-provider-tbi-performer
 InstanceOf: ACCTbiProvider
-Usage: #inline
-Description: "Contained acc provider examples reference"
- 
+Usage: #inline 
 * meta.profile = $acc-tbi-provider
-* extension[+].url = $acc-providerid
-* extension[=].valueString = "J99967"
+* extension[0].url = $acc-vendorid
+* extension[=].valueString = "J99966"
+// * extension[+].url = $acc-providerid
+// * extension[=].valueString = "J99967"
