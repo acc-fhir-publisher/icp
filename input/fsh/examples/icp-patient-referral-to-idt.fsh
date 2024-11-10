@@ -8,15 +8,15 @@ Description: "Example of an ICP Patient Referral Community care to IDT"
 * identifier.use = #official
 * identifier.value = "AB12345"
 
-* contained[0] = acc-provider
+* contained[0] = acc-provider-tbi-requester
 * contained[+] = patient-internal
-* contained[+] = acc-provider-tbi-performer
+// * contained[+] = acc-provider
 // * contained[+] = icp-tbi-cover-measurement-internal
 // * contained[+] = icp-tbi-start-c-measurement-internal
 
-* requester = Reference(acc-provider)
+// * performer = Reference(acc-provider)
 * subject = Reference(patient-internal)
-* performer = Reference(acc-provider-tbi-performer)
+* requester = Reference(acc-provider-tbi-requester)
 
 * status = #completed
 * authoredOn = "2023-08-09T15:30:00Z"
