@@ -58,15 +58,15 @@ Description:    "The ACC Patient Referral resource for a BIST measurement."
 * contained ^slicing.description = "Contained resources"
 
 * contained contains 
-    acc-provider 1..1 and
+    acc-tbi-provider 1..1 and
     patient 1..1 and
-    acc-tbi-provider 1..1
+    acc-provider 0..1
     // cover-and-causation 1..1 and
     // start-c 1..1
 
-* contained[acc-provider] only $acc-provider
-* contained[patient] only $icp-patient
 * contained[acc-tbi-provider] only $acc-tbi-provider
+* contained[patient] only $icp-patient
+* contained[acc-provider] only $acc-provider
 // * contained[cover-and-causation] only $icp-tbi-cover-causation
 // * contained[start-c] only $icp-tbi-start-c
 
@@ -119,13 +119,13 @@ Description:    "The ACC Patient Referral resource for a BIST measurement."
 * subject only Reference(IcpPatient)
 
 * requester 1..1
-* requester only Reference(ACCProvider)
-* requester ^short = "This represents the pracitioner referring the patient to a concussion supplier."
+* requester only Reference(ACCTbiProvider)
+* requester ^short = "This represents the pracitioner (ACC ProviderId) and practice (ACC VendorId) referring/not referring the patient to a concussion supplier."
 
 * performer 0..1
-// * performer[0] only Reference(ACCTbiProvider)
+* performer only Reference(ACCProvider)
 // * performer only Reference(ACCTbiProvider)
-// * performer ^short = "This represents the ACC-approved concussion supplier the patient is being referred to."
+* performer ^short = "This represents the ACC-approved concussion supplier the patient is being referred to."
 
 // * extension ^slicing.discriminator.type = #value
 // * extension ^slicing.discriminator.path = "url"
