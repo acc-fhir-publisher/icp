@@ -18,12 +18,9 @@ Description:    "The ACC Provider resource based on NzPractitioner."
 * extension ^slicing.rules = #open
 * extension ^slicing.ordered = false
 
+* extension 2..2
 * extension contains
     $acc-vendorid named acc-vendorid 1..1 and
-    $acc-providerid named acc-tbi-providerid 0..1
-
-
-// // * exensions 1..6
-// * extension contains
+    $acc-providerid named acc-providerid 1..1
 
 // * extension[acc-providerid] ^short = "The ACC Provider ID"
