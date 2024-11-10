@@ -122,7 +122,7 @@ Description:    "The ACC Patient Referral resource for a BIST measurement."
 * requester only Reference(ACCProvider)
 * requester ^short = "This represents the pracitioner referring the patient to a concussion supplier."
 
-* performer 1..1
+* performer 0..1
 // * performer[0] only Reference(ACCTbiProvider)
 // * performer only Reference(ACCTbiProvider)
 // * performer ^short = "This represents the ACC-approved concussion supplier the patient is being referred to."
