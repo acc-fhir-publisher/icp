@@ -309,7 +309,7 @@ Description:    "Represents the Brain Injury Screening Tool (BIST) for ACC."
       * answerValueSet = $icp-tbi-bist-answeroption-range-vs    
     * item[+]
       * linkId = "2.2.2"
-      * text = "If I close my eyes, I feel like I am sea"
+      * text = "If I close my eyes, I feel like I am at sea"
       * type = #choice
       * required = false
       * answerValueSet = $icp-tbi-bist-answeroption-range-vs    
@@ -375,7 +375,7 @@ Description:    "Represents the Brain Injury Screening Tool (BIST) for ACC."
       * answerValueSet = $icp-tbi-bist-answeroption-range-vs
     * item[+]
       * linkId = "2.4.2"
-      * text = "I feel restless"
+      * text = "I just don't feel right"
       * type = #choice
       * required = false
       * answerValueSet = $icp-tbi-bist-answeroption-range-vs
@@ -395,6 +395,7 @@ Description:    "Represents the Brain Injury Screening Tool (BIST) for ACC."
 
 * item[+]
   * linkId = "3"
+  * text = "Outcomes and Recommendations"
   * type = #group
   * item[0]
     * linkId = "3.1"
