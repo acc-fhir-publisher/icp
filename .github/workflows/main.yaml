@@ -103,8 +103,8 @@ jobs:
           npm config set //nexus.ds.acc.co.nz/repository/npm-integration/:_auth="$encoded_string"
 
           touch .npmrc
-          echo "registry=https://nexus.ds.acc.co.nz/repository/npm-integration/" >> /.npmrc
-          echo "//nexus.ds.acc.co.nz/repository/npm-integration/:_auth=$encoded_string" >> /.npmrc
+          echo "registry=https://nexus.ds.acc.co.nz/repository/npm-integration/" >> .npmrc
+          echo "//nexus.ds.acc.co.nz/repository/npm-integration/:_auth=$encoded_string" >> .npmrc
 
       - name: Publish to ACC Nexus Package Registry
         run: |
