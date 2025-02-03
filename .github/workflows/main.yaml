@@ -99,6 +99,7 @@ jobs:
           encoded_string=$(echo -n "${{env.prdnexususer}}":"${{env.prdnexustoken}}" | base64)
           npm config set //nexus.ds.acc.co.nz/repository/npm-integration/:_auth=$encoded_string
 
+          mkdir -p ./package
           touch .npmrc
           echo "registry=https://nexus.ds.acc.co.nz/repository/npm-integration/" >> .npmrc
           echo "//nexus.ds.acc.co.nz/repository/npm-integration/:_auth=$encoded_string" >> .npmrc
@@ -111,7 +112,6 @@ jobs:
 
       - name: Create package.json
         run: |
-          mkdir -p ./package
           cd ./package
           echo '{
             "name": "icp",
@@ -137,6 +137,10 @@ jobs:
 
       - name: Publish to ACC Nexus Package Registry
         run: |
+          unset NPM_CONFIG_USERCONFIG
+          unset NODE_AUTH_TOKEN
+          
           cd ./package
           touch package.tgz
+          echo "registry=https://nexus.ds.acc.co.nz/repository/npm-integration/" >> package.tgz
           npm publish
