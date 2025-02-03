@@ -63,9 +63,9 @@ jobs:
           path: /apps/icp/package
 
   publish:
+    needs: build
     runs-on:
       group: release-general-linux
-
     steps:
       - name: Download artifacts
         uses: actions/download-artifact@v4
