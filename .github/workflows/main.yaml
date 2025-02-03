@@ -115,10 +115,7 @@ jobs:
           cd ./package
           echo '{
             "name": "icp",
-            "version": "1.1.43",
-            "publishConfig": {
-                "registry": "https://nexus.ds.acc.co.nz/repository/npm-integration"
-            },
+            "version": "1.1.0",
             "repository":"https://github.com/integration-services-accnz/icp",
             "canonical": "http://hl7.org.nz/fhir/icp",
             "url": "http://hl7.org.nz/fhir/icp",
@@ -139,7 +136,7 @@ jobs:
         run: |
           unset NPM_CONFIG_USERCONFIG
           unset NODE_AUTH_TOKEN
-          
+
           cd ./package
           touch package.tgz
           echo "registry=https://nexus.ds.acc.co.nz/repository/npm-integration/" >> package.tgz
