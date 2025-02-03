@@ -35,10 +35,10 @@ jobs:
         run: |
           cd /apps/icp/package
           echo '{
-            "name": "@integration-services-accnz/icp",
+            "name": "icp",
             "version": "1.1.43",
             "publishConfig": {
-                "registry": "https://npm.pkg.github.com"
+                "registry": "https://nexus.ds.acc.co.nz/repository/npm-integration"
               },
             "repository":"https://github.com/integration-services-accnz/icp",
             "canonical": "http://hl7.org.nz/fhir/icp",
