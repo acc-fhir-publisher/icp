@@ -12,12 +12,27 @@ jobs:
         username: ${{ secrets.DOCKER_HUB_USERNAME }}
         password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
     permissions:
-      packages: write
-      contents: read  
+      packages: read
+      contents: read
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        
+    
+      - name: Login via Az module
+        uses: azure/login@v2
+        with:
+          creds: ${{secrets.AZURE_CREDENTIALS_PROD}}
+          enable-AzPSSession: true
+      
+      - name: Get nexus secrets from Azure Key Vault
+        shell: bash
+        run: |-
+          for secret_name in  prdnexususer prdnexustoken; do
+            secret_value=$(az keyvault secret show --vault-name "SYD-PDD-KVT-INT-NONPROD" --name $secret_name --query value -o tsv)
+            echo "::add-mask::$secret_value"
+            echo "$secret_name=$secret_value" >> $GITHUB_ENV
+          done
+    
       - name: Set Java Heap Space
         run: |
           echo "export JAVA_TOOL_OPTIONS='-Xmx2g'" >> $GITHUB_ENV
@@ -62,21 +77,6 @@ jobs:
             ],
             "license": "CC0-1.0"
           }' > package.json
-
-      - name: Login via Az module
-        uses: azure/login@v2
-        with:
-          creds: ${{secrets.AZURE_CREDENTIALS_PROD}}
-          enable-AzPSSession: true
-      
-      - name: Get nexus secrets from Azure Key Vault
-        shell: bash
-        run: |-
-          for secret_name in  prdnexususer prdnexustoken; do
-            secret_value=$(az keyvault secret show --vault-name "SYD-PDD-KVT-INT-NONPROD" --name $secret_name --query value -o tsv)
-            echo "::add-mask::$secret_value"
-            echo "$secret_name=$secret_value" >> $GITHUB_ENV
-          done
 
       - name: Create .npmrc
         shell: bash
