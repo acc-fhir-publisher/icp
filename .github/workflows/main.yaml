@@ -12,7 +12,7 @@ jobs:
         password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
     permissions:
       packages: write
-      contents: read  
+      contents: read
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -66,12 +66,15 @@ jobs:
     needs: build
     runs-on:
       group: release-general-linux
+    permissions:
+      packages: read
+      contents: write
     steps:
       - name: Download artifacts
         uses: actions/download-artifact@v4
         with:
+          run-id: ${{ github.event.workflow_run.id }}
           name: build-artifacts
-          path: /apps/icp/package
 
       - name: Login via Az module
         uses: azure/login@v2
@@ -96,7 +99,7 @@ jobs:
       - name: Create .npmrc
         shell: bash
         run: |
-          touch /apps/icp/package/.npmrc
+          touch .npmrc
           encoded_string=$(echo -n "${{env.prdnexususer}}":"${{env.prdnexustoken}}" | base64)
 
           echo "registry=https://nexus.ds.acc.co.nz/repository/npm-integration/" >> ./.npmrc
@@ -110,5 +113,4 @@ jobs:
 
       - name: Publish to ACC Nexus Package Registry
         run: |
-          cd /apps/icp/package
           npm publish
