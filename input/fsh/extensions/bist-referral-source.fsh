@@ -6,7 +6,13 @@ Description: "The source of the referral to the BIST."
 * insert Acc-Metadata
 
 * ^context[0].type = #element
+* ^context[=].expression = "Observation"
+* ^context[+].type = #element
 * ^context[=].expression = "Observation.extension"
+* ^context[+].type = #element
+* ^context[=].expression = "ServiceRequest"
+* ^context[+].type = #element
+* ^context[=].expression = "ServiceRequest.extension"
 
 * extension 0..0
 

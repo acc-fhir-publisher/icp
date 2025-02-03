@@ -1,4 +1,4 @@
-name: Publish IG package to ACC GitHub
+name: Publish IG package to ACC Nexus
 on:
   workflow_dispatch
 
