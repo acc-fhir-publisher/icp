@@ -67,6 +67,16 @@ jobs:
         with:
           creds: ${{secrets.AZURE_CREDENTIALS_PROD}}
           enable-AzPSSession: true
+      
+      - name: Get nexus secrets from Azure Key Vault
+        shell: bash
+        run: |-
+          for secret_name in  prdnexususer prdnexustoken; do
+            secret_value=$(az keyvault secret show --vault-name "SYD-PDD-KVT-INT-NONPROD" --name $secret_name --query value -o tsv)
+            echo "::add-mask::$secret_value"
+            echo "$secret_name=$secret_value" >> $GITHUB_ENV
+          done
+
       - name: Create .npmrc
         shell: bash
         run: |
