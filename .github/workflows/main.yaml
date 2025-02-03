@@ -3,36 +3,20 @@ on:
   workflow_dispatch
 
 jobs:
-  build-and-publish:
-    runs-on:
-      group: release-general-linux
+  build:
+    runs-on: ubuntu-latest
     container:
       image: accnewzealand/ig-publisher:1.6.15
       credentials:
         username: ${{ secrets.DOCKER_HUB_USERNAME }}
         password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
     permissions:
-      packages: read
-      contents: read
+      packages: write
+      contents: read  
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-    
-      - name: Login via Az module
-        uses: azure/login@v2
-        with:
-          creds: ${{secrets.AZURE_CREDENTIALS_PROD}}
-          enable-AzPSSession: true
-      
-      - name: Get nexus secrets from Azure Key Vault
-        shell: bash
-        run: |-
-          for secret_name in  prdnexususer prdnexustoken; do
-            secret_value=$(az keyvault secret show --vault-name "SYD-PDD-KVT-INT-NONPROD" --name $secret_name --query value -o tsv)
-            echo "::add-mask::$secret_value"
-            echo "$secret_name=$secret_value" >> $GITHUB_ENV
-          done
-    
+        
       - name: Set Java Heap Space
         run: |
           echo "export JAVA_TOOL_OPTIONS='-Xmx2g'" >> $GITHUB_ENV
@@ -46,12 +30,6 @@ jobs:
       - name: Run shell script
         run: |
           /apps/icp/build-publish.sh
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 18
-          registry-url: https://nexus.ds.acc.co.nz/repository/npm-integration/
 
       - name: Create package.json
         run: |
@@ -78,14 +56,51 @@ jobs:
             "license": "CC0-1.0"
           }' > package.json
 
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-artifacts
+          path: /apps/icp/package
+
+  publish:
+    runs-on:
+      group: release-general-linux
+
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: build-artifacts
+          path: /apps/icp/package
+
+      - name: Login via Az module
+        uses: azure/login@v2
+        with:
+          creds: ${{secrets.AZURE_CREDENTIALS_PROD}}
+          enable-AzPSSession: true
+
+      - name: Get nexus secrets from Azure Key Vault
+        shell: bash
+        run: |-
+          for secret_name in  prdnexususer prdnexustoken; do
+            secret_value=$(az keyvault secret show --vault-name "SYD-PDD-KVT-INT-NONPROD" --name $secret_name --query value -o tsv)
+            echo "::add-mask::$secret_value"
+            echo "$secret_name=$secret_value" >> $GITHUB_ENV
+          done
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+
       - name: Create .npmrc
         shell: bash
         run: |
-          touch ./.npmrc
+          touch /apps/icp/package/.npmrc
           encoded_string=$(echo -n "${{env.prdnexususer}}":"${{env.prdnexustoken}}" | base64)
 
-          echo "registry=https://nexus.ds.acc.co.nz/repository/npm-public-integration/" >> ./.npmrc
-          echo "//nexus.ds.acc.co.nz/repository/npm-public-integration/:_auth=$encoded_string" >> ./.npmrc
+          echo "registry=https://nexus.ds.acc.co.nz/repository/npm-integration/" >> ./.npmrc
+          echo "//nexus.ds.acc.co.nz/repository/npm-integration/:_auth=$encoded_string" >> ./.npmrc
 
       - name: Set .npmrc to private for publishing
         run: |
@@ -97,6 +112,3 @@ jobs:
         run: |
           cd /apps/icp/package
           npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
