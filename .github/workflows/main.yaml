@@ -68,7 +68,7 @@ jobs:
     runs-on:
       group: release-general-linux
     permissions:
-      packages: read
+      packages: write
       contents: write
     steps:
       # - name: Download artifacts
@@ -102,7 +102,6 @@ jobs:
           touch .npmrc
           echo "registry=https://nexus.ds.acc.co.nz/repository/npm-integration/" >> .npmrc
           echo "//nexus.ds.acc.co.nz/repository/npm-integration/:_auth=$encoded_string" >> .npmrc
-          cat .npmrc
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -112,8 +111,8 @@ jobs:
 
       - name: Create package.json
         run: |
-          mkdir -p /icp/package
-          cd /icp/package
+          mkdir -p ./package
+          cd ./package
           echo '{
             "name": "icp",
             "version": "1.1.43",
@@ -138,6 +137,6 @@ jobs:
 
       - name: Publish to ACC Nexus Package Registry
         run: |
-          cd /icp/package
+          cd ./package
           touch package.tgz
           npm publish
