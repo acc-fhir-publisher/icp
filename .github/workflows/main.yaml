@@ -4,6 +4,7 @@ on:
 
 jobs:
   build:
+    if: false
     runs-on: ubuntu-latest
     container:
       image: accnewzealand/ig-publisher:1.6.15
@@ -63,18 +64,19 @@ jobs:
           path: /apps/icp/package
 
   publish:
-    needs: build
+    # needs: build
     runs-on:
       group: release-general-linux
     permissions:
       packages: read
       contents: write
     steps:
-      - name: Download artifacts
-        uses: actions/download-artifact@v4
-        with:
-          run-id: ${{ github.event.workflow_run.id }}
-          name: build-artifacts
+      # - name: Download artifacts
+      #   uses: actions/download-artifact@v4
+      #   with:
+      #     run-id: ${{ github.event.workflow_run.id }}
+      #     name: build-artifacts
+
 
       - name: Login via Az module
         uses: azure/login@v2
@@ -91,21 +93,51 @@ jobs:
             echo "$secret_name=$secret_value" >> $GITHUB_ENV
           done
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 18
-
       - name: Set .npmrc to private for publishing
         run: |
           npm config set registry="https://nexus.ds.acc.co.nz/repository/npm-integration/"
           encoded_string=$(echo -n "${{env.prdnexususer}}":"${{env.prdnexustoken}}" | base64)
-          npm config set //nexus.ds.acc.co.nz/repository/npm-integration/:_auth="$encoded_string"
+          npm config set //nexus.ds.acc.co.nz/repository/npm-integration/:_auth=$encoded_string
 
           touch .npmrc
           echo "registry=https://nexus.ds.acc.co.nz/repository/npm-integration/" >> .npmrc
           echo "//nexus.ds.acc.co.nz/repository/npm-integration/:_auth=$encoded_string" >> .npmrc
+          cat .npmrc
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: 'https://nexus.ds.acc.co.nz/repository/npm-integration/'
+
+      - name: Create package.json
+        run: |
+          mkdir -p /icp/package
+          cd /icp/package
+          echo '{
+            "name": "icp",
+            "version": "1.1.43",
+            "publishConfig": {
+                "registry": "https://nexus.ds.acc.co.nz/repository/npm-integration"
+            },
+            "repository":"https://github.com/integration-services-accnz/icp",
+            "canonical": "http://hl7.org.nz/fhir/icp",
+            "url": "http://hl7.org.nz/fhir/icp",
+            "title": "New Zealand ICP Implementation Guide",
+            "description": "The ICP facade",
+            "language": "en",
+            "author": "ACC Integration",
+            "maintainers": [
+                {
+                    "name": "ACC Integration",
+                    "email": "digitaloperations@acc.co.nz"
+                }
+            ],
+            "license": "CC0-1.0"
+          }' > package.json
 
       - name: Publish to ACC Nexus Package Registry
         run: |
+          cd /icp/package
+          touch package.tgz
           npm publish
