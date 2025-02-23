@@ -19,6 +19,7 @@ Description:    "Represents the Brain Injury Screening Tool (BIST) for ACC."
 * item[0]
   * type = #group
   * linkId = "0"
+  * text = "Time of Accident"
   * item[0]
     * linkId = "0.1"
     * text = "Date of injury"
@@ -44,6 +45,7 @@ Description:    "Represents the Brain Injury Screening Tool (BIST) for ACC."
 * item[+]
   * linkId = "1"
   * type = #group
+  * text = "Accident Details"
   * item[0]
     * linkId = "1.1"
     * text = "Please tell me about what happened"
@@ -258,7 +260,7 @@ Description:    "Represents the Brain Injury Screening Tool (BIST) for ACC."
       * answerString = "Yes"
 * item[+]
   * linkId = "2"
-  * text = "Patient questions"
+  * text = "Symptom scale"
   * type = #group
   * item[0]
     * linkId = "2.0"
@@ -294,7 +296,7 @@ Description:    "Represents the Brain Injury Screening Tool (BIST) for ACC."
       * answerValueSet = $icp-tbi-bist-answeroption-range-vs
     * item[+]
       * linkId = "2.1.0"
-      * text = "Total physical score (out of 40) score"
+      * text = "Total physical score (out of 40)"
       * type = #decimal
       * initial[0].valueDecimal = 0
   * item[+]
