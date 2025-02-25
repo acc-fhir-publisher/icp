@@ -5,4 +5,4 @@ using [Questionnaire](http://hl7.org/fhir/R4/questionnaire.html) resources.
 
 | Description |Url |
 |--- | ---|
-|[ACC BIST](Questionnaire-acc-bist.html)                           | [http://hl7.org.nz/fhir/Questionnaire/acc-bist](Questionnaire-acc-bist.html)                       |
+|[ACC BIST](Questionnaire-acc-bpac-bist.html)                           | [http://hl7.org.nz/fhir/Questionnaire/acc-bist](Questionnaire-acc-bpac-bist.html)                       |

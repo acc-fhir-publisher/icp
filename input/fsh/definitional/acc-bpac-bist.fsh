@@ -1,5 +1,5 @@
 
-Instance: acc-bist
+Instance: acc-bpac-bist
 InstanceOf: Questionnaire
 Usage: #definition
 Title:          "ACC BIST"
