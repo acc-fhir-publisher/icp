@@ -50,7 +50,6 @@ Description:    "The ACC Patient Referral resource for a BIST measurement."
 * identifier[icpclaimnumber].period 0..0
 * identifier[icpclaimnumber].assigner 0..0
 
-
 * contained ^slicing.discriminator.type = #profile
 * contained ^slicing.discriminator.path = "$this"
 * contained ^slicing.rules = #open
@@ -60,16 +59,9 @@ Description:    "The ACC Patient Referral resource for a BIST measurement."
 * contained contains 
     acc-tbi-provider 1..1 and
     patient 1..1 
-    // and
-    // acc-provider 0..1
-    // cover-and-causation 1..1 and
-    // start-c 1..1
 
 * contained[acc-tbi-provider] only $acc-tbi-provider
 * contained[patient] only $icp-patient
-// * contained[acc-provider] only $acc-provider
-// * contained[cover-and-causation] only $icp-tbi-cover-causation
-// * contained[start-c] only $icp-tbi-start-c
 
 // status
 // intent
@@ -78,36 +70,11 @@ Description:    "The ACC Patient Referral resource for a BIST measurement."
 * reasonCode from $icp-tbi-bist-referral-type-vs (required)
 
 * category 0..0
-// * category 1..1
-// * category = $SCT#770656003
-// * category ^short = "Referral for further assessment." // idt assessment
-// * category.coding 1..1
-
 * code 0..0
-// * code 1..1
-// * code from $icp-bist-measurement-standard-vs
-// * code ^definition = "Type of TBI measurement"
-// * reasonReference 0..1
-// * reasonReference only Reference(Observation)
 
 * supportingInfo 0..1
 * supportingInfo only Reference(IcpTBIBIST)
 * supportingInfo ^short = "BIST measurement this referral is based on."
-
-
-// * contained[patient] ^short = "Patient's details."
-// * contained[patient] ^definition = "Contained patient resource for the required patient's details."
-// * contained[patient].extension[ethnicity] 1..*
-// * contained[patient].extension[ethnicity] only $ethnicity
-// * contained[patient].extension[ethnicity].valueCodeableConcept 1..1
-// * contained[patient].extension[ethnicity].valueCodeableConcept from $icp-bist-ethnicity-vs (required)
-// * contained[patient].extension[ethnicity] ^short = "ICP TBI Ethnicity codes for BIST measurement"
-// * contained[patient].extension[sex-at-birth] 1..1
-// * contained[patient].extension[sex-at-birth] only $sex-at-birth
-// * contained[patient].extension[sex-at-birth].valueCodeableConcept 1..1
-// * contained[patient].extension[sex-at-birth] ^short = "(male | female | other | unknown)"
-// performerType (idt assessment team / care team / practitioner - physiotherapist) SCTID: 394748003 Primary Care Group
-
 
 * authoredOn only dateTime
 * authoredOn obeys dateTime-not-in-future-invariant
@@ -124,17 +91,4 @@ Description:    "The ACC Patient Referral resource for a BIST measurement."
 * requester ^short = "This represents the pracitioner (ACC ProviderId) and practice (ACC VendorId) referring/not referring the patient to a concussion supplier."
 
 * performer 0..1
-// * performer only Reference(ACCProvider)
-// * performer only Reference(ACCTbiProvider)
 * performer ^short = "This represents the ACC-approved concussion supplier the patient is being referred to."
-
-// * extension ^slicing.discriminator.type = #value
-// * extension ^slicing.discriminator.path = "url"
-// * extension ^slicing.rules = #open
-// * extension ^slicing.ordered = false
-
-// TODO - this must be migrated to PractitionerRole
-// * extension contains
-//     $acc-vendorid named acc-vendorid 1..1 
-    // and
-    // $icp-idt-assessment named idt-assessment 1..1

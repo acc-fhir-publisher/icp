@@ -53,17 +53,16 @@ Alias: $icp-measurement-clinical = http://hl7.org.nz/fhir/StructureDefinition/ac
 Alias: $icp-measurement-prom = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-prom
 Alias: $icp-measurement-bist = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-bist
 Alias: $icp-referral-decline = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-decline
+
 Alias: $icp-bist-patient-referral = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-bist-patient-referral
-Alias: $icp-bist-patient-encounter = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-bist-patient-encounter
 Alias: $icp-tbi-start-c = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-start-c
 Alias: $icp-tbi-cover-causation = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-cover-and-causation
 Alias: $icp-tbi-bist = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-bist
 Alias: $icp-tbi-case-exit = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-case-exit
 Alias: $icp-tbi-referral-decline = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-referral-decline
-Alias: $icp-tbi-bist-encounter = http://hl7.org.nz/fhir/StructureDefinition/acc-icp-tbi-bist-encounter
 
 // definitions
-Alias: $acc-bist = http://hl7.org.nz/fhir/Questionnaire/acc-bist
+Alias: $acc-bpac-bist = http://hl7.org.nz/fhir/Questionnaire/acc-bpac-bist
 Alias: $acc-cover-causation = http://hl7.org.nz/fhir/Questionnaire/acc-cover-causation
 Alias: $acc-tbi-start-c = http://hl7.org.nz/fhir/Questionnaire/acc-tbi-start-c
 
@@ -191,3 +190,57 @@ Alias: $icp-encounter-status-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-encoun
 Alias: $icp-encounter-class-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-encounter-class
 Alias: $icp-bist-ethnicity-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-bist-ethnicity
 Alias: $icp-encounter-participant-type-vs = http://hl7.org.nz/fhir/ValueSet/acc-icp-encounter-participant-type
+
+
+// hl7 questionnaire
+Alias: $layout-columns = http://hl7.org/fhir/layout-columns
+Alias: $choice-list-orientation = http://hl7.org/fhir/choice-list-orientation
+Alias: $variable = http://hl7.org/fhir/StructureDefinition/variable
+Alias: $date-picker-restriction = http://hl7.org/fhir/date-picker-restriction
+Alias: $questionnaire-ordinalValue = http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue
+Alias: $questionnaire-linked-total-score-items = http://hl7.org/fhir/StructureDefinition/questionnaire-linked-total-score-items
+Alias: $questionnaire-linked-total-score-items-items = http://hl7.org/fhir/StructureDefinition/questionnaire-linked-total-score-items/items
+Alias: $questionnaire-hidden = http://hl7.org/fhir/StructureDefinition/questionnaire-hidden
+Alias: $questionnaire-itemControl = http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl
+Alias: $questionnaire-linked-total-score-items = http://hl7.org/fhir/StructureDefinition/questionnaire-linked-total-score-items
+Alias: $questionnaire-item-control = http://hl7.org/fhir/questionnaire-item-control
+Alias: $questionnaire-choiceOrientation = http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation
+Alias: $questionnaire-hidden = http://hl7.org/fhir/StructureDefinition/questionnaire-hidden
+
+Alias: $resource-meta-source = http://hapifhir.io/fhir/StructureDefinition/resource-meta-source
+
+// BPAC (BIST)
+Alias: $variables = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/variables
+Alias: $smartcare-module = http://fhir.bestpractice.org.nz/fhir/CodeSystem/smartcare-module
+Alias: $formbuilder-runtime-version = http://fhir.bestpractice.org.nz/fhir/CodeSystem/formbuilder-runtime-version
+Alias: $form-tags = http://fhir.bestpractice.org.nz/fhir/CodeSystem/form-tags
+Alias: $formbuilder-editor-version = http://fhir.bestpractice.org.nz/fhir/CodeSystem/formbuilder-editor-version
+Alias: $questionnaire-information-date-picker-restriction = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/questionnaire-information-date-picker-restriction
+Alias: $indexable-data-questionnaire-specialty-condition = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/indexable-data/questionnaire-specialty-condition
+Alias: $application-indexable-data = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/application-indexable-data
+Alias: $form-data-source = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/form-data-source
+Alias: $questionnaire-layout-type = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/questionnaire-layout-type
+Alias: $questionnaire-has-been-published = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/questionnaire-has-been-published
+Alias: $permissions-permission-name = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/permissions/permission/name
+Alias: $permissions-permission = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/permissions/permission
+Alias: $permissions = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/permissions
+Alias: $valid-when-conditions = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/valid-when-conditions
+Alias: $rules-code = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/rules/code
+Alias: $rules-output-parameter = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/rules/output/parameter
+Alias: $rules-output-type = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/rules/output/type
+Alias: $questionnaire-information-form-only = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/questionnaire-information-form-only
+Alias: $eligible-when-conditions = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/eligible-when-conditions
+Alias: $prepopulation-field-path = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/prepopulation-field-path
+Alias: $clearable = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/clearable
+Alias: $clearable-text = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/clearable-text
+Alias: $questionnaire-item-enable-when-operator = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/questionnaire-item-enable-when-operator
+Alias: $questionnaire-information-hover = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/questionnaire-information-hover
+Alias: $none-of-the-above = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/option/none-of-the-above
+Alias: $rows = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/rows
+Alias: $max-rows = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/max-rows
+Alias: $naViewPerm = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/access-level/view/naViewPerm
+Alias: $access-level-view = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/access-level/view
+Alias: $access-level = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/access-level
+Alias: $mcf-configuration-id = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/mcf-configuration-id
+Alias: $mcf-configuration-name = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/mcf-configuration-name
+Alias: $datepicker-should-populate-today = http://fhir.bestpractice.org.nz/fhir/StructureDefinition/datepicker-should-populate-today

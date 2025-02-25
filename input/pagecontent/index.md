@@ -23,7 +23,7 @@ This tab lists all the profiles defined in this guide. A profile is a set of con
 
 ### Questionnaires
 
-This tab lists all the Questionnaires defined in this guide.
+This tab lists the Questionnaires defined in this guide.
 
 ### Extensions
 
