@@ -21,7 +21,7 @@ Description: "Example of a referral decline TBI Encounter"
 * class = $encounter-class#PRENC
 * serviceProvider = Reference(Organization/ORG123)
 * subject = Reference(patient-internal)
-* serviceType = $icp-service-type-cs#tbi
+* serviceType = $icp-service-type-cs#msk // not-ready
 
 // * extension[0].url = $acc-providerid
 // * extension[=].valueString = "J99966"

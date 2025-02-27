@@ -7,7 +7,7 @@ Description: "Example of an ICP TBI Secondary care referral aka referral into"
 * identifier.system = $acc-claim-number
 * identifier.use = #official
 * identifier.value = "AB12345"
-* type = $icp-service-type-cs#tbi
+* type = $icp-service-type-cs#msk // not-ready
 * contained[0] = patient-internal
 * contained[+] = icp-tbi-cover-measurement-internal
 * contained[+] = icp-tbi-start-c-measurement-internal
