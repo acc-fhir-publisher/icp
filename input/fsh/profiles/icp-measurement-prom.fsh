@@ -14,14 +14,22 @@ These PROMS must be submitted through the PROM and Clinical measures API via the
 
 | Body site | Measurement standard | Measurement |
 |--- |--- |--- |
-| Shoulder | QuickDASH | QuickDASH values range from 0 to 100 |
-| Lower back |  Oswestry Disability Index |  Oswestry values 0 to 100 |
-| Knee | Knee Injury and Osteoarthritis Outcome Score (KOOS) | KOOS values 0 to 100 |
+| Shoulder | QuickDASH © Institute for Work & Health 2006-2020 | QuickDASH values range from 0 to 100 |
+| Lower back |  Oswestry Disability Index ODI © Jeremy Fairbank, 1980. All Rights Reserved. |  Oswestry values 0 to 100 |
+| Knee | Knee Injury and Osteoarthritis Outcome Score (KOOS) © Ewa Maria Roos, 1998 | KOOS values 0 to 100 |
 
 """
 
 * ^url = $icp-measurement-prom
 * insert Acc-Metadata
+
+// * ^copyright = "ACC New Zealand© 2023+; Licensed Under Creative Commons No Rights Reserved."
+* ^copyright = """
+ACC New Zealand© 2023+; Licensed Under Creative Commons No Rights Reserved.<br/>
+QuickDASH © Institute for Work & Health 2006-2020. All Rights Reserved.<br/>
+Oswestry Disability Index ODI © Jeremy Fairbank, 1980. All Rights Reserved.<br/>
+KOOS © Ewa Maria Roos, 1998. All Rights Reserved.
+"""
 
 * derivedFrom 0..0
 

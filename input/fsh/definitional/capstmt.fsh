@@ -90,11 +90,11 @@ The ICP Referral Decline contains the data that ICP suppliers send ACC on comple
 
 // ============== The Service Request endpoint
 
-* rest.resource[+].type = #ServiceRequest
-* rest.resource[=].supportedProfile[+] = $icp-bist-patient-referral
-* rest.resource[=].interaction[+].code = #create
-* rest.resource[=].interaction[=].documentation[0] = """
-Service Request create
-The ICP BIST Patient Referral contains the data that ICP suppliers send ACC on completion of patient triage and if they decide to refer the patient for a BIST measurement.
+// * rest.resource[+].type = #ServiceRequest
+// * rest.resource[=].supportedProfile[+] = $icp-bist-patient-referral
+// * rest.resource[=].interaction[+].code = #create
+// * rest.resource[=].interaction[=].documentation[0] = """
+// Service Request create
+// The ICP BIST Patient Referral contains the data that ICP suppliers send ACC on completion of patient triage and if they decide to refer the patient for a BIST measurement.
 
-"""
+// """

@@ -5,7 +5,7 @@ Title:          "ACC Integrated Care Pathway TBI BIST"
 Description:    "ACC Integrated Care Pathway TBI BIST"
 
 * ^url = $icp-tbi-bist
-* insert Acc-Metadata
+* insert Acc-Metadata-Tbi
 * ^purpose = "An ICP TBI BIST measurement resource is used within an ICP TBI Case, as a data point to verify weither an Icp case has a valid claim for concussion"
 * ^text.status = #additional
 

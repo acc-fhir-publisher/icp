@@ -48,7 +48,7 @@ Title: "BIST Answer Option ( Better | Worse | About the same )"
 Description: "ValueSet for response options Better, Worse, and About the same."
 
 * ^url = $icp-tbi-bist-answeroption-betterworsesame-vs
-* insert Acc-Vocabulary-Metadata
+* insert Acc-Vocabulary-Metadata-Tbi
 
 * include codes from system $icp-tbi-bist-answeroption-betterworsesame-cs
 
@@ -59,7 +59,7 @@ Description: "CodeSystem for response "
 
 * ^url = $icp-tbi-bist-answeroption-betterworsesame-cs
 * ^caseSensitive = true
-* insert Acc-Vocabulary-Metadata
+* insert Acc-Vocabulary-Metadata-Tbi
 
 * #better "Better"
   // * ^property[0].valueCoding.system = $ordinal-value
@@ -77,7 +77,7 @@ Title: "BIST Options Range 0-10 ( 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 )"
 Description: "ValueSet for BIST options range 0-10."
 
 * ^url = $icp-tbi-bist-answeroption-range-vs
-* insert Acc-Vocabulary-Metadata
+* insert Acc-Vocabulary-Metadata-Tbi
 
 * include codes from system $icp-tbi-bist-answeroption-range-cs
 
@@ -88,7 +88,7 @@ Description: "CodeSystem for response "
 
 * ^url = $icp-tbi-bist-answeroption-range-cs
 * ^caseSensitive = true
-* insert Acc-Vocabulary-Metadata
+* insert Acc-Vocabulary-Metadata-Tbi
 
 * #0 "0"
   // * ^property[0].valueCoding.system = $ordinal-value

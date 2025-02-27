@@ -5,7 +5,7 @@ Title:          "ACC Integrated Care Pathway TBI Cover and Causation"
 Description:    "ACC Integrated Care Pathway TBI Cover and Causation"
 
 * ^url = $icp-tbi-cover-causation
-* insert Acc-Metadata
+* insert Acc-Metadata-Tbi
 * ^purpose = "An ICP TBI Cover and Causation data point is used within an Icp TBI Case, as a data point to verify weither the claim is covered by ACC."
 * ^text.status = #additional
 

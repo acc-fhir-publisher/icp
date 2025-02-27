@@ -5,7 +5,7 @@ Title:          "ACC ICP Episode of Care Exit Resource"
 Description:    "This profile supports suppliers needing to inform ACC of a patient being exited from their ICP service."
 
 * ^url = $icp-tbi-case-exit
-* insert Acc-Metadata
+* insert Acc-Metadata-Tbi
 
 * contained contains 
     patient 1..1

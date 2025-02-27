@@ -4,7 +4,7 @@ Title: "BIST Ethnicity"
 Description: "This file contains ethnicities used in the ICP BIST message."
 
 * ^url = $icp-bist-ethnicity-vs
-* insert Acc-Vocabulary-Metadata
+* insert Acc-Vocabulary-Metadata-Tbi
 
 * $ethnicity-code-cs#10000 "European NFD"
 * $ethnicity-code-cs#11111 "New Zealand European"

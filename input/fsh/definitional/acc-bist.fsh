@@ -1,5 +1,5 @@
 
-Instance: acc-bpac-bist
+Instance: acc-bist
 InstanceOf: Questionnaire
 Usage: #definition
 Title:          "ACC BIST"
@@ -7,8 +7,8 @@ Description:    "Represents the Brain Injury Screening Tool (BIST) for ACC."
 
 * name = "ACC BIST - 20202"
 * title = "ACC BIST - 20202"
-* status = #active
-* publisher = "BPAC"
+* status = #draft
+* publisher = "ACC"
 * jurisdiction.coding = urn:iso:std:iso:3166#NZ
 * useContext[0]
   * code = #M1 "Module form"
@@ -2829,10 +2829,10 @@ Description:    "Represents the Brain Injury Screening Tool (BIST) for ACC."
     * url = $questionnaire-hidden
     * valueBoolean = true
   * extension[+]
-    * url = "http://fhir.bestpractice.org.nz/fhir/StructureDefinition/data-overridable"
+    * url = "http://hl7.org/fhir/fhir-types#boolean"
     * valueBoolean = false
   * extension[+]
-    * url = "http://fhir.bestpractice.org.nz/fhir/StructureDefinition/questionnaire-selected-external-data-item"
+    * url = "http://hl7.org/fhir/fhir-types#string"
     * valueString = "age"
   * linkId = "74d94b9d-400f-9db9-e402-81b12e4e232b"
   * text = "Age"

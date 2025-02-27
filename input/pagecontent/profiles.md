@@ -32,14 +32,6 @@ There are a number of ICP profiles available:
 | [PROM Measurement](StructureDefinition-acc-icp-measurement-prom.html)                | <http://hl7.org.nz/fhir/StructureDefinition/acc-icp-measurement-prom>     | This profile supports suppliers providing site-specific patient reported outcome measures (PROMs) to ACC.                                                                                                   | [example](Observation-icp-prom-measurement.html)                       |
 | [Referral Decline to ICP MSK](StructureDefinition-acc-icp-referral-decline.html)     | <http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-decline>     | This profile enables ICP suppliers to provide the relevant details to ACC when they decline an ICP referral.                                                                                                | [example](Encounter-icp-referral-decline.html)                         |
 
-#### Traumatic Brain Injury (TBI) Profiles
-
-##### Community Care
-
-| Name                                                                                                        | Canonical url                                                               | Description                                                                                                                |                                                   |
-|-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| [Patient Referral for initial BIST submission](StructureDefinition-acc-icp-bist-patient-referral.html)      | <http://hl7.org.nz/fhir/StructureDefinition/acc-icp-bist-patient-referral>  | This definition represents the Community Care Traumatic Brain Injury Screening Tool (BIST) has been completed.                            | |
-
 ### Additional Profile resources
 
 There are additional profiles which are not intended to be used directly, and are required to support the product 

@@ -4,7 +4,7 @@ Title: "CC TBI Referral Type"
 Description: "The referred to referral type."
 
 * ^url = $icp-tbi-bist-referral-type-vs
-* insert Acc-Vocabulary-Metadata
+* insert Acc-Vocabulary-Metadata-Tbi
 
 * include $icp-referral-source-type-cs#emergency
 * include $icp-referral-source-type-cs#community-care

@@ -5,7 +5,7 @@ Title:          "ACC ICP Patient Referral for BIST"
 Description:    "The ACC Patient Referral resource for a BIST measurement."
 
 * ^url = $icp-bist-patient-referral
-* insert Acc-Metadata
+* insert Acc-Metadata-Tbi
 * ^purpose = "A Patient Referral resource to represent a patient's referral for  an IDT assessment to be completed."
 * ^text.status = #additional
 

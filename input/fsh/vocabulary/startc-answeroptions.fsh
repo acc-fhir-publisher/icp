@@ -4,7 +4,7 @@ Title: "STarTC Answer Option ( disagree | agree )"
 Description: "ValueSet for response options such as Agree and Disagree."
 
 * ^url = $icp-tbi-startc-answeroption-agreedisagree-vs
-* insert Acc-Vocabulary-Metadata
+* insert Acc-Vocabulary-Metadata-Tbi
 
 * include codes from system $icp-tbi-startc-answeroption-agreedisagree-cs
 
@@ -16,7 +16,7 @@ Description: "CodeSystem for response options such as Agree and Disagree with or
 
 * ^url = $icp-tbi-startc-answeroption-agreedisagree-cs
 * ^caseSensitive = true
-* insert Acc-Vocabulary-Metadata
+* insert Acc-Vocabulary-Metadata-Tbi
 
 * #disagree "Disagree"
   // * ^property[0].valueCoding.system = $ordinal-value
@@ -32,7 +32,7 @@ Title: "Start-C Overall Options ( not-at-all | slightly | moderately | very-much
 Description: "ValueSet for overall STarT-C concussion symptoms with ordinal values."
 
 * ^url = $icp-tbi-startc-answeroption-overall-vs
-* insert Acc-Vocabulary-Metadata
+* insert Acc-Vocabulary-Metadata-Tbi
 
 * include codes from system $icp-tbi-startc-answeroption-overall-cs
 
@@ -43,7 +43,7 @@ Description: "CodeSystem for overall STarT-C concussion symptoms with ordinal va
 
 * ^url = $icp-tbi-startc-answeroption-overall-cs
 * ^caseSensitive = true
-* insert Acc-Vocabulary-Metadata
+* insert Acc-Vocabulary-Metadata-Tbi
 
 * #not-at-all "Not at all"
   // * ^property[0].valueCoding.system = $ordinal-value

@@ -4,7 +4,6 @@ Usage: #definition
 Title:          "ACC TBI STarT-C"
 Description:    "Represents the STarT-C questionnaire for Traumatic Brain Injury (TBI) patients"
 
-
 * name = "ACCTBIStartC"
 * title = "STarT-C"
 * url = $acc-tbi-start-c

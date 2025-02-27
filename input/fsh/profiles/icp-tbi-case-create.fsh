@@ -5,7 +5,7 @@ Title:          "ACC ICP TBI Case Create Resource"
 Description:    "ICP TBI Case Create is to be used by the supplier to furnish ACC with the required information following the completion of the triage assessment and the decision to accept the patient into their ICP service."
 
 * ^url = $icp-tbi-case-create
-* insert Acc-Metadata
+* insert Acc-Metadata-Tbi
 
 * type 1..1
 * type ^short = "The type of ICP service. Currently only musculoskeletal (msk) is allowed, with more to be added in the future, e.g. concussion."

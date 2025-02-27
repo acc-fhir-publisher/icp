@@ -8,7 +8,7 @@ This resource profile supports suppliers providing a BIST document to ACC.
 """
 
 * ^url = $icp-measurement-bist
-* insert Acc-Metadata
+* insert Acc-Metadata-Tbi
 
 * value[x] 0..0
 * dataAbsentReason 0..0

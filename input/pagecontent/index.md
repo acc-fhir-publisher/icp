@@ -21,9 +21,9 @@ The following tabs are available from the navbar at the top.
 
 This tab lists all the profiles defined in this guide. A profile is a set of constraints on a [Resource](http://hl7.org/fhir/resourcelist.html) or [Data Type](http://hl7.org/fhir/datatypes.html) - for example, the [ICP Case Create](StructureDefinition-acc-icp-case-create.html) resource has a profile defined for it in this guide. The profile defines which elements are required, and which are optional, and may also define additional constraints on the data in those elements. The ICP Case Create profile also defines that the 'patient' element must have a contained [ICP Patient](http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient) resource.
 
-### Questionnaires
+### Third-party
 
-This tab lists the Questionnaires defined in this guide.
+This tab lists the Third-party licenses referenced in this guide.
 
 ### Extensions
 

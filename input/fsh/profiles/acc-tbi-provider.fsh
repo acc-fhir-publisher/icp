@@ -5,7 +5,7 @@ Title:          "ACC Provider"
 Description:    "The ACC Provider resource based on NzPractitioner."
 
 * ^url = $acc-tbi-provider
-* insert Acc-Metadata
+* insert Acc-Metadata-Tbi
 * ^purpose = "An ACC Provider resource is used to represent a provider that is registered with ACC to supply concussion services."
 * ^text.status = #additional
 

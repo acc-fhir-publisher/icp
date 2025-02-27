@@ -5,7 +5,7 @@ Title:          "ACC Integrated Care Pathway TBI Start C"
 Description:    "ACC Integrated Care Pathway TBI Start C"
 
 * ^url = $icp-tbi-start-c
-* insert Acc-Metadata
+* insert Acc-Metadata-Tbi
 * ^purpose = "An ICP TBI Start C measurement resource is used within an Icp TBI Case, as a data point to verify weither an Icp case has a valid claim for concussion"
 * ^text.status = #additional
 
