@@ -44,7 +44,7 @@ Description:    "The ACC ICP Case resource based on Episode of Care"
 * type.coding.system = $icp-service-type-cs
 * type.coding.code from $icp-service-type-vs (required)
 * type.coding.code 1..1
-* type.coding.code ^short = "(msk | tbi)"
+* type.coding.code ^short = "(msk)"
 
 * identifier ^slicing.description = "ICP identifiers"
 * identifier ^slicing.discriminator.type = #value

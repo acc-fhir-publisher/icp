@@ -4,6 +4,6 @@ Title: "Encounter Participant"
 Description: "The Participant type of the ICP tbi encounter"
 
 * ^url = $icp-encounter-participant-type-vs
-* insert Acc-Vocabulary-Metadata
+* insert Acc-Vocabulary-Metadata-Tbi
 
 * $encounter-participant-type#PPRF "primary performer"

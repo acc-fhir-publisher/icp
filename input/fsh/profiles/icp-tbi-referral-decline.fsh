@@ -5,7 +5,7 @@ Title:          "ACC ICP Referral Decline Resource"
 Description:    "The ICP Referral Decline profile is to be used by ICP suppliers to furnish ACC with the required information following them declining an ICP referral."
 
 * ^url = $icp-tbi-referral-decline
-* insert Acc-Metadata
+* insert Acc-Metadata-Tbi
 
 * classHistory 0..0
 * statusHistory 0..0

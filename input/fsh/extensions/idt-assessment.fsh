@@ -4,7 +4,7 @@ Title: "ICP IDT Assessment"
 Description: "Integrated Care Pathways IDT Assessment"
 
 * ^url = $icp-idt-assessment
-* insert Acc-Metadata
+* insert Acc-Metadata-Tbi
 
 * ^context[0].type = #element
 * ^context[=].expression = "EpisodeOfCare"

@@ -4,7 +4,7 @@ Title: "BIST Referral"
 Description: "Integrated Care Pathways BIST Referral Reason"
 
 * ^url = $icp-bist-referral
-* insert Acc-Metadata
+* insert Acc-Metadata-Tbi
 
 * ^context[0].type = #element
 * ^context[=].expression = "Observation"

@@ -40,7 +40,7 @@ Title: "Exit Reason"
 Description: "New Zealand codes for Integrated Care Pathways TBI case exit reasons"
 
 * ^url = $icp-tbi-exit-reason-vs
-* insert Acc-Vocabulary-Metadata
+* insert Acc-Vocabulary-Metadata-Tbi
 
 * include $icp-exit-reason-cs#goal-achieved
 * include $icp-exit-reason-cs#partially-achieved

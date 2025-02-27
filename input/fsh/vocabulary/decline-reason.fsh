@@ -22,7 +22,7 @@ Title: "Referral TBI Decline Reason"
 Description: "New Zealand codes for Integrated Care Pathways tbi referral decline reasons"
 
 * ^url = $icp-tbi-declined-reason-vs
-* insert Acc-Vocabulary-Metadata
+* insert Acc-Vocabulary-Metadata-Tbi
 
 * include $icp-declined-reason-cs#accredited-employer
 * include $icp-declined-reason-cs#alternate-acc-service

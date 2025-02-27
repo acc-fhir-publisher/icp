@@ -40,7 +40,7 @@ Title: "TBI Referral Source Type"
 Description: "The source of the referral.  e.g. Internal is from within the supplier/consortium group."
 
 * ^url = $icp-tbi-referral-source-type-vs
-* insert Acc-Vocabulary-Metadata
+* insert Acc-Vocabulary-Metadata-Tbi
 
 * include $icp-referral-source-type-cs#gp
 * include $icp-referral-source-type-cs#physio
@@ -54,7 +54,7 @@ Title: "TBI Referral Source Type"
 Description: "The source of the referral.  e.g. Internal is from within the supplier/consortium group."
 
 * ^url = $icp-tbi-bist-referral-source-type-vs
-* insert Acc-Vocabulary-Metadata
+* insert Acc-Vocabulary-Metadata-Tbi
 
 * include $icp-referral-source-type-cs#emergency
 * include $icp-referral-source-type-cs#community-care

@@ -4,7 +4,7 @@ Title: "BIST Answer Option ( no | yes )"
 Description: "ValueSet for response options Yes and No."
 
 * ^url = $icp-tbi-bist-answeroption-yesno-vs
-* insert Acc-Vocabulary-Metadata
+* insert Acc-Vocabulary-Metadata-Tbi
 
 * include $icp-tbi-bist-answeroption-yesno-cs#yes
 * include $icp-tbi-bist-answeroption-yesno-cs#no
@@ -15,7 +15,7 @@ Title: "BIST Answer Option ( no | yes | unknown)"
 Description: "ValueSet for response options Yes, No, and Unknown."
 
 * ^url = $icp-tbi-bist-answeroption-yesnounknown-vs
-* insert Acc-Vocabulary-Metadata
+* insert Acc-Vocabulary-Metadata-Tbi
 
 * include $icp-tbi-bist-answeroption-yesno-cs#yes
 * include $icp-tbi-bist-answeroption-yesno-cs#no
@@ -29,7 +29,7 @@ Description: "CodeSystem for response "
 
 * ^url = $icp-tbi-bist-answeroption-yesno-cs
 * ^caseSensitive = true
-* insert Acc-Vocabulary-Metadata
+* insert Acc-Vocabulary-Metadata-Tbi
 
 * #yes "Yes"
   // * ^property[0].code = $ordinal-value#0

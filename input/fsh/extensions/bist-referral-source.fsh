@@ -3,7 +3,7 @@ Id: acc-icp-bist-referral-source
 Title: "TBI BIST Referral Source"
 Description: "The source of the referral to the BIST."
 * ^url = $icp-bist-referral-source
-* insert Acc-Metadata
+* insert Acc-Metadata-Tbi
 
 * ^context[0].type = #element
 * ^context[=].expression = "Observation"
