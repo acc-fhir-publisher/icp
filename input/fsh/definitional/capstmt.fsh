@@ -37,7 +37,7 @@ This is the computable resource that describes the RESTful endpoint
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[=].interaction[=].documentation[0] = """
 EpisodeOfCare create
-The ICP Create Episode of Care contains the data that ICP suppliers send ACC on completion of triage and they decide to enrol a patient into the ICP-MSK service.
+The ICP Create Episode of Care contains the data that ICP suppliers send ACC on completion of patient triage and if they decide to enrol a patient into the ACC Integrated Care Pathway service.
 
 """
 
@@ -64,7 +64,7 @@ The ICP Exit Episode of Care contains the data that ICP suppliers send ACC on ex
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[=].interaction[=].documentation[0] = """
 Observation clinical measures
-The ICP Clinical measures contains the clinical observation data that ICP suppliers send ACC while the patient is accepted into ICP.
+The ICP Clinical measures contains the clinical observation data that ICP suppliers send to ACC whilst the patient is going through ICP.
 
 """
 
@@ -84,6 +84,17 @@ The ICP Patient measures contains the patient record observation data that ICP s
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[=].interaction[=].documentation[0] = """
 Encounter create
-The ICP Referral Decline contains the data that ICP suppliers send ACC on completion of triage and they decide to decline the referral into the ICP-MSK service.
+The ICP Referral Decline contains the data that ICP suppliers send ACC on completion of patient triage and if they decide to decline the referral into the ACC Integrated Care Pathway service.
 
 """
+
+// ============== The Service Request endpoint
+
+// * rest.resource[+].type = #ServiceRequest
+// * rest.resource[=].supportedProfile[+] = $icp-bist-patient-referral
+// * rest.resource[=].interaction[+].code = #create
+// * rest.resource[=].interaction[=].documentation[0] = """
+// Service Request create
+// The ICP BIST Patient Referral contains the data that ICP suppliers send ACC on completion of patient triage and if they decide to refer the patient for a BIST measurement.
+
+// """

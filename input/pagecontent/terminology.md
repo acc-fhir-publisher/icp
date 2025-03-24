@@ -2,15 +2,15 @@
 
 These are ValueSets that have been defined in this guide for coded elements.
 
-Each ValueSet resource has a globally unique url (the [Canonical](http://hl7.org/fhir/references.html#canonical) url) that is used to unambiguously identify it.
-This url generally should resolve to the to the FHIR ValueSet resource, though the infrastructure to support this is not yet in place. There's a [specific note](http://hl7.org/fhir/valueset.html#ident) in the spec on ValueSet identification.
+Each ValueSet resource has a globally unique url (the [Canonical](http://hl7.org/fhir/references.html#canonical) url)
+that is used to unambiguously identify it.
+This url generally should resolve to the to the FHIR ValueSet resource, though the infrastructure to support this is not
+yet in place. There's a [specific note](http://hl7.org/fhir/valueset.html#ident) in the spec on ValueSet identification.
 
-The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detail on the use of Terminology in FHIR
-
-<div class="tableGridded"></div>
+The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has more detail on the use of Terminology in FHIR
 
 |Id |Canonical url |
-|--- |--- | ---|
+|--- | ---|
 |[acc-icp-diagnosis-code](ValueSet-acc-icp-diagnosis-code.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-diagnosis-code|
 |[acc-read-code](ValueSet-acc-read-code.html)|http://hl7.org.nz/fhir/ValueSet/acc-read-code|
 |[acc-icd-9](ValueSet-acc-icd9.html)|http://hl7.org.nz/fhir/ValueSet/acc-icd9-code|
@@ -24,6 +24,7 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |[icp-observation-status](ValueSet-acc-icp-observation-status.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-observation-status|
 |[icp-prom-msk-measurement-standard](ValueSet-acc-icp-prom-msk-measurement-standard.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-prom-msk-measurement-standard|
 |[icp-clinical-msk-measurement-standard](ValueSet-acc-icp-clinical-msk-measurement-standard.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-clinical-msk-measurement-standard|
+|[acc-icp-bist-measurement-standard](ValueSet-acc-icp-bist-measurement-standard.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-bist-measurement-standard|
 |[icp-recorded-outcome-stage](ValueSet-acc-icp-recorded-outcome-stage.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-recorded-outcome-stage|
 |[icp-data-absent-reason](ValueSet-acc-icp-data-absent-reason.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-data-absent-reason|
 |[icp-exit-reason](ValueSet-acc-icp-exit-reason.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-exit-reason|
@@ -35,19 +36,20 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 |[icp-status-observation](ValueSet-acc-icp-observation-status.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-observation-status|
 |[icp-referral-declined-reason](ValueSet-acc-icp-declined-reason.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-declined-reason|
 |[icp-clinical-msk-measurement-quantity-type](ValueSet-acc-icp-clinical-msk-measurement-quantity-type.html)|http://unitsofmeasure.org|
+|[acc-icp-bist-ethnicity](ValueSet-acc-icp-bist-ethnicity.html)|http://hl7.org.nz/fhir/ValueSet/acc-icp-bist-ethnicity|
 
 ### CodeSystems
 
-These are code systems that have been defined in this guide. They define specific concepts that are included in ValueSets.
+These are code systems that have been defined in this guide. They define specific concepts that are included in
+ValueSets.
 
-Each CodeSystem resource has a globally unique url (the canonical url) that is used to unambiguously identify it. The url generally refers to a description of the codesystem, rather than to the FHIR CodeSystem resource.
+Each CodeSystem resource has a globally unique url (the canonical url) that is used to unambiguously identify it. The
+url generally refers to a description of the codesystem, rather than to the FHIR CodeSystem resource.
 
-The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detail on the use of Terminology in FHIR
+The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detail on the use of Terminology within FHIR
 
-<div class="tableGridded"></div>
-
-|Id |Canonical url |
-|--- |--- | ---|
+|Id | Canonical url |
+|--- | ---|
 |[acc-read-code](CodeSystem-acc-read-code.html)|http://hl7.org.nz/fhir/CodeSystem/acc-read-code|
 |[acc-icd-9](CodeSystem-acc-icd9.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icd-9|
 |[acc-icd-10](CodeSystem-acc-icd10.html)|http://hl7.org.nz/fhir/CodeSystem/acc-icd-10|

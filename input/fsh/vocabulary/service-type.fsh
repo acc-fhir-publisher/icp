@@ -18,4 +18,5 @@ Description: "The type of ICP service. Currently only musculoskeletal (msk) is a
 * ^caseSensitive = true
 * insert Acc-Vocabulary-Metadata
 
-* #msk "Muscular Skeletal"
+* #msk "Musculoskeletal"
+// * #tbi "Traumatic Brain Injury"

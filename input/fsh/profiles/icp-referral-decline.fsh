@@ -90,6 +90,9 @@ Description:    "The ICP Referral Decline profile is to be used by ICP suppliers
     $icp-referral-declined named referral-declined 1..1 and
     $icp-triage named triage 0..1
 
+* extension[referral-declined].extension[reason].valueCode from $icp-declined-reason-vs (required)
+
+* extension[triage].extension[complexityScores] 1..1
 * extension[triage].extension[client-participation-agreement].valueBoolean 0..0
 
 * extension[acc-providerid] ^short = "The ACC provider Id of the practioner providing this information"

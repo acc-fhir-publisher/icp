@@ -4,21 +4,26 @@ name: icp
 title: New Zealand ICP Implementation Guide
 description: This is the New Zealand ICP Implementation Guide
 status: active # draft | active | retired | unknown
-version: 1.0.0
+version: 1.1.0
 fhirVersion: 4.0.1
 copyrightYear: 2023+
 license: CC0-1.0
-releaseLabel: release # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 publisher:
   name: Accident Compensation Corporation
 
 parameters:
   show-inherited-invariants: false
   # apply-version: false
+  bundle-references-resolve: false
+  default-version: true
   generate-version: r4
   validation: [allow-any-extensions]
   excludettl: true
   excludexml: true
+  suppressed-ids: $examples
+  no-validate: Organization/*
+  i18n-default-lang: en-NZ
   
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
@@ -28,14 +33,20 @@ dependencies:
   fhir.org.nz.ig.base:
      uri: 'http://fhir.org.nz/ig/base/ImplementationGuide/fhir.org.nz.ig.base'
      version: 3.0.0
+  hl7.terminology.r4:
+     uri: 'http://hl7.org/fhir/ImplementationGuide/hl7.terminology.r4'
+     version: 5.5.0
 pages:
   index.md:
     title: IG Home
   profiles.md:
     title: Profiles
+  third-party.md:
+    title: Third-party
   extensions.md:
     title: Extensions
   terminology.md:
     title: Terminology
   identifiers.md:
     title: Identifiers
+  

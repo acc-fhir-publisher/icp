@@ -49,7 +49,7 @@ Description: "The type of ICP service. Currently only musculoskeletal (msk) is a
     "This claim requires assessment from an ACC staff member before it can be entered into ICP"
     "This claim requires assessment from an ACC staff member before it can be entered into ICP. Please contact ACC on 0800 101 996 ext. 77097 to discuss."
 * #icp-val-11
-    "This claim already has an ICP Case against it."
+    "The active ICP case of the same ICP Service Type already exists for this claim."
     "This claim already has an ICP Case against it. Please contact ACC on 0800 101 996 ext. 77097 to discuss."
 * #icp-val-12
     "There's no ICP Subcase against the specified Claim in Eos"
@@ -89,7 +89,97 @@ Description: "The type of ICP service. Currently only musculoskeletal (msk) is a
     "You are not authorised to access this service. Contact ACC Digital Operations at digitaloperations@acc.co.nz to arrange permission."
 * #icp-auth-2002
     "You are not authorised to access this vendor record. Contact ACC Digital Operations at digitaloperations@acc.co.nz to arrange permission."
-    "You are not authorised to access this vendor record. Contact ACC Digital Operations at digitaloperations@acc.co.nz to arrange permission."  
+    "You are not authorised to access this vendor record. Contact ACC Digital Operations at digitaloperations@acc.co.nz to arrange permission." 
+* #bist-val-3000
+    "Unable to retrieve Questionnaire matching Questionnaire response version."
+    "Unable to retrieve Questionnaire matching Questionnaire response version."
+* #bist-val-3001
+    "BIST version number is required."
+    "BIST version number is required."
+* #bist-val-3002
+    "BIST instance number is required."
+    "BIST instance number is required."
+* #bist-val-3003
+    "Additional advice line is required when primary advice is not followed."
+    "Additional advice line is required when primary advice is not followed."
+* #bist-val-3004
+    "Mismatch between vomit indicator and numerical response."
+    "Mismatch between vomit indicator and numerical response."
+* #bist-val-3005
+    "Mismatch between loss of consciousness indicator and numerical response."
+    "Mismatch between loss of consciousness indicator and numerical response."  
+* #bist-val-3006
+    "Required duration for loss of consciousness is missing."
+    "Required duration for loss of consciousness is missing."
+* #bist-val-3007
+    "A weighting for this vomit indicator is required."
+    "A weighting for this vomit indicator is required."
+* #bist-val-3008
+    "A weighting for loss of consciousness indicator is required."
+    "A weighting for loss of consciousness indicator is required."
+* #bist-val-3009
+    "A weighting for patient experience is required."
+    "A weighting for patient experience is required."
+* #bist-val-3010
+    "A weighting for mental health indicator is required."
+    "A weighting for mental health indicator is required."
+* #bist-val-3011
+    "A weighting for migraine indicator is required."
+    "A weighting for migraine indicator is required."
+* #bist-val-3012
+    "Symptom scores more than 24 hours post-injury must be out of 160."
+    "Symptom scores more than 24 hours post-injury must be out of 160."
+* #bist-val-3013
+    "Symptom scores less than 24 hours post-injury must be out of 120."
+    "Symptom scores less than 24 hours post-injury must be out of 120."
+* #bist-val-3014
+    "Injury recency mismatch."
+    "Injury recency mismatch."
+* #bist-val-3015
+    "BIST is not a recommended tool for those aged under 8 years old."
+    "BIST is not a recommended tool for those aged under 8 years old."    
+* #bist-val-3016
+    "Incorrect secondary advice provided."
+    "Incorrect secondary advice provided."
+* #bist-val-3017
+    "Consultation date must be after accident date."
+    "Consultation date must be after accident date."
+* #bist-val-3018
+    "Patient date of birth must be in the past."
+    "Patient date of birth must be in the past."
+* #bist-val-3019
+    "Accident date cannot be in the future."
+    "Accident date cannot be in the future."
+* #bist-val-3020
+    "Injury occurred within past 24 hours is a mandatory field."
+    "Injury occurred within past 24 hours is a mandatory field."
+* #bist-val-3021
+    "High risk indicator is a mandatory field."
+    "High risk indicator is a mandatory field."
+* #bist-val-3022
+    "Traumatic circumstances indicator is a mandatory field."
+    "Traumatic circumstances indicator is a mandatory field."
+* #bist-val-3023
+    "Was anyone else with you indicator is a mandatory field."
+    "Was anyone else with you indicator is a mandatory field."
+* #bist-val-3024
+    "Vomit indicator is a mandatory field."
+    "Vomit indicator is a mandatory field."
+* #bist-val-3025
+    "Previous concussion indicator is a mandatory field."
+    "Previous concussion indicator is a mandatory field."
+* #bist-val-3026
+    "Medication indicator is a mandatory field."
+    "Medication indicator is a mandatory field."
+* #bist-val-3027
+    "Mental health indicator is a mandatory field."
+    "Mental health indicator is a mandatory field."
+* #bist-val-3028
+    "Migrain history indicator is a mandatory field."
+    "Migrain history indicator is a mandatory field."
+* #bist-val-3029
+    "Weighting error."
+    "Weighting error."
 * #icp-val-9000
     "There is an ACC system issue. You'll need to resubmit your content later. Advise ACC Digital Operations at digitaloperations@acc.co.nz."
     "There is an ACC system issue. You'll need to resubmit your content later. Advise ACC Digital Operations at digitaloperations@acc.co.nz."

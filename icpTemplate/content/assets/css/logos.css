@@ -1,0 +1,14 @@
+#acc-logo { 
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    height: 90px;
+}
+
+#hiso-logo {
+    float: right;
+    margin-right: 10px;
+    margin-top: 18px;
+    height: 90px;
+}

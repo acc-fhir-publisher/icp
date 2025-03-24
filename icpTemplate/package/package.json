@@ -1,14 +1,14 @@
 {
-    "name": "nz.fhir.template.icp",
+    "name": "acc.fhir.template.icp",
     "version": "1.0.0",
     "type": "fhir.template",
     "license": "CC0-1.0",
-    "description": "ICP NZ FHIR Template",
+    "description": "ACC NZ FHIR Template",
     "author": "ACC",
     "canonical": "http://fhir.org/templates/nz.fhir.template.icp",
     "baseDEP": "hl7.fhir.template",
     "base": "fhir.base.template",
     "dependencies": {
-        "fhir.base.template": "current"
+        "fhir.base.template": "0.8.1"
     }
 }

@@ -7,8 +7,6 @@ This resource profile supports suppliers providing site-specific clinical measur
 
 When the valueQuantity is provided, the value is expressed as a percentage from the following calculation:
 
-<div class="tableGridded"></div>
-
 | Measurement | Calculation |
 |--- |--- |
 | Shoulder | Kilogram of force measurement of the injured arm as a percentage of the measurement from the non-injured arm |
@@ -19,6 +17,8 @@ When the valueQuantity is provided, the value is expressed as a percentage from 
 
 * ^url = $icp-measurement-clinical
 * insert Acc-Metadata
+
+* derivedFrom 0..0
 
 * code from $icp-clinical-measurement-standard-msk-vs (required)
 * code 1..1

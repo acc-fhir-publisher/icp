@@ -13,6 +13,10 @@ Description: "This represents the person submitting this form to ACC.  It should
 * ^context[=].expression = "Observation"
 * ^context[+].type = #element
 * ^context[=].expression = "Encounter"
+* ^context[+].type = #element
+* ^context[=].expression = "ServiceRequest"
+* ^context[+].type = #element
+* ^context[=].expression = "Practitioner"
 
 * extension 0..0
 * value[x] only string

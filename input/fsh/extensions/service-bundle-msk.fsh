@@ -1,6 +1,6 @@
 Extension: Icp_ServiceBundle
 Id: acc-icp-service-bundle-msk
-Title: "Service Bundle"
+Title: "Service Bundle MSK"
 Description: "Indicates the ICP service bundle MSK selected for the treatment."
 * ^url = $icp-service-bundle-msk
 * insert Acc-Metadata
