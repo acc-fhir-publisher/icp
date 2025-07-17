@@ -5,6 +5,7 @@ The validation tool compares a resource against the base definitions and any
 profiles declared in the resource (Resource.meta.profile) or specified on the 
 command line
 
+
 The FHIR validation tool validates a FHIR resource or bundle.
 Schema and schematron checking is performed, then some additional checks are performed. 
 * XML & Json (FHIR versions 1.0, 1.4, 3.0, 3.4)
