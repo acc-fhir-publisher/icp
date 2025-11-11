@@ -8,7 +8,7 @@ jobs:
     container:
       image: accnewzealand/ig-publisher:1.6.15
       credentials:
-        username: ${{ secrets.DOCKER_HUB_USERNAME }}
+        username: ${{ vars.DOCKERHUB_ORG_NAME }}
         password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
     permissions:
       packages: write
