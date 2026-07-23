@@ -18,7 +18,7 @@ externalDocs:
 paths:
   /EpisodeOfCare:
     post:
-      summary: "create-type: Create a new IcpEpisodeOfCare instance"
+      summary: "create-type: Create a new IcpEpisodeOfCare instance."
       requestBody:
         content:
           application/fhir+json:
@@ -71,7 +71,7 @@ paths:
                 $ref: '#/components/schemas/OperationOutcome'
   /Observation:
     post:
-      summary: "create-type: Create a new IcpEpisodeOfCare instance"
+      summary: "create-type: Create a new IcpEpisodeOfCare instance."
       requestBody:
         content:
           application/fhir+json:
@@ -98,7 +98,7 @@ paths:
                 $ref: '#/components/schemas/OperationOutcome'
   /Encounter:
     post:
-      summary: "create-type: Create an icp case referral decline instance"
+      summary: "create-type: Create an icp case referral decline instance."
       requestBody:
         content:
           application/fhir+json:
