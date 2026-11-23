@@ -1,40 +1,42 @@
-# this mirrors all changes from the icp to the icp-mirror repository
-
 name: Publish to acc-fhir-publisher (build.fhir.org)
 
-# sdfsdf
 on:
   workflow_dispatch:
-#     branches:  [ trunk ]
     
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    runs-on:
+      group: general-linux
      
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
-          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
+          persist-credentials: false
           fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
 
-      - name: cleanup
-        run: rm -rf ~/.ssh
+      - uses: azure/login@v2
+        with:
+          creds: ${{secrets['AZURE_CREDENTIALS_NONPROD']}}
 
-      - name: Set branch name
-        id: extract_branch
-        run: echo "::set-output name=branch::${GITHUB_REF#refs/heads/}"
-
-      - name: Configure SSH and push
+      - name: Fetch SSH key from Key Vault
+        shell: bash
         run: |
-          install -m 600 -D /dev/null ~/.ssh/id_ed25519
-          echo "${{ secrets.ID_ED25519 }}" > ~/.ssh/id_ed25519
-          eval "$(ssh-agent -s)"
-          ssh-add ~/.ssh/id_ed25519
-          git remote set-url origin git@github.com:acc-fhir-publisher/icp.git
-          git push -u origin ${{ steps.extract_branch.outputs.branch }}
+          install -m 600 -D /dev/null ~/.ssh/icp_ssh_private_key
+          az keyvault secret show \
+            --vault-name "SYD-PDD-KVT-INT-NONPROD" \
+            --name "icp-fhir-ig-ssh-private-key-base64" \
+            --query value -o tsv | base64 -d > ~/.ssh/icp_ssh_private_key
+          ssh-keygen -y -f ~/.ssh/icp_ssh_private_key > /dev/null && echo "key OK"
+
+      - name: Push to acc-fhir-publisher
+        shell: bash
+        env:
+          GIT_SSH_COMMAND: ssh -i ~/.ssh/icp_ssh_private_key -o IdentitiesOnly=yes -o StrictHostKeyChecking=accept-new -o ConnectTimeout=20
+        run: |
+          git remote set-url origin ssh://git@ssh.github.com:443/acc-fhir-publisher/icp.git
+          git push -u origin "${{ github.ref_name }}"
+
+      - name: Remove key
+        if: always()
+        shell: bash
+        run: rm -f ~/.ssh/icp_ssh_private_key
